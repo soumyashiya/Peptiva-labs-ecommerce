@@ -124,6 +124,16 @@ export function CloseIcon(props: SVGProps<SVGSVGElement>) {
   );
 }
 
+export function BeakerIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M9 3h6" />
+      <path d="M10 3v6l-5 8.5A2 2 0 0 0 6.7 21h10.6a2 2 0 0 0 1.7-3.5L14 9V3" />
+      <path d="M7 15h10" />
+    </svg>
+  );
+}
+
 export function DotIcon({ className = "" }: { className?: string }) {
   return (
     <svg

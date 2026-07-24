@@ -109,14 +109,14 @@ function RegisterInner() {
           label="Nationality"
           value={form.nationality}
           onChange={(v) => update("nationality", v)}
-          placeholder="Emirati"
+          placeholder="Nationality"
           required
         />
         <TextField
           label="Country of residence"
           value={form.country_of_residence}
           onChange={(v) => update("country_of_residence", v)}
-          placeholder="United Arab Emirates"
+          placeholder="Country"
           required
           full
           autoComplete="country-name"

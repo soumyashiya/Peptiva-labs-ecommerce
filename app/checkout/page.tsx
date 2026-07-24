@@ -390,7 +390,7 @@ export default function CheckoutPage() {
                       />
                       <Field
                         label="City"
-                        placeholder="Dubai"
+                        placeholder="City"
                         value={form.city}
                         onChange={(v) => update("city", v)}
                       />
@@ -402,7 +402,7 @@ export default function CheckoutPage() {
                       />
                       <Field
                         label="Country"
-                        placeholder="United Arab Emirates"
+                        placeholder="Country"
                         full
                         value={form.country}
                         onChange={(v) => update("country", v)}
@@ -531,11 +531,24 @@ export default function CheckoutPage() {
                       </span>
                     </div>
 
+                    <div className="mt-6 rounded-2xl border border-line bg-white p-4 text-[11px] leading-relaxed text-ink-secondary">
+                      <p className="font-semibold uppercase tracking-label text-ink">
+                        Research use only
+                      </p>
+                      <p className="mt-1.5">
+                        By placing this order, you acknowledge that these
+                        products are supplied solely for laboratory research and
+                        are not intended for human or veterinary use. These
+                        products are not intended to diagnose, treat, cure, or
+                        prevent any disease.
+                      </p>
+                    </div>
+
                     <button
                       type="button"
                       onClick={placeOrder}
                       disabled={placing}
-                      className="btn-dark mt-6 hidden w-full justify-center disabled:opacity-60 lg:inline-flex"
+                      className="btn-dark mt-4 hidden w-full justify-center disabled:opacity-60 lg:inline-flex"
                     >
                       {placing
                         ? "Placing order…"

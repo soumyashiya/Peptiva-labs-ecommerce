@@ -174,11 +174,11 @@ export default function LoginPage() {
                 <br />
                 Sealed handling.
                 <br />
-                Direct from Dubai.
+                Third-party tested.
               </h2>
               <p className="mt-5 max-w-sm text-[14px] leading-relaxed text-white/70">
-                Sign in to track shipments, redeem wallet credit and manage your
-                affiliate promo code.
+                Sign in to track your orders, redeem wallet credit and manage
+                your affiliate promo code.
               </p>
             </div>
 

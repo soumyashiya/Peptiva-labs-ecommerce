@@ -226,6 +226,19 @@ export default function PaymentCapturePage({
                     </span>
                   </div>
 
+                  <div className="mt-5 rounded-2xl border border-line bg-white p-4 text-[11px] leading-relaxed text-ink-secondary">
+                    <p className="font-semibold uppercase tracking-label text-ink">
+                      Research use only
+                    </p>
+                    <p className="mt-1.5">
+                      By completing this payment, you acknowledge that these
+                      products are supplied solely for laboratory research and
+                      are not intended for human or veterinary use. These
+                      products are not intended to diagnose, treat, cure, or
+                      prevent any disease.
+                    </p>
+                  </div>
+
                   {/* Promo (only if allowed) */}
                   {ctx.allowPromo && !promoApplied && (
                     <div className="mt-6 border-t border-line pt-5">
@@ -417,7 +430,7 @@ function ResultCard({
   const config = {
     received: {
       title: "Payment received",
-      body: "Your transfer was verified. We&rsquo;ll dispatch your order shortly.",
+      body: "Your transfer was verified. We&rsquo;ll process your order shortly.",
       color: "bg-emerald-50 border-emerald-200 text-emerald-800",
     },
     rejected: {

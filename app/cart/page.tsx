@@ -58,7 +58,7 @@ export default function CartPage() {
                 Your cart is empty
               </h1>
               <p className="mt-3 max-w-md text-[15px] text-ink-secondary">
-                Explore our catalogue of research-grade peptides, each shipped
+                Explore our catalogue of research-grade peptides, each supplied
                 with full documentation.
               </p>
               <Link href="/#products" className="btn-dark mt-7">
@@ -182,7 +182,7 @@ export default function CartPage() {
                       </span>
                     </div>
                     <div className="mt-3 flex items-center justify-between text-[14px] text-ink-secondary">
-                      <span>Shipping — cold-chain dispatch</span>
+                      <span>Shipping</span>
                       <span className="font-medium text-ink">
                         {formatUSD(SHIPPING_FEE)}
                       </span>
@@ -226,6 +226,18 @@ export default function CartPage() {
                       </svg>
                       Secure, encrypted checkout
                     </p>
+                    <div className="mt-5 rounded-2xl border border-line bg-white/60 p-4 text-[11px] leading-relaxed text-ink-secondary">
+                      <p className="font-semibold uppercase tracking-label text-ink">
+                        Research use only
+                      </p>
+                      <p className="mt-1.5">
+                        By proceeding with this purchase, you acknowledge that
+                        these products are supplied solely for laboratory
+                        research and are not intended for human or veterinary
+                        use. These products are not intended to diagnose, treat,
+                        cure, or prevent any disease.
+                      </p>
+                    </div>
                   </div>
                 </aside>
               </div>

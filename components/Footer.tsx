@@ -180,17 +180,6 @@ export default function Footer() {
               </span>
             </span>
             <div className="mt-6 space-y-1 text-[13px] text-white/90">
-              <p>Level 5, Business Bay, Dubai, UAE</p>
-              <p>
-                <a
-                  href="https://wa.me/971543800625"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-white"
-                >
-                  +971 54 380 0625
-                </a>
-              </p>
               <p>
                 <a
                   href="mailto:sales@peptivalabs.com"

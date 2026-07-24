@@ -6,7 +6,7 @@ import { useReveal } from "./useReveal";
 const CASES = [
   {
     img: "/images/source-seo.webp",
-    alt: "Sourcing research peptides directly from certified manufacturers for Peptiva Labs Dubai",
+    alt: "Sourcing research peptides directly from certified manufacturers for Peptiva Labs",
     step: "01 · Source",
     quote:
       "Direct contracts with certified manufacturers. No grey-market resellers in the chain.",
@@ -22,10 +22,10 @@ const CASES = [
   },
   {
     img: "/images/ship-seo.webp",
-    alt: "Cold-chain shipping of sealed research peptide pens across the UAE",
-    step: "03 · Ship",
+    alt: "Sealed and tamper-evident research peptide pens ready for research use",
+    step: "03 · Seal",
     quote:
-      "Cold-packed, tamper-sealed, and dispatched same or next day from our Dubai warehouse.",
+      "Cold-stored and tamper-sealed, with accurate labelling on every pen before it leaves the shelf.",
     bg: "bg-surface-mute",
   },
 ];
@@ -37,13 +37,13 @@ export default function CaseStudy() {
       <div ref={scope} className="container-fluid">
         <div className="mx-auto max-w-2xl text-center">
           <h2 data-reveal className="reveal-init text-h2 font-normal text-balance">
-            How a pen gets to you
+            How each pen is prepared
           </h2>
           <p
             data-reveal
             className="reveal-init mt-4 text-[14px] text-ink-secondary"
           >
-            Three deliberate steps between the lab bench and your doorstep —
+            Three deliberate steps between the lab bench and the sealed pen —
             so nothing about the product is left to chance.
           </p>
         </div>

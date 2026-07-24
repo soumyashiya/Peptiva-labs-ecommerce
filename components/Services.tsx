@@ -29,7 +29,7 @@ export default function Services() {
             >
               Six core peptide lines, each available in the concentrations
               researchers actually ask for. Every batch is verified, sealed,
-              and cold-shipped from our Dubai facility.
+              and cold-stored before it leaves the shelf.
             </p>
           </div>
 

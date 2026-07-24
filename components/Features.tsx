@@ -47,7 +47,7 @@ export default function Features() {
           >
             <Image
               src="/images/whyus-seo.webp"
-              alt="Why choose Peptiva Labs — verified research peptides sourced and shipped from Dubai"
+              alt="Why choose Peptiva Labs — verified, sealed research peptides"
               fill
               sizes="(min-width: 1024px) 25vw, (min-width: 640px) 100vw, 100vw"
               className="object-cover"
@@ -66,8 +66,8 @@ export default function Features() {
               Lab-tested pens
             </h3>
             <p className="mt-2 text-[13px] leading-relaxed text-white/65">
-              Every batch is screened for purity. Out of spec means it never
-              ships.
+              Every batch is screened for purity. Out of spec never leaves
+              the shelf.
             </p>
           </div>
 
@@ -99,10 +99,11 @@ export default function Features() {
               <TruckIcon />
             </span>
             <h3 className="mt-auto pt-6 text-[16px] font-medium uppercase tracking-tight">
-              UAE stock, USD pricing
+              In stock, USD pricing
             </h3>
             <p className="mt-2 text-[13px] leading-relaxed text-ink-secondary">
-              Cold-stored in Dubai and dispatched same or next working day.
+              Cold-stored, sealed and batch-verified before it reaches the
+              shelf.
             </p>
           </div>
 

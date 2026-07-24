@@ -8,9 +8,9 @@ import { QuoteIcon } from "./icons";
 const TESTIMONIALS = [
   {
     quote:
-      "Ordered late afternoon, dispatched the next morning, and the packaging was easily the cleanest I've seen from a UAE supplier. Replies on WhatsApp arrived in minutes.",
+      "Packaging was easily the cleanest I've seen from any research peptide supplier — sealed, labelled and cold-stored properly. Replies on WhatsApp arrived in minutes.",
     name: "Hassan Al Marri",
-    role: "Independent researcher, Abu Dhabi",
+    role: "Independent researcher",
     img: "/images/review-img1-seo.webp",
   },
   {
@@ -24,7 +24,7 @@ const TESTIMONIALS = [
     quote:
       "Their team walked me through concentration choices before I bought anything. No upsell, no pressure — just useful guidance. That's rare in this space.",
     name: "Yusuf Rahman",
-    role: "Performance coach, Dubai",
+    role: "Performance coach",
     img: "/images/review-img3-seo.webp",
   },
 ];

@@ -17,7 +17,7 @@ const SERVICES = [
   "Third-party tested for purity",
   "Direct-from-supplier sourcing",
   "Accurate labelling on every pen",
-  "Cold-chain UAE-wide dispatch",
+  "Sealed, tamper-evident handling",
 ];
 
 const STATS: {
@@ -26,7 +26,7 @@ const STATS: {
   Icon: ComponentType<SVGProps<SVGSVGElement>>;
 }[] = [
   { value: "99.4%", label: "Verified Peptide Purity", Icon: ShieldIcon },
-  { value: "5,000+", label: "Pens Shipped UAE-Wide", Icon: TruckIcon },
+  { value: "5,000+", label: "Pens Verified & Sealed", Icon: TruckIcon },
   { value: "8+", label: "Curated Peptide Lines", Icon: PenIcon },
   { value: "4,000+", label: "Researchers Served", Icon: CoachIcon },
 ];
@@ -66,7 +66,7 @@ export default function About() {
               <div data-img-reveal className="absolute left-0 top-0 z-0 h-[59.62%] w-[67.31%] overflow-hidden rounded-[28px] shadow-[0_30px_60px_-20px_rgba(15,23,42,0.28)]">
                 <Image
                   src="/images/about1-seo.webp"
-                  alt="Peptiva Labs researcher preparing research peptides in Dubai laboratory"
+                  alt="Peptiva Labs researcher preparing research peptides in the laboratory"
                   fill
                   sizes="(min-width: 768px) 35vw, 68vw"
                   className="object-cover"
@@ -77,7 +77,7 @@ export default function About() {
               <div data-img-reveal className="absolute bottom-0 right-0 z-10 h-[50%] w-[61.54%] overflow-hidden rounded-[28px] shadow-[0_30px_60px_-20px_rgba(15,23,42,0.28)]">
                 <Image
                   src="/images/about2-seo.webp"
-                  alt="Verified research peptide pens third-party tested at Peptiva Labs UAE"
+                  alt="Verified research peptide pens third-party tested at Peptiva Labs"
                   fill
                   sizes="(min-width: 768px) 32vw, 62vw"
                   className="object-cover"
@@ -108,13 +108,14 @@ export default function About() {
               Company About
             </span>
             <h2 className="mt-3 text-h2 font-normal text-balance text-ink">
-              The fastest way to source peptides you can actually trust.
+              The fastest way to source reference peptides you can actually trust.
             </h2>
             <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-ink-secondary">
-              We started Peptiva Labs because the research peptide market needed a brand
-              willing to be boring about the basics — transparent sourcing, real
-              lab testing, and people you can actually message. Every batch is
-              checked before it reaches our shelves.
+              We started Peptiva Labs because the research peptide market needed a
+              supplier willing to be boring about the basics — transparent
+              sourcing, third-party lab testing, and people you can actually
+              message. Every batch is checked before it reaches our shelves.
+              Every product is supplied strictly for laboratory research use.
             </p>
 
             <p className="mt-7 text-[15px] font-medium text-ink">

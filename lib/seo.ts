@@ -13,14 +13,10 @@ export const SITE_URL = (
 export const SITE_NAME = "Peptiva Labs";
 
 export const SITE_DESCRIPTION =
-  "Lab-grade research peptides sourced, sealed and dispatched from Dubai across the UAE. Verified sourcing, cold-chain handling, and direct WhatsApp support on every order.";
+  "Reference-grade research peptides for laboratory and analytical use. Third-party purity testing, sealed handling, and transparent sourcing. For research use only — not for human or veterinary use.";
 
 export const CONTACT = {
-  whatsapp: "+971543800625",
-  whatsappHref: "https://wa.me/971543800625",
   email: "sales@peptivalabs.com",
-  city: "Dubai",
-  country: "AE",
 };
 
 // Default social card inherited by every route that doesn't pass its own
@@ -29,7 +25,7 @@ export const DEFAULT_OG_IMAGE = {
   url: `${SITE_URL}/images/research2.jpg`,
   width: 600,
   height: 400,
-  alt: "Peptiva Labs — research peptides sourced and shipped from Dubai",
+  alt: "Peptiva Labs — reference-grade research peptides for laboratory use only",
 };
 
 /** Build an absolute URL from a site-relative path. */
@@ -82,7 +78,7 @@ export function buildMetadata({
       title,
       description,
       url,
-      locale: "en_AE",
+      locale: "en_US",
       images: ogImages,
     },
     twitter: {
@@ -109,20 +105,12 @@ export function organizationSchema() {
     image: DEFAULT_OG_IMAGE.url,
     description: SITE_DESCRIPTION,
     email: CONTACT.email,
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: "Dubai",
-      addressCountry: "AE",
-    },
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "customer support",
-      telephone: CONTACT.whatsapp,
       email: CONTACT.email,
-      areaServed: "AE",
       availableLanguage: ["en"],
     },
-    sameAs: [CONTACT.whatsappHref],
   };
 }
 
@@ -136,17 +124,9 @@ export function localBusinessSchema() {
     image: DEFAULT_OG_IMAGE.url,
     logo: `${SITE_URL}/icon.svg`,
     description: SITE_DESCRIPTION,
-    telephone: CONTACT.whatsapp,
     email: CONTACT.email,
     priceRange: "USD",
     currenciesAccepted: "USD",
-    areaServed: { "@type": "Country", name: "United Arab Emirates" },
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: "Level 5, Business Bay",
-      addressLocality: "Dubai",
-      addressCountry: "AE",
-    },
     parentOrganization: { "@id": `${SITE_URL}/#organization` },
   };
 }
@@ -160,7 +140,7 @@ export function websiteSchema() {
     url: SITE_URL,
     description: SITE_DESCRIPTION,
     publisher: { "@id": `${SITE_URL}/#organization` },
-    inLanguage: "en-AE",
+    inLanguage: "en",
   };
 }
 

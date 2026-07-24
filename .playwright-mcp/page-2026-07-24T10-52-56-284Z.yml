@@ -1,0 +1,288 @@
+- generic [active] [ref=f1e1]:
+  - link "Skip to content" [ref=f1e2] [cursor=pointer]:
+    - /url: "#home"
+  - banner [ref=f1e3]:
+    - generic [ref=f1e5]:
+      - link "Peptiva Labs home" [ref=f1e6] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f1e7]: Peptiva Labs
+      - generic [ref=f1e15]:
+        - link "Sign in" [ref=f1e232] [cursor=pointer]:
+          - /url: /login
+        - link "Cart, 0 items" [ref=f1e17] [cursor=pointer]:
+          - /url: /cart
+        - button "Open menu" [ref=f1e22] [cursor=pointer]
+  - generic:
+    - generic:
+      - link:
+        - /url: /
+        - generic: Peptiva Labs
+      - button
+    - generic:
+      - navigation:
+        - link:
+          - /url: /#home
+          - text: Home
+        - link:
+          - /url: /#about
+          - text: About
+        - link:
+          - /url: /#products
+          - text: Products
+        - link:
+          - /url: /#why
+          - text: Why Us
+        - link:
+          - /url: /#testimonial
+          - text: Testimonial
+        - link:
+          - /url: /#contact
+          - text: Contact
+      - generic:
+        - paragraph: Account
+        - generic:
+          - link:
+            - /url: /login
+            - text: Sign in
+          - link:
+            - /url: /register
+            - text: Create account
+      - generic:
+        - link:
+          - /url: /#products
+          - text: Shop now
+  - main [ref=f1e25]:
+    - generic [ref=f1e26]:
+      - navigation "Breadcrumb" [ref=f1e27]:
+        - link "Back to the range" [ref=f1e28] [cursor=pointer]:
+          - /url: /#products
+      - generic [ref=f1e31]:
+        - generic [ref=f1e32]:
+          - img "Tirzepatide — 5 / 20 / 40 mg" [ref=f1e34]
+          - generic [ref=f1e35]:
+            - button "View image 1 of 4" [ref=f1e36] [cursor=pointer]:
+              - img "Tirzepatide view 1" [ref=f1e37]
+            - button "View image 2 of 4" [ref=f1e38] [cursor=pointer]:
+              - img "Tirzepatide view 2" [ref=f1e39]
+            - button "View image 3 of 4" [ref=f1e40] [cursor=pointer]:
+              - img "Tirzepatide view 3" [ref=f1e41]
+            - button "View image 4 of 4" [ref=f1e42] [cursor=pointer]:
+              - img "Tirzepatide view 4" [ref=f1e43]
+        - generic [ref=f1e44]:
+          - generic [ref=f1e45]: Compound Analysis · Metabolic
+          - heading "Tirzepatide" [level=1] [ref=f1e46]
+          - paragraph [ref=f1e47]: 5 / 20 / 40 mg
+          - paragraph [ref=f1e48]: from $ 100
+          - paragraph [ref=f1e49]: A 40 mg Tirzepatide formulation supplied in a pre-filled research device, provided exclusively for controlled laboratory R&D applications. Supplied in sealed format to support compound stability analysis, formulation studies, and formulation-mechanism evaluation.
+          - note [ref=f1e50]:
+            - paragraph [ref=f1e54]:
+              - strong [ref=f1e55]: "Safety Protocol:"
+              - text: Produced for laboratory research only. Not for human or veterinary consumption.
+          - generic [ref=f1e56]:
+            - generic [ref=f1e57]:
+              - button "Decrease quantity" [ref=f1e58] [cursor=pointer]
+              - generic [ref=f1e60]: "1"
+              - button "Increase quantity" [ref=f1e61] [cursor=pointer]
+            - button "Add to cart" [ref=f1e64] [cursor=pointer]
+            - link "View Janoshik Analytical Report" [ref=f1e65] [cursor=pointer]:
+              - /url: https://verify.janoshik.com/tests/147174-ALLUVI_TIRZEPATIDE_40MG_KIT_T5MBWRAYD4HN
+          - region [ref=f1e69]:
+            - generic [ref=f1e70]:
+              - heading "Janoshik Third-Party Lab Analysis" [level=3] [ref=f1e71]
+              - paragraph [ref=f1e72]: Independently tested and verified by Janoshik Analytical.
+            - generic [ref=f1e73]:
+              - generic [ref=f1e74]:
+                - paragraph [ref=f1e75]: Batch Number
+                - paragraph [ref=f1e76]: TR786PAOS
+              - generic [ref=f1e77]:
+                - paragraph [ref=f1e78]: Fill Volume
+                - paragraph [ref=f1e79]: 3 mL
+              - generic [ref=f1e80]:
+                - paragraph [ref=f1e81]: Purity
+                - paragraph [ref=f1e82]: 99.85%
+            - table [ref=f1e84]:
+              - rowgroup [ref=f1e85]:
+                - row [ref=f1e86]:
+                  - columnheader "Compound" [ref=f1e87]
+                  - columnheader "Concentration" [ref=f1e88]
+                  - columnheader "Verified Content" [ref=f1e89]
+              - rowgroup [ref=f1e90]:
+                - row [ref=f1e91]:
+                  - cell "Tirzepatide" [ref=f1e92]
+                  - cell "13.35 mg/mL" [ref=f1e93]
+                  - cell "40.05 mg" [ref=f1e94]
+            - paragraph [ref=f1e95]: Concentration is measured per ml; verified content reflects the total assayed mass across the stated fill volume.
+          - region "Product logistics" [ref=f1e96]:
+            - tablist "Product logistics" [ref=f1e97]:
+              - tab "Package Contents" [selected] [ref=f1e98] [cursor=pointer]
+              - tab "Storage Logic" [ref=f1e99] [cursor=pointer]
+            - tabpanel [ref=f1e100]:
+              - list [ref=f1e101]:
+                - listitem [ref=f1e102]: "Each Tirzepatide 40 mg research kit includes:"
+                - listitem [ref=f1e103]:
+                  - generic [ref=f1e104]: Pre-filled research pen (40 mg Tirzepatide)
+                - listitem [ref=f1e105]:
+                  - generic [ref=f1e106]: Research information sheet
+          - list [ref=f1e107]:
+            - listitem [ref=f1e108]: Available in 5 mg, 20 mg and 40 mg
+            - listitem [ref=f1e110]: Dual-agonist GLP-1 / GIP peptide
+            - listitem [ref=f1e112]: Janoshik Analytical verified
+            - listitem [ref=f1e114]: For laboratory research use only
+      - region [ref=f1e116]:
+        - generic [ref=f1e117]:
+          - heading "Related products" [level=2] [ref=f1e118]
+          - link "View all" [ref=f1e119] [cursor=pointer]:
+            - /url: /#products
+        - generic [ref=f1e120]:
+          - link [ref=f1e121] [cursor=pointer]:
+            - /url: /products/bpc-157-tb-500
+            - img "BPC-157 + TB-500" [ref=f1e123]
+            - generic [ref=f1e125]:
+              - heading "BPC-157 + TB-500" [level=3] [ref=f1e126]
+              - paragraph [ref=f1e127]: $ 130
+          - link [ref=f1e132] [cursor=pointer]:
+            - /url: /products/glow
+            - img "Glow" [ref=f1e134]
+            - generic [ref=f1e136]:
+              - heading "Glow" [level=3] [ref=f1e137]
+              - paragraph [ref=f1e138]: from $ 100
+          - link [ref=f1e143] [cursor=pointer]:
+            - /url: /products/retatrutide
+            - img "Retatrutide 20mg" [ref=f1e145]
+            - generic [ref=f1e147]:
+              - heading "Retatrutide 20mg" [level=3] [ref=f1e148]
+              - paragraph [ref=f1e149]: $ 100
+  - dialog [ref=f1e233]:
+    - generic [ref=f1e234]:
+      - button "Close" [ref=f1e235] [cursor=pointer]
+      - generic [ref=f1e238]:
+        - heading "Janoshik Third-Party Lab Analysis" [level=2] [ref=f1e242]
+        - paragraph [ref=f1e243]: Independently tested and verified by Janoshik Analytical.
+      - generic [ref=f1e244]:
+        - generic [ref=f1e245]:
+          - paragraph [ref=f1e246]: Batch Number
+          - paragraph [ref=f1e247]: TR786PAOS
+        - generic [ref=f1e248]:
+          - paragraph [ref=f1e249]: Fill Volume
+          - paragraph [ref=f1e250]: 3 mL
+        - generic [ref=f1e251]:
+          - paragraph [ref=f1e252]: Purity
+          - paragraph [ref=f1e253]: 99.85%
+      - table [ref=f1e255]:
+        - rowgroup [ref=f1e256]:
+          - row [ref=f1e257]:
+            - columnheader "Compound" [ref=f1e258]
+            - columnheader "Concentration" [ref=f1e259]
+            - columnheader "Verified Content" [ref=f1e260]
+        - rowgroup [ref=f1e261]:
+          - row [ref=f1e262]:
+            - cell "Tirzepatide" [ref=f1e263]
+            - cell "13.35 mg/mL" [ref=f1e264]
+            - cell "40.05 mg" [ref=f1e265]
+      - paragraph [ref=f1e266]: Concentration is measured per ml; verified content reflects the total assayed mass across the stated fill volume.
+      - link "View Full Janoshik Report" [ref=f1e268] [cursor=pointer]:
+        - /url: https://verify.janoshik.com/tests/147174-ALLUVI_TIRZEPATIDE_40MG_KIT_T5MBWRAYD4HN
+  - contentinfo [ref=f1e154]:
+    - generic [ref=f1e156]:
+      - generic [ref=f1e157]:
+        - generic [ref=f1e158]:
+          - generic [ref=f1e159]: Peptiva Labs
+          - paragraph [ref=f1e168]:
+            - link "sales@peptivalabs.com" [ref=f1e169] [cursor=pointer]:
+              - /url: mailto:sales@peptivalabs.com
+          - generic [ref=f1e170]:
+            - paragraph [ref=f1e171]: Newsletter
+            - paragraph [ref=f1e172]: Batch drops, storage tips, sourcing notes. No spam.
+            - generic [ref=f1e173]:
+              - textbox "you@lab.com" [ref=f1e174]
+              - button "Subscribe" [disabled] [ref=f1e175]
+            - generic [ref=f1e176]:
+              - checkbox "I agree to receive research updates." [checked] [ref=f1e177]
+              - text: I agree to receive research updates.
+        - generic [ref=f1e178]:
+          - generic [ref=f1e179]:
+            - heading "Catalogue" [level=3] [ref=f1e180]
+            - list [ref=f1e181]:
+              - listitem [ref=f1e182]:
+                - link "BPC-157 + TB-500" [ref=f1e183] [cursor=pointer]:
+                  - /url: /products/bpc-157-tb-500
+              - listitem [ref=f1e184]:
+                - link "Glow" [ref=f1e185] [cursor=pointer]:
+                  - /url: /products/glow
+              - listitem [ref=f1e186]:
+                - link "Retatrutide 20mg" [ref=f1e187] [cursor=pointer]:
+                  - /url: /products/retatrutide
+              - listitem [ref=f1e188]:
+                - link "Tirzepatide" [ref=f1e189] [cursor=pointer]:
+                  - /url: /products/tirzepatide
+              - listitem [ref=f1e190]:
+                - link "Retatrutide 40mg" [ref=f1e191] [cursor=pointer]:
+                  - /url: /products/retatrutide-40mg
+              - listitem [ref=f1e192]:
+                - link "NAD+ 1,000mg" [ref=f1e193] [cursor=pointer]:
+                  - /url: /products/nad-plus-1000mg
+          - generic [ref=f1e194]:
+            - heading "Company" [level=3] [ref=f1e195]
+            - list [ref=f1e196]:
+              - listitem [ref=f1e197]:
+                - link "About Peptiva Labs" [ref=f1e198] [cursor=pointer]:
+                  - /url: /#about
+              - listitem [ref=f1e199]:
+                - link "How we source" [ref=f1e200] [cursor=pointer]:
+                  - /url: /#why
+              - listitem [ref=f1e201]:
+                - link "Reviews" [ref=f1e202] [cursor=pointer]:
+                  - /url: /#testimonial
+              - listitem [ref=f1e203]:
+                - link "Contact" [ref=f1e204] [cursor=pointer]:
+                  - /url: /#contact
+          - generic [ref=f1e205]:
+            - heading "Support" [level=3] [ref=f1e206]
+            - list [ref=f1e207]:
+              - listitem [ref=f1e208]:
+                - link "Track order" [ref=f1e209] [cursor=pointer]:
+                  - /url: /track-order
+              - listitem [ref=f1e210]:
+                - link "Cart" [ref=f1e211] [cursor=pointer]:
+                  - /url: /cart
+              - listitem [ref=f1e212]:
+                - link "Account" [ref=f1e213] [cursor=pointer]:
+                  - /url: /account
+              - listitem [ref=f1e214]:
+                - link "Sign in" [ref=f1e215] [cursor=pointer]:
+                  - /url: /login
+          - generic [ref=f1e216]:
+            - heading "Connect" [level=3] [ref=f1e217]
+            - list [ref=f1e218]:
+              - listitem [ref=f1e219]:
+                - link "Shop now" [ref=f1e220] [cursor=pointer]:
+                  - /url: /#products
+              - listitem [ref=f1e221]:
+                - link "Register" [ref=f1e222] [cursor=pointer]:
+                  - /url: /register
+      - generic [ref=f1e223]: Peptiva
+      - generic [ref=f1e226]:
+        - paragraph [ref=f1e227]: © 2026 Peptiva Labs. All rights reserved. For research use only.
+        - generic [ref=f1e228]:
+          - link "Privacy" [ref=f1e229] [cursor=pointer]:
+            - /url: /#contact
+          - link "Terms" [ref=f1e230] [cursor=pointer]:
+            - /url: /#contact
+          - link "Cookies" [ref=f1e231] [cursor=pointer]:
+            - /url: /#contact
+  - button "Open assistant" [ref=f1e272] [cursor=pointer]
+  - dialog "Research assistant":
+    - generic:
+      - generic:
+        - generic:
+          - paragraph: Research assistant
+          - paragraph: Ask about compounds, storage, or sourcing.
+      - button "Close"
+    - generic:
+      - generic:
+        - paragraph: Hi. I’m your research assistant — ask me anything about the Peptiva Labs catalogue.
+      - list
+    - generic:
+      - textbox "Ask about a compound…"
+      - button "Send" [disabled]
+  - alert [ref=f1e275]

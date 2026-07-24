@@ -35,12 +35,11 @@ export function generateMetadata({
   }
   return buildMetadata({
     title: `${product.name} — ${product.meta}`,
-    description: `${product.blurb} ${priceLabel(product)}. Verified, sealed and dispatched from Dubai.`,
+    description: `${product.blurb} ${priceLabel(product)}. Verified, sealed and third-party tested.`,
     path: `/products/${product.slug}`,
     keywords: [
       product.name,
-      `${product.name} Dubai`,
-      `${product.name} UAE`,
+      `${product.name} research`,
       product.category,
       "research peptides",
     ],

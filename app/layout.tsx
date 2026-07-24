@@ -16,7 +16,7 @@ import {
   jsonLd,
 } from "@/lib/seo";
 
-// Body font — matches lumauae.com
+// Body font
 const dmSans = DM_Sans({
   subsets: ["latin"],
   display: "swap",
@@ -24,7 +24,7 @@ const dmSans = DM_Sans({
   weight: ["300", "400", "500", "600", "700"],
 });
 
-// Heading / display font — Clash Display, matches lumauae.com
+// Heading / display font — Clash Display
 const clashDisplay = localFont({
   variable: "--font-clash",
   display: "swap",
@@ -42,21 +42,22 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   applicationName: SITE_NAME,
   ...buildMetadata({
-    title: "Peptiva Labs — Research Peptides, Sourced and Shipped from Dubai",
+    title: "Peptiva Labs — Reference-Grade Research Peptides for Laboratory Use",
     path: "/",
     keywords: [
-      "research peptides Dubai",
-      "buy peptides UAE",
-      "BPC-157 TB-500",
-      "tirzepatide research",
-      "retatrutide UAE",
-      "lab-grade peptides",
+      "research peptides",
+      "reference peptides",
+      "laboratory research compounds",
+      "BPC-157 TB-500 reference",
+      "tirzepatide research reference",
+      "retatrutide research reference",
+      "analytical research materials",
       "Peptiva Labs",
     ],
   }),
   // Child routes render "<Page> · Peptiva Labs"; the home page keeps its full title.
   title: {
-    default: "Peptiva Labs — Research Peptides, Sourced and Shipped from Dubai",
+    default: "Peptiva Labs — Reference-Grade Research Peptides for Laboratory Use",
     template: `%s · ${SITE_NAME}`,
   },
   formatDetection: { telephone: false, address: false, email: false },

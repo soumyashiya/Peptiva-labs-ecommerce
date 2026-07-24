@@ -25,6 +25,41 @@ function toNumber(v: number | string | null | undefined): number {
   return Number.isFinite(n) ? n : 0;
 }
 
+// The API sometimes returns the payment method as an object (gateway payload)
+// instead of a plain code, which used to render as "[object Object]". Pull the
+// readable bit out and map the raw codes onto words a customer understands.
+const PAYMENT_LABELS: Record<string, string> = {
+  manual: "Bank transfer",
+  bank: "Bank transfer",
+  bank_transfer: "Bank transfer",
+  banktransfer: "Bank transfer",
+  wire: "Bank transfer",
+  card: "Card payment",
+  credit_card: "Card payment",
+  stripe: "Card payment",
+  paypal: "PayPal",
+  crypto: "Crypto",
+  usdt: "Crypto (USDT)",
+  wallet: "Wallet credit",
+  cod: "Cash on delivery",
+};
+
+function paymentMethodLabel(method: unknown): string {
+  if (method && typeof method === "object") {
+    const o = method as Record<string, unknown>;
+    const inner = o.name ?? o.label ?? o.title ?? o.type ?? o.method ?? o.code;
+    return inner ? paymentMethodLabel(inner) : "Bank transfer";
+  }
+  const raw = String(method ?? "").trim();
+  if (!raw) return "Bank transfer";
+  const key = raw.toLowerCase().replace(/[\s-]+/g, "_");
+  if (PAYMENT_LABELS[key]) return PAYMENT_LABELS[key];
+  // Unknown code — show it as words rather than a raw slug.
+  return raw
+    .replace(/[_-]+/g, " ")
+    .replace(/\b\w/g, (c) => c.toUpperCase());
+}
+
 function statusStyles(status: string): string {
   const s = (status || "").toLowerCase();
   if (["completed", "paid", "received", "shipped", "delivered"].includes(s)) {
@@ -169,8 +204,8 @@ export default function TrackOrderPage() {
                         <p className="text-[16px] font-medium text-ink">
                           {formatUSD(toNumber(o.total))}
                         </p>
-                        <p className="text-[11px] uppercase tracking-label text-ink-muted">
-                          {o.payment_method || "Manual"}
+                        <p className="mt-0.5 text-[12px] text-ink-muted">
+                          via {paymentMethodLabel(o.payment_method)}
                         </p>
                       </div>
                       </Link>

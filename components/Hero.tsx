@@ -7,15 +7,15 @@ import { gsap } from "gsap";
 const HERO_IMAGES: { src: string; alt: string }[] = [
   {
     src: "/images/hero3-seo.webp",
-    alt: "Cold-chain dispatch of verified research peptides from Peptiva Labs",
+    alt: "Cold-stored, verified research peptides from Peptiva Labs",
   },
   {
     src: "/images/hero1-seo.webp",
-    alt: "Peptiva Labs research peptide pen sourced and shipped from Dubai",
+    alt: "Peptiva Labs research peptide pen, sourced and verified",
   },
   {
     src: "/images/hero2-seo.webp",
-    alt: "Lab-tested research peptide packaging by Peptiva Labs UAE",
+    alt: "Lab-tested research peptide packaging by Peptiva Labs",
   },
   {
     src: "/images/hero4-seo.webp",
@@ -120,9 +120,10 @@ export default function Hero() {
             data-hero-foot
             className="max-w-md text-[14px] text-ink-secondary"
           >
-            Verified research peptides, packed and dispatched from Dubai.
-            Honest sourcing, careful handling, and a real person on WhatsApp
-            when you need one.
+            Reference-grade research peptides, packed and sealed for the lab
+            bench. Verified sourcing, third-party purity testing, and a real
+            person on WhatsApp when you need one. For research use only —
+            not for human or veterinary use.
           </p>
           <div data-hero-foot className="flex flex-wrap items-center gap-3 w-full md:w-auto">
             <a href="#products" className="btn-dark">
