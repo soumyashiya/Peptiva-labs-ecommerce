@@ -32,12 +32,12 @@ export default function CartPage() {
   return (
     <>
       <Navbar />
-      <main className="section-block bg-canvas pb-20 pt-28 sm:pt-32">
+      <main className="section-block min-h-screen bg-canvas pb-20 pt-28 sm:pt-32">
         <div className="container-fluid">
           {!hydrated ? (
             <p className="mt-6 text-[15px] text-ink-secondary">Loading…</p>
           ) : lines.length === 0 ? (
-            <div className="mx-auto flex max-w-xl flex-col items-center rounded-card border border-line bg-white p-12 text-center">
+            <div className="mx-auto mt-6 flex max-w-xl flex-col items-center rounded-card border border-line bg-white p-12 text-center">
               <span className="inline-flex h-14 w-14 items-center justify-center rounded-full bg-surface-mute text-ink">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
                   <path
@@ -61,7 +61,7 @@ export default function CartPage() {
                 Explore our catalogue of research-grade peptides, each supplied
                 with full documentation.
               </p>
-              <Link href="/#products" className="btn-dark mt-7">
+              <Link href="/products" className="btn-dark mt-7">
                 Browse the catalogue
               </Link>
             </div>
@@ -159,7 +159,7 @@ export default function CartPage() {
                   </ul>
 
                   <Link
-                    href="/#products"
+                    href="/products"
                     className="mt-6 inline-flex items-center gap-2 text-[14px] text-ink-secondary transition-colors hover:text-ink"
                   >
                     <ArrowLeft /> Continue shopping

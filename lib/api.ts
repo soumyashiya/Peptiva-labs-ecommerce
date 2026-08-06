@@ -467,6 +467,26 @@ export function applyCapturePromo(token: string, promoCode: string) {
   }>("/api/payment-capture/apply-promo", { json: { token, promoCode } });
 }
 
+// Shape of the payment-verification-service's OCR verdict, as forwarded
+// verbatim inside `verification` (see payment-verification-service API docs,
+// POST /api/payment-verification/verify).
+export type PaymentVerificationExtracted = {
+  amount_candidates: number[];
+  best_amount: number | null;
+  expected_total: number;
+  payee_expected: string;
+  sort_code_expected: string;
+  account_number_expected: string;
+  ocr_avg_conf: number;
+};
+
+export type PaymentVerification = {
+  decision: "approved" | "rejected";
+  probability: number;
+  reasons: string[];
+  extracted: PaymentVerificationExtracted;
+};
+
 export function uploadCaptureScreenshot(token: string, file: File) {
   const form = new FormData();
   form.append("token", token);
@@ -475,7 +495,7 @@ export function uploadCaptureScreenshot(token: string, file: File) {
     ok: true;
     screenshotUrl: string;
     screenshotFilename: string;
-    verification: unknown;
+    verification: PaymentVerification | null;
     payment_status: "received" | "rejected" | "pending";
     verification_error?: string;
   }>("/api/payment-capture/upload", { form, timeoutMs: 60_000 });

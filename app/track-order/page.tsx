@@ -114,7 +114,7 @@ export default function TrackOrderPage() {
   return (
     <>
       <Navbar />
-      <main className="section-block bg-canvas pb-24 pt-28 sm:pt-32">
+      <main className="section-block min-h-screen bg-canvas pb-24 pt-28 sm:pt-32">
         <div className="container-fluid">
           <p className="text-[11px] uppercase tracking-label text-ink-muted">
             Peptiva Labs · Order lookup

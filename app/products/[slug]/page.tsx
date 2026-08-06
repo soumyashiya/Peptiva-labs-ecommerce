@@ -78,7 +78,7 @@ export default function ProductPage({
         dangerouslySetInnerHTML={jsonLd(
           breadcrumbSchema([
             { name: "Home", path: "/" },
-            { name: "Products", path: "/#products" },
+            { name: "Shop", path: "/products" },
             { name: product.name, path: `/products/${product.slug}` },
           ])
         )}

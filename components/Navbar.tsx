@@ -9,7 +9,7 @@ import { useAuth } from "./AuthContext";
 const NAV_LINKS = [
   { label: "Home", href: "/#home" },
   { label: "About", href: "/#about" },
-  { label: "Products", href: "/#products" },
+  { label: "Shop", href: "/#products" },
   { label: "Why Us", href: "/#why" },
   { label: "Testimonial", href: "/#testimonial" },
   { label: "Contact", href: "/#contact" },
@@ -194,7 +194,7 @@ export default function Navbar() {
             <div className="flex items-center gap-2 sm:gap-3">
               <AccountButton />
               <CartButton />
-              <Link href="/#products" className="btn-dark hidden lg:inline-flex">
+              <Link href="/products" className="btn-dark hidden lg:inline-flex">
                 Shop now
               </Link>
 
@@ -296,7 +296,7 @@ export default function Navbar() {
 
           <div className="container-fluid mt-auto flex flex-col gap-3 py-6">
             <Link
-              href="/#products"
+              href="/products"
               onClick={() => setOpen(false)}
               className="btn-dark w-full justify-center"
             >

@@ -1,0 +1,227 @@
+- generic [active] [ref=f8e1]:
+  - link "Skip to content" [ref=f8e2] [cursor=pointer]:
+    - /url: "#home"
+  - banner [ref=f8e532]:
+    - generic [ref=f8e534]:
+      - link "Peptiva Labs home" [ref=f8e535] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f8e536]: Peptiva Labs
+      - navigation [ref=f8e544]:
+        - link "Home" [ref=f8e545] [cursor=pointer]:
+          - /url: /#home
+        - link "About" [ref=f8e546] [cursor=pointer]:
+          - /url: /#about
+        - link "Shop" [ref=f8e547] [cursor=pointer]:
+          - /url: /#products
+        - link "Why Us" [ref=f8e548] [cursor=pointer]:
+          - /url: /#why
+        - link "Testimonial" [ref=f8e549] [cursor=pointer]:
+          - /url: /#testimonial
+        - link "Contact" [ref=f8e550] [cursor=pointer]:
+          - /url: /#contact
+      - generic [ref=f8e551]:
+        - link "Sign in" [ref=f8e552] [cursor=pointer]:
+          - /url: /login
+        - link "Cart, 0 items" [ref=f8e553] [cursor=pointer]:
+          - /url: /cart
+        - link "Shop now" [ref=f8e558] [cursor=pointer]:
+          - /url: /products
+  - link "⚡ Preview payment page" [ref=f8e559] [cursor=pointer]:
+    - /url: /payment-capture/preview-token
+  - main [ref=f8e560]:
+    - generic [ref=f8e561]:
+      - paragraph [ref=f8e562]: Payment upload
+      - heading "Complete your payment" [level=1] [ref=f8e563]
+      - list [ref=f8e564]:
+        - listitem [ref=f8e565]:
+          - generic [ref=f8e569]: Review order
+        - listitem [ref=f8e571]:
+          - generic [ref=f8e572]: "2"
+          - generic [ref=f8e573]: Send transfer & upload proof
+        - listitem [ref=f8e575]:
+          - generic [ref=f8e576]: "3"
+          - generic [ref=f8e577]: Verification
+      - generic [ref=f8e578]:
+        - generic [ref=f8e579]:
+          - generic [ref=f8e580]:
+            - generic [ref=f8e581]:
+              - generic [ref=f8e582]:
+                - paragraph [ref=f8e583]: Order
+                - paragraph [ref=f8e584]: ORD-20260630-164254633-93504D
+              - generic [ref=f8e585]: "Payment: pending"
+            - list [ref=f8e586]:
+              - listitem [ref=f8e587]:
+                - generic [ref=f8e588]:
+                  - paragraph [ref=f8e589]: Retatrutide 20mg
+                  - paragraph [ref=f8e590]: Qty 1 · $ 100 each
+                - generic [ref=f8e591]: $ 100
+            - generic [ref=f8e592]:
+              - generic [ref=f8e593]: Subtotal
+              - generic [ref=f8e594]: $ 100
+            - generic [ref=f8e595]:
+              - generic [ref=f8e596]: Shipping
+              - generic [ref=f8e597]: $ 12
+            - generic [ref=f8e598]:
+              - generic [ref=f8e599]: Total due
+              - generic [ref=f8e600]: $ 112
+            - generic [ref=f8e605]:
+              - paragraph [ref=f8e606]: Research use only
+              - paragraph [ref=f8e607]: By completing this payment, you acknowledge that these products are supplied solely for laboratory research and are not intended for human or veterinary use. These products are not intended to diagnose, treat, cure, or prevent any disease.
+            - generic [ref=f8e608]:
+              - paragraph [ref=f8e609]: Have a promo code?
+              - generic [ref=f8e610]:
+                - textbox "Promo code" [ref=f8e611]
+                - button "Apply" [disabled] [ref=f8e612]
+          - generic [ref=f8e613]:
+            - paragraph [ref=f8e614]: Upload proof of payment
+            - heading "Attach your bank-transfer screenshot" [level=2] [ref=f8e615]
+            - paragraph [ref=f8e616]: "We’ll verify it and mark your order as paid. Accepted formats: any image. Max 25 MB."
+            - generic [ref=f8e617] [cursor=pointer]:
+              - paragraph [ref=f8e620]: Choose image or drag it here
+              - paragraph [ref=f8e621]: PNG, JPG up to 25 MB
+            - button "Submit for verification" [disabled] [ref=f8e622]
+            - paragraph [ref=f8e624]: Verified automatically via secure OCR matching
+        - complementary [ref=f8e628]:
+          - generic [ref=f8e629]:
+            - paragraph [ref=f8e635]: Transfer to
+            - generic [ref=f8e636]:
+              - generic [ref=f8e637]:
+                - generic [ref=f8e638]: Payee
+                - generic [ref=f8e639]:
+                  - generic [ref=f8e640]: HSA INTERPAY UK
+                  - button "Copy" [ref=f8e641] [cursor=pointer]
+              - generic [ref=f8e642]:
+                - generic [ref=f8e643]: Sort code
+                - generic [ref=f8e644]:
+                  - generic [ref=f8e645]: 60-95-61
+                  - button "Copy" [ref=f8e646] [cursor=pointer]
+              - generic [ref=f8e647]:
+                - generic [ref=f8e648]: Account number
+                - generic [ref=f8e649]:
+                  - generic [ref=f8e650]: "21327124"
+                  - button "Copy" [ref=f8e651] [cursor=pointer]
+              - generic [ref=f8e652]:
+                - generic [ref=f8e653]: Reference
+                - generic [ref=f8e654]:
+                  - generic [ref=f8e655]: PEP-93504D
+                  - button "Copy" [ref=f8e656] [cursor=pointer]
+            - generic [ref=f8e657]:
+              - generic [ref=f8e658]: Amount to send
+              - generic [ref=f8e659]: $ 112
+            - paragraph [ref=f8e660]: Use the reference above so we can match your transfer. After sending, upload the confirmation screenshot on the left.
+  - contentinfo [ref=f8e661]:
+    - generic [ref=f8e663]:
+      - generic [ref=f8e664]:
+        - generic [ref=f8e665]:
+          - generic [ref=f8e666]: Peptiva Labs
+          - paragraph [ref=f8e675]:
+            - link "sales@peptivalabs.com" [ref=f8e676] [cursor=pointer]:
+              - /url: mailto:sales@peptivalabs.com
+          - generic [ref=f8e677]:
+            - paragraph [ref=f8e678]: Newsletter
+            - paragraph [ref=f8e679]: Batch drops, storage tips, sourcing notes. No spam.
+            - generic [ref=f8e680]:
+              - textbox "you@lab.com" [ref=f8e681]
+              - button "Subscribe" [disabled] [ref=f8e682]
+            - generic [ref=f8e683]:
+              - checkbox "I agree to receive research updates." [checked] [ref=f8e684]
+              - text: I agree to receive research updates.
+        - generic [ref=f8e685]:
+          - generic [ref=f8e686]:
+            - heading "Catalogue" [level=3] [ref=f8e687]
+            - list [ref=f8e688]:
+              - listitem [ref=f8e689]:
+                - link "Shop all products" [ref=f8e690] [cursor=pointer]:
+                  - /url: /products
+              - listitem [ref=f8e691]:
+                - link "BPC-157 + TB-500" [ref=f8e692] [cursor=pointer]:
+                  - /url: /products/bpc-157-tb-500
+              - listitem [ref=f8e693]:
+                - link "Glow" [ref=f8e694] [cursor=pointer]:
+                  - /url: /products/glow
+              - listitem [ref=f8e695]:
+                - link "Retatrutide 20mg" [ref=f8e696] [cursor=pointer]:
+                  - /url: /products/retatrutide
+              - listitem [ref=f8e697]:
+                - link "Tirzepatide" [ref=f8e698] [cursor=pointer]:
+                  - /url: /products/tirzepatide
+              - listitem [ref=f8e699]:
+                - link "Retatrutide 40mg" [ref=f8e700] [cursor=pointer]:
+                  - /url: /products/retatrutide-40mg
+              - listitem [ref=f8e701]:
+                - link "NAD+ 1,000mg" [ref=f8e702] [cursor=pointer]:
+                  - /url: /products/nad-plus-1000mg
+          - generic [ref=f8e703]:
+            - heading "Company" [level=3] [ref=f8e704]
+            - list [ref=f8e705]:
+              - listitem [ref=f8e706]:
+                - link "About Peptiva Labs" [ref=f8e707] [cursor=pointer]:
+                  - /url: /#about
+              - listitem [ref=f8e708]:
+                - link "How we source" [ref=f8e709] [cursor=pointer]:
+                  - /url: /#why
+              - listitem [ref=f8e710]:
+                - link "Reviews" [ref=f8e711] [cursor=pointer]:
+                  - /url: /#testimonial
+              - listitem [ref=f8e712]:
+                - link "Press" [ref=f8e713] [cursor=pointer]:
+                  - /url: /press
+              - listitem [ref=f8e714]:
+                - link "Contact" [ref=f8e715] [cursor=pointer]:
+                  - /url: /#contact
+          - generic [ref=f8e716]:
+            - heading "Support" [level=3] [ref=f8e717]
+            - list [ref=f8e718]:
+              - listitem [ref=f8e719]:
+                - link "Track order" [ref=f8e720] [cursor=pointer]:
+                  - /url: /track-order
+              - listitem [ref=f8e721]:
+                - link "Cart" [ref=f8e722] [cursor=pointer]:
+                  - /url: /cart
+              - listitem [ref=f8e723]:
+                - link "Account" [ref=f8e724] [cursor=pointer]:
+                  - /url: /account
+              - listitem [ref=f8e725]:
+                - link "Sign in" [ref=f8e726] [cursor=pointer]:
+                  - /url: /login
+          - generic [ref=f8e727]:
+            - heading "Legal" [level=3] [ref=f8e728]
+            - list [ref=f8e729]:
+              - listitem [ref=f8e730]:
+                - link "Shipping Policy" [ref=f8e731] [cursor=pointer]:
+                  - /url: /shipping-policy
+              - listitem [ref=f8e732]:
+                - link "Refund Policy" [ref=f8e733] [cursor=pointer]:
+                  - /url: /refund-policy
+              - listitem [ref=f8e734]:
+                - link "Privacy Policy" [ref=f8e735] [cursor=pointer]:
+                  - /url: /privacy-policy
+              - listitem [ref=f8e736]:
+                - link "Terms of Service" [ref=f8e737] [cursor=pointer]:
+                  - /url: /terms-of-service
+      - generic [ref=f8e738]: Peptiva
+      - generic [ref=f8e741]:
+        - paragraph [ref=f8e742]: © 2026 Peptiva Labs. All rights reserved. For research use only.
+        - generic [ref=f8e743]:
+          - link "Privacy" [ref=f8e744] [cursor=pointer]:
+            - /url: /privacy-policy
+          - link "Terms" [ref=f8e745] [cursor=pointer]:
+            - /url: /terms-of-service
+          - link "Refunds" [ref=f8e746] [cursor=pointer]:
+            - /url: /refund-policy
+  - button "Open assistant" [ref=f8e747] [cursor=pointer]
+  - dialog "Research assistant":
+    - generic:
+      - generic:
+        - generic:
+          - paragraph: Research assistant
+          - paragraph: Ask about compounds, storage, or sourcing.
+      - button "Close"
+    - generic:
+      - generic:
+        - paragraph: Hi. I’m your research assistant — ask me anything about the Peptiva Labs catalogue.
+      - list
+    - generic:
+      - textbox "Ask about a compound…"
+      - button "Send" [disabled]
+  - alert [ref=f8e750]: Complete your payment · Peptiva Labs

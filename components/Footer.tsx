@@ -11,6 +11,7 @@ const COLUMNS: { title: string; links: FooterLink[] }[] = [
   {
     title: "Catalogue",
     links: [
+      { label: "Shop all products", href: "/products" },
       { label: "BPC-157 + TB-500", href: "/products/bpc-157-tb-500" },
       { label: "Glow", href: "/products/glow" },
       { label: "Retatrutide 20mg", href: "/products/retatrutide" },
@@ -25,6 +26,7 @@ const COLUMNS: { title: string; links: FooterLink[] }[] = [
       { label: "About Peptiva Labs", href: "/#about" },
       { label: "How we source", href: "/#why" },
       { label: "Reviews", href: "/#testimonial" },
+      { label: "Press", href: "/press" },
       { label: "Contact", href: "/#contact" },
     ],
   },
@@ -38,10 +40,12 @@ const COLUMNS: { title: string; links: FooterLink[] }[] = [
     ],
   },
   {
-    title: "Connect",
+    title: "Legal",
     links: [
-      { label: "Shop now", href: "/#products" },
-      { label: "Register", href: "/register" },
+      { label: "Shipping Policy", href: "/shipping-policy" },
+      { label: "Refund Policy", href: "/refund-policy" },
+      { label: "Privacy Policy", href: "/privacy-policy" },
+      { label: "Terms of Service", href: "/terms-of-service" },
     ],
   },
 ];
@@ -252,14 +256,14 @@ export default function Footer() {
         <div className="mt-2 flex flex-col items-center justify-between gap-3 border-t border-white/15 pb-8 pt-6 text-[12px] text-white/90 sm:flex-row">
           <p>© {new Date().getFullYear()} Peptiva Labs. All rights reserved. For research use only.</p>
           <div className="flex items-center gap-6">
-            <Link href="/#contact" className="transition-colors hover:text-white">
+            <Link href="/privacy-policy" className="transition-colors hover:text-white">
               Privacy
             </Link>
-            <Link href="/#contact" className="transition-colors hover:text-white">
+            <Link href="/terms-of-service" className="transition-colors hover:text-white">
               Terms
             </Link>
-            <Link href="/#contact" className="transition-colors hover:text-white">
-              Cookies
+            <Link href="/refund-policy" className="transition-colors hover:text-white">
+              Refunds
             </Link>
           </div>
         </div>

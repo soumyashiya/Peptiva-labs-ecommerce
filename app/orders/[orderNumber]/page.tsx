@@ -212,7 +212,7 @@ export default function OrderDetailPage({
                             </div>
                             <div className="text-right">
                               <p className="text-[13px] font-medium text-ink">
-                                {formatUSD(toNumber(p.amount))} {p.currency}
+                                {formatUSD(toNumber(p.amount))}
                               </p>
                               <span
                                 className={`mt-1 inline-flex items-center rounded-pill border px-2 py-0.5 text-[10px] font-medium uppercase tracking-label ${statusStyles(
@@ -269,7 +269,7 @@ export default function OrderDetailPage({
                         Look up another order
                       </Link>
                       <Link
-                        href="/#products"
+                        href="/products"
                         className="inline-flex w-full items-center justify-center rounded-pill border border-line bg-white px-5 py-2.5 text-[14px] font-medium text-ink transition-colors hover:bg-canvas"
                       >
                         Shop the Peptiva Labs range

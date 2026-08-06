@@ -1,0 +1,128 @@
+- generic [active] [ref=f24e1]:
+  - link "Skip to content" [ref=f24e2] [cursor=pointer]:
+    - /url: "#home"
+  - banner [ref=f24e3]:
+    - generic [ref=f24e5]:
+      - link "Peptiva Labs home" [ref=f24e6] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f24e7]: Peptiva Labs
+      - navigation [ref=f24e15]:
+        - link "Home" [ref=f24e16] [cursor=pointer]:
+          - /url: /#home
+        - link "About" [ref=f24e17] [cursor=pointer]:
+          - /url: /#about
+        - link "Shop" [ref=f24e18] [cursor=pointer]:
+          - /url: /#products
+        - link "Why Us" [ref=f24e19] [cursor=pointer]:
+          - /url: /#why
+        - link "Testimonial" [ref=f24e20] [cursor=pointer]:
+          - /url: /#testimonial
+        - link "Contact" [ref=f24e21] [cursor=pointer]:
+          - /url: /#contact
+      - generic [ref=f24e22]:
+        - link "Cart, 0 items" [ref=f24e24] [cursor=pointer]:
+          - /url: /cart
+        - link "Shop now" [ref=f24e29] [cursor=pointer]:
+          - /url: /products
+  - main [ref=f24e30]:
+    - paragraph [ref=f24e32]: Loading…
+  - contentinfo [ref=f24e33]:
+    - generic [ref=f24e35]:
+      - generic [ref=f24e36]:
+        - generic [ref=f24e37]:
+          - generic [ref=f24e38]: Peptiva Labs
+          - paragraph [ref=f24e47]:
+            - link "sales@peptivalabs.com" [ref=f24e48] [cursor=pointer]:
+              - /url: mailto:sales@peptivalabs.com
+          - generic [ref=f24e49]:
+            - paragraph [ref=f24e50]: Newsletter
+            - paragraph [ref=f24e51]: Batch drops, storage tips, sourcing notes. No spam.
+            - generic [ref=f24e52]:
+              - textbox "you@lab.com" [ref=f24e53]
+              - button "Subscribe" [disabled] [ref=f24e54]
+            - generic [ref=f24e55]:
+              - checkbox "I agree to receive research updates." [checked] [ref=f24e56]
+              - text: I agree to receive research updates.
+        - generic [ref=f24e57]:
+          - generic [ref=f24e58]:
+            - heading "Catalogue" [level=3] [ref=f24e59]
+            - list [ref=f24e60]:
+              - listitem [ref=f24e61]:
+                - link "Shop all products" [ref=f24e62] [cursor=pointer]:
+                  - /url: /products
+              - listitem [ref=f24e63]:
+                - link "BPC-157 + TB-500" [ref=f24e64] [cursor=pointer]:
+                  - /url: /products/bpc-157-tb-500
+              - listitem [ref=f24e65]:
+                - link "Glow" [ref=f24e66] [cursor=pointer]:
+                  - /url: /products/glow
+              - listitem [ref=f24e67]:
+                - link "Retatrutide 20mg" [ref=f24e68] [cursor=pointer]:
+                  - /url: /products/retatrutide
+              - listitem [ref=f24e69]:
+                - link "Tirzepatide" [ref=f24e70] [cursor=pointer]:
+                  - /url: /products/tirzepatide
+              - listitem [ref=f24e71]:
+                - link "Retatrutide 40mg" [ref=f24e72] [cursor=pointer]:
+                  - /url: /products/retatrutide-40mg
+              - listitem [ref=f24e73]:
+                - link "NAD+ 1,000mg" [ref=f24e74] [cursor=pointer]:
+                  - /url: /products/nad-plus-1000mg
+          - generic [ref=f24e75]:
+            - heading "Company" [level=3] [ref=f24e76]
+            - list [ref=f24e77]:
+              - listitem [ref=f24e78]:
+                - link "About Peptiva Labs" [ref=f24e79] [cursor=pointer]:
+                  - /url: /#about
+              - listitem [ref=f24e80]:
+                - link "How we source" [ref=f24e81] [cursor=pointer]:
+                  - /url: /#why
+              - listitem [ref=f24e82]:
+                - link "Reviews" [ref=f24e83] [cursor=pointer]:
+                  - /url: /#testimonial
+              - listitem [ref=f24e84]:
+                - link "Press" [ref=f24e85] [cursor=pointer]:
+                  - /url: /press
+              - listitem [ref=f24e86]:
+                - link "Contact" [ref=f24e87] [cursor=pointer]:
+                  - /url: /#contact
+          - generic [ref=f24e88]:
+            - heading "Support" [level=3] [ref=f24e89]
+            - list [ref=f24e90]:
+              - listitem [ref=f24e91]:
+                - link "Track order" [ref=f24e92] [cursor=pointer]:
+                  - /url: /track-order
+              - listitem [ref=f24e93]:
+                - link "Cart" [ref=f24e94] [cursor=pointer]:
+                  - /url: /cart
+              - listitem [ref=f24e95]:
+                - link "Account" [ref=f24e96] [cursor=pointer]:
+                  - /url: /account
+              - listitem [ref=f24e97]:
+                - link "Sign in" [ref=f24e98] [cursor=pointer]:
+                  - /url: /login
+          - generic [ref=f24e99]:
+            - heading "Legal" [level=3] [ref=f24e100]
+            - list [ref=f24e101]:
+              - listitem [ref=f24e102]:
+                - link "Shipping Policy" [ref=f24e103] [cursor=pointer]:
+                  - /url: /shipping-policy
+              - listitem [ref=f24e104]:
+                - link "Refund Policy" [ref=f24e105] [cursor=pointer]:
+                  - /url: /refund-policy
+              - listitem [ref=f24e106]:
+                - link "Privacy Policy" [ref=f24e107] [cursor=pointer]:
+                  - /url: /privacy-policy
+              - listitem [ref=f24e108]:
+                - link "Terms of Service" [ref=f24e109] [cursor=pointer]:
+                  - /url: /terms-of-service
+      - generic [ref=f24e110]: Peptiva
+      - generic [ref=f24e113]:
+        - paragraph [ref=f24e114]: © 2026 Peptiva Labs. All rights reserved. For research use only.
+        - generic [ref=f24e115]:
+          - link "Privacy" [ref=f24e116] [cursor=pointer]:
+            - /url: /privacy-policy
+          - link "Terms" [ref=f24e117] [cursor=pointer]:
+            - /url: /terms-of-service
+          - link "Refunds" [ref=f24e118] [cursor=pointer]:
+            - /url: /refund-policy

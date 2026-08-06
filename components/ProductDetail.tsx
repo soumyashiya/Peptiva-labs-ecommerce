@@ -88,7 +88,7 @@ export default function ProductDetail({
           {/* Breadcrumb / back */}
           <nav aria-label="Breadcrumb">
             <Link
-              href="/#products"
+              href="/products"
               className="inline-flex items-center gap-2 text-[14px] text-ink-secondary transition-colors hover:text-ink"
             >
               <ArrowLeft /> Back to the range
@@ -368,23 +368,6 @@ export default function ProductDetail({
             </div>
           </div>
 
-          {/* Compliance footer */}
-          <aside
-            aria-label="Research-use compliance disclaimer"
-            className="mt-12 rounded-card border border-line bg-white p-5 sm:p-6"
-          >
-            <p className="text-[11px] font-semibold uppercase tracking-label text-ink">
-              For research purposes only
-            </p>
-            <p className="mt-2 max-w-3xl text-[13px] leading-relaxed text-ink-secondary">
-              Not intended for human or veterinary use. Not intended to
-              diagnose, treat, cure, or prevent any disease. Products are
-              supplied strictly for laboratory and analytical research
-              conducted by qualified professionals. By purchasing, you confirm
-              you are ordering these products for research use only.
-            </p>
-          </aside>
-
           {/* Related products */}
           {related.length > 0 && (
             <section className="mt-20 sm:mt-28" aria-labelledby="related-heading">
@@ -396,7 +379,7 @@ export default function ProductDetail({
                   Related products
                 </h2>
                 <Link
-                  href="/#products"
+                  href="/products"
                   className="text-[14px] text-ink-secondary transition-colors hover:text-ink"
                 >
                   View all

@@ -7,6 +7,7 @@ import Features from "@/components/Features";
 import CaseStudy from "@/components/CaseStudy";
 import CTA from "@/components/CTA";
 import Testimonials from "@/components/Testimonials";
+import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import { localBusinessSchema, jsonLd } from "@/lib/seo";
 
@@ -27,6 +28,7 @@ export default function Home() {
         <CaseStudy />
         <CTA />
         <Testimonials />
+        <Contact />
       </main>
       <Footer />
     </>

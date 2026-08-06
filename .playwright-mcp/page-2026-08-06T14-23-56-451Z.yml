@@ -1,0 +1,156 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#home"
+  - banner [ref=e3]:
+    - generic [ref=e5]:
+      - link "Peptiva Labs home" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e7]: Peptiva Labs
+      - generic [ref=e15]:
+        - link "Cart, 0 items" [ref=e17] [cursor=pointer]:
+          - /url: /cart
+        - button "Open menu" [ref=e22] [cursor=pointer]
+  - generic:
+    - generic:
+      - link:
+        - /url: /
+        - generic: Peptiva Labs
+      - button
+    - generic:
+      - navigation:
+        - link:
+          - /url: /#home
+          - text: Home
+        - link:
+          - /url: /#about
+          - text: About
+        - link:
+          - /url: /#products
+          - text: Shop
+        - link:
+          - /url: /#why
+          - text: Why Us
+        - link:
+          - /url: /#testimonial
+          - text: Testimonial
+        - link:
+          - /url: /#contact
+          - text: Contact
+      - generic:
+        - paragraph: Account
+        - generic:
+          - link:
+            - /url: /login
+            - text: Sign in
+          - link:
+            - /url: /register
+            - text: Create account
+      - generic:
+        - link:
+          - /url: /products
+          - text: Shop now
+  - main [ref=e25]:
+    - generic [ref=e26]:
+      - paragraph [ref=e27]: Payment upload
+      - heading "Complete your payment" [level=1] [ref=e28]
+  - contentinfo [ref=e48]:
+    - generic [ref=e50]:
+      - generic [ref=e51]:
+        - generic [ref=e52]:
+          - generic [ref=e53]: Peptiva Labs
+          - paragraph [ref=e62]:
+            - link "sales@peptivalabs.com" [ref=e63] [cursor=pointer]:
+              - /url: mailto:sales@peptivalabs.com
+          - generic [ref=e64]:
+            - paragraph [ref=e65]: Newsletter
+            - paragraph [ref=e66]: Batch drops, storage tips, sourcing notes. No spam.
+            - generic [ref=e67]:
+              - textbox "you@lab.com" [ref=e68]
+              - button "Subscribe" [disabled] [ref=e69]
+            - generic [ref=e70]:
+              - checkbox "I agree to receive research updates." [checked] [ref=e71]
+              - text: I agree to receive research updates.
+        - generic [ref=e72]:
+          - generic [ref=e73]:
+            - heading "Catalogue" [level=3] [ref=e74]
+            - list [ref=e75]:
+              - listitem [ref=e76]:
+                - link "Shop all products" [ref=e77] [cursor=pointer]:
+                  - /url: /products
+              - listitem [ref=e78]:
+                - link "BPC-157 + TB-500" [ref=e79] [cursor=pointer]:
+                  - /url: /products/bpc-157-tb-500
+              - listitem [ref=e80]:
+                - link "Glow" [ref=e81] [cursor=pointer]:
+                  - /url: /products/glow
+              - listitem [ref=e82]:
+                - link "Retatrutide 20mg" [ref=e83] [cursor=pointer]:
+                  - /url: /products/retatrutide
+              - listitem [ref=e84]:
+                - link "Tirzepatide" [ref=e85] [cursor=pointer]:
+                  - /url: /products/tirzepatide
+              - listitem [ref=e86]:
+                - link "Retatrutide 40mg" [ref=e87] [cursor=pointer]:
+                  - /url: /products/retatrutide-40mg
+              - listitem [ref=e88]:
+                - link "NAD+ 1,000mg" [ref=e89] [cursor=pointer]:
+                  - /url: /products/nad-plus-1000mg
+          - generic [ref=e90]:
+            - heading "Company" [level=3] [ref=e91]
+            - list [ref=e92]:
+              - listitem [ref=e93]:
+                - link "About Peptiva Labs" [ref=e94] [cursor=pointer]:
+                  - /url: /#about
+              - listitem [ref=e95]:
+                - link "How we source" [ref=e96] [cursor=pointer]:
+                  - /url: /#why
+              - listitem [ref=e97]:
+                - link "Reviews" [ref=e98] [cursor=pointer]:
+                  - /url: /#testimonial
+              - listitem [ref=e99]:
+                - link "Press" [ref=e100] [cursor=pointer]:
+                  - /url: /press
+              - listitem [ref=e101]:
+                - link "Contact" [ref=e102] [cursor=pointer]:
+                  - /url: /#contact
+          - generic [ref=e103]:
+            - heading "Support" [level=3] [ref=e104]
+            - list [ref=e105]:
+              - listitem [ref=e106]:
+                - link "Track order" [ref=e107] [cursor=pointer]:
+                  - /url: /track-order
+              - listitem [ref=e108]:
+                - link "Cart" [ref=e109] [cursor=pointer]:
+                  - /url: /cart
+              - listitem [ref=e110]:
+                - link "Account" [ref=e111] [cursor=pointer]:
+                  - /url: /account
+              - listitem [ref=e112]:
+                - link "Sign in" [ref=e113] [cursor=pointer]:
+                  - /url: /login
+          - generic [ref=e114]:
+            - heading "Legal" [level=3] [ref=e115]
+            - list [ref=e116]:
+              - listitem [ref=e117]:
+                - link "Shipping Policy" [ref=e118] [cursor=pointer]:
+                  - /url: /shipping-policy
+              - listitem [ref=e119]:
+                - link "Refund Policy" [ref=e120] [cursor=pointer]:
+                  - /url: /refund-policy
+              - listitem [ref=e121]:
+                - link "Privacy Policy" [ref=e122] [cursor=pointer]:
+                  - /url: /privacy-policy
+              - listitem [ref=e123]:
+                - link "Terms of Service" [ref=e124] [cursor=pointer]:
+                  - /url: /terms-of-service
+      - generic [ref=e125]: Peptiva
+      - generic [ref=e128]:
+        - paragraph [ref=e129]: © 2026 Peptiva Labs. All rights reserved. For research use only.
+        - generic [ref=e130]:
+          - link "Privacy" [ref=e131] [cursor=pointer]:
+            - /url: /privacy-policy
+          - link "Terms" [ref=e132] [cursor=pointer]:
+            - /url: /terms-of-service
+          - link "Refunds" [ref=e133] [cursor=pointer]:
+            - /url: /refund-policy
+  - alert [ref=e134]

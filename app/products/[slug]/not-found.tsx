@@ -15,7 +15,7 @@ export default function ProductNotFound() {
           The item you’re looking for may have sold out or moved. Explore the
           full range instead.
         </p>
-        <Link href="/#products" className="btn-dark mt-6">
+        <Link href="/products" className="btn-dark mt-6">
           Back to the range
         </Link>
       </main>

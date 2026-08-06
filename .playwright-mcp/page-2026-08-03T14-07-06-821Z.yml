@@ -1,0 +1,274 @@
+- generic [active] [ref=f30e1]:
+  - link "Skip to content" [ref=f30e2] [cursor=pointer]:
+    - /url: "#home"
+  - banner [ref=f30e3]:
+    - generic [ref=f30e5]:
+      - link "Peptiva Labs home" [ref=f30e6] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f30e7]: Peptiva Labs
+      - generic [ref=f30e15]:
+        - link "Sign in" [ref=f30e16] [cursor=pointer]:
+          - /url: /login
+        - link "Cart, 0 items" [ref=f30e17] [cursor=pointer]:
+          - /url: /cart
+        - button "Open menu" [ref=f30e22] [cursor=pointer]
+  - generic:
+    - generic:
+      - link:
+        - /url: /
+        - generic: Peptiva Labs
+      - button
+    - generic:
+      - navigation:
+        - link:
+          - /url: /#home
+          - text: Home
+        - link:
+          - /url: /#about
+          - text: About
+        - link:
+          - /url: /#products
+          - text: Shop
+        - link:
+          - /url: /#why
+          - text: Why Us
+        - link:
+          - /url: /#testimonial
+          - text: Testimonial
+        - link:
+          - /url: /#contact
+          - text: Contact
+      - generic:
+        - paragraph: Account
+        - generic:
+          - link:
+            - /url: /login
+            - text: Sign in
+          - link:
+            - /url: /register
+            - text: Create account
+      - generic:
+        - link:
+          - /url: /products
+          - text: Shop now
+  - main [ref=f30e25]:
+    - generic [ref=f30e26]:
+      - navigation "Breadcrumb" [ref=f30e27]:
+        - link "Home" [ref=f30e28] [cursor=pointer]:
+          - /url: /
+        - text: /Terms of Service
+      - generic [ref=f30e35]:
+        - generic [ref=f30e36]:
+          - generic [ref=f30e37]: Policy
+          - generic [ref=f30e38]: Last updated August 3, 2026
+        - heading "Terms of Service" [level=1] [ref=f30e39]
+        - paragraph [ref=f30e40]: These Terms of Service ("Terms") govern your access to peptivalabs.com and any order you place with Peptiva Labs. By using the site or placing an order, you agree to these Terms.
+      - generic [ref=f30e41]:
+        - navigation "Section navigation" [ref=f30e42]:
+          - generic [ref=f30e43]:
+            - paragraph [ref=f30e44]: On this page
+            - list [ref=f30e45]:
+              - listitem [ref=f30e46]:
+                - link "Acceptance of terms" [ref=f30e47] [cursor=pointer]:
+                  - /url: "#acceptance"
+              - listitem [ref=f30e48]:
+                - link "Eligibility & research use" [ref=f30e49] [cursor=pointer]:
+                  - /url: "#eligibility"
+              - listitem [ref=f30e50]:
+                - link "Accounts" [ref=f30e51] [cursor=pointer]:
+                  - /url: "#accounts"
+              - listitem [ref=f30e52]:
+                - link "Orders & pricing" [ref=f30e53] [cursor=pointer]:
+                  - /url: "#orders"
+              - listitem [ref=f30e54]:
+                - link "Shipping & returns" [ref=f30e55] [cursor=pointer]:
+                  - /url: "#shipping-returns"
+              - listitem [ref=f30e56]:
+                - link "Intellectual property" [ref=f30e57] [cursor=pointer]:
+                  - /url: "#ip"
+              - listitem [ref=f30e58]:
+                - link "Acceptable use" [ref=f30e59] [cursor=pointer]:
+                  - /url: "#conduct"
+              - listitem [ref=f30e60]:
+                - link "Disclaimer of warranties" [ref=f30e61] [cursor=pointer]:
+                  - /url: "#disclaimer"
+              - listitem [ref=f30e62]:
+                - link "Limitation of liability" [ref=f30e63] [cursor=pointer]:
+                  - /url: "#liability"
+              - listitem [ref=f30e64]:
+                - link "Governing law" [ref=f30e65] [cursor=pointer]:
+                  - /url: "#law"
+              - listitem [ref=f30e66]:
+                - link "Changes to these terms" [ref=f30e67] [cursor=pointer]:
+                  - /url: "#changes"
+              - listitem [ref=f30e68]:
+                - link "Contact us" [ref=f30e69] [cursor=pointer]:
+                  - /url: "#contact"
+          - generic [ref=f30e70]:
+            - paragraph [ref=f30e71]: Still have questions?
+            - paragraph [ref=f30e72]: Reach our team any time at
+            - link "sales@peptivalabs.com" [ref=f30e73] [cursor=pointer]:
+              - /url: mailto:sales@peptivalabs.com
+        - generic [ref=f30e75]:
+          - generic [ref=f30e79]:
+            - heading "Acceptance of terms" [level=2] [ref=f30e80]
+            - paragraph [ref=f30e82]:
+              - text: By browsing this site, creating an account, or placing an order, you confirm that you have read, understood, and agree to be bound by these Terms and our
+              - link "Privacy Policy" [ref=f30e83] [cursor=pointer]:
+                - /url: /privacy-policy
+              - text: . If you do not agree, please do not use the site.
+          - generic [ref=f30e87]:
+            - heading "Eligibility & research use" [level=2] [ref=f30e88]
+            - list [ref=f30e90]:
+              - listitem [ref=f30e91]: You must be at least 18 years old and legally able to enter a binding contract to use this site or place an order.
+              - listitem [ref=f30e92]: Every product listed is supplied strictly for laboratory and analytical research use by qualified professionals. Nothing on this site is intended for human or veterinary consumption, and no product is intended to diagnose, treat, cure, or prevent any disease.
+              - listitem [ref=f30e93]: By ordering, you represent that you are acquiring the products for lawful research purposes and that you are responsible for complying with the laws and regulations that apply to research-use compounds in your jurisdiction.
+          - generic [ref=f30e97]:
+            - heading "Accounts" [level=2] [ref=f30e98]
+            - paragraph [ref=f30e100]:
+              - text: You're responsible for keeping your account credentials confidential and for all activity that happens under your account. Let us know immediately at
+              - link "sales@peptivalabs.com" [ref=f30e101] [cursor=pointer]:
+                - /url: mailto:sales@peptivalabs.com
+              - text: if you suspect unauthorized use of your account.
+          - generic [ref=f30e105]:
+            - heading "Orders & pricing" [level=2] [ref=f30e106]
+            - paragraph [ref=f30e108]: Placing an order is an offer to purchase; we may accept, decline, or cancel any order at our discretion — for example if a product is out of stock, if we suspect fraud, or if a listing error affected the price. Prices are shown in USD and may change without notice, though the price you pay is the price shown at checkout when your order is confirmed.
+          - generic [ref=f30e112]:
+            - heading "Shipping & returns" [level=2] [ref=f30e113]
+            - paragraph [ref=f30e115]:
+              - text: Order fulfilment, delivery timelines, and return eligibility are described in our
+              - link "Shipping Policy" [ref=f30e116] [cursor=pointer]:
+                - /url: /shipping-policy
+              - text: and
+              - link "Refund Policy" [ref=f30e117] [cursor=pointer]:
+                - /url: /refund-policy
+              - text: ", both of which form part of these Terms."
+          - generic [ref=f30e121]:
+            - heading "Intellectual property" [level=2] [ref=f30e122]
+            - paragraph [ref=f30e124]: All content on this site — including text, graphics, logos, product photography, and site design — is owned by or licensed to Peptiva Labs and protected by applicable intellectual property law. You may not copy, reproduce, or repurpose it without our written permission.
+          - generic [ref=f30e128]:
+            - heading "Acceptable use" [level=2] [ref=f30e129]
+            - list [ref=f30e131]:
+              - listitem [ref=f30e132]: Do not use the site for any unlawful purpose or in a way that violates any applicable regulation.
+              - listitem [ref=f30e133]: Do not attempt to interfere with, disrupt, or gain unauthorized access to the site, our systems, or other users' accounts.
+              - listitem [ref=f30e134]: Do not misrepresent your identity, age, or the intended use of any product ordered.
+          - generic [ref=f30e138]:
+            - heading "Disclaimer of warranties" [level=2] [ref=f30e139]
+            - paragraph [ref=f30e141]: The site and products are provided “as is” for research use. To the fullest extent permitted by law, we disclaim all warranties, express or implied, regarding the site or any product, including any warranty of merchantability or fitness for a particular purpose beyond laboratory research.
+          - generic [ref=f30e145]:
+            - heading "Limitation of liability" [level=2] [ref=f30e146]
+            - paragraph [ref=f30e148]: To the fullest extent permitted by law, Peptiva Labs will not be liable for any indirect, incidental, or consequential damages arising from your use of the site or any product, including any use outside the stated research-use-only purpose. Our total liability for any claim arising from an order is limited to the amount you paid for that order.
+          - generic [ref=f30e152]:
+            - heading "Governing law" [level=2] [ref=f30e153]
+            - paragraph [ref=f30e155]: These Terms are governed by the laws applicable in the jurisdiction where Peptiva Labs is registered, without regard to conflict-of-law principles. Any dispute arising from these Terms will be resolved in the courts of that jurisdiction.
+          - generic [ref=f30e159]:
+            - heading "Changes to these terms" [level=2] [ref=f30e160]
+            - paragraph [ref=f30e162]: We may update these Terms from time to time. Continuing to use the site after an update means you accept the revised Terms. Material changes will be reflected by an updated “last updated” date at the top of this page.
+          - generic [ref=f30e166]:
+            - heading "Contact us" [level=2] [ref=f30e167]
+            - paragraph [ref=f30e169]:
+              - text: Questions about these Terms? Email
+              - link "sales@peptivalabs.com" [ref=f30e170] [cursor=pointer]:
+                - /url: mailto:sales@peptivalabs.com
+              - text: .
+  - contentinfo [ref=f30e171]:
+    - generic [ref=f30e173]:
+      - generic [ref=f30e174]:
+        - generic [ref=f30e175]:
+          - generic [ref=f30e176]: Peptiva Labs
+          - paragraph [ref=f30e185]:
+            - link "sales@peptivalabs.com" [ref=f30e186] [cursor=pointer]:
+              - /url: mailto:sales@peptivalabs.com
+          - generic [ref=f30e187]:
+            - paragraph [ref=f30e188]: Newsletter
+            - paragraph [ref=f30e189]: Batch drops, storage tips, sourcing notes. No spam.
+            - generic [ref=f30e190]:
+              - textbox "you@lab.com" [ref=f30e191]
+              - button "Subscribe" [disabled] [ref=f30e192]
+            - generic [ref=f30e193]:
+              - checkbox "I agree to receive research updates." [checked] [ref=f30e194]
+              - text: I agree to receive research updates.
+        - generic [ref=f30e195]:
+          - generic [ref=f30e196]:
+            - heading "Catalogue" [level=3] [ref=f30e197]
+            - list [ref=f30e198]:
+              - listitem [ref=f30e199]:
+                - link "Shop all products" [ref=f30e200] [cursor=pointer]:
+                  - /url: /products
+              - listitem [ref=f30e201]:
+                - link "BPC-157 + TB-500" [ref=f30e202] [cursor=pointer]:
+                  - /url: /products/bpc-157-tb-500
+              - listitem [ref=f30e203]:
+                - link "Glow" [ref=f30e204] [cursor=pointer]:
+                  - /url: /products/glow
+              - listitem [ref=f30e205]:
+                - link "Retatrutide 20mg" [ref=f30e206] [cursor=pointer]:
+                  - /url: /products/retatrutide
+              - listitem [ref=f30e207]:
+                - link "Tirzepatide" [ref=f30e208] [cursor=pointer]:
+                  - /url: /products/tirzepatide
+              - listitem [ref=f30e209]:
+                - link "Retatrutide 40mg" [ref=f30e210] [cursor=pointer]:
+                  - /url: /products/retatrutide-40mg
+              - listitem [ref=f30e211]:
+                - link "NAD+ 1,000mg" [ref=f30e212] [cursor=pointer]:
+                  - /url: /products/nad-plus-1000mg
+          - generic [ref=f30e213]:
+            - heading "Company" [level=3] [ref=f30e214]
+            - list [ref=f30e215]:
+              - listitem [ref=f30e216]:
+                - link "About Peptiva Labs" [ref=f30e217] [cursor=pointer]:
+                  - /url: /#about
+              - listitem [ref=f30e218]:
+                - link "How we source" [ref=f30e219] [cursor=pointer]:
+                  - /url: /#why
+              - listitem [ref=f30e220]:
+                - link "Reviews" [ref=f30e221] [cursor=pointer]:
+                  - /url: /#testimonial
+              - listitem [ref=f30e222]:
+                - link "Press" [ref=f30e223] [cursor=pointer]:
+                  - /url: /press
+              - listitem [ref=f30e224]:
+                - link "Contact" [ref=f30e225] [cursor=pointer]:
+                  - /url: /#contact
+          - generic [ref=f30e226]:
+            - heading "Support" [level=3] [ref=f30e227]
+            - list [ref=f30e228]:
+              - listitem [ref=f30e229]:
+                - link "Track order" [ref=f30e230] [cursor=pointer]:
+                  - /url: /track-order
+              - listitem [ref=f30e231]:
+                - link "Cart" [ref=f30e232] [cursor=pointer]:
+                  - /url: /cart
+              - listitem [ref=f30e233]:
+                - link "Account" [ref=f30e234] [cursor=pointer]:
+                  - /url: /account
+              - listitem [ref=f30e235]:
+                - link "Sign in" [ref=f30e236] [cursor=pointer]:
+                  - /url: /login
+          - generic [ref=f30e237]:
+            - heading "Legal" [level=3] [ref=f30e238]
+            - list [ref=f30e239]:
+              - listitem [ref=f30e240]:
+                - link "Shipping Policy" [ref=f30e241] [cursor=pointer]:
+                  - /url: /shipping-policy
+              - listitem [ref=f30e242]:
+                - link "Refund Policy" [ref=f30e243] [cursor=pointer]:
+                  - /url: /refund-policy
+              - listitem [ref=f30e244]:
+                - link "Privacy Policy" [ref=f30e245] [cursor=pointer]:
+                  - /url: /privacy-policy
+              - listitem [ref=f30e246]:
+                - link "Terms of Service" [ref=f30e247] [cursor=pointer]:
+                  - /url: /terms-of-service
+      - generic [ref=f30e248]: Peptiva
+      - generic [ref=f30e251]:
+        - paragraph [ref=f30e252]: © 2026 Peptiva Labs. All rights reserved. For research use only.
+        - generic [ref=f30e253]:
+          - link "Privacy" [ref=f30e254] [cursor=pointer]:
+            - /url: /privacy-policy
+          - link "Terms" [ref=f30e255] [cursor=pointer]:
+            - /url: /terms-of-service
+          - link "Refunds" [ref=f30e256] [cursor=pointer]:
+            - /url: /refund-policy
+  - alert [ref=f30e257]

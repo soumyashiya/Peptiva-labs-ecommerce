@@ -292,7 +292,7 @@ export default function CheckoutPage() {
               <p className="mt-3 text-[15px] text-ink-secondary">
                 Add a compound before proceeding to checkout.
               </p>
-              <Link href="/#products" className="btn-dark mt-7">
+              <Link href="/products" className="btn-dark mt-7">
                 Browse the catalogue
               </Link>
             </div>
@@ -589,11 +589,6 @@ function OrderPlacedModal({
   email: string;
 }) {
   const [copied, setCopied] = useState(false);
-  const whatsappMsg = encodeURIComponent(
-    `Hi Peptiva Labs — I've just placed order ${orderRef} (${formatUSD(
-      total
-    )}). Please send the bank-transfer payment instructions.`
-  );
 
   async function copyRef() {
     try {
@@ -663,14 +658,12 @@ function OrderPlacedModal({
         </div>
 
         <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:justify-center">
-          <a
-            href={`https://wa.me/971543800625?text=${whatsappMsg}`}
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/products"
             className="btn-dark justify-center sm:min-w-[180px]"
           >
-            Message on WhatsApp
-          </a>
+            Continue shopping
+          </Link>
           <Link
             href="/track-order"
             className="inline-flex items-center justify-center rounded-pill border border-line bg-white px-5 py-2.5 text-[14px] font-medium text-ink transition-colors hover:bg-canvas sm:min-w-[140px]"

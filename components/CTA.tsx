@@ -286,8 +286,7 @@ export default function CTA() {
               <br /> Browse the catalogue
             </h2>
             <a
-              id="contact"
-              href="/#products"
+              href="/products"
               className="orbit-cta btn-dark mt-5 transition-[transform,box-shadow] duration-300 hover:scale-[1.05] hover:shadow-[0_16px_40px_-10px_rgba(26,29,32,0.55)] sm:mt-6"
             >
               Start your order

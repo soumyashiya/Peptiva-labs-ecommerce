@@ -113,7 +113,7 @@ export default function AccountPage() {
               </div>
             </div>
             <div className="flex flex-wrap gap-3">
-              <Link href="/#products" className="btn-ghost">
+              <Link href="/products" className="btn-ghost">
                 Continue shopping
               </Link>
               <button
@@ -267,7 +267,7 @@ export default function AccountPage() {
                     <p className="mt-2 text-[13px] text-ink-secondary">
                       Once you place your first order it will show up here.
                     </p>
-                    <Link href="/#products" className="btn-dark mt-5">
+                    <Link href="/products" className="btn-dark mt-5">
                       Browse the catalogue
                     </Link>
                   </div>

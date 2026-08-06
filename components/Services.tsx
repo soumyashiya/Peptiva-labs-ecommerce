@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useReveal } from "./useReveal";
@@ -11,9 +10,7 @@ const INITIAL_COUNT = 4;
 
 export default function Services() {
   const scope = useReveal<HTMLDivElement>();
-  const [showAll, setShowAll] = useState(false);
-  const canToggle = PRODUCTS.length > INITIAL_COUNT;
-  const visible = showAll ? PRODUCTS : PRODUCTS.slice(0, INITIAL_COUNT);
+  const visible = PRODUCTS.slice(0, INITIAL_COUNT);
 
   return (
     <section id="products" className="section-block bg-canvas py-12 sm:py-16 md:py-24">
@@ -33,16 +30,13 @@ export default function Services() {
             </p>
           </div>
 
-          {canToggle && (
-            <button
-              type="button"
-              onClick={() => setShowAll((v) => !v)}
-              className="btn-dark shrink-0 self-start sm:self-end"
-              aria-expanded={showAll}
-            >
-              {showAll ? "Show less" : "All"}
-            </button>
-          )}
+          <Link
+            href="/products"
+            className="btn-dark inline-flex shrink-0 items-center gap-2 self-start sm:self-end"
+          >
+            View full shop
+            <ArrowUpRight width={16} height={16} />
+          </Link>
         </div>
 
         <div className="mt-10 sm:mt-16 grid grid-cols-1 gap-4 sm:gap-5 sm:grid-cols-2 lg:grid-cols-4">

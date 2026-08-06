@@ -1,0 +1,324 @@
+- generic [active] [ref=f8e1]:
+  - link "Skip to content" [ref=f8e2] [cursor=pointer]:
+    - /url: "#home"
+  - banner [ref=f8e3]:
+    - generic [ref=f8e5]:
+      - link "Peptiva Labs home" [ref=f8e6] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f8e7]: Peptiva Labs
+      - navigation [ref=f8e15]:
+        - link "Home" [ref=f8e16] [cursor=pointer]:
+          - /url: /#home
+        - link "About" [ref=f8e17] [cursor=pointer]:
+          - /url: /#about
+        - link "Shop" [ref=f8e18] [cursor=pointer]:
+          - /url: /#products
+        - link "Why Us" [ref=f8e19] [cursor=pointer]:
+          - /url: /#why
+        - link "Testimonial" [ref=f8e20] [cursor=pointer]:
+          - /url: /#testimonial
+        - link "Contact" [ref=f8e21] [cursor=pointer]:
+          - /url: /#contact
+      - generic [ref=f8e22]:
+        - link "Cart, 0 items" [ref=f8e24] [cursor=pointer]:
+          - /url: /cart
+        - link "Shop now" [ref=f8e29] [cursor=pointer]:
+          - /url: /products
+  - link "⚡ Preview payment page" [ref=f8e30] [cursor=pointer]:
+    - /url: /payment-capture/preview-token
+  - main [ref=f8e31]:
+    - generic [ref=f8e33]:
+      - heading "P e p t i v a" [level=1] [ref=f8e34]:
+        - generic [ref=f8e35]: P
+        - generic [ref=f8e36]: e
+        - generic [ref=f8e37]: p
+        - generic [ref=f8e38]: t
+        - generic [ref=f8e39]: i
+        - generic [ref=f8e40]: v
+        - generic [ref=f8e41]: a
+      - generic [ref=f8e42]:
+        - img "Cold-stored, verified research peptides from Peptiva Labs" [ref=f8e44]
+        - img "Peptiva Labs research peptide pen, sourced and verified" [ref=f8e46]
+        - img "Lab-tested research peptide packaging by Peptiva Labs" [ref=f8e48]
+        - img "Third-party tested peptide pen ready for research use" [ref=f8e50]
+      - generic [ref=f8e51]:
+        - paragraph [ref=f8e52]: Reference-grade research peptides, packed and sealed for the lab bench. Verified sourcing, third-party purity testing, and a real person on WhatsApp when you need one. For research use only — not for human or veterinary use.
+        - link "Browse catalogue" [ref=f8e54] [cursor=pointer]:
+          - /url: /products
+    - generic [ref=f8e57]:
+      - generic [ref=f8e58]:
+        - generic [ref=f8e59]: Verified Sourcing
+        - generic [ref=f8e63]: Lab-Tested Purity
+        - generic [ref=f8e67]: Sealed Cold Packaging
+        - generic [ref=f8e71]: WhatsApp Support
+        - generic [ref=f8e75]: Verified Sourcing
+        - generic [ref=f8e79]: Lab-Tested Purity
+        - generic [ref=f8e83]: Sealed Cold Packaging
+        - generic [ref=f8e87]: WhatsApp Support
+        - generic [ref=f8e91]: Verified Sourcing
+        - generic [ref=f8e95]: Lab-Tested Purity
+        - generic [ref=f8e99]: Sealed Cold Packaging
+        - generic [ref=f8e103]: WhatsApp Support
+        - generic [ref=f8e107]: Verified Sourcing
+        - generic [ref=f8e111]: Lab-Tested Purity
+        - generic [ref=f8e115]: Sealed Cold Packaging
+        - generic [ref=f8e119]: WhatsApp Support
+      - generic [ref=f8e123]:
+        - generic [ref=f8e124]: Verified Sourcing
+        - generic [ref=f8e128]: Lab-Tested Purity
+        - generic [ref=f8e132]: Sealed Cold Packaging
+        - generic [ref=f8e136]: WhatsApp Support
+        - generic [ref=f8e140]: Verified Sourcing
+        - generic [ref=f8e144]: Lab-Tested Purity
+        - generic [ref=f8e148]: Sealed Cold Packaging
+        - generic [ref=f8e152]: WhatsApp Support
+        - generic [ref=f8e156]: Verified Sourcing
+        - generic [ref=f8e160]: Lab-Tested Purity
+        - generic [ref=f8e164]: Sealed Cold Packaging
+        - generic [ref=f8e168]: WhatsApp Support
+        - generic [ref=f8e172]: Verified Sourcing
+        - generic [ref=f8e176]: Lab-Tested Purity
+        - generic [ref=f8e180]: Sealed Cold Packaging
+        - generic [ref=f8e184]: WhatsApp Support
+    - generic [ref=f8e189]:
+      - generic [ref=f8e190]:
+        - generic [ref=f8e192]:
+          - img "Peptiva Labs researcher preparing research peptides in the laboratory" [ref=f8e194]
+          - img "Verified research peptide pens third-party tested at Peptiva Labs" [ref=f8e196]
+          - generic [ref=f8e197]:
+            - paragraph [ref=f8e198]: 99.4%
+            - paragraph [ref=f8e199]: Verified Peptide Purity
+        - generic [ref=f8e200]:
+          - text: Company About
+          - heading "The fastest way to source reference peptides you can actually trust." [level=2] [ref=f8e201]
+          - paragraph [ref=f8e202]: We started Peptiva Labs because the research peptide market needed a supplier willing to be boring about the basics — transparent sourcing, third-party lab testing, and people you can actually message. Every batch is checked before it reaches our shelves. Every product is supplied strictly for laboratory research use.
+          - paragraph [ref=f8e203]: "Our Special Services:"
+          - list [ref=f8e204]:
+            - listitem [ref=f8e205]:
+              - generic [ref=f8e209]: Third-party tested for purity
+            - listitem [ref=f8e210]:
+              - generic [ref=f8e214]: Direct-from-supplier sourcing
+            - listitem [ref=f8e215]:
+              - generic [ref=f8e219]: Accurate labelling on every pen
+            - listitem [ref=f8e220]:
+              - generic [ref=f8e224]: Sealed, tamper-evident handling
+      - generic [ref=f8e226]:
+        - generic [ref=f8e232]:
+          - paragraph [ref=f8e233]: 99.4%
+          - paragraph [ref=f8e234]: Verified Peptide Purity
+        - generic [ref=f8e242]:
+          - paragraph [ref=f8e243]: 5,000+
+          - paragraph [ref=f8e244]: Pens Verified & Sealed
+        - generic [ref=f8e249]:
+          - paragraph [ref=f8e250]: 8+
+          - paragraph [ref=f8e251]: Curated Peptide Lines
+        - generic [ref=f8e257]:
+          - paragraph [ref=f8e258]: 4,000+
+          - paragraph [ref=f8e259]: Researchers Served
+    - generic [ref=f8e261]:
+      - generic [ref=f8e262]:
+        - generic [ref=f8e263]:
+          - heading "The Range" [level=2] [ref=f8e264]
+          - paragraph [ref=f8e265]: Six core peptide lines, each available in the concentrations researchers actually ask for. Every batch is verified, sealed, and cold-stored before it leaves the shelf.
+        - link "View full shop" [ref=f8e266] [cursor=pointer]:
+          - /url: /products
+      - generic [ref=f8e270]:
+        - link "BPC-157 + TB-500 40 mg dual blend BPC-157 + TB-500 Two widely researched peptides paired in one research-grade pre-filled pen for laboratory analysis and formulation studies. $ 130" [ref=f8e271] [cursor=pointer]:
+          - /url: /products/bpc-157-tb-500
+          - img "BPC-157 + TB-500" [ref=f8e273]
+          - generic [ref=f8e274]:
+            - paragraph [ref=f8e275]: 40 mg dual blend
+            - heading "BPC-157 + TB-500" [level=3] [ref=f8e276]
+            - paragraph [ref=f8e277]: Two widely researched peptides paired in one research-grade pre-filled pen for laboratory analysis and formulation studies.
+            - generic [ref=f8e278]: $ 130
+        - link "Glow 5 mg · 70 mg options Glow A multi-compound peptide reference blend supplied in a pre-filled research pen for laboratory analysis and formulation studies. from $ 100" [ref=f8e284] [cursor=pointer]:
+          - /url: /products/glow
+          - img "Glow" [ref=f8e286]
+          - generic [ref=f8e287]:
+            - paragraph [ref=f8e288]: 5 mg · 70 mg options
+            - heading "Glow" [level=3] [ref=f8e289]
+            - paragraph [ref=f8e290]: A multi-compound peptide reference blend supplied in a pre-filled research pen for laboratory analysis and formulation studies.
+            - generic [ref=f8e291]: from $ 100
+        - link "Retatrutide 20mg 20 mg pre-filled pen Retatrutide 20mg Triple-agonist reference peptide in a sealed 20 mg pre-filled research pen, batch-tested before it leaves the shelf. $ 100" [ref=f8e297] [cursor=pointer]:
+          - /url: /products/retatrutide
+          - img "Retatrutide 20mg" [ref=f8e299]
+          - generic [ref=f8e300]:
+            - paragraph [ref=f8e301]: 20 mg pre-filled pen
+            - heading "Retatrutide 20mg" [level=3] [ref=f8e302]
+            - paragraph [ref=f8e303]: Triple-agonist reference peptide in a sealed 20 mg pre-filled research pen, batch-tested before it leaves the shelf.
+            - generic [ref=f8e304]: $ 100
+        - link "Tirzepatide 5 / 20 / 40 mg Tirzepatide Dual-agonist GLP-1 / GIP reference peptide stocked in three concentrations to suit different research study designs. from $ 100" [ref=f8e310] [cursor=pointer]:
+          - /url: /products/tirzepatide
+          - img "Tirzepatide" [ref=f8e312]
+          - generic [ref=f8e313]:
+            - paragraph [ref=f8e314]: 5 / 20 / 40 mg
+            - heading "Tirzepatide" [level=3] [ref=f8e315]
+            - paragraph [ref=f8e316]: Dual-agonist GLP-1 / GIP reference peptide stocked in three concentrations to suit different research study designs.
+            - generic [ref=f8e317]: from $ 100
+    - generic [ref=f8e325]:
+      - generic [ref=f8e326]:
+        - generic [ref=f8e327]: Why Peptiva Labs
+        - heading "Why Choose Peptiva Labs?" [level=2] [ref=f8e329]: Why ChoosePeptiva Labs?
+        - paragraph [ref=f8e330]: Purity, paperwork, and real customer service — all on the same side of the table.
+      - img "Why choose Peptiva Labs — verified, sealed research peptides" [ref=f8e332]
+      - generic [ref=f8e333]:
+        - heading "Lab-tested pens" [level=3] [ref=f8e337]
+        - paragraph [ref=f8e338]: Every batch is screened for purity. Out of spec never leaves the shelf.
+      - generic [ref=f8e339]:
+        - heading "Traceable sourcing" [level=3] [ref=f8e344]
+        - link "Talk to the team" [ref=f8e345] [cursor=pointer]:
+          - /url: "#contact"
+      - generic [ref=f8e349]:
+        - heading "In stock, USD pricing" [level=3] [ref=f8e356]
+        - paragraph [ref=f8e357]: Cold-stored, sealed and batch-verified before it reaches the shelf.
+      - generic [ref=f8e358]:
+        - heading "A human on WhatsApp" [level=3] [ref=f8e363]
+        - generic [ref=f8e364]:
+          - paragraph [ref=f8e365]: Real replies, fast.
+          - link "Message us on WhatsApp" [ref=f8e366] [cursor=pointer]:
+            - /url: "#contact"
+    - generic [ref=f8e371]:
+      - generic [ref=f8e372]:
+        - heading "How each pen is prepared" [level=2] [ref=f8e373]
+        - paragraph [ref=f8e374]: Three deliberate steps between the lab bench and the sealed pen — so nothing about the product is left to chance.
+      - generic [ref=f8e375]:
+        - article [ref=f8e376]:
+          - img "Sourcing research peptides directly from certified manufacturers for Peptiva Labs" [ref=f8e378]
+          - generic [ref=f8e379]:
+            - paragraph [ref=f8e380]: 01 · Source
+            - paragraph [ref=f8e381]: Direct contracts with certified manufacturers. No grey-market resellers in the chain.
+        - article [ref=f8e382]:
+          - img "Independent purity verification of every research peptide batch at Peptiva Labs" [ref=f8e384]
+          - generic [ref=f8e385]:
+            - paragraph [ref=f8e386]: 02 · Verify
+            - paragraph [ref=f8e387]: Independent purity and concentration checks on every batch before it touches a customer order.
+        - article [ref=f8e388]:
+          - img "Sealed and tamper-evident research peptide pens ready for research use" [ref=f8e390]
+          - generic [ref=f8e391]:
+            - paragraph [ref=f8e392]: 03 · Seal
+            - paragraph [ref=f8e393]: Cold-stored and tamper-sealed, with accurate labelling on every pen before it leaves the shelf.
+    - generic [ref=f8e396]:
+      - generic [ref=f8e397]:
+        - img "Research peptide pen from the Peptiva Labs catalogue" [ref=f8e401]
+        - img "Lab-tested BPC-157 research peptide by Peptiva Labs" [ref=f8e405]
+        - img "Tirzepatide research peptide pen from Peptiva Labs" [ref=f8e409]
+        - img "Retatrutide research peptide from Peptiva Labs" [ref=f8e413]
+        - img "Glow multi-compound reference peptide blend from Peptiva Labs" [ref=f8e417]
+        - img "Sealed research peptide pen from Peptiva Labs" [ref=f8e421]
+      - generic [ref=f8e422]:
+        - heading "Ready to order? Browse the catalogue" [level=2] [ref=f8e423]
+        - link "Start your order" [ref=f8e424] [cursor=pointer]:
+          - /url: /products
+    - generic [ref=f8e426]:
+      - heading "What our customers say" [level=2] [ref=f8e427]
+      - generic [ref=f8e428]:
+        - img "Hassan Al Marri, Independent researcher" [ref=f8e430]
+        - figure "Hassan Al Marri Independent researcher" [ref=f8e431]:
+          - blockquote [ref=f8e435]: Packaging was easily the cleanest I've seen from any research peptide supplier — sealed, labelled and cold-stored properly. Replies on WhatsApp arrived in minutes.
+          - generic [ref=f8e436]:
+            - generic [ref=f8e437]: Hassan Al Marri
+            - generic [ref=f8e438]: Independent researcher
+      - generic [ref=f8e439]:
+        - button "Testimonial 1" [ref=f8e440] [cursor=pointer]
+        - button "Testimonial 2" [ref=f8e442] [cursor=pointer]
+        - button "Testimonial 3" [ref=f8e444] [cursor=pointer]
+  - contentinfo [ref=f8e446]:
+    - generic [ref=f8e448]:
+      - generic [ref=f8e449]:
+        - generic [ref=f8e450]:
+          - generic [ref=f8e451]: Peptiva Labs
+          - paragraph [ref=f8e460]:
+            - link "sales@peptivalabs.com" [ref=f8e461] [cursor=pointer]:
+              - /url: mailto:sales@peptivalabs.com
+          - generic [ref=f8e462]:
+            - paragraph [ref=f8e463]: Newsletter
+            - paragraph [ref=f8e464]: Batch drops, storage tips, sourcing notes. No spam.
+            - generic [ref=f8e465]:
+              - textbox "you@lab.com" [ref=f8e466]
+              - button "Subscribe" [disabled] [ref=f8e467]
+            - generic [ref=f8e468]:
+              - checkbox "I agree to receive research updates." [checked] [ref=f8e469]
+              - text: I agree to receive research updates.
+        - generic [ref=f8e470]:
+          - generic [ref=f8e471]:
+            - heading "Catalogue" [level=3] [ref=f8e472]
+            - list [ref=f8e473]:
+              - listitem [ref=f8e474]:
+                - link "Shop all products" [ref=f8e475] [cursor=pointer]:
+                  - /url: /products
+              - listitem [ref=f8e476]:
+                - link "BPC-157 + TB-500" [ref=f8e477] [cursor=pointer]:
+                  - /url: /products/bpc-157-tb-500
+              - listitem [ref=f8e478]:
+                - link "Glow" [ref=f8e479] [cursor=pointer]:
+                  - /url: /products/glow
+              - listitem [ref=f8e480]:
+                - link "Retatrutide 20mg" [ref=f8e481] [cursor=pointer]:
+                  - /url: /products/retatrutide
+              - listitem [ref=f8e482]:
+                - link "Tirzepatide" [ref=f8e483] [cursor=pointer]:
+                  - /url: /products/tirzepatide
+              - listitem [ref=f8e484]:
+                - link "Retatrutide 40mg" [ref=f8e485] [cursor=pointer]:
+                  - /url: /products/retatrutide-40mg
+              - listitem [ref=f8e486]:
+                - link "NAD+ 1,000mg" [ref=f8e487] [cursor=pointer]:
+                  - /url: /products/nad-plus-1000mg
+          - generic [ref=f8e488]:
+            - heading "Company" [level=3] [ref=f8e489]
+            - list [ref=f8e490]:
+              - listitem [ref=f8e491]:
+                - link "About Peptiva Labs" [ref=f8e492] [cursor=pointer]:
+                  - /url: /#about
+              - listitem [ref=f8e493]:
+                - link "How we source" [ref=f8e494] [cursor=pointer]:
+                  - /url: /#why
+              - listitem [ref=f8e495]:
+                - link "Reviews" [ref=f8e496] [cursor=pointer]:
+                  - /url: /#testimonial
+              - listitem [ref=f8e497]:
+                - link "Press" [ref=f8e498] [cursor=pointer]:
+                  - /url: /press
+              - listitem [ref=f8e499]:
+                - link "Contact" [ref=f8e500] [cursor=pointer]:
+                  - /url: /#contact
+          - generic [ref=f8e501]:
+            - heading "Support" [level=3] [ref=f8e502]
+            - list [ref=f8e503]:
+              - listitem [ref=f8e504]:
+                - link "Track order" [ref=f8e505] [cursor=pointer]:
+                  - /url: /track-order
+              - listitem [ref=f8e506]:
+                - link "Cart" [ref=f8e507] [cursor=pointer]:
+                  - /url: /cart
+              - listitem [ref=f8e508]:
+                - link "Account" [ref=f8e509] [cursor=pointer]:
+                  - /url: /account
+              - listitem [ref=f8e510]:
+                - link "Sign in" [ref=f8e511] [cursor=pointer]:
+                  - /url: /login
+          - generic [ref=f8e512]:
+            - heading "Legal" [level=3] [ref=f8e513]
+            - list [ref=f8e514]:
+              - listitem [ref=f8e515]:
+                - link "Shipping Policy" [ref=f8e516] [cursor=pointer]:
+                  - /url: /shipping-policy
+              - listitem [ref=f8e517]:
+                - link "Refund Policy" [ref=f8e518] [cursor=pointer]:
+                  - /url: /refund-policy
+              - listitem [ref=f8e519]:
+                - link "Privacy Policy" [ref=f8e520] [cursor=pointer]:
+                  - /url: /privacy-policy
+              - listitem [ref=f8e521]:
+                - link "Terms of Service" [ref=f8e522] [cursor=pointer]:
+                  - /url: /terms-of-service
+      - generic [ref=f8e523]: Peptiva
+      - generic [ref=f8e526]:
+        - paragraph [ref=f8e527]: © 2026 Peptiva Labs. All rights reserved. For research use only.
+        - generic [ref=f8e528]:
+          - link "Privacy" [ref=f8e529] [cursor=pointer]:
+            - /url: /privacy-policy
+          - link "Terms" [ref=f8e530] [cursor=pointer]:
+            - /url: /terms-of-service
+          - link "Refunds" [ref=f8e531] [cursor=pointer]:
+            - /url: /refund-policy

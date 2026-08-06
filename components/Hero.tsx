@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { gsap } from "gsap";
 
 const HERO_IMAGES: { src: string; alt: string }[] = [
@@ -126,9 +127,9 @@ export default function Hero() {
             not for human or veterinary use.
           </p>
           <div data-hero-foot className="flex flex-wrap items-center gap-3 w-full md:w-auto">
-            <a href="#products" className="btn-dark">
+            <Link href="/products" className="btn-dark">
               Browse catalogue
-            </a>
+            </Link>
           </div>
         </div>
       </div>
