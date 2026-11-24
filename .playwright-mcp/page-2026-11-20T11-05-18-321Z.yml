@@ -1,0 +1,584 @@
+- generic [active] [ref=f71e1]:
+  - link "Skip to content" [ref=f71e2] [cursor=pointer]:
+    - /url: "#home"
+  - generic [ref=f71e5]:
+    - link "Third-party tested — view reports" [ref=f71e7] [cursor=pointer]:
+      - /url: /#why
+      - text: Third-party tested — view reports
+      - generic [aria-hidden] [ref=f71e8]: →
+    - generic [ref=f71e10]:
+      - generic [ref=f71e27]: "4.8"
+      - generic [ref=f71e28]: rating
+    - generic [ref=f71e29]: Cold-chain shipping on every order
+  - banner [ref=f71e31]:
+    - generic [ref=f71e33]:
+      - link "Peptiva Labs home" [ref=f71e34] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f71e35]:
+          - text: Peptiva
+          - generic [ref=f71e36]: Labs
+          - generic [aria-hidden] [ref=f71e37]: ®
+      - navigation [ref=f71e38]:
+        - link "Shop" [ref=f71e40] [cursor=pointer]:
+          - /url: /products
+        - link "Science" [ref=f71e41] [cursor=pointer]:
+          - /url: /science
+        - link "Reviews" [ref=f71e42] [cursor=pointer]:
+          - /url: /reviews
+        - link "About" [ref=f71e43] [cursor=pointer]:
+          - /url: /about
+        - link "Contact" [ref=f71e44] [cursor=pointer]:
+          - /url: /contact
+      - generic [ref=f71e45]:
+        - link "Cart, 0 items" [ref=f71e46] [cursor=pointer]:
+          - /url: /cart
+          - generic [ref=f71e51]: Cart
+        - button "Search" [ref=f71e52] [cursor=pointer]
+  - generic [aria-hidden]:
+    - button
+    - generic:
+      - generic:
+        - textbox:
+          - /placeholder: Search products
+        - button
+      - generic:
+        - link:
+          - /url: /products/bpc-157-tb-500
+          - generic:
+            - generic: BPC-157 + TB-500
+            - generic: 40 mg dual blend
+        - link:
+          - /url: /products/glow
+          - generic:
+            - generic: Glow
+            - generic: 5 mg · 70 mg options
+        - link:
+          - /url: /products/retatrutide
+          - generic:
+            - generic: Retatrutide 20mg
+            - generic: 20 mg pre-filled pen
+        - link:
+          - /url: /products/tirzepatide
+          - generic:
+            - generic: Tirzepatide
+            - generic: 5 / 20 / 40 mg
+  - main [ref=f71e59]:
+    - generic [ref=f71e60]:
+      - heading "Shop all research products" [level=1] [ref=f71e61]
+      - generic [ref=f71e63]:
+        - paragraph [ref=f71e64]: Shop by research goal
+        - tablist "Filter by research goal" [ref=f71e65]:
+          - tab "View all" [selected] [ref=f71e66] [cursor=pointer]
+          - tab "Blends" [ref=f71e69] [cursor=pointer]
+          - tab "Metabolic" [ref=f71e72] [cursor=pointer]
+          - tab "Recovery" [ref=f71e75] [cursor=pointer]
+          - tab "Skin & hair" [ref=f71e78] [cursor=pointer]
+          - tab "Anti-ageing" [ref=f71e81] [cursor=pointer]
+          - tab "Energy" [ref=f71e84] [cursor=pointer]
+        - generic [ref=f71e87]:
+          - link "Bundle & save up to 15%" [ref=f71e88] [cursor=pointer]:
+            - /url: "#bundles"
+          - generic [ref=f71e89]:
+            - generic [ref=f71e90]: Sort products
+            - combobox "Sort products" [ref=f71e91]:
+              - option "Sort by" [selected]
+              - 'option "Price: low to high"'
+              - 'option "Price: high to low"'
+              - option "Top rated"
+      - generic [ref=f71e93]:
+        - article [ref=f71e94]:
+          - heading [level=3] [ref=f71e95]:
+            - link "BPC-157 + TB-500" [ref=f71e96] [cursor=pointer]:
+              - /url: /products/bpc-157-tb-500
+          - generic [ref=f71e97]:
+            - img "Rated 4.8 out of 5" [ref=f71e98]
+            - generic [ref=f71e114]: 412 reviews
+          - generic [ref=f71e115]:
+            - link "Certificate of analysis" [ref=f71e116] [cursor=pointer]:
+              - /url: /products/bpc-157-tb-500#analysis
+            - link "What's in the kit" [ref=f71e117] [cursor=pointer]:
+              - /url: /products/bpc-157-tb-500#contents
+          - link [ref=f71e118] [cursor=pointer]:
+            - /url: /products/bpc-157-tb-500
+            - img "BPC-157 + TB-500" [ref=f71e119]
+          - paragraph [ref=f71e120]:
+            - generic [ref=f71e121]: Two widely researched peptides paired in one research-grade pre-filled pen for laboratory analysis and formulation studies.
+          - generic [ref=f71e122]:
+            - paragraph [ref=f71e123]: $ 130
+            - generic [ref=f71e124]:
+              - link "Learn more" [ref=f71e125] [cursor=pointer]:
+                - /url: /products/bpc-157-tb-500
+              - button "Add to cart" [ref=f71e126] [cursor=pointer]
+        - article [ref=f71e127]:
+          - heading "Metabolic Bundle" [level=3] [ref=f71e128]
+          - list [ref=f71e130]:
+            - listitem [ref=f71e131]:
+              - link "Tirzepatide" [ref=f71e132] [cursor=pointer]:
+                - /url: /products/tirzepatide
+            - listitem [ref=f71e135]:
+              - link "Retatrutide 20mg" [ref=f71e136] [cursor=pointer]:
+                - /url: /products/retatrutide
+          - button "Add bundle · $ 200" [ref=f71e139] [cursor=pointer]
+        - article [ref=f71e140]:
+          - heading [level=3] [ref=f71e141]:
+            - link "Glow" [ref=f71e142] [cursor=pointer]:
+              - /url: /products/glow
+          - generic [ref=f71e143]:
+            - img "Rated 4.9 out of 5" [ref=f71e144]
+            - generic [ref=f71e160]: 287 reviews
+          - generic [ref=f71e161]:
+            - link "Certificate of analysis" [ref=f71e162] [cursor=pointer]:
+              - /url: /products/glow#analysis
+            - link "What's in the kit" [ref=f71e163] [cursor=pointer]:
+              - /url: /products/glow#contents
+          - link [ref=f71e164] [cursor=pointer]:
+            - /url: /products/glow
+            - img "Glow" [ref=f71e165]
+          - paragraph [ref=f71e166]:
+            - generic [ref=f71e167]: A multi-compound peptide reference blend supplied in a pre-filled research pen for laboratory analysis and formulation studies.
+          - generic [ref=f71e168]:
+            - paragraph [ref=f71e169]: from $ 100
+            - generic [ref=f71e170]:
+              - link "Learn more" [ref=f71e171] [cursor=pointer]:
+                - /url: /products/glow
+              - button "Add to cart" [ref=f71e172] [cursor=pointer]
+        - article [ref=f71e173]:
+          - heading [level=3] [ref=f71e174]:
+            - link "Retatrutide 20mg" [ref=f71e175] [cursor=pointer]:
+              - /url: /products/retatrutide
+          - generic [ref=f71e176]:
+            - img "Rated 4.7 out of 5" [ref=f71e177]
+            - generic [ref=f71e193]: 531 reviews
+          - generic [ref=f71e194]:
+            - link "Certificate of analysis" [ref=f71e195] [cursor=pointer]:
+              - /url: /products/retatrutide#analysis
+            - link "What's in the kit" [ref=f71e196] [cursor=pointer]:
+              - /url: /products/retatrutide#contents
+          - link [ref=f71e197] [cursor=pointer]:
+            - /url: /products/retatrutide
+            - img "Retatrutide 20mg" [ref=f71e198]
+          - paragraph [ref=f71e199]:
+            - generic [ref=f71e200]: Triple-agonist reference peptide in a sealed 20 mg pre-filled research pen, batch-tested before it leaves the shelf.
+          - generic [ref=f71e201]:
+            - paragraph [ref=f71e202]: $ 100
+            - generic [ref=f71e203]:
+              - link "Learn more" [ref=f71e204] [cursor=pointer]:
+                - /url: /products/retatrutide
+              - button "Add to cart" [ref=f71e205] [cursor=pointer]
+        - article [ref=f71e206]:
+          - heading "Anti-ageing Bundle" [level=3] [ref=f71e207]
+          - list [ref=f71e209]:
+            - listitem [ref=f71e210]:
+              - link "Glow" [ref=f71e211] [cursor=pointer]:
+                - /url: /products/glow
+            - listitem [ref=f71e214]:
+              - link "NAD+ 1,000mg" [ref=f71e215] [cursor=pointer]:
+                - /url: /products/nad-plus-1000mg
+          - button "Add bundle · $ 240" [ref=f71e218] [cursor=pointer]
+        - article [ref=f71e219]:
+          - heading [level=3] [ref=f71e220]:
+            - link "Tirzepatide" [ref=f71e221] [cursor=pointer]:
+              - /url: /products/tirzepatide
+          - generic [ref=f71e222]:
+            - img "Rated 4.8 out of 5" [ref=f71e223]
+            - generic [ref=f71e239]: 698 reviews
+          - generic [ref=f71e240]:
+            - link "Certificate of analysis" [ref=f71e241] [cursor=pointer]:
+              - /url: /products/tirzepatide#analysis
+            - link "What's in the kit" [ref=f71e242] [cursor=pointer]:
+              - /url: /products/tirzepatide#contents
+          - link [ref=f71e243] [cursor=pointer]:
+            - /url: /products/tirzepatide
+            - img "Tirzepatide" [ref=f71e244]
+          - paragraph [ref=f71e245]:
+            - generic [ref=f71e246]: Dual-agonist GLP-1 / GIP reference peptide stocked in three concentrations to suit different research study designs.
+          - generic [ref=f71e247]:
+            - paragraph [ref=f71e248]: from $ 100
+            - generic [ref=f71e249]:
+              - link "Learn more" [ref=f71e250] [cursor=pointer]:
+                - /url: /products/tirzepatide
+              - button "Add to cart" [ref=f71e251] [cursor=pointer]
+        - article [ref=f71e252]:
+          - heading [level=3] [ref=f71e253]:
+            - link "Retatrutide 40mg" [ref=f71e254] [cursor=pointer]:
+              - /url: /products/retatrutide-40mg
+          - generic [ref=f71e255]:
+            - img "Rated 4.8 out of 5" [ref=f71e256]
+            - generic [ref=f71e272]: 244 reviews
+          - generic [ref=f71e273]:
+            - link "Certificate of analysis" [ref=f71e274] [cursor=pointer]:
+              - /url: /products/retatrutide-40mg#analysis
+            - link "What's in the kit" [ref=f71e275] [cursor=pointer]:
+              - /url: /products/retatrutide-40mg#contents
+          - link [ref=f71e276] [cursor=pointer]:
+            - /url: /products/retatrutide-40mg
+            - img "Retatrutide 40mg" [ref=f71e277]
+          - paragraph [ref=f71e278]:
+            - generic [ref=f71e279]: High-concentration 40 mg Retatrutide reference peptide in a sealed pre-filled research pen for controlled laboratory R&D applications.
+          - generic [ref=f71e280]:
+            - paragraph [ref=f71e281]: $ 180
+            - generic [ref=f71e282]:
+              - link "Learn more" [ref=f71e283] [cursor=pointer]:
+                - /url: /products/retatrutide-40mg
+              - button "Add to cart" [ref=f71e284] [cursor=pointer]
+        - article [ref=f71e285]:
+          - heading [level=3] [ref=f71e286]:
+            - link "NAD+ 1,000mg" [ref=f71e287] [cursor=pointer]:
+              - /url: /products/nad-plus-1000mg
+          - generic [ref=f71e288]:
+            - img "Rated 4.6 out of 5" [ref=f71e289]
+            - generic [ref=f71e305]: 176 reviews
+          - generic [ref=f71e306]:
+            - link "Certificate of analysis" [ref=f71e307] [cursor=pointer]:
+              - /url: /products/nad-plus-1000mg#analysis
+            - link "What's in the kit" [ref=f71e308] [cursor=pointer]:
+              - /url: /products/nad-plus-1000mg#contents
+          - link [ref=f71e309] [cursor=pointer]:
+            - /url: /products/nad-plus-1000mg
+            - img "NAD+ 1,000mg" [ref=f71e310]
+          - paragraph [ref=f71e311]:
+            - generic [ref=f71e312]: Nicotinamide Adenine Dinucleotide reference kit — two pre-filled 500 mg pens for controlled laboratory studies.
+          - generic [ref=f71e313]:
+            - paragraph [ref=f71e314]: $ 140
+            - generic [ref=f71e315]:
+              - link "Learn more" [ref=f71e316] [cursor=pointer]:
+                - /url: /products/nad-plus-1000mg
+              - button "Add to cart" [ref=f71e317] [cursor=pointer]
+        - article [ref=f71e318]:
+          - generic [ref=f71e319]: New
+          - heading [level=3] [ref=f71e320]:
+            - link "CJC-1295" [ref=f71e321] [cursor=pointer]:
+              - /url: /products/cjc-1295
+          - generic [ref=f71e322]:
+            - img "Rated 4.7 out of 5" [ref=f71e323]
+            - generic [ref=f71e339]: 86 reviews
+          - generic [ref=f71e340]:
+            - link "Certificate of analysis" [ref=f71e341] [cursor=pointer]:
+              - /url: /products/cjc-1295#analysis
+            - link "What's in the kit" [ref=f71e342] [cursor=pointer]:
+              - /url: /products/cjc-1295#contents
+          - link [ref=f71e343] [cursor=pointer]:
+            - /url: /products/cjc-1295
+            - img "CJC-1295" [ref=f71e344]
+          - paragraph [ref=f71e345]:
+            - generic [ref=f71e346]: CJC-1295 (without DAC) reference peptide in a sealed 10 mg pre-filled research pen.
+          - generic [ref=f71e347]:
+            - paragraph [ref=f71e348]: $ 110
+            - generic [ref=f71e349]:
+              - link "Learn more" [ref=f71e350] [cursor=pointer]:
+                - /url: /products/cjc-1295
+              - button "Add to cart" [ref=f71e351] [cursor=pointer]
+        - article [ref=f71e352]:
+          - heading "Recovery Bundle" [level=3] [ref=f71e353]
+          - list [ref=f71e355]:
+            - listitem [ref=f71e356]:
+              - link "BPC-157 + TB-500" [ref=f71e357] [cursor=pointer]:
+                - /url: /products/bpc-157-tb-500
+            - listitem [ref=f71e360]:
+              - link "Glow" [ref=f71e361] [cursor=pointer]:
+                - /url: /products/glow
+          - button "Add bundle · $ 230" [ref=f71e364] [cursor=pointer]
+        - article [ref=f71e365]:
+          - generic [ref=f71e366]: New
+          - heading [level=3] [ref=f71e367]:
+            - link "MOTS-C" [ref=f71e368] [cursor=pointer]:
+              - /url: /products/mots-c
+          - generic [ref=f71e369]:
+            - img "Rated 4.8 out of 5" [ref=f71e370]
+            - generic [ref=f71e386]: 104 reviews
+          - generic [ref=f71e387]:
+            - link "Certificate of analysis" [ref=f71e388] [cursor=pointer]:
+              - /url: /products/mots-c#analysis
+            - link "What's in the kit" [ref=f71e389] [cursor=pointer]:
+              - /url: /products/mots-c#contents
+          - link [ref=f71e390] [cursor=pointer]:
+            - /url: /products/mots-c
+            - img "MOTS-C" [ref=f71e391]
+          - paragraph [ref=f71e392]:
+            - generic [ref=f71e393]: MOTS-C mitochondrial-derived reference peptide in a sealed 40 mg pre-filled research pen.
+          - generic [ref=f71e394]:
+            - paragraph [ref=f71e395]: $ 140
+            - generic [ref=f71e396]:
+              - link "Learn more" [ref=f71e397] [cursor=pointer]:
+                - /url: /products/mots-c
+              - button "Add to cart" [ref=f71e398] [cursor=pointer]
+        - article [ref=f71e399]:
+          - generic [ref=f71e400]: New
+          - heading [level=3] [ref=f71e401]:
+            - link "Tesamorelin" [ref=f71e402] [cursor=pointer]:
+              - /url: /products/tesamorelin
+          - generic [ref=f71e403]:
+            - img "Rated 4.7 out of 5" [ref=f71e404]
+            - generic [ref=f71e420]: 158 reviews
+          - generic [ref=f71e421]:
+            - link "Certificate of analysis" [ref=f71e422] [cursor=pointer]:
+              - /url: /products/tesamorelin#analysis
+            - link "What's in the kit" [ref=f71e423] [cursor=pointer]:
+              - /url: /products/tesamorelin#contents
+          - link [ref=f71e424] [cursor=pointer]:
+            - /url: /products/tesamorelin
+            - img "Tesamorelin" [ref=f71e425]
+          - paragraph [ref=f71e426]:
+            - generic [ref=f71e427]: Tesamorelin reference peptide in a sealed 20 mg pre-filled research pen for laboratory analysis and formulation studies.
+          - generic [ref=f71e428]:
+            - paragraph [ref=f71e429]: $ 120
+            - generic [ref=f71e430]:
+              - link "Learn more" [ref=f71e431] [cursor=pointer]:
+                - /url: /products/tesamorelin
+              - button "Add to cart" [ref=f71e432] [cursor=pointer]
+      - generic [ref=f71e433]:
+        - heading "Bundles built around your research goals" [level=2] [ref=f71e434]
+        - generic [ref=f71e437]:
+          - group "Research bundles" [ref=f71e438]:
+            - article [ref=f71e440]:
+              - generic [ref=f71e442]:
+                - heading "Metabolic" [level=3] [ref=f71e443]
+                - paragraph [ref=f71e444]: Pair a dual and a triple agonist across one metabolic study design.
+              - list [ref=f71e446]:
+                - listitem [ref=f71e447]:
+                  - link "Tirzepatide" [ref=f71e448] [cursor=pointer]:
+                    - /url: /products/tirzepatide
+                - listitem [ref=f71e451]:
+                  - link "Retatrutide 20mg" [ref=f71e452] [cursor=pointer]:
+                    - /url: /products/retatrutide
+              - button "Bundle and save · $ 200" [ref=f71e455] [cursor=pointer]
+            - article [ref=f71e457]:
+              - generic [ref=f71e459]:
+                - heading "Anti-ageing" [level=3] [ref=f71e460]
+                - paragraph [ref=f71e461]: GHK-Cu blend alongside NAD+ for cellular-repair and skin research.
+              - list [ref=f71e463]:
+                - listitem [ref=f71e464]:
+                  - link "Glow" [ref=f71e465] [cursor=pointer]:
+                    - /url: /products/glow
+                - listitem [ref=f71e468]:
+                  - link "NAD+ 1,000mg" [ref=f71e469] [cursor=pointer]:
+                    - /url: /products/nad-plus-1000mg
+              - button "Bundle and save · $ 240" [ref=f71e472] [cursor=pointer]
+            - article [ref=f71e474]:
+              - generic [ref=f71e476]:
+                - heading "Recovery" [level=3] [ref=f71e477]
+                - paragraph [ref=f71e478]: Two tissue-repair blends for side-by-side recovery protocols.
+              - list [ref=f71e480]:
+                - listitem [ref=f71e481]:
+                  - link "BPC-157 + TB-500" [ref=f71e482] [cursor=pointer]:
+                    - /url: /products/bpc-157-tb-500
+                - listitem [ref=f71e485]:
+                  - link "Glow" [ref=f71e486] [cursor=pointer]:
+                    - /url: /products/glow
+              - button "Bundle and save · $ 230" [ref=f71e489] [cursor=pointer]
+          - generic:
+            - button "Previous" [disabled] [ref=f71e490]
+            - button "Next" [ref=f71e493] [cursor=pointer]
+      - generic [ref=f71e496]:
+        - generic [ref=f71e497]:
+          - generic [ref=f71e499]:
+            - heading "Backed by real analysis" [level=2] [ref=f71e500]
+            - paragraph [ref=f71e501]: Every batch is assayed by Janoshik Analytical before it is listed. Batch codes, measured content and public verification links — not marketing claims.
+            - link "See the lab results" [ref=f71e502] [cursor=pointer]:
+              - /url: /science
+          - generic [aria-hidden]:
+            - generic:
+              - generic:
+                - paragraph: Backed by real analysis
+                - heading [level=3]: "Tirzepatide: 99.85% purity"
+                - paragraph: Measured by Janoshik Analytical, batch TR786PAOS. The full report and verification link are on the product page.
+                - link:
+                  - /url: /products/tirzepatide#analysis
+                  - text: View lab report
+          - generic [aria-hidden]:
+            - generic:
+              - generic:
+                - paragraph: Backed by real analysis
+                - heading [level=3]: "Glow: 25.8 mg GHK-Cu"
+                - paragraph: Measured by Janoshik Analytical, batch GL0621XSA. The full report and verification link are on the product page.
+                - link:
+                  - /url: /products/glow#analysis
+                  - text: View lab report
+          - generic [aria-hidden]:
+            - generic:
+              - generic:
+                - paragraph: Backed by real analysis
+                - heading [level=3]: MOTS-C — coming soon
+                - paragraph: Batches are being tested now. The independent report is published the day it is released.
+                - link:
+                  - /url: /products/mots-c
+                  - text: Register interest
+        - generic [ref=f71e504]:
+          - button "Show slide 1" [ref=f71e505] [cursor=pointer]
+          - button "Show slide 2" [ref=f71e507] [cursor=pointer]
+          - button "Show slide 3" [ref=f71e509] [cursor=pointer]
+          - button "Show slide 4" [ref=f71e511] [cursor=pointer]
+      - generic [ref=f71e513]:
+        - heading "Lab results" [level=2] [ref=f71e514]
+        - generic [ref=f71e515]:
+          - generic [ref=f71e516]:
+            - paragraph [ref=f71e518]: BPC-157 + TB-500
+            - paragraph [ref=f71e519]: 21.99 mg
+            - paragraph [ref=f71e520]: of BPC-157 measured per device
+            - link "Learn more" [ref=f71e521] [cursor=pointer]:
+              - /url: /products/bpc-157-tb-500#analysis
+          - generic [ref=f71e522]:
+            - paragraph [ref=f71e524]: Glow
+            - paragraph [ref=f71e525]: 25.8 mg
+            - paragraph [ref=f71e526]: of GHK-Cu measured per device
+            - link "Learn more" [ref=f71e527] [cursor=pointer]:
+              - /url: /products/glow#analysis
+          - generic [ref=f71e528]:
+            - paragraph [ref=f71e530]: Retatrutide 20mg
+            - paragraph [ref=f71e531]: 99.21%
+            - paragraph [ref=f71e532]: purity confirmed by Janoshik Analytical
+            - link "Learn more" [ref=f71e533] [cursor=pointer]:
+              - /url: /products/retatrutide#analysis
+          - generic [ref=f71e534]:
+            - paragraph [ref=f71e536]: Tirzepatide
+            - paragraph [ref=f71e537]: 99.85%
+            - paragraph [ref=f71e538]: purity confirmed by Janoshik Analytical
+            - link "Learn more" [ref=f71e539] [cursor=pointer]:
+              - /url: /products/tirzepatide#analysis
+      - complementary "Research-use compliance disclaimer" [ref=f71e540]:
+        - generic [ref=f71e541]:
+          - paragraph [ref=f71e542]: For research purposes only
+          - paragraph [ref=f71e543]: Not intended for human or veterinary use. Not intended to diagnose, treat, cure, or prevent any disease. Products are supplied strictly for laboratory and analytical research conducted by qualified professionals. By purchasing, you confirm you are ordering these products for research use only.
+  - contentinfo [ref=f71e544]:
+    - generic [ref=f71e545]:
+      - generic [ref=f71e547]:
+        - generic [ref=f71e548]:
+          - paragraph [ref=f71e549]: Start with our best sellers
+          - paragraph [ref=f71e550]: Trending right now
+        - generic [ref=f71e551]:
+          - link "BPC-157 + TB-500 $ 130" [ref=f71e552] [cursor=pointer]:
+            - /url: /products/bpc-157-tb-500
+            - generic [ref=f71e554]: BPC-157 + TB-500
+            - generic [ref=f71e555]: $ 130
+          - link "Glow from $ 100" [ref=f71e558] [cursor=pointer]:
+            - /url: /products/glow
+            - generic [ref=f71e560]: Glow
+            - generic [ref=f71e561]: from $ 100
+          - link "Retatrutide 20mg $ 100" [ref=f71e564] [cursor=pointer]:
+            - /url: /products/retatrutide
+            - generic [ref=f71e566]: Retatrutide 20mg
+            - generic [ref=f71e567]: $ 100
+          - link "Shop the full range" [ref=f71e570] [cursor=pointer]:
+            - /url: /products
+      - generic [ref=f71e578]:
+        - generic [ref=f71e579]:
+          - heading "Help with your order" [level=3] [ref=f71e580]
+          - list [ref=f71e581]:
+            - listitem [ref=f71e582]:
+              - link "My account" [ref=f71e583] [cursor=pointer]:
+                - /url: /account
+            - listitem [ref=f71e588]:
+              - link "Track my order" [ref=f71e589] [cursor=pointer]:
+                - /url: /track-order
+            - listitem [ref=f71e596]:
+              - link "Delivery" [ref=f71e597] [cursor=pointer]:
+                - /url: /shipping-policy
+            - listitem [ref=f71e603]:
+              - link "Contact us" [ref=f71e604] [cursor=pointer]:
+                - /url: /contact
+        - generic [ref=f71e609]:
+          - heading "Shop" [level=3] [ref=f71e610]
+          - list [ref=f71e611]:
+            - listitem [ref=f71e612]:
+              - link "All products" [ref=f71e613] [cursor=pointer]:
+                - /url: /products
+            - listitem [ref=f71e614]:
+              - link "Your cart" [ref=f71e615] [cursor=pointer]:
+                - /url: /cart
+            - listitem [ref=f71e616]:
+              - link "Checkout" [ref=f71e617] [cursor=pointer]:
+                - /url: /checkout
+        - generic [ref=f71e618]:
+          - heading "Science" [level=3] [ref=f71e619]
+          - list [ref=f71e620]:
+            - listitem [ref=f71e621]:
+              - link "BPC-157 + TB-500" [ref=f71e622] [cursor=pointer]:
+                - /url: /products/bpc-157-tb-500
+            - listitem [ref=f71e623]:
+              - link "Tirzepatide" [ref=f71e624] [cursor=pointer]:
+                - /url: /products/tirzepatide
+            - listitem [ref=f71e625]:
+              - link "Retatrutide" [ref=f71e626] [cursor=pointer]:
+                - /url: /products/retatrutide
+            - listitem [ref=f71e627]:
+              - link "Glow" [ref=f71e628] [cursor=pointer]:
+                - /url: /products/glow
+            - listitem [ref=f71e629]:
+              - link "NAD+" [ref=f71e630] [cursor=pointer]:
+                - /url: /products/nad-plus-1000mg
+        - generic [ref=f71e631]:
+          - heading "Company & reviews" [level=3] [ref=f71e632]
+          - list [ref=f71e633]:
+            - listitem [ref=f71e634]:
+              - link "About" [ref=f71e635] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=f71e636]:
+              - link "How we verify" [ref=f71e637] [cursor=pointer]:
+                - /url: /science
+            - listitem [ref=f71e638]:
+              - link "Customer reviews" [ref=f71e639] [cursor=pointer]:
+                - /url: /reviews
+            - listitem [ref=f71e640]:
+              - link "Press" [ref=f71e641] [cursor=pointer]:
+                - /url: /press
+        - generic [ref=f71e642]:
+          - heading "Policies" [level=3] [ref=f71e643]
+          - list [ref=f71e644]:
+            - listitem [ref=f71e645]:
+              - link "Shipping policy" [ref=f71e646] [cursor=pointer]:
+                - /url: /shipping-policy
+            - listitem [ref=f71e647]:
+              - link "Refund policy" [ref=f71e648] [cursor=pointer]:
+                - /url: /refund-policy
+            - listitem [ref=f71e649]:
+              - link "Privacy policy" [ref=f71e650] [cursor=pointer]:
+                - /url: /privacy-policy
+            - listitem [ref=f71e651]:
+              - link "Terms of service" [ref=f71e652] [cursor=pointer]:
+                - /url: /terms-of-service
+      - generic [ref=f71e654]:
+        - generic [ref=f71e655]:
+          - paragraph [ref=f71e656]: Stay in touch
+          - paragraph [ref=f71e657]: Batch drops and early access.
+        - generic [ref=f71e658]:
+          - generic [ref=f71e659]:
+            - generic [ref=f71e660]:
+              - textbox "Email address" [ref=f71e661]
+              - button "Join" [disabled] [ref=f71e662]
+            - generic [ref=f71e665]:
+              - checkbox "I agree to receive research updates. Unsubscribe anytime." [checked] [ref=f71e666]
+              - text: I agree to receive research updates. Unsubscribe anytime.
+          - generic [ref=f71e667]:
+            - link "Peptiva Labs on Instagram" [ref=f71e668] [cursor=pointer]:
+              - /url: https://instagram.com
+            - link "Peptiva Labs on LinkedIn" [ref=f71e673] [cursor=pointer]:
+              - /url: https://linkedin.com
+      - generic [ref=f71e677]:
+        - generic [ref=f71e678]:
+          - generic [ref=f71e679]:
+            - text: Peptiva
+            - generic [ref=f71e680]: Labs
+            - generic [aria-hidden] [ref=f71e681]: ®
+          - paragraph [ref=f71e682]: Reference-grade research materials, verified.
+          - paragraph [ref=f71e683]: © 2026 Peptiva Labs. All rights reserved. For laboratory research use only — not for human or veterinary use.
+        - generic [ref=f71e684]:
+          - generic [ref=f71e685]:
+            - generic [ref=f71e686]: United Arab Emirates · USD $
+            - generic [ref=f71e687]: English
+          - paragraph [ref=f71e688]:
+            - text: Something else?
+            - link "Contact us" [ref=f71e689] [cursor=pointer]:
+              - /url: /contact
+          - list [ref=f71e690]:
+            - listitem [ref=f71e691]:
+              - link "Privacy policy" [ref=f71e692] [cursor=pointer]:
+                - /url: /privacy-policy
+            - listitem [ref=f71e693]:
+              - link "Shipping and returns" [ref=f71e694] [cursor=pointer]:
+                - /url: /shipping-policy
+            - listitem [ref=f71e695]:
+              - link "Refund policy" [ref=f71e696] [cursor=pointer]:
+                - /url: /refund-policy
+            - listitem [ref=f71e697]:
+              - link "Terms of service" [ref=f71e698] [cursor=pointer]:
+                - /url: /terms-of-service

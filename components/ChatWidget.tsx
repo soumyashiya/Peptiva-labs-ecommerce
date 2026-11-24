@@ -104,7 +104,7 @@ export default function ChatWidget() {
         type="button"
         aria-label={open ? "Close assistant" : "Open assistant"}
         onClick={() => setOpen((v) => !v)}
-        className="fixed bottom-5 right-5 z-40 inline-flex h-14 w-14 items-center justify-center rounded-full bg-ink_btn text-white shadow-card transition-transform hover:scale-105"
+        className="fixed bottom-5 right-5 z-40 inline-flex h-14 w-14 items-center justify-center rounded-full bg-black text-white shadow-soft transition-transform hover:scale-105"
       >
         {open ? (
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
@@ -130,7 +130,7 @@ export default function ChatWidget() {
       {/* Panel */}
       <div
         ref={panelRef}
-        className={`fixed inset-x-4 bottom-24 z-40 flex flex-col overflow-hidden rounded-card border border-line bg-white shadow-card transition-all duration-200 sm:bottom-24 sm:right-5 sm:left-auto sm:w-[380px] ${
+        className={`fixed inset-x-4 bottom-24 z-40 flex flex-col overflow-hidden rounded-lg border border-grey-200 bg-white shadow-soft transition-all duration-200 sm:bottom-24 sm:right-5 sm:left-auto sm:w-[380px] ${
           open
             ? "pointer-events-auto translate-y-0 opacity-100"
             : "pointer-events-none translate-y-3 opacity-0"
@@ -140,9 +140,9 @@ export default function ChatWidget() {
         aria-label="Research assistant"
       >
         {/* Header */}
-        <div className="flex items-center justify-between border-b border-line px-4 py-3">
+        <div className="flex items-center justify-between border-b border-grey-200 px-4 py-3">
           <div className="flex items-center gap-2">
-            <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-ink_btn text-white">
+            <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-black text-white">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
                 <path
                   d="M12 2v3M12 19v3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M2 12h3M19 12h3M4.9 19.1L7 17M17 7l2.1-2.1"
@@ -154,10 +154,10 @@ export default function ChatWidget() {
               </svg>
             </span>
             <div>
-              <p className="text-[13px] font-medium text-ink">
+              <p className="text-small font-medium text-black">
                 Research assistant
               </p>
-              <p className="text-[11px] text-ink-muted">
+              <p className="text-small text-grey-600">
                 Ask about compounds, storage, or sourcing.
               </p>
             </div>
@@ -165,7 +165,7 @@ export default function ChatWidget() {
           <button
             type="button"
             onClick={() => setOpen(false)}
-            className="rounded-md p-1 text-ink-secondary hover:bg-canvas hover:text-ink"
+            className="rounded-md p-1 text-grey-700 hover:bg-white hover:text-black"
             aria-label="Close"
           >
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
@@ -186,7 +186,7 @@ export default function ChatWidget() {
         >
           {messages.length === 0 && (
             <div>
-              <p className="text-[13px] text-ink-secondary">
+              <p className="text-small text-grey-700">
                 Hi. I&rsquo;m your research assistant — ask me anything about the
                 Peptiva Labs catalogue.
               </p>
@@ -197,7 +197,7 @@ export default function ChatWidget() {
                       key={s}
                       type="button"
                       onClick={() => void send(s)}
-                      className="text-left rounded-xl border border-line bg-canvas px-3 py-2 text-[12px] text-ink transition-colors hover:bg-white"
+                      className="text-left rounded-xl border border-grey-200 bg-white px-3 py-2 text-small text-black transition-colors hover:bg-white"
                     >
                       {s}
                     </button>
@@ -214,10 +214,10 @@ export default function ChatWidget() {
                 className={`flex ${m.role === "user" ? "justify-end" : "justify-start"}`}
               >
                 <div
-                  className={`max-w-[85%] whitespace-pre-wrap rounded-2xl px-3.5 py-2.5 text-[13px] leading-relaxed ${
+                  className={`max-w-[85%] whitespace-pre-wrap rounded-2xl px-3.5 py-2.5 text-small leading-relaxed ${
                     m.role === "user"
-                      ? "bg-ink_btn text-white"
-                      : "bg-surface-soft text-ink"
+                      ? "bg-black text-white"
+                      : "bg-sand-100 text-black"
                   }`}
                 >
                   {m.text}
@@ -226,7 +226,7 @@ export default function ChatWidget() {
             ))}
             {busy && (
               <li className="flex justify-start">
-                <div className="flex items-center gap-1 rounded-2xl bg-surface-soft px-3.5 py-2.5">
+                <div className="flex items-center gap-1 rounded-2xl bg-sand-100 px-3.5 py-2.5">
                   <Dot delay="0ms" />
                   <Dot delay="120ms" />
                   <Dot delay="240ms" />
@@ -240,7 +240,7 @@ export default function ChatWidget() {
               {sources.map((s) => (
                 <span
                   key={s.id}
-                  className="rounded-pill border border-line bg-white px-2 py-0.5 text-[10px] text-ink-secondary"
+                  className="rounded-pill border border-grey-200 bg-white px-2 py-0.5 text-small text-grey-700"
                   title={s.id}
                 >
                   {s.title}
@@ -250,7 +250,7 @@ export default function ChatWidget() {
           )}
 
           {error && (
-            <p className="mt-3 rounded-lg border border-red-200 bg-red-50 px-3 py-2 text-[12px] text-red-700">
+            <p className="mt-3 rounded-lg border border-alert-500/30 bg-alert-50 px-3 py-2 text-small text-alert-500">
               {error}
             </p>
           )}
@@ -259,7 +259,7 @@ export default function ChatWidget() {
         {/* Composer */}
         <form
           onSubmit={handleSubmit}
-          className="flex items-end gap-2 border-t border-line p-3"
+          className="flex items-end gap-2 border-t border-grey-200 p-3"
         >
           <textarea
             value={input}
@@ -272,12 +272,12 @@ export default function ChatWidget() {
             }}
             placeholder="Ask about a compound…"
             rows={1}
-            className="max-h-28 min-h-[40px] flex-1 resize-none rounded-xl border border-line bg-white px-3 py-2 text-[13px] text-ink outline-none placeholder:text-ink-subtle focus:border-ink/30"
+            className="max-h-28 min-h-[40px] flex-1 resize-none rounded-xl border border-grey-200 bg-white px-3 py-2 text-small text-black outline-none placeholder:text-grey-600 focus:border-black"
           />
           <button
             type="submit"
             disabled={!input.trim() || busy}
-            className="inline-flex h-10 w-10 flex-none items-center justify-center rounded-full bg-ink_btn text-white transition-opacity disabled:opacity-40"
+            className="inline-flex h-10 w-10 flex-none items-center justify-center rounded-full bg-black text-white transition-opacity disabled:opacity-40"
             aria-label="Send"
           >
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
@@ -298,7 +298,7 @@ export default function ChatWidget() {
 function Dot({ delay }: { delay: string }) {
   return (
     <span
-      className="inline-block h-1.5 w-1.5 animate-bounce rounded-full bg-ink-secondary"
+      className="inline-block h-1.5 w-1.5 animate-bounce rounded-full bg-black-secondary"
       style={{ animationDelay: delay }}
     />
   );

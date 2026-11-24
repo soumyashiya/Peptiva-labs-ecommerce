@@ -280,19 +280,19 @@ export default function CheckoutPage() {
   return (
     <>
       <Navbar />
-      <main className="section-block bg-canvas pb-20 pt-28 sm:pt-32">
-        <div className="container-fluid">
+      <main className="bg-white pb-20 pt-28 sm:pt-32">
+        <div className="shell">
           {!hydrated ? (
-            <p className="mt-6 text-[15px] text-ink-secondary">Loading…</p>
+            <p className="mt-6 text-base text-grey-700">Loading…</p>
           ) : lines.length === 0 && !placed ? (
-            <div className="mx-auto flex max-w-xl flex-col items-center rounded-card border border-line bg-white p-12 text-center">
-              <h1 className="text-[clamp(28px,3.4vw,40px)] font-medium tracking-tight2 text-ink">
+            <div className="mx-auto flex max-w-xl flex-col items-center rounded-lg border border-grey-200 bg-white p-12 text-center">
+              <h1 className="text-h2 font-normal text-black">
                 Your cart is empty
               </h1>
-              <p className="mt-3 text-[15px] text-ink-secondary">
+              <p className="mt-3 text-base text-grey-700">
                 Add a compound before proceeding to checkout.
               </p>
-              <Link href="/products" className="btn-dark mt-7">
+              <Link href="/products" className="btn-primary mt-7">
                 Browse the catalogue
               </Link>
             </div>
@@ -303,15 +303,15 @@ export default function CheckoutPage() {
                 <div className="flex flex-wrap items-center gap-3">
                   <Link
                     href="/cart"
-                    className="inline-flex items-center gap-2 text-[13px] text-ink-secondary transition-colors hover:text-ink"
+                    className="inline-flex items-center gap-2 text-small text-grey-700 transition-colors hover:text-black"
                   >
                     <ArrowLeft /> Back to cart
                   </Link>
-                  <span className="text-[11px] uppercase tracking-label text-ink-muted">
+                  <span className="text-small uppercase tracking-caps text-grey-600">
                     Final step
                   </span>
                 </div>
-                <h1 className="mt-2 text-[clamp(44px,7vw,96px)] font-medium leading-[1] tracking-tight2 text-ink">
+                <h1 className="mt-2 text-h1 font-normal text-black">
                   Checkout
                 </h1>
               </div>
@@ -327,7 +327,7 @@ export default function CheckoutPage() {
                 >
                   {/* Contact */}
                   <section>
-                    <p className="text-[11px] uppercase tracking-label text-ink-muted">
+                    <p className="text-small uppercase tracking-caps text-grey-600">
                       Contact
                     </p>
                     <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -364,7 +364,7 @@ export default function CheckoutPage() {
 
                   {/* Shipping */}
                   <section className="mt-10">
-                    <p className="text-[11px] uppercase tracking-label text-ink-muted">
+                    <p className="text-small uppercase tracking-caps text-grey-600">
                       Shipping address
                     </p>
                     <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -379,7 +379,7 @@ export default function CheckoutPage() {
                         label={
                           <>
                             Address line 2{" "}
-                            <span className="text-ink-muted">(optional)</span>
+                            <span className="text-grey-600">(optional)</span>
                           </>
                         }
                         required={false}
@@ -414,7 +414,7 @@ export default function CheckoutPage() {
                   <button
                     type="submit"
                     disabled={placing}
-                    className="btn-dark mt-8 w-full justify-center disabled:opacity-60 lg:hidden"
+                    className="btn-primary mt-8 w-full justify-center disabled:opacity-60 lg:hidden"
                   >
                     {placing ? "Placing order…" : `Place order · ${formatUSD(total)}`}
                   </button>
@@ -422,8 +422,8 @@ export default function CheckoutPage() {
 
                 {/* Order summary */}
                 <aside className="lg:col-span-5">
-                  <div className="rounded-card bg-surface-dim p-6 sm:p-8 lg:sticky lg:top-28">
-                    <p className="text-[11px] uppercase tracking-label text-ink-muted">
+                  <div className="rounded-lg bg-sand-100 p-6 sm:p-8 lg:sticky lg:top-28">
+                    <p className="text-small uppercase tracking-caps text-grey-600">
                       Order summary
                     </p>
 
@@ -431,7 +431,7 @@ export default function CheckoutPage() {
                       {lines.map((l) => (
                         <li key={l.slug} className="flex items-center gap-3">
                           <div className="relative flex-none">
-                            <div className="relative h-14 w-14 overflow-hidden rounded-image bg-surface-mute">
+                            <div className="relative h-14 w-14 overflow-hidden rounded-lg bg-grey-100">
                               <Image
                                 src={l.product.img}
                                 alt={l.product.name}
@@ -440,19 +440,19 @@ export default function CheckoutPage() {
                                 className="object-cover"
                               />
                             </div>
-                            <span className="absolute -right-2 -top-2 inline-flex h-5 min-w-[20px] items-center justify-center rounded-full bg-ink_btn px-1 text-[11px] font-medium text-white ring-2 ring-surface-soft">
+                            <span className="absolute -right-2 -top-2 inline-flex h-5 min-w-[20px] items-center justify-center rounded-full bg-black px-1 text-small font-medium text-white ring-2 ring-sand-100">
                               {l.qty}
                             </span>
                           </div>
                           <div className="min-w-0 flex-1">
-                            <p className="truncate text-[14px] font-medium text-ink">
+                            <p className="truncate text-base font-medium text-black">
                               {l.product.name}
                             </p>
-                            <p className="text-[12px] text-ink-muted">
+                            <p className="text-small text-grey-600">
                               {l.product.meta}
                             </p>
                           </div>
-                          <span className="text-[14px] font-medium text-ink">
+                          <span className="text-base font-medium text-black">
                             {formatUSD(l.product.price * l.qty)}
                           </span>
                         </li>
@@ -460,21 +460,21 @@ export default function CheckoutPage() {
                     </ul>
 
                     {/* Promo code */}
-                    <div className="mt-6 border-t border-line pt-6">
+                    <div className="mt-6 border-t border-grey-200 pt-6">
                       {promo ? (
                         <div className="flex items-center justify-between rounded-pill bg-white px-4 py-2.5">
                           <div>
-                            <p className="text-[13px] font-medium text-ink">
+                            <p className="text-small font-medium text-black">
                               {promo.code} · −{promo.percent}%
                             </p>
-                            <p className="text-[11px] text-ink-muted">
+                            <p className="text-small text-grey-600">
                               Applied to subtotal
                             </p>
                           </div>
                           <button
                             type="button"
                             onClick={removePromo}
-                            className="text-[12px] text-ink-secondary underline-offset-4 hover:text-ink hover:underline"
+                            className="text-small text-grey-700 underline-offset-4 hover:text-black hover:underline"
                           >
                             Remove
                           </button>
@@ -487,13 +487,13 @@ export default function CheckoutPage() {
                               placeholder="Promo code"
                               value={promoInput}
                               onChange={(e) => setPromoInput(e.target.value)}
-                              className="min-w-0 flex-1 rounded-pill border border-line bg-white px-4 py-2.5 text-[13px] text-ink outline-none transition-colors placeholder:text-ink-subtle focus:border-ink/30"
+                              className="min-w-0 flex-1 rounded-pill border border-grey-200 bg-white px-4 py-2.5 text-small text-black outline-none transition-colors placeholder:text-grey-600 focus:border-black"
                             />
                             <button
                               type="button"
                               onClick={applyPromo}
                               disabled={promoBusy || !promoInput.trim()}
-                              className="rounded-pill border border-line bg-white px-4 py-2.5 text-[13px] font-medium text-ink transition-colors hover:bg-canvas disabled:opacity-50"
+                              className="rounded-pill border border-grey-200 bg-white px-4 py-2.5 text-small font-medium text-black transition-colors hover:bg-white disabled:opacity-50"
                             >
                               {promoBusy ? "…" : "Apply"}
                             </button>
@@ -502,37 +502,37 @@ export default function CheckoutPage() {
                       )}
                     </div>
 
-                    <div className="mt-6 flex items-center justify-between text-[14px] text-ink-secondary">
+                    <div className="mt-6 flex items-center justify-between text-base text-grey-700">
                       <span>Subtotal</span>
-                      <span className="font-medium text-ink">
+                      <span className="font-medium text-black">
                         {formatUSD(subtotal)}
                       </span>
                     </div>
-                    <div className="mt-3 flex items-center justify-between text-[14px] text-ink-secondary">
+                    <div className="mt-3 flex items-center justify-between text-base text-grey-700">
                       <span>Shipping</span>
-                      <span className="font-medium text-ink">
+                      <span className="font-medium text-black">
                         {formatUSD(shipping)}
                       </span>
                     </div>
                     {discount > 0 && (
-                      <div className="mt-3 flex items-center justify-between text-[14px] text-ink-secondary">
+                      <div className="mt-3 flex items-center justify-between text-base text-grey-700">
                         <span>Discount ({promo?.code})</span>
-                        <span className="font-medium text-ink">
+                        <span className="font-medium text-black">
                           −{formatUSD(discount)}
                         </span>
                       </div>
                     )}
-                    <div className="mt-5 flex items-center justify-between border-t border-line pt-5">
-                      <span className="text-[16px] font-medium text-ink">
+                    <div className="mt-5 flex items-center justify-between border-t border-grey-200 pt-5">
+                      <span className="text-base font-medium text-black">
                         Total
                       </span>
-                      <span className="text-[22px] font-medium text-ink">
+                      <span className="text-h3 font-normal text-black">
                         {formatUSD(total)}
                       </span>
                     </div>
 
-                    <div className="mt-6 rounded-2xl border border-line bg-white p-4 text-[11px] leading-relaxed text-ink-secondary">
-                      <p className="font-semibold uppercase tracking-label text-ink">
+                    <div className="mt-6 rounded-2xl border border-grey-200 bg-white p-4 text-small leading-relaxed text-grey-700">
+                      <p className="font-semibold uppercase tracking-caps text-black">
                         Research use only
                       </p>
                       <p className="mt-1.5">
@@ -548,14 +548,14 @@ export default function CheckoutPage() {
                       type="button"
                       onClick={placeOrder}
                       disabled={placing}
-                      className="btn-dark mt-4 hidden w-full justify-center disabled:opacity-60 lg:inline-flex"
+                      className="btn-primary mt-4 hidden w-full justify-center disabled:opacity-60 lg:inline-flex"
                     >
                       {placing
                         ? "Placing order…"
                         : `Place order · ${formatUSD(total)}`}
                     </button>
 
-                    <p className="mt-4 text-center text-[12px] leading-relaxed text-ink-muted">
+                    <p className="mt-4 text-center text-small leading-relaxed text-grey-600">
                       Payment by bank transfer. We&rsquo;ll email you secure
                       payment instructions and a capture link for your receipt.
                     </p>
@@ -605,10 +605,10 @@ function OrderPlacedModal({
       role="dialog"
       aria-modal="true"
       aria-label="Order placed"
-      className="fixed inset-0 z-50 flex items-center justify-center bg-ink/40 px-5 backdrop-blur-sm"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 px-5 backdrop-blur-sm"
     >
-      <div className="w-full max-w-md rounded-card bg-surface-soft p-8 text-center shadow-card">
-        <span className="mx-auto inline-flex h-14 w-14 items-center justify-center rounded-full bg-white text-ink">
+      <div className="w-full max-w-md rounded-lg bg-sand-100 p-8 text-center shadow-soft">
+        <span className="mx-auto inline-flex h-14 w-14 items-center justify-center rounded-full bg-white text-black">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
             <path
               d="M5 12.5l4 4 10-10"
@@ -619,12 +619,12 @@ function OrderPlacedModal({
             />
           </svg>
         </span>
-        <h2 className="mt-5 text-[26px] font-medium tracking-tight2 text-ink">
+        <h2 className="mt-5 text-[26px] font-medium text-black">
           Order confirmed
         </h2>
-        <p className="mx-auto mt-3 max-w-sm text-[14px] leading-relaxed text-ink-secondary">
+        <p className="mx-auto mt-3 max-w-sm text-base leading-relaxed text-grey-700">
           Your order is recorded. A payment-instructions email will follow to{" "}
-          <span className="font-medium text-ink">{email}</span>. If it
+          <span className="font-medium text-black">{email}</span>. If it
           doesn&rsquo;t arrive within a few minutes, message us on WhatsApp with
           your reference and we&rsquo;ll send the bank details manually.
         </p>
@@ -632,26 +632,26 @@ function OrderPlacedModal({
         <div className="mt-6 rounded-xl bg-white px-4 py-3 text-left">
           <div className="flex items-center justify-between gap-3">
             <div className="min-w-0">
-              <p className="text-[10px] uppercase tracking-label text-ink-muted">
+              <p className="text-small uppercase tracking-caps text-grey-600">
                 Order reference
               </p>
-              <p className="mt-0.5 truncate text-[13px] font-medium text-ink">
+              <p className="mt-0.5 truncate text-small font-medium text-black">
                 {orderRef}
               </p>
             </div>
             <button
               type="button"
               onClick={copyRef}
-              className="shrink-0 rounded-pill border border-line px-3 py-1.5 text-[11px] font-medium text-ink-secondary transition-colors hover:bg-canvas hover:text-ink"
+              className="shrink-0 rounded-pill border border-grey-200 px-3 py-1.5 text-small font-medium text-grey-700 transition-colors hover:bg-white hover:text-black"
             >
               {copied ? "Copied" : "Copy"}
             </button>
           </div>
-          <div className="mt-3 flex items-center justify-between border-t border-line pt-3">
-            <p className="text-[10px] uppercase tracking-label text-ink-muted">
+          <div className="mt-3 flex items-center justify-between border-t border-grey-200 pt-3">
+            <p className="text-small uppercase tracking-caps text-grey-600">
               Total
             </p>
-            <p className="text-[14px] font-medium text-ink">
+            <p className="text-base font-medium text-black">
               {formatUSD(total)}
             </p>
           </div>
@@ -660,13 +660,13 @@ function OrderPlacedModal({
         <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:justify-center">
           <Link
             href="/products"
-            className="btn-dark justify-center sm:min-w-[180px]"
+            className="btn-primary justify-center sm:min-w-[180px]"
           >
             Continue shopping
           </Link>
           <Link
             href="/track-order"
-            className="inline-flex items-center justify-center rounded-pill border border-line bg-white px-5 py-2.5 text-[14px] font-medium text-ink transition-colors hover:bg-canvas sm:min-w-[140px]"
+            className="inline-flex items-center justify-center rounded-pill border border-grey-200 bg-white px-5 py-2.5 text-base font-medium text-black transition-colors hover:bg-white sm:min-w-[140px]"
           >
             Track order
           </Link>
@@ -696,15 +696,15 @@ function Field({
   onChange,
 }: FieldProps) {
   return (
-    <label className={`flex flex-col gap-1.5 ${full ? "sm:col-span-2" : ""}`}>
-      <span className="text-[12px] font-medium text-ink">{label}</span>
+    <label className={`flex flex-col gap-2 ${full ? "sm:col-span-2" : ""}`}>
+      <span className="text-small font-medium text-black">{label}</span>
       <input
         type={type}
         required={required}
         placeholder={placeholder}
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        className="rounded-xl border border-line bg-white px-4 py-3 text-[14px] text-ink outline-none transition-colors placeholder:text-ink-subtle focus:border-ink/30"
+        className="field"
       />
     </label>
   );

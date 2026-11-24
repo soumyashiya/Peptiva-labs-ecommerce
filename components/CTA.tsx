@@ -1,297 +1,104 @@
 "use client";
 
-import { useEffect, useRef } from "react";
 import Image from "next/image";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { SplitText } from "gsap/SplitText";
+import Link from "next/link";
+import { useReveal } from "./useReveal";
 
-gsap.registerPlugin(ScrollTrigger, SplitText);
+/**
+ * Promo block + trust marks.
+ *
+ * Reference archetype: a rounded washed panel with a cut-out photograph
+ * bleeding off the left edge and the offer set right — bold all-caps heading,
+ * one supporting line, one black pill CTA. Beneath it, a row of three
+ * equal tinted tiles carrying certification marks.
+ */
 
-const CARDS = [
+const MARKS = [
   {
-    src: "/images/circle-img-seo1.webp",
-    alt: "Research peptide pen from the Peptiva Labs catalogue",
-    pos: "top-[7%] left-[8%] w-[92px] h-[116px] sm:w-[126px] sm:h-[160px]",
-    tilt: -8,
+    title: "Third-party assayed",
+    detail: "Janoshik Analytical",
+    img: "/images/verify-seo.webp",
   },
   {
-    src: "/images/circle-img-seo2.webp",
-    alt: "Lab-tested BPC-157 research peptide by Peptiva Labs",
-    pos: "top-[4%] right-[8%] w-[96px] h-[120px] sm:w-[134px] sm:h-[168px]",
-    tilt: 7,
+    title: "Sealed & tamper-evident",
+    detail: "Filled under control",
+    img: "/images/source-seo.webp",
   },
   {
-    src: "/images/circle-img3-seo.webp",
-    alt: "Tirzepatide research peptide pen from Peptiva Labs",
-    pos: "top-[39%] left-0 sm:left-[1%] w-[86px] h-[108px] sm:w-[118px] sm:h-[150px]",
-    tilt: -5,
-  },
-  {
-    src: "/images/circle-img4-seo-new.webp",
-    alt: "Retatrutide research peptide from Peptiva Labs",
-    pos: "top-[41%] right-0 sm:right-[1%] w-[86px] h-[108px] sm:w-[118px] sm:h-[150px]",
-    tilt: 6,
-  },
-  {
-    src: "/images/circle-img5.webp",
-    alt: "Glow multi-compound reference peptide blend from Peptiva Labs",
-    pos: "bottom-[7%] left-[11%] w-[92px] h-[116px] sm:w-[126px] sm:h-[160px]",
-    tilt: 5,
-  },
-  {
-    src: "/images/circle-img6-seo.webp",
-    alt: "Sealed research peptide pen from Peptiva Labs",
-    pos: "bottom-[4%] right-[11%] w-[92px] h-[116px] sm:w-[126px] sm:h-[160px]",
-    tilt: -7,
+    title: "Cold-chain shipping",
+    detail: "2–8°C, insulated",
+    img: "/images/ship-seo.webp",
   },
 ];
 
-const GRAIN =
-  "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E";
-
 export default function CTA() {
-  const root = useRef<HTMLDivElement>(null);
-  const stage = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const el = root.current;
-    const stageEl = stage.current;
-    if (!el || !stageEl) return;
-
-    const reduce = window.matchMedia(
-      "(prefers-reduced-motion: reduce)"
-    ).matches;
-
-    const ctx = gsap.context(() => {
-      const circles = gsap.utils.toArray<HTMLElement>(".orbit-circle");
-      const cards = gsap.utils.toArray<HTMLElement>(".orbit-card");
-      const inners = gsap.utils.toArray<HTMLElement>(".orbit-card-inner");
-      const glow = el.querySelector<HTMLElement>(".orbit-glow");
-      const head = el.querySelector<HTMLElement>(".orbit-head");
-      const cta = el.querySelector<HTMLElement>(".orbit-cta");
-      const cardsWrap = el.querySelector<HTMLElement>(".orbit-cards");
-      const circlesWrap = el.querySelector<HTMLElement>(".orbit-circles");
-
-      if (reduce) return; // leave everything in its natural, visible state
-
-      // Center deltas — how far each card must travel back to the center.
-      const sr = stageEl.getBoundingClientRect();
-      const cx = sr.left + sr.width / 2;
-      const cy = sr.top + sr.height / 2;
-      const deltas = cards.map((c) => {
-        const r = c.getBoundingClientRect();
-        return {
-          dx: cx - (r.left + r.width / 2),
-          dy: cy - (r.top + r.height / 2),
-        };
-      });
-
-      // Initial (collapsed-at-center) states
-      gsap.set(circles, { scale: 0.6, autoAlpha: 0, transformOrigin: "50% 50%" });
-      if (glow) gsap.set(glow, { scale: 0.6, autoAlpha: 0 });
-      cards.forEach((c, i) => {
-        gsap.set(c, {
-          x: deltas[i].dx,
-          y: deltas[i].dy,
-          scale: 0.3,
-          autoAlpha: 0,
-          rotation: gsap.utils.random(-24, 24),
-          filter: "blur(10px)",
-          transformOrigin: "50% 50%",
-        });
-      });
-      // Editorial masked line reveal for the heading (matches all sections)
-      const headSplit = head
-        ? new SplitText(head, {
-            type: "lines",
-            mask: "lines",
-            linesClass: "rv-line",
-          })
-        : null;
-      if (headSplit) {
-        gsap.set(headSplit.lines, {
-          yPercent: 115,
-          opacity: 0,
-          filter: "blur(8px)",
-        });
-      }
-      gsap.set(cta, { autoAlpha: 0, y: 22 });
-
-      const tl = gsap.timeline({
-        defaults: { ease: "power3.out" }, // ≈ cubic-bezier(.22,1,.36,1)
-        scrollTrigger: { trigger: el, start: "top 78%", once: true },
-        onComplete: startAmbient,
-      });
-
-      if (glow) tl.to(glow, { scale: 1, autoAlpha: 1, duration: 1.4 }, 0);
-      tl.to(circles, { scale: 1, autoAlpha: 1, duration: 1.4, stagger: 0.12 }, 0);
-      tl.to(
-        cards,
-        {
-          x: 0,
-          y: 0,
-          scale: 1,
-          autoAlpha: 1,
-          filter: "blur(0px)",
-          rotation: (i: number) => CARDS[i].tilt,
-          duration: 1.1,
-          ease: "back.out(1.4)", // overshoot then settle
-          stagger: 0.15,
-        },
-        0.35
-      );
-      if (headSplit) {
-        tl.to(
-          headSplit.lines,
-          {
-            yPercent: 0,
-            opacity: 1,
-            filter: "blur(0px)",
-            duration: 1.1,
-            ease: "power4.out",
-            stagger: 0.12,
-            clearProps: "filter",
-          },
-          0.9
-        );
-      }
-      tl.to(cta, { autoAlpha: 1, y: 0, duration: 0.6 }, 1.25);
-
-      function startAmbient() {
-        // Concentric circles — subtle infinite pulse
-        circles.forEach((c, i) => {
-          gsap.to(c, {
-            scale: 1.05,
-            duration: gsap.utils.random(6, 10),
-            repeat: -1,
-            yoyo: true,
-            ease: "sine.inOut",
-            delay: i * 0.5,
-          });
-        });
-        if (glow)
-          gsap.to(glow, {
-            scale: 1.1,
-            autoAlpha: 0.8,
-            duration: 8,
-            repeat: -1,
-            yoyo: true,
-            ease: "sine.inOut",
-          });
-        // Cards — continuous organic float (on the inner layer so it never
-        // fights the entrance transform on the outer element)
-        inners.forEach((c) => {
-          gsap.to(c, {
-            y: gsap.utils.random(-10, -6),
-            rotation: gsap.utils.random(-2, 2),
-            duration: gsap.utils.random(4, 6),
-            repeat: -1,
-            yoyo: true,
-            ease: "sine.inOut",
-            delay: gsap.utils.random(0, 1.5),
-          });
-        });
-      }
-
-      // Subtle parallax on pointer move (layers drift at different rates)
-      const cardX = gsap.quickTo(cardsWrap, "x", { duration: 0.7, ease: "power3.out" });
-      const cardY = gsap.quickTo(cardsWrap, "y", { duration: 0.7, ease: "power3.out" });
-      const circX = gsap.quickTo(circlesWrap, "x", { duration: 0.9, ease: "power3.out" });
-      const circY = gsap.quickTo(circlesWrap, "y", { duration: 0.9, ease: "power3.out" });
-      const onMove = (e: MouseEvent) => {
-        const r = el.getBoundingClientRect();
-        const px = (e.clientX - r.left) / r.width - 0.5;
-        const py = (e.clientY - r.top) / r.height - 0.5;
-        cardX(px * 22);
-        cardY(py * 22);
-        circX(px * 9);
-        circY(py * 9);
-      };
-      el.addEventListener("mousemove", onMove);
-      return () => el.removeEventListener("mousemove", onMove);
-    }, el);
-
-    return () => ctx.revert();
-  }, []);
+  const scope = useReveal<HTMLDivElement>();
 
   return (
-    <section
-      ref={root}
-      className="relative w-full overflow-hidden bg-canvas py-20 sm:py-28"
-    >
-      {/* Grain / noise overlay */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 z-40 opacity-[0.05] mix-blend-multiply"
-        style={{ backgroundImage: `url("${GRAIN}")`, backgroundSize: "140px 140px" }}
-      />
-
-      <div className="container-fluid">
+    <section className="bg-white">
+      <div ref={scope} className="shell">
+        {/* ---- promo panel ------------------------------------------
+            Reference geometry: 500px tall, 30px radius, lavender→sand wash.
+            The cut-out artwork sits in the left half and is cropped by the
+            panel's bottom edge; copy starts at the panel's midline with a
+            40/56 bold caps heading, a 25/40 line and a 260×52 button. */}
         <div
-          ref={stage}
-          className="relative mx-auto h-[520px] max-w-4xl sm:h-[540px]"
+          data-reveal
+          className="relative overflow-hidden rounded-[30px] bg-[linear-gradient(180deg,#F1E6FD_0%,#F9F1F6_100%)]"
         >
-          {/* Radial glow */}
-          <div
-            aria-hidden
-            className="orbit-glow pointer-events-none absolute left-1/2 top-1/2 -z-10 h-[520px] w-[520px] -translate-x-1/2 -translate-y-1/2 rounded-full"
-            style={{
-              background:
-                "radial-gradient(circle, rgba(49,41,56,0.12) 0%, rgba(49,41,56,0.04) 35%, transparent 65%)",
-            }}
-          />
-
-          {/* Concentric circles */}
-          <div className="orbit-circles pointer-events-none absolute inset-0 z-0 flex items-center justify-center">
-            {[1, 2, 3, 4].map((r) => (
-              <div
-                key={r}
-                className="orbit-circle absolute rounded-full border border-ink/10"
-                style={{
-                  width: `clamp(${r * 80}px, ${r * 20}vw, ${r * 150}px)`,
-                  height: `clamp(${r * 80}px, ${r * 20}vw, ${r * 150}px)`,
-                }}
-              />
-            ))}
+          {/* save.png: the subject with two kits on the left, plain wash on the
+              right — laid across the whole panel, copy on the plain side. */}
+          <div className="relative aspect-[1600/592] w-full lg:absolute lg:inset-0 lg:aspect-auto">
+            <Image
+              src="/new-images/save.png"
+              alt="Researcher holding two Peptiva kits"
+              fill
+              unoptimized
+              className="origin-bottom-left scale-[0.9] object-cover object-left [mask-image:linear-gradient(to_left,transparent_0%,#000_10%),linear-gradient(to_bottom,transparent_0%,#000_10%)] [mask-composite:intersect] [-webkit-mask-composite:source-in]"
+            />
           </div>
-
-          {/* Floating image cards */}
-          <div className="orbit-cards absolute inset-0 z-10">
-            {CARDS.map((c, i) => (
-              <div
-                key={i}
-                className={`orbit-card absolute ${c.pos}`}
-                style={{ willChange: "transform, opacity, filter" }}
+          <div className="relative grid lg:h-[500px] lg:grid-cols-2">
+            <div className="flex flex-col justify-center px-6 pb-10 pt-8 sm:px-12 lg:col-start-2 lg:py-0 lg:pl-[40px] lg:pr-[60px]">
+              <h2 className="max-w-[660px] text-[clamp(26px,3vw,40px)] font-bold uppercase leading-[1.4] tracking-caps text-black">
+                Save up to 15% on multi&#8209;kit research orders
+              </h2>
+              <p className="mt-5 max-w-[580px] text-[clamp(17px,1.6vw,22px)] leading-[1.8] text-black">
+                Researchers pair compounds across a study — volume pricing is
+                applied automatically at checkout.
+              </p>
+              <Link
+                href="/products"
+                className="mt-8 inline-flex h-[52px] w-[260px] items-center justify-center rounded-md bg-black text-base font-medium text-white transition-opacity duration-fast hover:opacity-85"
               >
-                <div className="orbit-card-inner h-full w-full" style={{ willChange: "transform" }}>
-                  <div className="group relative h-full w-full overflow-hidden rounded-image bg-surface-mute shadow-card transition-[transform,box-shadow] duration-300 hover:z-30 hover:scale-105 hover:shadow-[0_24px_50px_-12px_rgba(15,23,42,0.35)]">
-                    <Image
-                      src={c.src}
-                      alt={c.alt}
-                      fill
-                      sizes="168px"
-                      className="object-cover"
-                    />
-                  </div>
-                </div>
-              </div>
-            ))}
+                Bundle and save
+              </Link>
+            </div>
           </div>
+        </div>
 
-          {/* Center content */}
-          <div className="absolute inset-0 z-20 flex flex-col items-center justify-center px-4 text-center">
-            <h2 className="orbit-head text-h2 font-normal text-balance">
-              Ready to order?
-              <br /> Browse the catalogue
-            </h2>
-            <a
-              href="/products"
-              className="orbit-cta btn-dark mt-5 transition-[transform,box-shadow] duration-300 hover:scale-[1.05] hover:shadow-[0_16px_40px_-10px_rgba(26,29,32,0.55)] sm:mt-6"
+        {/* ---- certification tiles ----------------------------------- */}
+        <div
+          data-reveal
+          className="mx-auto mt-14 grid max-w-[1060px] grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-6 lg:mt-20 lg:gap-[57px]"
+        >
+          {MARKS.map((m) => (
+            <div
+              key={m.title}
+              className="flex h-[200px] flex-col items-center justify-center gap-4 rounded-[30px] bg-grad-routine px-6 text-center lg:h-[220px]"
             >
-              Start your order
-            </a>
-          </div>
+              <span className="relative h-[84px] w-[84px] overflow-hidden rounded-full bg-white">
+                <Image src={m.img} alt="" fill sizes="84px" className="object-cover" />
+              </span>
+              <span>
+                <span className="block text-base font-medium text-black">
+                  {m.title}
+                </span>
+                <span className="mt-1 block text-small text-grey-700">
+                  {m.detail}
+                </span>
+              </span>
+            </div>
+          ))}
         </div>
       </div>
     </section>

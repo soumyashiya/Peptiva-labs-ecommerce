@@ -1,81 +1,144 @@
 "use client";
 
+import { useCallback, useEffect, useState } from "react";
 import Image from "next/image";
+import { ChevronLeftIcon, ChevronRightIcon } from "./icons";
 import { useReveal } from "./useReveal";
+import CommunityStrip from "./CommunityStrip";
 
-const CASES = [
+/**
+ * Three stacked reference archetypes that always travel together:
+ *
+ *  1. an edge-bleeding media strip with the section title set hard left,
+ *  2. a full-width washed slider whose copy sits left of the artwork,
+ *  3. an oversized all-caps statement rendered in a horizontal gradient.
+ */
+
+
+const SLIDES = [
   {
-    img: "/images/source-seo.webp",
-    alt: "Sourcing research peptides directly from certified manufacturers for Peptiva Labs",
-    step: "01 · Source",
-    quote:
-      "Direct contracts with certified manufacturers. No grey-market resellers in the chain.",
-    bg: "bg-lilac",
+    title: "The most analytically honest material we can supply",
+    body: "Independently assayed, batch-coded, traceable.",
+    img: "/new-images/Chic woman presenting GLOW GHK-CU.png",
   },
   {
-    img: "/images/verify-seo.webp",
-    alt: "Independent purity verification of every research peptide batch at Peptiva Labs",
-    step: "02 · Verify",
-    quote:
-      "Independent purity and concentration checks on every batch before it touches a customer order.",
-    bg: "bg-cream",
+    title: "Fixed-volume devices, filled under control",
+    body: "No decanting, no repackaging, no guesswork.",
+    img: "/new-images/Elegant woman presenting an ALLUVI GLOW carton.png",
   },
   {
-    img: "/images/ship-seo.webp",
-    alt: "Sealed and tamper-evident research peptide pens ready for research use",
-    step: "03 · Seal",
-    quote:
-      "Cold-stored and tamper-sealed, with accurate labelling on every pen before it leaves the shelf.",
-    bg: "bg-surface-mute",
+    title: "Documented from synthesis to shipment",
+    body: "Every kit arrives with its paperwork attached.",
+    img: "/new-images/shipment.png",
   },
 ];
 
+const AUTOPLAY_MS = 7000;
+
 export default function CaseStudy() {
   const scope = useReveal<HTMLDivElement>();
+  const [index, setIndex] = useState(0);
+  const [paused, setPaused] = useState(false);
+
+  const go = useCallback(
+    (dir: 1 | -1) => setIndex((i) => (i + dir + SLIDES.length) % SLIDES.length),
+    []
+  );
+
+  useEffect(() => {
+    if (paused) return;
+    const id = window.setInterval(() => go(1), AUTOPLAY_MS);
+    return () => window.clearInterval(id);
+  }, [paused, go]);
+
+  const slide = SLIDES[index];
+
   return (
-    <section id="process" className="section-block bg-canvas py-12 sm:py-16 md:py-24">
-      <div ref={scope} className="container-fluid">
-        <div className="mx-auto max-w-2xl text-center">
-          <h2 data-reveal className="reveal-init text-h2 font-normal text-balance">
-            How each pen is prepared
-          </h2>
+    <div ref={scope}>
+      {/* ---- 1. community strip (shared component) ------------------- */}
+      <CommunityStrip />
+
+      {/* ---- 2. full-width slider ------------------------------------- */}
+      <section className="bg-white pb-4">
+        <div className="shell">
+          <div
+            data-reveal
+            className="relative overflow-hidden rounded-lg bg-grad-wash"
+            onMouseEnter={() => setPaused(true)}
+            onMouseLeave={() => setPaused(false)}
+          >
+            {/* Each slide is one wide banner (plain wash left, subject right)
+                laid across the whole panel; the copy sits on the plain side. */}
+            <div className="relative aspect-[4/3] w-full sm:aspect-[16/9] lg:absolute lg:inset-0 lg:aspect-auto">
+              {SLIDES.map((s, i) => (
+                <Image
+                  key={s.img}
+                  src={s.img}
+                  alt={i === index ? s.title : ""}
+                  fill
+                  unoptimized
+                  aria-hidden={i !== index}
+                  className={`object-cover object-[80%_100%] transition-opacity lg:object-right duration-base ease-standard ${
+                    i === index ? "opacity-100" : "opacity-0"
+                  }`}
+                />
+              ))}
+            </div>
+            <div className="relative grid items-center px-6 pb-7 pt-6 sm:p-12 lg:min-h-[460px] lg:grid-cols-2 lg:p-16 lg:pl-24">
+              <div key={index} className="animate-fade-in min-h-[150px] lg:min-h-0">
+                <h3 className="heading-editorial max-w-[15ch] text-[clamp(24px,6.5vw,40px)] leading-[1.3]">{slide.title}</h3>
+                <p className="mt-3 lead lg:mt-5">{slide.body}</p>
+              </div>
+              {/* phones: arrows are hidden, so dashes switch slides */}
+              <div className="mt-5 flex gap-2 lg:hidden">
+                {SLIDES.map((sl, n) => (
+                  <button
+                    key={sl.img}
+                    type="button"
+                    aria-label={`Show slide ${n + 1}`}
+                    aria-current={n === index ? "true" : undefined}
+                    onClick={() => setIndex(n)}
+                    className="py-2"
+                  >
+                    <span className="dash block w-8" data-active={n === index} />
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div className="pointer-events-none absolute inset-y-0 left-3 right-3 hidden items-center justify-between lg:flex">
+              <button
+                type="button"
+                onClick={() => go(-1)}
+                aria-label="Previous"
+                className="btn-round pointer-events-auto"
+              >
+                <ChevronLeftIcon />
+              </button>
+              <button
+                type="button"
+                onClick={() => go(1)}
+                aria-label="Next"
+                className="btn-round pointer-events-auto"
+              >
+                <ChevronRightIcon />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ---- 3. gradient statement ------------------------------------ */}
+      <section className="section bg-white">
+        <div className="shell">
           <p
             data-reveal
-            className="reveal-init mt-4 text-[14px] text-ink-secondary"
+            className="max-w-[16ch] bg-gradient-to-r from-berry-500 via-plum-500 to-teal-500 bg-clip-text text-band font-normal uppercase tracking-caps text-transparent"
           >
-            Three deliberate steps between the lab bench and the sealed pen —
-            so nothing about the product is left to chance.
+            Backed by real analysis, not marketing claims
           </p>
         </div>
-
-        <div className="mt-10 sm:mt-14 grid grid-cols-1 gap-4 sm:gap-5 md:grid-cols-3">
-          {CASES.map((c, i) => (
-            <article
-              key={i}
-              data-reveal
-              className={`reveal-init overflow-hidden rounded-card ${c.bg}`}
-            >
-              <div data-img-reveal className="relative aspect-[5/4] overflow-hidden">
-                <Image
-                  src={c.img}
-                  alt={c.alt}
-                  fill
-                  sizes="(min-width: 768px) 33vw, 100vw"
-                  className="object-cover"
-                />
-              </div>
-              <div className="px-5 py-4 sm:px-6 sm:py-5">
-                <p className="text-[12px] uppercase tracking-label text-ink-muted">
-                  {c.step}
-                </p>
-                <p className="mt-2 text-[14px] sm:text-[15px] leading-snug text-ink">
-                  {c.quote}
-                </p>
-              </div>
-            </article>
-          ))}
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 }

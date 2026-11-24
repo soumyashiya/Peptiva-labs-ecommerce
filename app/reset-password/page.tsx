@@ -69,61 +69,61 @@ function ResetInner() {
 
   return (
     <div className="mx-auto w-full max-w-md">
-      <p className="text-[11px] uppercase tracking-label text-ink-muted">
+      <p className="text-small uppercase tracking-caps text-grey-600">
         Peptiva Labs · Choose a new password
       </p>
-      <h1 className="mt-2 text-[clamp(36px,5vw,56px)] font-medium leading-[1] tracking-tight2 text-ink">
+      <h1 className="mt-2 text-h1 font-normal text-black">
         Reset password
       </h1>
 
       <form onSubmit={handleSubmit} className="mt-8 grid gap-4">
         {!tokenFromUrl && (
           <label className="flex flex-col gap-1.5">
-            <span className="text-[12px] font-medium text-ink">Reset token</span>
+            <span className="text-small font-medium text-black">Reset token</span>
             <input
               type="text"
               required
               placeholder="Paste the token from your email"
               value={token}
               onChange={(e) => setToken(e.target.value)}
-              className="rounded-xl border border-line bg-white px-4 py-3 text-[14px] text-ink outline-none transition-colors placeholder:text-ink-subtle focus:border-ink/30"
+              className="rounded-xl border border-grey-200 bg-white px-4 py-3 text-base text-black outline-none transition-colors placeholder:text-grey-600 focus:border-black"
             />
           </label>
         )}
         <label className="flex flex-col gap-1.5">
-          <span className="text-[12px] font-medium text-ink">New password</span>
+          <span className="text-small font-medium text-black">New password</span>
           <input
             type="password"
             required
             placeholder="At least 6 characters"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="rounded-xl border border-line bg-white px-4 py-3 text-[14px] text-ink outline-none transition-colors placeholder:text-ink-subtle focus:border-ink/30"
+            className="rounded-xl border border-grey-200 bg-white px-4 py-3 text-base text-black outline-none transition-colors placeholder:text-grey-600 focus:border-black"
           />
         </label>
         <label className="flex flex-col gap-1.5">
-          <span className="text-[12px] font-medium text-ink">Confirm password</span>
+          <span className="text-small font-medium text-black">Confirm password</span>
           <input
             type="password"
             required
             placeholder="Re-enter password"
             value={confirm}
             onChange={(e) => setConfirm(e.target.value)}
-            className="rounded-xl border border-line bg-white px-4 py-3 text-[14px] text-ink outline-none transition-colors placeholder:text-ink-subtle focus:border-ink/30"
+            className="rounded-xl border border-grey-200 bg-white px-4 py-3 text-base text-black outline-none transition-colors placeholder:text-grey-600 focus:border-black"
           />
         </label>
 
         <button
           type="submit"
           disabled={loading}
-          className="btn-dark mt-2 w-full justify-center disabled:opacity-60"
+          className="btn-primary mt-2 w-full justify-center disabled:opacity-60"
         >
           {loading ? "Resetting…" : "Reset password"}
         </button>
       </form>
 
-      <p className="mt-5 text-[13px] text-ink-secondary">
-        <Link href="/login" className="text-ink hover:opacity-70">
+      <p className="mt-5 text-small text-grey-700">
+        <Link href="/login" className="text-black hover:opacity-70">
           ← Back to sign in
         </Link>
       </p>
@@ -135,9 +135,9 @@ export default function ResetPasswordPage() {
   return (
     <>
       <Navbar />
-      <main className="section-block bg-canvas pb-24 pt-28 sm:pt-32">
-        <div className="container-fluid">
-          <Suspense fallback={<div className="text-ink-secondary">Loading…</div>}>
+      <main className="bg-white pb-24 pt-28 sm:pt-32">
+        <div className="shell">
+          <Suspense fallback={<div className="text-grey-700">Loading…</div>}>
             <ResetInner />
           </Suspense>
         </div>

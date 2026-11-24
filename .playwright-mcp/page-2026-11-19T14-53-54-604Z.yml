@@ -1,0 +1,1665 @@
+- generic [active] [ref=f9e1]:
+  - generic [ref=f9e2]:
+    - paragraph [ref=f9e5]:
+      - text: We use cookies to improve your experience and personalise ads.
+      - generic [ref=f9e6]:
+        - link "Learn more" [ref=f9e7] [cursor=pointer]:
+          - /url: https://wearefeel.com/en-ae/pages/privacy-policy
+        - text: or Manage cookies
+    - generic [ref=f9e8]:
+      - button "Accept" [ref=f9e9] [cursor=pointer]
+      - button "Decline" [ref=f9e10] [cursor=pointer]
+  - generic:  
+  - generic [ref=f9e12]:
+    - text:                    
+    - generic [ref=f9e14]:
+      - generic [ref=f9e15]:
+        - link "Bundle & Save 25%" [ref=f9e16] [cursor=pointer]:
+          - /url: https://wearefeel.com/en-ae/collections/bundle-builder
+        - generic [ref=f9e17]: 
+      - generic [ref=f9e18]: "|"
+      - generic [ref=f9e19] [cursor=pointer]:
+        - generic [ref=f9e20]:
+          - generic [ref=f9e21]: 
+          - generic [ref=f9e22]: 
+          - generic [ref=f9e23]: 
+          - generic [ref=f9e24]: 
+          - generic [ref=f9e25]: 
+          - generic [ref=f9e26]:
+            - generic [ref=f9e27]: 
+            - generic [ref=f9e28]: 
+            - generic [ref=f9e29]: 
+            - generic [ref=f9e30]: 
+            - generic [ref=f9e31]: 
+        - generic [ref=f9e32]: 23,867
+        - text: reviews
+      - generic [ref=f9e33]: "|"
+      - generic [ref=f9e34]: Recommended by over 300 expert nutritionists
+  - generic [ref=f9e36]:
+    - text: 
+    - link [ref=f9e38] [cursor=pointer]:
+      - /url: /en-ae
+      - img "Feel logo" [ref=f9e39]
+    - list [ref=f9e41]:
+      - listitem [ref=f9e42]:
+        - link "Shop" [ref=f9e43] [cursor=pointer]:
+          - /url: /en-ae/products
+      - listitem [ref=f9e44]:
+        - link "Bundle & Save" [ref=f9e45] [cursor=pointer]:
+          - /url: /en-ae/collections/bundle-builder
+      - listitem [ref=f9e46]:
+        - link "Reviews" [ref=f9e47] [cursor=pointer]:
+          - /url: /en-ae/pages/nutritionists
+      - listitem [ref=f9e48]:
+        - link "Blog" [ref=f9e49] [cursor=pointer]:
+          - /url: /en-ae/blogs/learn
+      - listitem [ref=f9e50]:
+        - link "About" [ref=f9e51] [cursor=pointer]:
+          - /url: /en-ae/pages/our-story
+      - listitem [ref=f9e52]:
+        - link "Science" [ref=f9e53] [cursor=pointer]:
+          - /url: /en-ae/pages/science
+    - generic [ref=f9e54]:
+      - button "Cart" [ref=f9e55] [cursor=pointer]
+      - button "Search" [ref=f9e57] [cursor=pointer]
+      - link "Account" [ref=f9e58] [cursor=pointer]:
+        - /url: /en-ae/account/login
+      - generic [ref=f9e60] [cursor=pointer]:
+        - img "United Arab Emiratesflag" [ref=f9e61]
+        - generic [ref=f9e62]:
+          - generic [ref=f9e63]: العربية
+          - generic [ref=f9e65]: English
+  - generic [ref=f9e66]:
+    - heading "Shop vitamins & supplements" [level=1] [ref=f9e67]
+    - generic [ref=f9e68]:
+      - generic [ref=f9e70]:
+        - heading "Shop by health goal" [level=2] [ref=f9e73]
+        - list [ref=f9e77]:
+          - listitem [ref=f9e78]:
+            - generic [ref=f9e79] [cursor=pointer]:
+              - img "View all" [ref=f9e80]
+              - paragraph [ref=f9e81]: View all
+          - listitem [ref=f9e82]:
+            - generic [ref=f9e83] [cursor=pointer]:
+              - img "Skin & Anti-Ageing" [ref=f9e84]
+              - paragraph [ref=f9e85]: Skin & Anti-Ageing
+          - listitem [ref=f9e86]:
+            - generic [ref=f9e87] [cursor=pointer]:
+              - img "Menopause" [ref=f9e88]
+              - paragraph [ref=f9e89]: Menopause
+          - listitem [ref=f9e90]:
+            - generic [ref=f9e91] [cursor=pointer]:
+              - img "Hair Loss" [ref=f9e92]
+              - paragraph [ref=f9e93]: Hair Loss
+          - listitem [ref=f9e94]:
+            - generic [ref=f9e95] [cursor=pointer]:
+              - img "Mood" [ref=f9e96]
+              - paragraph [ref=f9e97]: Mood
+          - listitem [ref=f9e98]:
+            - generic [ref=f9e99] [cursor=pointer]:
+              - img "Gut Health" [ref=f9e100]
+              - paragraph [ref=f9e101]: Gut Health
+          - listitem [ref=f9e102]:
+            - button "search by ingredient Search Ingredients" [ref=f9e103] [cursor=pointer]:
+              - img "search by ingredient" [ref=f9e104]
+              - generic [ref=f9e105]: Search Ingredients
+      - generic [ref=f9e107]:
+        - generic [ref=f9e108]:
+          - link "Bundle & save 25%" [ref=f9e109] [cursor=pointer]:
+            - /url: /en-ae/collections/bundle-builder
+          - generic [ref=f9e110]:
+            - img "Tabby logo" [ref=f9e112]
+            - text: Buy now pay later
+          - button "Sort by " [ref=f9e114] [cursor=pointer]:
+            - text: Sort by
+            - generic [ref=f9e115]: 
+        - generic [ref=f9e116]:
+          - generic [ref=f9e117]:
+            - button "" [ref=f9e118] [cursor=pointer]
+            - heading "Search and filter" [level=3] [ref=f9e119]
+          - generic [ref=f9e122]:
+            - img "search_icon" [ref=f9e123]
+            - textbox "search_icon" [ref=f9e124]:
+              - /placeholder: Search by ingredient or health benefit
+            - text: 
+          - generic:
+            - list
+            - text: BEST MATCH Benefits Ingredients
+          - generic [ref=f9e125]:
+            - button "Products" [ref=f9e127] [cursor=pointer]
+            - button "Ingredients" [ref=f9e130] [cursor=pointer]
+            - button "Health goal" [ref=f9e133] [cursor=pointer]
+            - link "Bundle & save 25%" [ref=f9e136] [cursor=pointer]:
+              - /url: /en-ae/collections/bundle-builder
+      - generic [ref=f9e138]:
+        - generic [ref=f9e140]:
+          - generic [ref=f9e141]:
+            - generic [ref=f9e142]:
+              - link "Fiber Jelly" [ref=f9e144] [cursor=pointer]:
+                - /url: /en-ae/products/feel-fiber-jelly-passion-fruit
+              - generic [ref=f9e145]:
+                - generic [ref=f9e146]:
+                  - generic [ref=f9e147]: 
+                  - generic [ref=f9e148]: 
+                  - generic [ref=f9e149]: 
+                  - generic [ref=f9e150]: 
+                  - generic [ref=f9e151]: 
+                  - generic [ref=f9e152]:
+                    - generic [ref=f9e153]: 
+                    - generic [ref=f9e154]: 
+                    - generic [ref=f9e155]: 
+                    - generic [ref=f9e156]: 
+                    - generic [ref=f9e157]: 
+                - generic [ref=f9e158]: 20 reviews
+              - generic [ref=f9e159]:
+                - button "Health improvement timeline" [ref=f9e161] [cursor=pointer]
+                - generic [ref=f9e162]:
+                  - paragraph [ref=f9e163]: Health improvement timeline
+                  - button "" [ref=f9e164] [cursor=pointer]
+              - generic [ref=f9e168]:
+                - button "View ingredients" [ref=f9e169] [cursor=pointer]
+                - text:    
+            - generic [ref=f9e170]:
+              - generic [ref=f9e171]:
+                - img "badge new" [ref=f9e174]
+                - link [ref=f9e176] [cursor=pointer]:
+                  - /url: /en-ae/products/feel-fiber-jelly-passion-fruit
+                  - img "Fiber Jelly box" [ref=f9e177]
+              - generic [ref=f9e178]:
+                - generic [ref=f9e179]:
+                  - paragraph [ref=f9e181]: Your daily fibre, made delicious. Each passion fruit jelly packs 9.5g of fibre from four plant sources, plus four superfoods, into one easy sachet. That’s about a head of broccoli’s worth of fibre, with none of the prep. Tear, squeeze, enjoy. No water, no powder, no grit.30 servings. 25g per serving.
+                  - generic [ref=f9e182] [cursor=pointer]: ... read more
+                - link "Learn More" [ref=f9e184] [cursor=pointer]:
+                  - /url: /en-ae/products/feel-fiber-jelly-passion-fruit
+          - generic [ref=f9e186] [cursor=pointer]:
+            - generic [ref=f9e187]:
+              - generic [ref=f9e188]: Weight Loss Bundle
+              - generic [ref=f9e189]:
+                - generic [ref=f9e190]:
+                  - img "bundle image 1" [ref=f9e192]
+                  - generic [ref=f9e193]: Fiber
+                - generic [ref=f9e194]:
+                  - img "bundle image 2" [ref=f9e196]
+                  - generic [ref=f9e197]: Pro Metabolic
+            - link "Learn More" [ref=f9e199]:
+              - /url: /en-ae/pages/custom-bundle-preset/weight-loss-bundle
+            - img "bundle image 2" [ref=f9e203]
+          - generic [ref=f9e204]:
+            - generic [ref=f9e205]:
+              - link "Pro Collagen Jelly" [ref=f9e207] [cursor=pointer]:
+                - /url: /en-ae/products/feel-pro-collagen-jelly-watermelon
+              - generic [ref=f9e208]:
+                - generic [ref=f9e209]:
+                  - generic [ref=f9e210]: 
+                  - generic [ref=f9e211]: 
+                  - generic [ref=f9e212]: 
+                  - generic [ref=f9e213]: 
+                  - generic [ref=f9e214]: 
+                  - generic [ref=f9e215]:
+                    - generic [ref=f9e216]: 
+                    - generic [ref=f9e217]: 
+                    - generic [ref=f9e218]: 
+                    - generic [ref=f9e219]: 
+                    - generic [ref=f9e220]: 
+                - generic [ref=f9e221]: 43 reviews
+              - generic [ref=f9e222]:
+                - button "Health improvement timeline" [ref=f9e224] [cursor=pointer]
+                - generic [ref=f9e225]:
+                  - paragraph [ref=f9e226]: Health improvement timeline
+                  - button "" [ref=f9e227] [cursor=pointer]
+              - generic [ref=f9e231]:
+                - button "View ingredients" [ref=f9e232] [cursor=pointer]
+                - text:    
+            - generic [ref=f9e233]:
+              - generic [ref=f9e234]:
+                - generic [ref=f9e235]:
+                  - generic [ref=f9e236]: Watermelon
+                  - generic [ref=f9e237]: Mixed Berry
+                - img "badge new" [ref=f9e240]
+                - link [ref=f9e242] [cursor=pointer]:
+                  - /url: /en-ae/products/feel-pro-collagen-jelly-watermelon
+                  - img "Pro Collagen Jelly box" [ref=f9e243]
+              - generic [ref=f9e244]:
+                - generic [ref=f9e245]:
+                  - paragraph [ref=f9e247]:
+                    - text: World’s 1
+                    - superscript [ref=f9e248]: st
+                    - text: vegan collagen designed to transform your skin from within. This K-Beauty inspired format removes the hassle of mixing and measuring, so you can enjoy it anytime, anywhere. Providing anti-wrinkle support, as well as increasing skin elasticity, while supporting hair and nail growth.30 servings. 25g per serving.
+                  - generic [ref=f9e249] [cursor=pointer]: ... read more
+                - link "Learn More" [ref=f9e251] [cursor=pointer]:
+                  - /url: /en-ae/products/feel-pro-collagen-jelly-watermelon
+          - generic [ref=f9e253]:
+            - generic [ref=f9e254]:
+              - link "Pro Creatine" [ref=f9e256] [cursor=pointer]:
+                - /url: /en-ae/products/feel-pro-creatine-lemon-lime
+              - generic [ref=f9e257]:
+                - generic [ref=f9e258]:
+                  - generic [ref=f9e259]: 
+                  - generic [ref=f9e260]: 
+                  - generic [ref=f9e261]: 
+                  - generic [ref=f9e262]: 
+                  - generic [ref=f9e263]: 
+                  - generic [ref=f9e264]:
+                    - generic [ref=f9e265]: 
+                    - generic [ref=f9e266]: 
+                    - generic [ref=f9e267]: 
+                    - generic [ref=f9e268]: 
+                    - generic [ref=f9e269]: 
+                - generic [ref=f9e270]: 60 reviews
+              - generic [ref=f9e271]:
+                - button "Health improvement timeline" [ref=f9e273] [cursor=pointer]
+                - generic [ref=f9e274]:
+                  - paragraph [ref=f9e275]: Health improvement timeline
+                  - button "" [ref=f9e276] [cursor=pointer]
+              - generic [ref=f9e280]:
+                - button "View ingredients" [ref=f9e281] [cursor=pointer]
+                - text:    
+            - generic [ref=f9e282]:
+              - generic [ref=f9e283]:
+                - img "badge new" [ref=f9e286]
+                - link [ref=f9e288] [cursor=pointer]:
+                  - /url: /en-ae/products/feel-pro-creatine-lemon-lime
+                  - img "Pro Creatine box" [ref=f9e289]
+              - generic [ref=f9e290]:
+                - generic [ref=f9e291]:
+                  - paragraph [ref=f9e293]: Pro Creatine supports energy production at a cellular level, helping maintain mental clarity, mood balance and muscle strength. Formulated with key vitamins to support cognitive performance, bone health and overall wellbeing for women at every life stage.30 servings. 9g per serving.
+                  - generic [ref=f9e294] [cursor=pointer]: ... read more
+                - link "Learn More" [ref=f9e296] [cursor=pointer]:
+                  - /url: /en-ae/products/feel-pro-creatine-lemon-lime
+          - generic [ref=f9e298] [cursor=pointer]:
+            - generic [ref=f9e299]:
+              - generic [ref=f9e300]: Anti-ageing Bundle
+              - generic [ref=f9e301]:
+                - generic [ref=f9e302]:
+                  - img "bundle image 1" [ref=f9e304]
+                  - generic [ref=f9e305]: Multivitamin
+                - generic [ref=f9e306]:
+                  - img "bundle image 2" [ref=f9e308]
+                  - generic [ref=f9e309]: Pro Collagen
+                - generic [ref=f9e310]:
+                  - img "bundle image 3" [ref=f9e312]
+                  - generic [ref=f9e313]: Omega 3
+            - link "Learn More" [ref=f9e315]:
+              - /url: /en-ae/pages/custom-bundle-preset/anti-agieng-bundle
+            - img "bundle image 3" [ref=f9e319]
+          - generic [ref=f9e320]:
+            - generic [ref=f9e321]:
+              - link "Pro Collagen" [ref=f9e323] [cursor=pointer]:
+                - /url: /en-ae/products/feel-pro-collagen
+              - generic [ref=f9e324]:
+                - generic [ref=f9e325]:
+                  - generic [ref=f9e326]: 
+                  - generic [ref=f9e327]: 
+                  - generic [ref=f9e328]: 
+                  - generic [ref=f9e329]: 
+                  - generic [ref=f9e330]: 
+                  - generic [ref=f9e331]:
+                    - generic [ref=f9e332]: 
+                    - generic [ref=f9e333]: 
+                    - generic [ref=f9e334]: 
+                    - generic [ref=f9e335]: 
+                    - generic [ref=f9e336]: 
+                - generic [ref=f9e337]: 3,491 reviews
+              - generic [ref=f9e338]:
+                - button "Health improvement timeline" [ref=f9e340] [cursor=pointer]
+                - generic [ref=f9e341]:
+                  - paragraph [ref=f9e342]: Health improvement timeline
+                  - button "" [ref=f9e343] [cursor=pointer]
+              - generic [ref=f9e347]:
+                - button "View ingredients" [ref=f9e348] [cursor=pointer]
+                - text:    
+            - generic [ref=f9e349]:
+              - generic [ref=f9e350]:
+                - generic [ref=f9e351]:
+                  - generic [ref=f9e352]: Peach
+                  - generic [ref=f9e353]: Pineapple
+                - generic [ref=f9e355]:
+                  - img "badge tried and tested" [ref=f9e356]
+                  - img "badge wellness awards skin winner 2024" [ref=f9e357]
+                  - img "badge beauty awards winner 2024" [ref=f9e358]
+                  - img "badge green winner 2024" [ref=f9e359]
+                  - img "badge wellness awards 2024" [ref=f9e360]
+                  - img "badge wellness from within 2024" [ref=f9e361]
+                  - img "badge green winner 2024" [ref=f9e362]
+                - link [ref=f9e364] [cursor=pointer]:
+                  - /url: /en-ae/products/feel-pro-collagen
+                  - img "Pro Collagen box" [ref=f9e365]
+              - generic [ref=f9e366]:
+                - generic [ref=f9e367]:
+                  - paragraph [ref=f9e369]: Introducing the world’s first vegan collagen designed to transform your skin. Providing anti-wrinkle support, as well as increasing skin elasticity, while supporting hair and nail growth. Shown to reduce fine lines and wrinkles in just 28 days. 80% of users in a clinical study saw a significant improvement in skin elasticity, hydration, and suppleness. Pro Collagen increases collagen production in the body by 135%.30 servings. 10g per serving.
+                  - generic [ref=f9e370] [cursor=pointer]: ... read more
+                - link "Learn More" [ref=f9e372] [cursor=pointer]:
+                  - /url: /en-ae/products/feel-pro-collagen
+          - generic [ref=f9e374]:
+            - generic [ref=f9e375]:
+              - link "Pro Metabolic" [ref=f9e377] [cursor=pointer]:
+                - /url: /en-ae/products/feel-pro-metabolic-berry
+              - generic [ref=f9e378]:
+                - generic [ref=f9e379]:
+                  - generic [ref=f9e380]: 
+                  - generic [ref=f9e381]: 
+                  - generic [ref=f9e382]: 
+                  - generic [ref=f9e383]: 
+                  - generic [ref=f9e384]: 
+                  - generic [ref=f9e385]:
+                    - generic [ref=f9e386]: 
+                    - generic [ref=f9e387]: 
+                    - generic [ref=f9e388]: 
+                    - generic [ref=f9e389]: 
+                    - generic [ref=f9e390]: 
+                - generic [ref=f9e391]: 1,147 reviews
+              - generic [ref=f9e392]:
+                - button "Health improvement timeline" [ref=f9e394] [cursor=pointer]
+                - generic [ref=f9e395]:
+                  - paragraph [ref=f9e396]: Health improvement timeline
+                  - button "" [ref=f9e397] [cursor=pointer]
+              - generic [ref=f9e401]:
+                - button "View ingredients" [ref=f9e402] [cursor=pointer]
+                - text:    
+            - generic [ref=f9e403]:
+              - link [ref=f9e406] [cursor=pointer]:
+                - /url: /en-ae/products/feel-pro-metabolic-berry
+                - img "Pro Metabolic box" [ref=f9e407]
+              - generic [ref=f9e408]:
+                - generic [ref=f9e409]:
+                  - paragraph [ref=f9e411]: Feel Pro Metabolic is a next-generation formula designed to stimulate your body’s own GLP-1 secretion - helping you manage appetite, curb cravings, and support metabolic health.30 sachets. 1 per day.
+                  - generic [ref=f9e412] [cursor=pointer]: ... read more
+                - link "Learn More" [ref=f9e414] [cursor=pointer]:
+                  - /url: /en-ae/products/feel-pro-metabolic-berry
+          - generic [ref=f9e416]:
+            - generic [ref=f9e417]:
+              - link "Multivitamin" [ref=f9e419] [cursor=pointer]:
+                - /url: /en-ae/products/essential-multivitamin
+              - generic [ref=f9e420]:
+                - generic [ref=f9e421]:
+                  - generic [ref=f9e422]: 
+                  - generic [ref=f9e423]: 
+                  - generic [ref=f9e424]: 
+                  - generic [ref=f9e425]: 
+                  - generic [ref=f9e426]: 
+                  - generic [ref=f9e427]:
+                    - generic [ref=f9e428]: 
+                    - generic [ref=f9e429]: 
+                    - generic [ref=f9e430]: 
+                    - generic [ref=f9e431]: 
+                    - generic [ref=f9e432]: 
+                - generic [ref=f9e433]: 4,955 reviews
+              - generic [ref=f9e434]:
+                - button "Health improvement timeline" [ref=f9e436] [cursor=pointer]
+                - generic [ref=f9e437]:
+                  - paragraph [ref=f9e438]: Health improvement timeline
+                  - button "" [ref=f9e439] [cursor=pointer]
+              - generic [ref=f9e443]:
+                - button "View ingredients" [ref=f9e444] [cursor=pointer]
+                - text:    
+            - generic [ref=f9e445]:
+              - generic [ref=f9e446]:
+                - generic [ref=f9e448]:
+                  - img "badge world beauty awards" [ref=f9e449]
+                  - img "badge attracta beauty awards" [ref=f9e450]
+                  - img "badge wellness awards" [ref=f9e451]
+                  - img "badge wellness awards winner 2024" [ref=f9e452]
+                  - img "badge wellness from within 2024" [ref=f9e453]
+                  - img "badge beauty awards bronze" [ref=f9e454]
+                - link [ref=f9e456] [cursor=pointer]:
+                  - /url: /en-ae/products/essential-multivitamin
+                  - img "Multivitamin box" [ref=f9e457]
+              - generic [ref=f9e458]:
+                - generic [ref=f9e459]:
+                  - paragraph [ref=f9e461]: One formula - 32 Premium Ingredients - 100 distinct health benefits. Clinically-backed multivitamin for energy, skin, mood & immunity.60 capsules. 2 per day.
+                  - generic [ref=f9e462] [cursor=pointer]: ... read more
+                - link "Learn More" [ref=f9e464] [cursor=pointer]:
+                  - /url: /en-ae/products/essential-multivitamin
+          - generic [ref=f9e466]:
+            - generic [ref=f9e467]:
+              - link "Pro Collagen Type 2 for Joints" [ref=f9e469] [cursor=pointer]:
+                - /url: /en-ae/products/feel-pro-collagen-type-2-mango-vanilla
+              - generic [ref=f9e470]:
+                - generic [ref=f9e471]:
+                  - generic [ref=f9e472]: 
+                  - generic [ref=f9e473]: 
+                  - generic [ref=f9e474]: 
+                  - generic [ref=f9e475]: 
+                  - generic [ref=f9e476]: 
+                  - generic [ref=f9e477]:
+                    - generic [ref=f9e478]: 
+                    - generic [ref=f9e479]: 
+                    - generic [ref=f9e480]: 
+                    - generic [ref=f9e481]: 
+                    - generic [ref=f9e482]: 
+                - generic [ref=f9e483]: 464 reviews
+              - generic [ref=f9e484]:
+                - button "Health improvement timeline" [ref=f9e486] [cursor=pointer]
+                - generic [ref=f9e487]:
+                  - paragraph [ref=f9e488]: Health improvement timeline
+                  - button "" [ref=f9e489] [cursor=pointer]
+              - generic [ref=f9e493]:
+                - button "View ingredients" [ref=f9e494] [cursor=pointer]
+                - text:    
+            - generic [ref=f9e495]:
+              - generic [ref=f9e496]:
+                - generic [ref=f9e497]:
+                  - generic [ref=f9e498]: Watermelon
+                  - generic [ref=f9e499]: Mango Vanilla
+                - link [ref=f9e501] [cursor=pointer]:
+                  - /url: /en-ae/products/feel-pro-collagen-type-2-mango-vanilla
+                  - img "Pro Collagen Type 2 for Joints box" [ref=f9e502]
+              - generic [ref=f9e503]:
+                - generic [ref=f9e504]:
+                  - paragraph [ref=f9e506]: World’s first Vegan Type 2 Collagen for Joints, reducing discomfort and enabling better mobility and flexibility. The only collagen in the world biomimetic to human Type 2 Collagen.30 servings. 6g per serving.
+                  - generic [ref=f9e507] [cursor=pointer]: ... read more
+                - generic [ref=f9e509]:
+                  - paragraph [ref=f9e510]: This product is currently out of stock.
+                  - paragraph [ref=f9e511]: "Enter your email below to be notified once the product is back in stock:"
+                  - generic [ref=f9e512]:
+                    - textbox "Your e-mail address" [ref=f9e513]
+                    - button "Submit" [ref=f9e514] [cursor=pointer]
+          - generic [ref=f9e516] [cursor=pointer]:
+            - generic [ref=f9e517]:
+              - generic [ref=f9e518]: Hair Growth Bundle
+              - generic [ref=f9e519]:
+                - generic [ref=f9e520]:
+                  - generic:
+                    - img "bundle image 1"
+                  - generic [ref=f9e521]: Hair Support
+                - generic [ref=f9e522]:
+                  - img "bundle image 2" [ref=f9e524]
+                  - generic [ref=f9e525]: Pro Collagen
+                - generic [ref=f9e526]:
+                  - generic:
+                    - img "bundle image 3"
+                  - generic [ref=f9e527]: Beauty Gummies
+            - link "Learn More" [ref=f9e529]:
+              - /url: /en-ae/pages/custom-bundle-preset/hair-growth-bundle
+            - generic:
+              - generic:
+                - img "bundle image 3"
+          - generic [ref=f9e531]:
+            - generic [ref=f9e532]:
+              - link "Pro Collagen Watermelon" [ref=f9e534] [cursor=pointer]:
+                - /url: /en-ae/products/feel-pro-collagen-watermelon-sachets
+              - generic [ref=f9e535]:
+                - generic [ref=f9e536]:
+                  - generic [ref=f9e537]: 
+                  - generic [ref=f9e538]: 
+                  - generic [ref=f9e539]: 
+                  - generic [ref=f9e540]: 
+                  - generic [ref=f9e541]: 
+                  - generic [ref=f9e542]:
+                    - generic [ref=f9e543]: 
+                    - generic [ref=f9e544]: 
+                    - generic [ref=f9e545]: 
+                    - generic [ref=f9e546]: 
+                    - generic [ref=f9e547]: 
+                - generic [ref=f9e548]: 178 reviews
+              - generic [ref=f9e549]:
+                - button "Health improvement timeline" [ref=f9e551] [cursor=pointer]
+                - generic [ref=f9e552]:
+                  - paragraph [ref=f9e553]: Health improvement timeline
+                  - button "" [ref=f9e554] [cursor=pointer]
+              - generic [ref=f9e558]:
+                - button "View ingredients" [ref=f9e559] [cursor=pointer]
+                - text:    
+            - generic [ref=f9e560]:
+              - generic [ref=f9e561]:
+                - generic [ref=f9e563]:
+                  - img "badge world beauty awards" [ref=f9e564]
+                  - img "badge beauty awards finalist" [ref=f9e565]
+                - generic:
+                  - link "Pro Collagen Watermelon box":
+                    - /url: /en-ae/products/feel-pro-collagen-watermelon-sachets
+                    - img "Pro Collagen Watermelon box"
+              - generic [ref=f9e566]:
+                - generic [ref=f9e567]:
+                  - paragraph [ref=f9e569]: World’s first vegan collagen designed to transform your skin - in ready to use powder sachets for ultimate convenience. Providing anti-wrinkle support, as well as increasing skin elasticity, while supporting hair and nail growth. Shown to reduce fine lines and wrinkles in just 28 days. 80% of users in a clinical study saw a significant improvement in skin elasticity, hydration, and suppleness. Pro Collagen increases collagen production in the body by 135%.30 sachets. 1 per day.
+                  - generic [ref=f9e570] [cursor=pointer]: ... read more
+                - link "Learn More" [ref=f9e572] [cursor=pointer]:
+                  - /url: /en-ae/products/feel-pro-collagen-watermelon-sachets
+          - generic [ref=f9e574]:
+            - generic [ref=f9e575]:
+              - link "Menopause" [ref=f9e577] [cursor=pointer]:
+                - /url: /en-ae/products/menopause
+              - generic [ref=f9e578]:
+                - generic [ref=f9e579]:
+                  - generic [ref=f9e580]: 
+                  - generic [ref=f9e581]: 
+                  - generic [ref=f9e582]: 
+                  - generic [ref=f9e583]: 
+                  - generic [ref=f9e584]: 
+                  - generic [ref=f9e585]:
+                    - generic [ref=f9e586]: 
+                    - generic [ref=f9e587]: 
+                    - generic [ref=f9e588]: 
+                    - generic [ref=f9e589]: 
+                    - generic [ref=f9e590]: 
+                - generic [ref=f9e591]: 2,379 reviews
+              - generic [ref=f9e592]:
+                - button "Health improvement timeline" [ref=f9e594] [cursor=pointer]
+                - generic [ref=f9e595]:
+                  - paragraph [ref=f9e596]: Health improvement timeline
+                  - button "" [ref=f9e597] [cursor=pointer]
+              - generic [ref=f9e601]:
+                - button "View ingredients" [ref=f9e602] [cursor=pointer]
+                - text:    
+            - generic [ref=f9e603]:
+              - generic [ref=f9e604]:
+                - generic [ref=f9e606]:
+                  - img "badge research"
+                  - img "badge global green beauty winner"
+                - link [ref=f9e608] [cursor=pointer]:
+                  - /url: /en-ae/products/menopause
+                  - img "Menopause box" [ref=f9e609]
+              - generic [ref=f9e610]:
+                - generic [ref=f9e611]:
+                  - paragraph [ref=f9e613]: UK's most reviewed menopause supplement. Developed in partnership with one of the UK’s top award-winning menopause specialists using targeted plant-based ingredients.60 capsules. 2 per day.
+                  - generic [ref=f9e614] [cursor=pointer]: ... read more
+                - link "Learn More" [ref=f9e616] [cursor=pointer]:
+                  - /url: /en-ae/products/menopause
+          - generic [ref=f9e618]:
+            - generic [ref=f9e619]:
+              - link "Hair Loss Support" [ref=f9e621] [cursor=pointer]:
+                - /url: /en-ae/products/hair-support
+              - generic [ref=f9e622]:
+                - generic [ref=f9e623]:
+                  - generic [ref=f9e624]: 
+                  - generic [ref=f9e625]: 
+                  - generic [ref=f9e626]: 
+                  - generic [ref=f9e627]: 
+                  - generic [ref=f9e628]: 
+                  - generic [ref=f9e629]:
+                    - generic [ref=f9e630]: 
+                    - generic [ref=f9e631]: 
+                    - generic [ref=f9e632]: 
+                    - generic [ref=f9e633]: 
+                    - generic [ref=f9e634]: 
+                - generic [ref=f9e635]: 769 reviews
+              - generic [ref=f9e636]:
+                - button "Health improvement timeline" [ref=f9e638] [cursor=pointer]
+                - generic [ref=f9e639]:
+                  - paragraph [ref=f9e640]: Health improvement timeline
+                  - button "" [ref=f9e641] [cursor=pointer]
+              - generic [ref=f9e645]:
+                - button "View ingredients" [ref=f9e646] [cursor=pointer]
+                - text:    
+            - generic [ref=f9e647]:
+              - generic [ref=f9e648]:
+                - generic [ref=f9e650]:
+                  - img "badge world beauty awards" [ref=f9e651]
+                  - img "badge beauty awards winner"
+                  - img "badge Bambini baby awards winner"
+                - link [ref=f9e653] [cursor=pointer]:
+                  - /url: /en-ae/products/hair-support
+                  - img "Hair Loss Support box" [ref=f9e654]
+              - generic [ref=f9e655]:
+                - generic [ref=f9e656]:
+                  - paragraph [ref=f9e658]: A standout innovation in reducing hair loss, Feel Hair Support with Keranat™ is the first scientifically proven food supplement ingredient that significantly reduces hair loss, restores the natural growth cycle of hair and strengthens from root to tip.30 capsules. 1 per day.
+                  - generic [ref=f9e659] [cursor=pointer]: ... read more
+                - link "Learn More" [ref=f9e661] [cursor=pointer]:
+                  - /url: /en-ae/products/hair-support
+          - generic [ref=f9e663] [cursor=pointer]:
+            - generic [ref=f9e664]:
+              - generic [ref=f9e665]: Gut Health Bundle
+              - generic [ref=f9e666]:
+                - generic [ref=f9e667]:
+                  - img "bundle image 1" [ref=f9e669]
+                  - generic [ref=f9e670]: Pro Metabolic
+                - generic [ref=f9e671]:
+                  - generic:
+                    - img "bundle image 2"
+                  - generic [ref=f9e672]: Daily Biotic
+            - link "Learn More" [ref=f9e674]:
+              - /url: /en-ae/pages/custom-bundle-preset/gut-health-bundle
+            - generic:
+              - generic:
+                - img "bundle image 2"
+          - generic [ref=f9e676]:
+            - generic [ref=f9e677]:
+              - link "Smooth Skin" [ref=f9e679] [cursor=pointer]:
+                - /url: /en-ae/products/feel-smooth-skin
+              - generic [ref=f9e680]:
+                - generic [ref=f9e681]:
+                  - generic [ref=f9e682]: 
+                  - generic [ref=f9e683]: 
+                  - generic [ref=f9e684]: 
+                  - generic [ref=f9e685]: 
+                  - generic [ref=f9e686]: 
+                  - generic [ref=f9e687]:
+                    - generic [ref=f9e688]: 
+                    - generic [ref=f9e689]: 
+                    - generic [ref=f9e690]: 
+                    - generic [ref=f9e691]: 
+                    - generic [ref=f9e692]: 
+                - generic [ref=f9e693]: 203 reviews
+              - generic [ref=f9e694]:
+                - button "Health improvement timeline" [ref=f9e696] [cursor=pointer]
+                - generic [ref=f9e697]:
+                  - paragraph [ref=f9e698]: Health improvement timeline
+                  - button "" [ref=f9e699] [cursor=pointer]
+              - generic [ref=f9e703]:
+                - button "View ingredients" [ref=f9e704] [cursor=pointer]
+                - text:    
+            - generic [ref=f9e705]:
+              - generic [ref=f9e706]:
+                - img "badge world beauty awards" [ref=f9e709]
+                - link [ref=f9e711] [cursor=pointer]:
+                  - /url: /en-ae/products/feel-smooth-skin
+                  - img "Smooth Skin box" [ref=f9e712]
+              - generic [ref=f9e713]:
+                - generic [ref=f9e714]:
+                  - paragraph [ref=f9e716]:
+                    - text: Europe's first anti-cellulite supplement. Scientifically designed to reduce the appearance of 'orange-peel' skin, improve skin smoothness, and boost overall skin health. Powered by SOD B Dimpless
+                    - superscript [ref=f9e717]: ®
+                    - text: ", clinically proven to reduce cellulite in just 56 days and reduce skin folds by 28% in 90 days. Using a revolutionary capsule-in-capsule technology this natural formula is enhanced with Evening Primrose oil and Borage oils working at your core to reduce fat deposits and enhance skin elasticity.30 capsules. 1 per day."
+                  - generic [ref=f9e718] [cursor=pointer]: ... read more
+                - link "Learn More" [ref=f9e720] [cursor=pointer]:
+                  - /url: /en-ae/products/feel-smooth-skin
+          - generic [ref=f9e722]:
+            - generic [ref=f9e723]:
+              - link "Pro Collagen Gel" [ref=f9e725] [cursor=pointer]:
+                - /url: /en-ae/products/feel-collagen-gels
+              - generic [ref=f9e726]:
+                - generic [ref=f9e727]:
+                  - generic [ref=f9e728]: 
+                  - generic [ref=f9e729]: 
+                  - generic [ref=f9e730]: 
+                  - generic [ref=f9e731]: 
+                  - generic [ref=f9e732]: 
+                  - generic [ref=f9e733]:
+                    - generic [ref=f9e734]: 
+                    - generic [ref=f9e735]: 
+                    - generic [ref=f9e736]: 
+                    - generic [ref=f9e737]: 
+                    - generic [ref=f9e738]: 
+                - generic [ref=f9e739]: 325 reviews
+              - generic [ref=f9e740]:
+                - button "Health improvement timeline" [ref=f9e742] [cursor=pointer]
+                - generic [ref=f9e743]:
+                  - paragraph [ref=f9e744]: Health improvement timeline
+                  - button "" [ref=f9e745] [cursor=pointer]
+              - generic [ref=f9e749]:
+                - button "View ingredients" [ref=f9e750] [cursor=pointer]
+                - text:    
+            - generic [ref=f9e751]:
+              - generic [ref=f9e752]:
+                - generic [ref=f9e753]:
+                  - generic [ref=f9e754]: Cherry
+                  - generic [ref=f9e755]: Tropical
+                  - generic [ref=f9e756]: Watermelon
+                - generic [ref=f9e758]:
+                  - img "badge global awards 2024"
+                  - img "badge wellness from within 2024" [ref=f9e759]
+                  - img "badge vegan beauty"
+                - generic:
+                  - link "Pro Collagen Gel box":
+                    - /url: /en-ae/products/feel-collagen-gels
+                    - img "Pro Collagen Gel box"
+              - generic [ref=f9e760]:
+                - generic [ref=f9e761]:
+                  - paragraph [ref=f9e763]: World’s first vegan collagen designed to transform your skin - in an easy everyday format as gels. Providing anti-wrinkle support, as well as increasing skin elasticity, while supporting hair and nail growth.30 sachets. 1 per day.
+                  - generic [ref=f9e764] [cursor=pointer]: ... read more
+                - link "Learn More" [ref=f9e766] [cursor=pointer]:
+                  - /url: /en-ae/products/feel-collagen-gels
+          - generic [ref=f9e768]:
+            - generic [ref=f9e769]:
+              - link "V-Health" [ref=f9e771] [cursor=pointer]:
+                - /url: /en-ae/products/feel-v-health
+              - generic [ref=f9e772]:
+                - generic [ref=f9e773]:
+                  - generic [ref=f9e774]: 
+                  - generic [ref=f9e775]: 
+                  - generic [ref=f9e776]: 
+                  - generic [ref=f9e777]: 
+                  - generic [ref=f9e778]: 
+                  - generic [ref=f9e779]:
+                    - generic [ref=f9e780]: 
+                    - generic [ref=f9e781]: 
+                    - generic [ref=f9e782]: 
+                    - generic [ref=f9e783]: 
+                    - generic [ref=f9e784]: 
+                - generic [ref=f9e785]: 91 reviews
+              - generic [ref=f9e786]:
+                - button "Health improvement timeline" [ref=f9e788] [cursor=pointer]
+                - generic [ref=f9e789]:
+                  - paragraph [ref=f9e790]: Health improvement timeline
+                  - button "" [ref=f9e791] [cursor=pointer]
+              - generic [ref=f9e795]:
+                - button "View ingredients" [ref=f9e796] [cursor=pointer]
+                - text:    
+            - generic [ref=f9e797]:
+              - generic [ref=f9e798]:
+                - generic [ref=f9e800]:
+                  - img "badge beauty awards finalist" [ref=f9e801]
+                  - img "badge wellbeing silver" [ref=f9e802]
+                - generic:
+                  - link "V-Health box":
+                    - /url: /en-ae/products/feel-v-health
+                    - img "V-Health box"
+              - generic [ref=f9e803]:
+                - generic [ref=f9e804]:
+                  - paragraph [ref=f9e806]: A comprehensive oral supplement designed to support against recurrent UTIs, while restoring vaginal flora. Meticulously formulated to bring together the very best ingredients for vaginal health, such as D-Mannose, Uva Ursi, Cranberry extract, evidence-based botanicals and two V-health targeted live-bacterial cultures.90 capsules. 3 per day.
+                  - generic [ref=f9e807] [cursor=pointer]: ... read more
+                - link "Learn More" [ref=f9e809] [cursor=pointer]:
+                  - /url: /en-ae/products/feel-v-health
+          - generic [ref=f9e811]:
+            - generic [ref=f9e812]:
+              - link "Pro Menopause" [ref=f9e814] [cursor=pointer]:
+                - /url: /en-ae/products/pro-menopause
+              - generic [ref=f9e815]:
+                - generic [ref=f9e816]:
+                  - generic [ref=f9e817]: 
+                  - generic [ref=f9e818]: 
+                  - generic [ref=f9e819]: 
+                  - generic [ref=f9e820]: 
+                  - generic [ref=f9e821]: 
+                  - generic [ref=f9e822]:
+                    - generic [ref=f9e823]: 
+                    - generic [ref=f9e824]: 
+                    - generic [ref=f9e825]: 
+                    - generic [ref=f9e826]: 
+                    - generic [ref=f9e827]: 
+                - generic [ref=f9e828]: 2,379 reviews
+              - generic [ref=f9e829]:
+                - button "Health improvement timeline" [ref=f9e831] [cursor=pointer]
+                - generic [ref=f9e832]:
+                  - paragraph [ref=f9e833]: Health improvement timeline
+                  - button "" [ref=f9e834] [cursor=pointer]
+              - generic [ref=f9e838]:
+                - button "View ingredients" [ref=f9e839] [cursor=pointer]
+                - text:    
+            - generic [ref=f9e840]:
+              - generic [ref=f9e841]:
+                - img "badge beauty awards finalist" [ref=f9e844]
+                - generic:
+                  - link "Pro Menopause box":
+                    - /url: /en-ae/products/pro-menopause
+                    - img "Pro Menopause box"
+              - generic [ref=f9e845]:
+                - generic [ref=f9e846]:
+                  - paragraph [ref=f9e848]:
+                    - text: Our award-winning menopause formula in PRO version. The world’s first natural menopause support formula combining 7 distinct types of phytoestrogens, minimising over-reliance on a single phytoestrogen source. Powered by the most clinically validated ingredient for menopause - SoyLife
+                    - superscript [ref=f9e849]: ®
+                    - text: (35 clinical studies & 3000 participants).30 sachets. 1 per day.
+                  - generic [ref=f9e850] [cursor=pointer]: ... read more
+                - link "Learn More" [ref=f9e852] [cursor=pointer]:
+                  - /url: /en-ae/products/pro-menopause
+          - generic [ref=f9e854]:
+            - generic [ref=f9e855]:
+              - link "Daily Biotic" [ref=f9e857] [cursor=pointer]:
+                - /url: /en-ae/products/feel-daily-biotic
+              - generic [ref=f9e858]:
+                - generic [ref=f9e859]:
+                  - generic [ref=f9e860]: 
+                  - generic [ref=f9e861]: 
+                  - generic [ref=f9e862]: 
+                  - generic [ref=f9e863]: 
+                  - generic [ref=f9e864]: 
+                  - generic [ref=f9e865]:
+                    - generic [ref=f9e866]: 
+                    - generic [ref=f9e867]: 
+                    - generic [ref=f9e868]: 
+                    - generic [ref=f9e869]: 
+                    - generic [ref=f9e870]: 
+                - generic [ref=f9e871]: 406 reviews
+              - generic [ref=f9e872]:
+                - button "Health improvement timeline" [ref=f9e874] [cursor=pointer]
+                - generic [ref=f9e875]:
+                  - paragraph [ref=f9e876]: Health improvement timeline
+                  - button "" [ref=f9e877] [cursor=pointer]
+              - generic [ref=f9e881]:
+                - button "View ingredients" [ref=f9e882] [cursor=pointer]
+                - text:    
+            - generic [ref=f9e883]:
+              - generic [ref=f9e884]:
+                - generic [ref=f9e886]:
+                  - img "badge bambini"
+                  - img "badge beauty awards bronze" [ref=f9e887]
+                - link [ref=f9e889] [cursor=pointer]:
+                  - /url: /en-ae/products/feel-daily-biotic
+                  - img "Daily Biotic box" [ref=f9e890]
+              - generic [ref=f9e891]:
+                - generic [ref=f9e892]:
+                  - paragraph [ref=f9e894]: Multi-strain synbiotic combines 14 patented cultures and soluble prebiotic dietary fiber to help nourish the gut and bring a host of benefits for gut and immune health as well as brain function and mood regulation. Digestive support with 10 billion CFU of live acid-resistant bacteria strains.30 capsules. 1 per day.
+                  - generic [ref=f9e895] [cursor=pointer]: ... read more
+                - link "Learn More" [ref=f9e897] [cursor=pointer]:
+                  - /url: /en-ae/products/feel-daily-biotic
+          - generic [ref=f9e899]:
+            - generic [ref=f9e900]:
+              - link "Omega 3 (Vegan)" [ref=f9e902] [cursor=pointer]:
+                - /url: /en-ae/products/feel-algae-omega-3
+              - generic [ref=f9e903]:
+                - generic [ref=f9e904]:
+                  - generic [ref=f9e905]: 
+                  - generic [ref=f9e906]: 
+                  - generic [ref=f9e907]: 
+                  - generic [ref=f9e908]: 
+                  - generic [ref=f9e909]: 
+                  - generic [ref=f9e910]:
+                    - generic [ref=f9e911]: 
+                    - generic [ref=f9e912]: 
+                    - generic [ref=f9e913]: 
+                    - generic [ref=f9e914]: 
+                    - generic [ref=f9e915]: 
+                - generic [ref=f9e916]: 933 reviews
+              - generic [ref=f9e917]:
+                - button "Health improvement timeline" [ref=f9e919] [cursor=pointer]
+                - generic [ref=f9e920]:
+                  - paragraph [ref=f9e921]: Health improvement timeline
+                  - button "" [ref=f9e922] [cursor=pointer]
+              - generic [ref=f9e926]:
+                - button "View ingredients" [ref=f9e927] [cursor=pointer]
+                - text:    
+            - generic [ref=f9e928]:
+              - generic [ref=f9e929]:
+                - generic:
+                  - link "Omega 3 (Vegan) box":
+                    - /url: /en-ae/products/feel-algae-omega-3
+                    - img "Omega 3 (Vegan) box"
+              - generic [ref=f9e930]:
+                - generic [ref=f9e931]:
+                  - paragraph [ref=f9e933]: The most sustainable & potent Omega 3 supplement from Algae to support brain function, cardiovascular health, vision and eye health (Vegan).60 capsules. 2 per day.
+                  - generic [ref=f9e934] [cursor=pointer]: ... read more
+                - link "Learn More" [ref=f9e936] [cursor=pointer]:
+                  - /url: /en-ae/products/feel-algae-omega-3
+          - generic [ref=f9e938]:
+            - generic [ref=f9e939]:
+              - link "Beauty Gummies" [ref=f9e941] [cursor=pointer]:
+                - /url: /en-ae/products/beauty-gummies
+              - generic [ref=f9e942]:
+                - generic [ref=f9e943]:
+                  - generic [ref=f9e944]: 
+                  - generic [ref=f9e945]: 
+                  - generic [ref=f9e946]: 
+                  - generic [ref=f9e947]: 
+                  - generic [ref=f9e948]: 
+                  - generic [ref=f9e949]:
+                    - generic [ref=f9e950]: 
+                    - generic [ref=f9e951]: 
+                    - generic [ref=f9e952]: 
+                    - generic [ref=f9e953]: 
+                    - generic [ref=f9e954]: 
+                - generic [ref=f9e955]: 383 reviews
+              - generic [ref=f9e956]:
+                - button "Health improvement timeline" [ref=f9e958] [cursor=pointer]
+                - generic [ref=f9e959]:
+                  - paragraph [ref=f9e960]: Health improvement timeline
+                  - button "" [ref=f9e961] [cursor=pointer]
+              - generic [ref=f9e965]:
+                - button "View ingredients" [ref=f9e966] [cursor=pointer]
+                - text:    
+            - generic [ref=f9e967]:
+              - generic [ref=f9e968]:
+                - generic [ref=f9e970]:
+                  - img "badge beauty awards bronze" [ref=f9e971]
+                  - img "badge global green beauty commented" [ref=f9e972]
+                - generic:
+                  - link "Beauty Gummies box":
+                    - /url: /en-ae/products/beauty-gummies
+                    - img "Beauty Gummies box"
+              - generic [ref=f9e973]:
+                - generic [ref=f9e974]:
+                  - paragraph [ref=f9e976]: Clinically proven to help support skin and hair health, Feel Beauty Gummies are enriched with Hyaluronic Acid to replump and repair skin and Careflow® - a patented and scientifically proven ingredient to prevent collagen breakdown and improve skin microcirculation. The formula also contains Biotin and Selenium for comprehensive support for hair, skin and nails in a tasty sugar-free, plant-based gummy.60 gummies. 2 per day.
+                  - generic [ref=f9e977] [cursor=pointer]: ... read more
+                - link "Learn More" [ref=f9e979] [cursor=pointer]:
+                  - /url: /en-ae/products/beauty-gummies
+          - generic [ref=f9e981]:
+            - generic [ref=f9e982]:
+              - link "Pro Turmeric" [ref=f9e984] [cursor=pointer]:
+                - /url: /en-ae/products/feel-pro-turmeric
+              - generic [ref=f9e985]:
+                - generic [ref=f9e986]:
+                  - generic [ref=f9e987]: 
+                  - generic [ref=f9e988]: 
+                  - generic [ref=f9e989]: 
+                  - generic [ref=f9e990]: 
+                  - generic [ref=f9e991]: 
+                  - generic [ref=f9e992]:
+                    - generic [ref=f9e993]: 
+                    - generic [ref=f9e994]: 
+                    - generic [ref=f9e995]: 
+                    - generic [ref=f9e996]: 
+                    - generic [ref=f9e997]: 
+                - generic [ref=f9e998]: 610 reviews
+              - generic [ref=f9e999]:
+                - button "Health improvement timeline" [ref=f9e1001] [cursor=pointer]
+                - generic [ref=f9e1002]:
+                  - paragraph [ref=f9e1003]: Health improvement timeline
+                  - button "" [ref=f9e1004] [cursor=pointer]
+              - generic [ref=f9e1008]:
+                - button "View ingredients" [ref=f9e1009] [cursor=pointer]
+                - text:    
+            - generic [ref=f9e1010]:
+              - generic [ref=f9e1011]:
+                - generic:
+                  - link "Pro Turmeric box":
+                    - /url: /en-ae/products/feel-pro-turmeric
+                    - img "Pro Turmeric box"
+              - generic [ref=f9e1012]:
+                - generic [ref=f9e1013]:
+                  - paragraph [ref=f9e1015]:
+                    - text: Designed to support your body’s natural state of comfort and ease, helping you move through the day. Supporting your
+                    - strong [ref=f9e1016]: joints, cartilage function
+                    - text: and
+                    - strong [ref=f9e1017]: normal muscle function
+                    - text: ", Feel Pro Turmeric offers"
+                    - strong [ref=f9e1018]: protection against oxidative stress
+                    - text: ", so you can stay active and engage in all your favourite activities.60 capsules. 2 per day."
+                  - generic [ref=f9e1019] [cursor=pointer]: ... read more
+                - link "Learn More" [ref=f9e1021] [cursor=pointer]:
+                  - /url: /en-ae/products/feel-pro-turmeric
+          - generic [ref=f9e1023]:
+            - generic [ref=f9e1024]:
+              - link "Focus" [ref=f9e1026] [cursor=pointer]:
+                - /url: /en-ae/products/feel-cognition
+              - generic [ref=f9e1027]:
+                - generic [ref=f9e1028]:
+                  - generic [ref=f9e1029]: 
+                  - generic [ref=f9e1030]: 
+                  - generic [ref=f9e1031]: 
+                  - generic [ref=f9e1032]: 
+                  - generic [ref=f9e1033]: 
+                  - generic [ref=f9e1034]:
+                    - generic [ref=f9e1035]: 
+                    - generic [ref=f9e1036]: 
+                    - generic [ref=f9e1037]: 
+                    - generic [ref=f9e1038]: 
+                    - generic [ref=f9e1039]: 
+                - generic [ref=f9e1040]: 162 reviews
+              - generic [ref=f9e1041]:
+                - button "Health improvement timeline" [ref=f9e1043] [cursor=pointer]
+                - generic [ref=f9e1044]:
+                  - paragraph [ref=f9e1045]: Health improvement timeline
+                  - button "" [ref=f9e1046] [cursor=pointer]
+              - generic [ref=f9e1050]:
+                - button "View ingredients" [ref=f9e1051] [cursor=pointer]
+                - text:    
+            - generic [ref=f9e1052]:
+              - link [ref=f9e1055] [cursor=pointer]:
+                - /url: /en-ae/products/feel-cognition
+                - img "Focus box" [ref=f9e1056]
+              - generic [ref=f9e1057]:
+                - generic [ref=f9e1058]:
+                  - paragraph [ref=f9e1060]: This science-led brain neurotransmitter-stimulating formula is designed to make your brain work better, counteracting brain fog and fatigue. Improve concentration, energy, support focus, memory and brain health.60 capsules. 2 per day.
+                  - generic [ref=f9e1061] [cursor=pointer]: ... read more
+                - link "Learn More" [ref=f9e1063] [cursor=pointer]:
+                  - /url: /en-ae/products/feel-cognition
+          - generic [ref=f9e1065]:
+            - generic [ref=f9e1066]:
+              - link "Digestion" [ref=f9e1068] [cursor=pointer]:
+                - /url: /en-ae/products/feel-digestion
+              - generic [ref=f9e1069]:
+                - generic [ref=f9e1070]:
+                  - generic [ref=f9e1071]: 
+                  - generic [ref=f9e1072]: 
+                  - generic [ref=f9e1073]: 
+                  - generic [ref=f9e1074]: 
+                  - generic [ref=f9e1075]: 
+                  - generic [ref=f9e1076]:
+                    - generic [ref=f9e1077]: 
+                    - generic [ref=f9e1078]: 
+                    - generic [ref=f9e1079]: 
+                    - generic [ref=f9e1080]: 
+                    - generic [ref=f9e1081]: 
+                - generic [ref=f9e1082]: 144 reviews
+              - generic [ref=f9e1083]:
+                - button "Health improvement timeline" [ref=f9e1085] [cursor=pointer]
+                - generic [ref=f9e1086]:
+                  - paragraph [ref=f9e1087]: Health improvement timeline
+                  - button "" [ref=f9e1088] [cursor=pointer]
+              - generic [ref=f9e1092]:
+                - button "View ingredients" [ref=f9e1093] [cursor=pointer]
+                - text:    
+            - generic [ref=f9e1094]:
+              - generic [ref=f9e1095]:
+                - generic:
+                  - link "Digestion box":
+                    - /url: /en-ae/products/feel-digestion
+                    - img "Digestion box"
+              - generic [ref=f9e1096]:
+                - generic [ref=f9e1097]:
+                  - paragraph [ref=f9e1099]:
+                    - text: Digest without discomfort and forget about common issues that normally occur after eating certain foods. Our formula provides relief from common
+                    - strong [ref=f9e1100]: digestive system issues
+                    - text: like
+                    - strong [ref=f9e1101]: bloating, indigestion
+                    - text: and
+                    - strong [ref=f9e1102]: food intolerances
+                    - text: .60 capsules. 2 per day.
+                  - generic [ref=f9e1103] [cursor=pointer]: ... read more
+                - link "Learn More" [ref=f9e1105] [cursor=pointer]:
+                  - /url: /en-ae/products/feel-digestion
+        - generic [ref=f9e1108]:
+          - heading "Bundles built around your health goals" [level=2] [ref=f9e1109]
+          - generic [ref=f9e1111]:
+            - generic:
+              - button "Go to last slide" [ref=f9e1112] [cursor=pointer]
+              - button "Next slide" [ref=f9e1115] [cursor=pointer]
+            - list [ref=f9e1119]:
+              - listitem [aria-hidden] [ref=f9e1120]:
+                - generic [ref=f9e1121]:
+                  - generic [ref=f9e1125]:
+                    - heading [level=3] [ref=f9e1126]: Mood
+                    - paragraph [ref=f9e1127]: Support emotional wellbeing and resilience by balancing stress and promoting a calmer mind.
+                  - generic [ref=f9e1128]:
+                    - heading [level=4] [ref=f9e1132]: Multivitamin
+                    - heading [level=4] [ref=f9e1136]: Daily Biotic
+                  - button [ref=f9e1138] [cursor=pointer]:
+                    - generic [ref=f9e1139]: Bundle and Save
+              - listitem [aria-hidden] [ref=f9e1140]:
+                - generic [ref=f9e1141]:
+                  - generic [ref=f9e1145]:
+                    - heading [level=3] [ref=f9e1146]: Gut
+                    - paragraph [ref=f9e1147]: Promote better digestion, regularity, and a healthy microbiome for overall wellness.
+                  - generic [ref=f9e1148]:
+                    - heading [level=4] [ref=f9e1152]: Daily Biotic
+                    - heading [level=4] [ref=f9e1156]: Pro Metabolic
+                  - button [ref=f9e1158] [cursor=pointer]:
+                    - generic [ref=f9e1159]: Bundle and Save
+              - listitem [ref=f9e1160]:
+                - generic [ref=f9e1161]:
+                  - generic [ref=f9e1162]:
+                    - img "Anti-ageing" [ref=f9e1164]
+                    - generic [ref=f9e1165]:
+                      - heading "Anti-ageing" [level=3] [ref=f9e1166]
+                      - paragraph [ref=f9e1167]: Reduce fine lines and wrinkles and maintain a healthy, radiant complexion throughout the year.
+                  - generic [ref=f9e1168]:
+                    - generic [ref=f9e1169]:
+                      - img "Feel Pro Collagen - Peach" [ref=f9e1171]
+                      - heading "Pro Collagen" [level=4] [ref=f9e1172]
+                    - generic [ref=f9e1173]:
+                      - img "Feel Multivitamin" [ref=f9e1175]
+                      - heading "Multivitamin" [level=4] [ref=f9e1176]
+                    - generic [ref=f9e1177]:
+                      - img "Feel Smooth Skin" [ref=f9e1179]
+                      - heading "Smooth Skin" [level=4] [ref=f9e1180]
+                  - button "Bundle and Save" [ref=f9e1182] [cursor=pointer]
+              - listitem [ref=f9e1184]:
+                - generic [ref=f9e1185]:
+                  - generic [ref=f9e1186]:
+                    - img "Menopause" [ref=f9e1188]
+                    - generic [ref=f9e1189]:
+                      - heading "Menopause" [level=3] [ref=f9e1190]
+                      - paragraph [ref=f9e1191]: Support hormonal balance and common menopause symptoms for smoother transition.
+                  - generic [ref=f9e1192]:
+                    - generic [ref=f9e1193]:
+                      - img "Feel Menopause" [ref=f9e1195]
+                      - heading "Menopause" [level=4] [ref=f9e1196]
+                    - generic [ref=f9e1197]:
+                      - img "Feel Pro Collagen - Peach" [ref=f9e1199]
+                      - heading "Pro Collagen" [level=4] [ref=f9e1200]
+                  - button "Bundle and Save" [ref=f9e1202] [cursor=pointer]
+              - listitem [aria-hidden] [ref=f9e1204]:
+                - generic [ref=f9e1205]:
+                  - generic [ref=f9e1209]:
+                    - heading [level=3] [ref=f9e1210]: Hair, skin, nails
+                    - paragraph [ref=f9e1211]: Strengthen hair, improve skin elasticity, and support stronger nails with targeted nutrients.
+                  - generic [ref=f9e1212]:
+                    - heading [level=4] [ref=f9e1216]: Pro Collagen
+                    - heading [level=4] [ref=f9e1220]: Hair Loss Support
+                    - heading [level=4] [ref=f9e1224]: Multivitamin
+                  - button [ref=f9e1226] [cursor=pointer]:
+                    - generic [ref=f9e1227]: Bundle and Save
+              - listitem [aria-hidden] [ref=f9e1228]:
+                - generic [ref=f9e1229]:
+                  - generic [ref=f9e1233]:
+                    - heading [level=3] [ref=f9e1234]: Energy
+                    - paragraph [ref=f9e1235]: Boost physical and mental energy levels to power through your day with focus and vitality.
+                  - generic [ref=f9e1236]:
+                    - heading [level=4] [ref=f9e1240]: Multivitamin
+                    - heading [level=4] [ref=f9e1244]: Focus
+                  - button [ref=f9e1246] [cursor=pointer]:
+                    - generic [ref=f9e1247]: Bundle and Save
+              - listitem [aria-hidden] [ref=f9e1248]:
+                - generic [ref=f9e1249]:
+                  - generic [ref=f9e1253]:
+                    - heading [level=3] [ref=f9e1254]: Mood
+                    - paragraph [ref=f9e1255]: Support emotional wellbeing and resilience by balancing stress and promoting a calmer mind.
+                  - generic [ref=f9e1256]:
+                    - heading [level=4] [ref=f9e1260]: Multivitamin
+                    - heading [level=4] [ref=f9e1264]: Daily Biotic
+                  - button [ref=f9e1266] [cursor=pointer]:
+                    - generic [ref=f9e1267]: Bundle and Save
+              - listitem [aria-hidden] [ref=f9e1268]:
+                - generic [ref=f9e1269]:
+                  - generic [ref=f9e1273]:
+                    - heading [level=3] [ref=f9e1274]: Gut
+                    - paragraph [ref=f9e1275]: Promote better digestion, regularity, and a healthy microbiome for overall wellness.
+                  - generic [ref=f9e1276]:
+                    - heading [level=4] [ref=f9e1280]: Daily Biotic
+                    - heading [level=4] [ref=f9e1284]: Pro Metabolic
+                  - button [ref=f9e1286] [cursor=pointer]:
+                    - generic [ref=f9e1287]: Bundle and Save
+              - listitem [aria-hidden] [ref=f9e1288]:
+                - generic [ref=f9e1289]:
+                  - generic [ref=f9e1293]:
+                    - heading [level=3] [ref=f9e1294]: Anti-ageing
+                    - paragraph [ref=f9e1295]: Reduce fine lines and wrinkles and maintain a healthy, radiant complexion throughout the year.
+                  - generic [ref=f9e1296]:
+                    - heading [level=4] [ref=f9e1300]: Pro Collagen
+                    - heading [level=4] [ref=f9e1304]: Multivitamin
+                    - heading [level=4] [ref=f9e1308]: Smooth Skin
+                  - button [ref=f9e1310] [cursor=pointer]:
+                    - generic [ref=f9e1311]: Bundle and Save
+              - listitem [aria-hidden] [ref=f9e1312]:
+                - generic [ref=f9e1313]:
+                  - generic [ref=f9e1317]:
+                    - heading [level=3] [ref=f9e1318]: Menopause
+                    - paragraph [ref=f9e1319]: Support hormonal balance and common menopause symptoms for smoother transition.
+                  - generic [ref=f9e1320]:
+                    - heading [level=4] [ref=f9e1324]: Menopause
+                    - heading [level=4] [ref=f9e1328]: Pro Collagen
+                  - button [ref=f9e1330] [cursor=pointer]:
+                    - generic [ref=f9e1331]: Bundle and Save
+        - generic [ref=f9e1334]:
+          - list [ref=f9e1336]:
+            - listitem [aria-hidden] [ref=f9e1337]:
+              - generic [ref=f9e1339]:
+                - heading [level=3] [ref=f9e1340]: Sustainable
+                - list [ref=f9e1341]:
+                  - listitem [ref=f9e1342]: Plastic-free
+                  - listitem [ref=f9e1343]: Biodegradable
+                  - listitem [ref=f9e1344]: Eco-friendly paint
+            - listitem [aria-hidden] [ref=f9e1347]:
+              - generic [ref=f9e1349]:
+                - heading [level=3] [ref=f9e1350]: Accredited
+                - list [ref=f9e1351]:
+                  - listitem [ref=f9e1352]: cGMO accredited facilities
+                  - listitem [ref=f9e1353]: HFMA accredited
+                  - listitem [ref=f9e1354]: BRC accredited
+                  - listitem [ref=f9e1355]: UKAS tested
+            - listitem [ref=f9e1358]:
+              - generic [ref=f9e1359]:
+                - generic [ref=f9e1360]:
+                  - heading "Backed by real research" [level=3] [ref=f9e1361]
+                  - paragraph [ref=f9e1362]: Formulas with over 500+ clinical studies and research papers supporting the benefits of ingredients used in Feel products
+                - img "slide-1" [ref=f9e1364]
+            - listitem [aria-hidden] [ref=f9e1365]:
+              - generic [ref=f9e1367]:
+                - heading [level=3] [ref=f9e1368]: Lab tested for quality
+                - paragraph [ref=f9e1369]: Ingredients tested for quality by UKAS accredited laboratories
+            - listitem [aria-hidden] [ref=f9e1372]:
+              - generic [ref=f9e1374]:
+                - heading [level=3] [ref=f9e1375]: Ethical
+                - list [ref=f9e1376]:
+                  - listitem [ref=f9e1377]: Clean label, no additives
+                  - listitem [ref=f9e1378]: 100% Vegan
+                  - listitem [ref=f9e1379]: Cruelty-Free
+                  - listitem [ref=f9e1380]: PETA certified
+            - listitem [aria-hidden] [ref=f9e1383]:
+              - generic [ref=f9e1385]:
+                - heading [level=3] [ref=f9e1386]: Sustainable
+                - list [ref=f9e1387]:
+                  - listitem [ref=f9e1388]: Plastic-free
+                  - listitem [ref=f9e1389]: Biodegradable
+                  - listitem [ref=f9e1390]: Eco-friendly paint
+            - listitem [aria-hidden] [ref=f9e1393]:
+              - generic [ref=f9e1395]:
+                - heading [level=3] [ref=f9e1396]: Accredited
+                - list [ref=f9e1397]:
+                  - listitem [ref=f9e1398]: cGMO accredited facilities
+                  - listitem [ref=f9e1399]: HFMA accredited
+                  - listitem [ref=f9e1400]: BRC accredited
+                  - listitem [ref=f9e1401]: UKAS tested
+            - listitem [aria-hidden] [ref=f9e1404]:
+              - generic [ref=f9e1406]:
+                - heading [level=3] [ref=f9e1407]: Backed by real research
+                - paragraph [ref=f9e1408]: Formulas with over 500+ clinical studies and research papers supporting the benefits of ingredients used in Feel products
+            - listitem [aria-hidden] [ref=f9e1411]:
+              - generic [ref=f9e1413]:
+                - heading [level=3] [ref=f9e1414]: Lab tested for quality
+                - paragraph [ref=f9e1415]: Ingredients tested for quality by UKAS accredited laboratories
+          - list:
+            - listitem [ref=f9e1418]:
+              - button "Go to slide 1" [ref=f9e1419] [cursor=pointer]
+            - listitem [ref=f9e1420]:
+              - button "Go to slide 2" [ref=f9e1421] [cursor=pointer]
+            - listitem [ref=f9e1422]:
+              - button "Go to slide 3" [ref=f9e1423] [cursor=pointer]
+            - listitem [ref=f9e1424]:
+              - button "Go to slide 4" [ref=f9e1425] [cursor=pointer]
+            - listitem [ref=f9e1426]:
+              - button "Go to slide 5" [ref=f9e1427] [cursor=pointer]
+        - text:        ...        ...        ...        ...        ...
+  - text:   • • •
+  - dialog [aria-hidden] [ref=f9e1428]:
+    - document:
+      - generic [ref=f9e1430]:
+        - button [ref=f9e1431] [cursor=pointer]: 
+        - heading [level=5] [ref=f9e1432]: Full nutritional ingredients list
+  - generic [ref=f9e1436]:
+    - heading "Studies and trials" [level=2] [ref=f9e1438]
+    - generic [ref=f9e1441]:
+      - generic:
+        - button "Go to last slide" [ref=f9e1442] [cursor=pointer]
+        - button "Next slide" [ref=f9e1445] [cursor=pointer]
+      - list [ref=f9e1449]:
+        - listitem [aria-hidden] [ref=f9e1450]:
+          - generic [ref=f9e1451]:
+            - generic [ref=f9e1454]: Multivitamin
+            - generic [ref=f9e1455]:
+              - paragraph [ref=f9e1456]: 78%
+              - paragraph [ref=f9e1457]: of users saw an improvement after 4 weeks
+          - link [ref=f9e1459] [cursor=pointer]:
+            - /url: /en-ae/pages/science#essential-multivitamin
+            - generic [ref=f9e1460]: Learn More
+        - listitem [aria-hidden] [ref=f9e1461]:
+          - generic [ref=f9e1462]:
+            - generic [ref=f9e1464]: Pro Collagen
+            - generic [ref=f9e1465]:
+              - paragraph [ref=f9e1466]: 80%
+              - paragraph [ref=f9e1467]: of users in a clinical study significantly improved their skin
+          - link [ref=f9e1469] [cursor=pointer]:
+            - /url: /en-ae/pages/collagen-science
+            - generic [ref=f9e1470]: Learn More
+        - listitem [aria-hidden] [ref=f9e1471]:
+          - generic [ref=f9e1472]:
+            - generic [ref=f9e1475]: Hair Loss Support
+            - generic [ref=f9e1476]:
+              - paragraph [ref=f9e1477]: 91%
+              - paragraph [ref=f9e1478]: of users in a clinical study reduced hair loss
+          - link [ref=f9e1480] [cursor=pointer]:
+            - /url: /en-ae/pages/hair-loss-science
+            - generic [ref=f9e1481]: Learn More
+        - listitem [aria-hidden] [ref=f9e1482]:
+          - generic [ref=f9e1483]:
+            - generic [ref=f9e1485]: Omega 3 (Vegan)
+            - generic [ref=f9e1486]:
+              - paragraph [ref=f9e1487]: 78%
+              - paragraph [ref=f9e1488]: of users experienced benefits within 3 months
+          - link [ref=f9e1490] [cursor=pointer]:
+            - /url: /en-ae/pages/science#feel-algae-omega-3
+            - generic [ref=f9e1491]: Learn More
+        - listitem [aria-hidden] [ref=f9e1492]:
+          - generic [ref=f9e1493]:
+            - generic [ref=f9e1495]: Pro Turmeric
+            - generic [ref=f9e1496]:
+              - paragraph [ref=f9e1497]: 78%
+              - paragraph [ref=f9e1498]: of users saw a reduction in joint pain
+          - link [ref=f9e1500] [cursor=pointer]:
+            - /url: /en-ae/pages/science#feel-pro-turmeric
+            - generic [ref=f9e1501]: Learn More
+        - listitem [aria-hidden] [ref=f9e1502]:
+          - generic [ref=f9e1503]:
+            - generic [ref=f9e1505]: Digestion
+            - generic [ref=f9e1506]:
+              - paragraph [ref=f9e1507]: 90%
+              - paragraph [ref=f9e1508]: of users noticed a positive change in their digestion after 1 month
+          - link [ref=f9e1510] [cursor=pointer]:
+            - /url: /en-ae/pages/science#feel-digestion
+            - generic [ref=f9e1511]: Learn More
+        - listitem [aria-hidden] [ref=f9e1512]:
+          - generic [ref=f9e1513]:
+            - generic [ref=f9e1516]: Multivitamin
+            - generic [ref=f9e1517]:
+              - paragraph [ref=f9e1518]: 78%
+              - paragraph [ref=f9e1519]: of users saw an improvement after 4 weeks
+          - link [ref=f9e1521] [cursor=pointer]:
+            - /url: /en-ae/pages/science#essential-multivitamin
+            - generic [ref=f9e1522]: Learn More
+        - listitem [aria-hidden] [ref=f9e1523]:
+          - generic [ref=f9e1524]:
+            - generic [ref=f9e1526]: Pro Collagen
+            - generic [ref=f9e1527]:
+              - paragraph [ref=f9e1528]: 80%
+              - paragraph [ref=f9e1529]: of users in a clinical study significantly improved their skin
+          - link [ref=f9e1531] [cursor=pointer]:
+            - /url: /en-ae/pages/collagen-science
+            - generic [ref=f9e1532]: Learn More
+        - listitem [aria-hidden] [ref=f9e1533]:
+          - generic [ref=f9e1534]:
+            - generic [ref=f9e1537]: Hair Loss Support
+            - generic [ref=f9e1538]:
+              - paragraph [ref=f9e1539]: 91%
+              - paragraph [ref=f9e1540]: of users in a clinical study reduced hair loss
+          - link [ref=f9e1542] [cursor=pointer]:
+            - /url: /en-ae/pages/hair-loss-science
+            - generic [ref=f9e1543]: Learn More
+        - listitem [aria-hidden] [ref=f9e1544]:
+          - generic [ref=f9e1545]:
+            - generic [ref=f9e1547]: Omega 3 (Vegan)
+            - generic [ref=f9e1548]:
+              - paragraph [ref=f9e1549]: 78%
+              - paragraph [ref=f9e1550]: of users experienced benefits within 3 months
+          - link [ref=f9e1552] [cursor=pointer]:
+            - /url: /en-ae/pages/science#feel-algae-omega-3
+            - generic [ref=f9e1553]: Learn More
+        - listitem [aria-hidden] [ref=f9e1554]:
+          - generic [ref=f9e1555]:
+            - generic [ref=f9e1557]: Pro Turmeric
+            - generic [ref=f9e1558]:
+              - paragraph [ref=f9e1559]: 78%
+              - paragraph [ref=f9e1560]: of users saw a reduction in joint pain
+          - link [ref=f9e1562] [cursor=pointer]:
+            - /url: /en-ae/pages/science#feel-pro-turmeric
+            - generic [ref=f9e1563]: Learn More
+        - listitem [aria-hidden] [ref=f9e1564]:
+          - generic [ref=f9e1565]:
+            - generic [ref=f9e1567]: Digestion
+            - generic [ref=f9e1568]:
+              - paragraph [ref=f9e1569]: 90%
+              - paragraph [ref=f9e1570]: of users noticed a positive change in their digestion after 1 month
+          - link [ref=f9e1572] [cursor=pointer]:
+            - /url: /en-ae/pages/science#feel-digestion
+            - generic [ref=f9e1573]: Learn More
+        - listitem [ref=f9e1574]:
+          - generic [ref=f9e1575]:
+            - img "Feel Multivitamin box" [ref=f9e1577]
+            - generic [ref=f9e1578]: Multivitamin
+            - generic [ref=f9e1579]:
+              - paragraph [ref=f9e1580]: 78%
+              - paragraph [ref=f9e1581]: of users saw an improvement after 4 weeks
+          - link "Learn More" [ref=f9e1583] [cursor=pointer]:
+            - /url: /en-ae/pages/science#essential-multivitamin
+        - listitem [ref=f9e1585]:
+          - generic [ref=f9e1586]:
+            - generic [ref=f9e1587]:
+              - img "Feel Pro Collagen - Pineapple box"
+            - generic [ref=f9e1588]: Pro Collagen
+            - generic [ref=f9e1589]:
+              - paragraph [ref=f9e1590]: 80%
+              - paragraph [ref=f9e1591]: of users in a clinical study significantly improved their skin
+          - link "Learn More" [ref=f9e1593] [cursor=pointer]:
+            - /url: /en-ae/pages/collagen-science
+        - listitem [ref=f9e1595]:
+          - generic [ref=f9e1596]:
+            - img "Feel Hair Support box" [ref=f9e1598]
+            - generic [ref=f9e1599]: Hair Loss Support
+            - generic [ref=f9e1600]:
+              - paragraph [ref=f9e1601]: 91%
+              - paragraph [ref=f9e1602]: of users in a clinical study reduced hair loss
+          - link "Learn More" [ref=f9e1604] [cursor=pointer]:
+            - /url: /en-ae/pages/hair-loss-science
+        - listitem [ref=f9e1606]:
+          - generic [ref=f9e1607]:
+            - generic [ref=f9e1608]:
+              - img "Feel Omega 3 box"
+            - generic [ref=f9e1609]: Omega 3 (Vegan)
+            - generic [ref=f9e1610]:
+              - paragraph [ref=f9e1611]: 78%
+              - paragraph [ref=f9e1612]: of users experienced benefits within 3 months
+          - link "Learn More" [ref=f9e1614] [cursor=pointer]:
+            - /url: /en-ae/pages/science#feel-algae-omega-3
+        - listitem [aria-hidden] [ref=f9e1616]:
+          - generic [ref=f9e1617]:
+            - generic [ref=f9e1619]: Pro Turmeric
+            - generic [ref=f9e1620]:
+              - paragraph [ref=f9e1621]: 78%
+              - paragraph [ref=f9e1622]: of users saw a reduction in joint pain
+          - link [ref=f9e1624] [cursor=pointer]:
+            - /url: /en-ae/pages/science#feel-pro-turmeric
+            - generic [ref=f9e1625]: Learn More
+        - listitem [aria-hidden] [ref=f9e1626]:
+          - generic [ref=f9e1627]:
+            - generic [ref=f9e1629]: Digestion
+            - generic [ref=f9e1630]:
+              - paragraph [ref=f9e1631]: 90%
+              - paragraph [ref=f9e1632]: of users noticed a positive change in their digestion after 1 month
+          - link [ref=f9e1634] [cursor=pointer]:
+            - /url: /en-ae/pages/science#feel-digestion
+            - generic [ref=f9e1635]: Learn More
+        - listitem [aria-hidden] [ref=f9e1636]:
+          - generic [ref=f9e1637]:
+            - generic [ref=f9e1640]: Multivitamin
+            - generic [ref=f9e1641]:
+              - paragraph [ref=f9e1642]: 78%
+              - paragraph [ref=f9e1643]: of users saw an improvement after 4 weeks
+          - link [ref=f9e1645] [cursor=pointer]:
+            - /url: /en-ae/pages/science#essential-multivitamin
+            - generic [ref=f9e1646]: Learn More
+        - listitem [aria-hidden] [ref=f9e1647]:
+          - generic [ref=f9e1648]:
+            - generic [ref=f9e1650]: Pro Collagen
+            - generic [ref=f9e1651]:
+              - paragraph [ref=f9e1652]: 80%
+              - paragraph [ref=f9e1653]: of users in a clinical study significantly improved their skin
+          - link [ref=f9e1655] [cursor=pointer]:
+            - /url: /en-ae/pages/collagen-science
+            - generic [ref=f9e1656]: Learn More
+        - listitem [aria-hidden] [ref=f9e1657]:
+          - generic [ref=f9e1658]:
+            - generic [ref=f9e1661]: Hair Loss Support
+            - generic [ref=f9e1662]:
+              - paragraph [ref=f9e1663]: 91%
+              - paragraph [ref=f9e1664]: of users in a clinical study reduced hair loss
+          - link [ref=f9e1666] [cursor=pointer]:
+            - /url: /en-ae/pages/hair-loss-science
+            - generic [ref=f9e1667]: Learn More
+        - listitem [aria-hidden] [ref=f9e1668]:
+          - generic [ref=f9e1669]:
+            - generic [ref=f9e1671]: Omega 3 (Vegan)
+            - generic [ref=f9e1672]:
+              - paragraph [ref=f9e1673]: 78%
+              - paragraph [ref=f9e1674]: of users experienced benefits within 3 months
+          - link [ref=f9e1676] [cursor=pointer]:
+            - /url: /en-ae/pages/science#feel-algae-omega-3
+            - generic [ref=f9e1677]: Learn More
+        - listitem [aria-hidden] [ref=f9e1678]:
+          - generic [ref=f9e1679]:
+            - generic [ref=f9e1681]: Pro Turmeric
+            - generic [ref=f9e1682]:
+              - paragraph [ref=f9e1683]: 78%
+              - paragraph [ref=f9e1684]: of users saw a reduction in joint pain
+          - link [ref=f9e1686] [cursor=pointer]:
+            - /url: /en-ae/pages/science#feel-pro-turmeric
+            - generic [ref=f9e1687]: Learn More
+        - listitem [aria-hidden] [ref=f9e1688]:
+          - generic [ref=f9e1689]:
+            - generic [ref=f9e1691]: Digestion
+            - generic [ref=f9e1692]:
+              - paragraph [ref=f9e1693]: 90%
+              - paragraph [ref=f9e1694]: of users noticed a positive change in their digestion after 1 month
+          - link [ref=f9e1696] [cursor=pointer]:
+            - /url: /en-ae/pages/science#feel-digestion
+            - generic [ref=f9e1697]: Learn More
+        - listitem [aria-hidden] [ref=f9e1698]:
+          - generic [ref=f9e1699]:
+            - generic [ref=f9e1702]: Multivitamin
+            - generic [ref=f9e1703]:
+              - paragraph [ref=f9e1704]: 78%
+              - paragraph [ref=f9e1705]: of users saw an improvement after 4 weeks
+          - link [ref=f9e1707] [cursor=pointer]:
+            - /url: /en-ae/pages/science#essential-multivitamin
+            - generic [ref=f9e1708]: Learn More
+        - listitem [aria-hidden] [ref=f9e1709]:
+          - generic [ref=f9e1710]:
+            - generic [ref=f9e1712]: Pro Collagen
+            - generic [ref=f9e1713]:
+              - paragraph [ref=f9e1714]: 80%
+              - paragraph [ref=f9e1715]: of users in a clinical study significantly improved their skin
+          - link [ref=f9e1717] [cursor=pointer]:
+            - /url: /en-ae/pages/collagen-science
+            - generic [ref=f9e1718]: Learn More
+        - listitem [aria-hidden] [ref=f9e1719]:
+          - generic [ref=f9e1720]:
+            - generic [ref=f9e1723]: Hair Loss Support
+            - generic [ref=f9e1724]:
+              - paragraph [ref=f9e1725]: 91%
+              - paragraph [ref=f9e1726]: of users in a clinical study reduced hair loss
+          - link [ref=f9e1728] [cursor=pointer]:
+            - /url: /en-ae/pages/hair-loss-science
+            - generic [ref=f9e1729]: Learn More
+        - listitem [aria-hidden] [ref=f9e1730]:
+          - generic [ref=f9e1731]:
+            - generic [ref=f9e1733]: Omega 3 (Vegan)
+            - generic [ref=f9e1734]:
+              - paragraph [ref=f9e1735]: 78%
+              - paragraph [ref=f9e1736]: of users experienced benefits within 3 months
+          - link [ref=f9e1738] [cursor=pointer]:
+            - /url: /en-ae/pages/science#feel-algae-omega-3
+            - generic [ref=f9e1739]: Learn More
+        - listitem [aria-hidden] [ref=f9e1740]:
+          - generic [ref=f9e1741]:
+            - generic [ref=f9e1743]: Pro Turmeric
+            - generic [ref=f9e1744]:
+              - paragraph [ref=f9e1745]: 78%
+              - paragraph [ref=f9e1746]: of users saw a reduction in joint pain
+          - link [ref=f9e1748] [cursor=pointer]:
+            - /url: /en-ae/pages/science#feel-pro-turmeric
+            - generic [ref=f9e1749]: Learn More
+        - listitem [aria-hidden] [ref=f9e1750]:
+          - generic [ref=f9e1751]:
+            - generic [ref=f9e1753]: Digestion
+            - generic [ref=f9e1754]:
+              - paragraph [ref=f9e1755]: 90%
+              - paragraph [ref=f9e1756]: of users noticed a positive change in their digestion after 1 month
+          - link [ref=f9e1758] [cursor=pointer]:
+            - /url: /en-ae/pages/science#feel-digestion
+            - generic [ref=f9e1759]: Learn More
+  - text: 
+  - contentinfo [ref=f9e1760]:
+    - generic [ref=f9e1761]:
+      - generic [ref=f9e1762]:
+        - generic [ref=f9e1763]:
+          - paragraph [ref=f9e1764]: Start with our best sellers
+          - heading "Trending right now" [level=2] [ref=f9e1765]
+        - list [ref=f9e1766]:
+          - listitem [ref=f9e1767]:
+            - link "Pro Metabolic from ‎⃃ 295" [ref=f9e1768] [cursor=pointer]:
+              - /url: /en-ae/products/feel-pro-metabolic-berry
+              - generic [ref=f9e1770]: Pro Metabolic
+              - generic [ref=f9e1771]: from ‎⃃ 295
+          - listitem [ref=f9e1774]:
+            - link "Pro Collagen Jelly from ‎⃃ 235" [ref=f9e1775] [cursor=pointer]:
+              - /url: /en-ae/products/feel-pro-collagen-jelly-mixed-berry
+              - generic [ref=f9e1777]: Pro Collagen Jelly
+              - generic [ref=f9e1778]: from ‎⃃ 235
+          - listitem [ref=f9e1781]:
+            - link "Fiber Jelly from ‎⃃ 235" [ref=f9e1782] [cursor=pointer]:
+              - /url: /en-ae/products/feel-fiber-jelly-passion-fruit
+              - generic [ref=f9e1784]: Fiber Jelly
+              - generic [ref=f9e1785]: from ‎⃃ 235
+          - listitem [ref=f9e1788]:
+            - link "Bundle & save 25%" [ref=f9e1789] [cursor=pointer]:
+              - /url: /en-ae/collections/bundle-builder
+      - generic [ref=f9e1798]:
+        - generic [ref=f9e1799]:
+          - heading "Help with your order" [level=2] [ref=f9e1800]:
+            - button "Help with your order" [expanded]
+          - navigation "Help with your order" [ref=f9e1802]:
+            - link "My account" [ref=f9e1803] [cursor=pointer]:
+              - /url: /en-ae/account/login
+            - link "Track my order" [ref=f9e1809] [cursor=pointer]:
+              - /url: /en-ae/pages/tracking
+            - link "Delivery" [ref=f9e1817] [cursor=pointer]:
+              - /url: /en-ae/pages/shipping-rates
+            - link "FAQ" [ref=f9e1823] [cursor=pointer]:
+              - /url: /en-ae/pages/faq
+        - generic [ref=f9e1828]:
+          - heading "Offers and rewards" [level=2] [ref=f9e1829]:
+            - button "Offers and rewards" [expanded]
+          - navigation "Offers and rewards" [ref=f9e1831]:
+            - link "Bundle & save" [ref=f9e1832] [cursor=pointer]:
+              - /url: /en-ae/collections/bundle-builder
+            - link "Refer a friend" [ref=f9e1833] [cursor=pointer]:
+              - /url: /en-ae/a/referral
+            - link "Rewards & points" [ref=f9e1834] [cursor=pointer]:
+              - /url: /en-ae/pages/rewards
+        - generic [ref=f9e1835]:
+          - heading "Science" [level=2] [ref=f9e1836]:
+            - button "Science" [expanded]
+          - navigation "Science" [ref=f9e1838]:
+            - link "Pro Metabolic" [ref=f9e1839] [cursor=pointer]:
+              - /url: /en-ae/pages/pro-metabolic-science
+            - link "Pro Collagen" [ref=f9e1840] [cursor=pointer]:
+              - /url: /en-ae/pages/collagen-science
+            - link "Hair Support" [ref=f9e1841] [cursor=pointer]:
+              - /url: /en-ae/pages/hair-loss-science
+            - link "Smooth Skin" [ref=f9e1842] [cursor=pointer]:
+              - /url: /en-ae/pages/smooth-skin-science
+            - link "Vitamins & Minerals" [ref=f9e1843] [cursor=pointer]:
+              - /url: /en-ae/pages/science
+        - generic [ref=f9e1844]:
+          - heading "Company & reviews" [level=2] [ref=f9e1845]:
+            - button "Company & reviews" [expanded]
+          - navigation "Company & reviews" [ref=f9e1847]:
+            - link "About" [ref=f9e1848] [cursor=pointer]:
+              - /url: /en-ae/pages/our-story
+            - link "Blog" [ref=f9e1849] [cursor=pointer]:
+              - /url: /en-ae/blogs/learn
+            - link "Customer reviews" [ref=f9e1850] [cursor=pointer]:
+              - /url: /en-ae/pages/reviews
+            - link "Nutritionist reviews" [ref=f9e1851] [cursor=pointer]:
+              - /url: /en-ae/pages/nutritionists
+        - generic [ref=f9e1852]:
+          - heading "Partner with us" [level=2] [ref=f9e1853]:
+            - button "Partner with us" [expanded]
+          - navigation "Partner with us" [ref=f9e1855]:
+            - link "Practitioners" [ref=f9e1856] [cursor=pointer]:
+              - /url: /en-ae/pages/practitioners
+            - link "Brand ambassadors" [ref=f9e1857] [cursor=pointer]:
+              - /url: /en-ae/pages/brand-ambassadors
+            - link "Affiliates" [ref=f9e1858] [cursor=pointer]:
+              - /url: /en-ae/pages/affiliates
+            - link "Distribution and retail" [ref=f9e1859] [cursor=pointer]:
+              - /url: /en-ae/pages/distribution-retail-enquiries
+      - generic [ref=f9e1860]:
+        - generic [ref=f9e1861]:
+          - paragraph [ref=f9e1862]: Stay in touch
+          - paragraph [ref=f9e1863]: Health tips and early offers.
+        - generic [ref=f9e1864]:
+          - generic [ref=f9e1865]:
+            - textbox "Email address" [ref=f9e1866]
+            - button "Join" [ref=f9e1867] [cursor=pointer]
+          - generic [ref=f9e1870]:
+            - link [ref=f9e1871] [cursor=pointer]:
+              - /url: https://www.instagram.com/wearefeel/
+              - img "instagram" [ref=f9e1872]
+            - link [ref=f9e1873] [cursor=pointer]:
+              - /url: https://www.tiktok.com/@wearefeel?_op=1&_r=1&_t=8dZSDMO8g2t
+              - img "tiktok" [ref=f9e1874]
+      - generic [ref=f9e1875]:
+        - generic [ref=f9e1876]:
+          - generic [ref=f9e1877]:
+            - button "United Arab Emiratesflag United Arab Emirates AED ‎⃃" [ref=f9e1878] [cursor=pointer]:
+              - img "United Arab Emiratesflag" [ref=f9e1879]
+              - generic [ref=f9e1880]:
+                - text: United Arab Emirates
+                - generic [ref=f9e1881]: AED ‎⃃
+            - group "Language" [ref=f9e1884]:
+              - link "English" [ref=f9e1885] [cursor=pointer]:
+                - /url: /en-ae/products
+              - link "العربية" [ref=f9e1887] [cursor=pointer]:
+                - /url: /ar-ae/products
+            - list [ref=f9e1888]:
+              - listitem [ref=f9e1889]:
+                - img "Visa" [ref=f9e1890]
+              - listitem [ref=f9e1891]:
+                - img "Mastercard" [ref=f9e1892]
+              - listitem [ref=f9e1893]:
+                - img "Apple Pay" [ref=f9e1894]
+              - listitem [ref=f9e1895]:
+                - img "Google Pay" [ref=f9e1896]
+              - listitem [ref=f9e1897]:
+                - img "Tabby" [ref=f9e1898]
+          - paragraph [ref=f9e1899]:
+            - text: Something else?
+            - link "Contact us" [ref=f9e1900] [cursor=pointer]:
+              - /url: /en-ae/pages/faq
+          - navigation [ref=f9e1901]:
+            - link "Privacy policy" [ref=f9e1902] [cursor=pointer]:
+              - /url: /en-ae/pages/privacy-policy
+            - link "Shipping and returns" [ref=f9e1903] [cursor=pointer]:
+              - /url: /en-ae/pages/shipping-rates
+            - link "Terms of service" [ref=f9e1904] [cursor=pointer]:
+              - /url: /en-ae/pages/terms-of-service
+            - link "Subscription cancellation policy" [ref=f9e1905] [cursor=pointer]:
+              - /url: /en-ae/pages/subscription-cancellation-policy
+        - generic [ref=f9e1906]:
+          - link [ref=f9e1907] [cursor=pointer]:
+            - /url: /en-ae
+            - img "Feel logo" [ref=f9e1908]
+          - paragraph [ref=f9e1909]: Premium wellness, reimagined
+          - paragraph [ref=f9e1910]: Feel Wellness Food Supplements Trading Co. 2026. All Rights Reserved.
+  - generic [ref=f9e1912]:
+    - button "empty cart 0" [ref=f9e1914] [cursor=pointer]:
+      - img "empty cart" [ref=f9e1915]
+      - generic [ref=f9e1916]: "0"
+    - button "Checkout " [disabled] [ref=f9e1918]:
+      - text: Checkout
+      - generic [ref=f9e1919]: 
+  - generic: 
+  - dialog [ref=f9e1920]:
+    - document:
+      - generic [ref=f9e1922]:
+        - button "Close" [ref=f9e1923] [cursor=pointer]:
+          - generic [ref=f9e1924]: 
+        - heading "My Cart" [level=3] [ref=f9e1925]

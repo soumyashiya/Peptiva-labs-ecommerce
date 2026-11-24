@@ -181,12 +181,12 @@ export default function PaymentCapturePage({
   return (
     <>
       <Navbar />
-      <main className="section-block bg-canvas pb-24 pt-28 sm:pt-32">
-        <div className="container-fluid">
-          <p className="text-[11px] uppercase tracking-label text-ink-muted">
+      <main className="bg-white pb-24 pt-28 sm:pt-32">
+        <div className="shell">
+          <p className="text-small uppercase tracking-caps text-grey-600">
             Payment upload
           </p>
-          <h1 className="mt-2 text-[clamp(38px,6vw,72px)] font-medium leading-[1] tracking-tight2 text-ink">
+          <h1 className="mt-2 text-h1 font-normal text-black">
             Complete your payment
           </h1>
 
@@ -197,22 +197,22 @@ export default function PaymentCapturePage({
           {loading && (
             <div className="mt-10 grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-12">
               <div className="lg:col-span-7 space-y-6">
-                <div className="animate-pulse rounded-card border border-line bg-white p-6 sm:p-8">
-                  <div className="h-3 w-20 rounded-full bg-line" />
-                  <div className="mt-3 h-5 w-48 rounded-full bg-line" />
+                <div className="animate-pulse rounded-lg border border-grey-200 bg-white p-6 sm:p-8">
+                  <div className="h-3 w-20 rounded-full bg-grey-200" />
+                  <div className="mt-3 h-5 w-48 rounded-full bg-grey-200" />
                   <div className="mt-8 space-y-4">
-                    <div className="h-4 w-full rounded-full bg-line/70" />
-                    <div className="h-4 w-5/6 rounded-full bg-line/70" />
-                    <div className="h-4 w-2/3 rounded-full bg-line/70" />
+                    <div className="h-4 w-full rounded-full bg-grey-200/70" />
+                    <div className="h-4 w-5/6 rounded-full bg-grey-200/70" />
+                    <div className="h-4 w-2/3 rounded-full bg-grey-200/70" />
                   </div>
                 </div>
-                <div className="animate-pulse rounded-card border border-line bg-white p-6 sm:p-8">
-                  <div className="h-3 w-32 rounded-full bg-line" />
-                  <div className="mt-6 h-32 rounded-card bg-line/60" />
+                <div className="animate-pulse rounded-lg border border-grey-200 bg-white p-6 sm:p-8">
+                  <div className="h-3 w-32 rounded-full bg-grey-200" />
+                  <div className="mt-6 h-32 rounded-lg bg-grey-200/60" />
                 </div>
               </div>
               <div className="lg:col-span-5">
-                <div className="animate-pulse rounded-card bg-surface-dim p-6 sm:p-8">
+                <div className="animate-pulse rounded-lg bg-sand-100 p-6 sm:p-8">
                   <div className="h-3 w-24 rounded-full bg-white/60" />
                   <div className="mt-6 space-y-4">
                     <div className="h-4 w-full rounded-full bg-white/50" />
@@ -225,16 +225,16 @@ export default function PaymentCapturePage({
           )}
 
           {error && (
-            <div className="mt-10 max-w-xl rounded-card border border-line bg-white p-8">
-              <div className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-red-50 text-red-500">
+            <div className="mt-10 max-w-xl rounded-lg border border-grey-200 bg-white p-8">
+              <div className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-alert-50 text-alert-500">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                   <path d="M12 8v5M12 16h.01" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
                   <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.6" />
                 </svg>
               </div>
-              <p className="mt-4 text-[15px] font-medium text-ink">Link invalid</p>
-              <p className="mt-2 text-[14px] text-ink-secondary">{error}</p>
-              <Link href="/" className="btn-dark mt-6">
+              <p className="mt-4 text-base font-medium text-black">Link invalid</p>
+              <p className="mt-2 text-base text-grey-700">{error}</p>
+              <Link href="/" className="btn-primary mt-6">
                 Back to home
               </Link>
             </div>
@@ -245,72 +245,72 @@ export default function PaymentCapturePage({
               {/* Left: order + bank + upload */}
               <div className="lg:col-span-7">
                 {/* Order summary */}
-                <section className="rounded-card border border-line bg-white p-6 sm:p-8">
+                <section className="rounded-lg border border-grey-200 bg-white p-6 sm:p-8">
                   <div className="flex flex-wrap items-center justify-between gap-3">
                     <div>
-                      <p className="text-[11px] uppercase tracking-label text-ink-muted">
+                      <p className="text-small uppercase tracking-caps text-grey-600">
                         Order
                       </p>
-                      <p className="mt-1 text-[18px] font-medium text-ink">
+                      <p className="mt-1 text-h4 font-medium text-black">
                         {ctx.order.order_number}
                       </p>
                     </div>
-                    <span className="inline-flex items-center rounded-pill border border-line bg-canvas px-3 py-1 text-[11px] uppercase tracking-label text-ink-secondary">
+                    <span className="inline-flex items-center rounded-pill border border-grey-200 bg-white px-3 py-1 text-small uppercase tracking-caps text-grey-700">
                       Payment: {ctx.order.payment_status || "pending"}
                     </span>
                   </div>
 
-                  <ul className="mt-6 divide-y divide-line border-y border-line">
+                  <ul className="mt-6 divide-y divide-grey-200 border-y border-grey-200">
                     {ctx.items.map((it) => (
                       <li key={it.id} className="flex items-center justify-between py-3">
                         <div className="min-w-0 pr-4">
-                          <p className="truncate text-[14px] font-medium text-ink">
+                          <p className="truncate text-base font-medium text-black">
                             {it.name}
                           </p>
-                          <p className="text-[12px] text-ink-muted">
+                          <p className="text-small text-grey-600">
                             Qty {it.quantity} · {formatUSD(toNumber(it.unit_price))} each
                           </p>
                         </div>
-                        <span className="text-[14px] font-medium text-ink">
+                        <span className="text-base font-medium text-black">
                           {formatUSD(toNumber(it.line_total))}
                         </span>
                       </li>
                     ))}
                   </ul>
 
-                  <div className="mt-5 flex items-center justify-between text-[14px] text-ink-secondary">
+                  <div className="mt-5 flex items-center justify-between text-base text-grey-700">
                     <span>Subtotal</span>
-                    <span className="font-medium text-ink">
+                    <span className="font-medium text-black">
                       {formatUSD(toNumber(ctx.order.subtotal))}
                     </span>
                   </div>
-                  <div className="mt-2 flex items-center justify-between text-[14px] text-ink-secondary">
+                  <div className="mt-2 flex items-center justify-between text-base text-grey-700">
                     <span>Shipping</span>
-                    <span className="font-medium text-ink">
+                    <span className="font-medium text-black">
                       {formatUSD(toNumber(ctx.order.shipping))}
                     </span>
                   </div>
                   {(promoApplied || toNumber(ctx.order.discount_amount) > 0) && (
-                    <div className="mt-2 flex items-center justify-between text-[14px] text-ink-secondary">
+                    <div className="mt-2 flex items-center justify-between text-base text-grey-700">
                       <span>Discount{promoApplied ? ` (${promoApplied.code})` : ""}</span>
-                      <span className="font-medium text-ink">
+                      <span className="font-medium text-black">
                         −{formatUSD(toNumber(ctx.order.discount_amount))}
                       </span>
                     </div>
                   )}
-                  <div className="mt-4 flex items-center justify-between border-t border-line pt-4">
-                    <span className="text-[16px] font-medium text-ink">
+                  <div className="mt-4 flex items-center justify-between border-t border-grey-200 pt-4">
+                    <span className="text-base font-medium text-black">
                       Total due
                     </span>
-                    <span className="text-[22px] font-medium text-ink">
+                    <span className="text-h3 font-normal text-black">
                       {formatUSD(promoApplied?.total ?? toNumber(ctx.order.total))}
                     </span>
                   </div>
 
-                  <div className="mt-5 flex gap-3 rounded-2xl border border-line bg-canvas p-4 text-[11px] leading-relaxed text-ink-secondary">
-                    <ShieldIcon className="mt-0.5 h-4 w-4 flex-none text-ink-muted" />
+                  <div className="mt-5 flex gap-3 rounded-2xl border border-grey-200 bg-white p-4 text-small leading-relaxed text-grey-700">
+                    <ShieldIcon className="mt-0.5 h-4 w-4 flex-none text-grey-600" />
                     <div>
-                      <p className="font-semibold uppercase tracking-label text-ink">
+                      <p className="font-semibold uppercase tracking-caps text-black">
                         Research use only
                       </p>
                       <p className="mt-1.5">
@@ -325,8 +325,8 @@ export default function PaymentCapturePage({
 
                   {/* Promo (only if allowed) */}
                   {ctx.allowPromo && !promoApplied && (
-                    <div className="mt-6 border-t border-line pt-5">
-                      <p className="text-[12px] font-medium text-ink">
+                    <div className="mt-6 border-t border-grey-200 pt-5">
+                      <p className="text-small font-medium text-black">
                         Have a promo code?
                       </p>
                       <div className="mt-2 flex gap-2">
@@ -335,24 +335,24 @@ export default function PaymentCapturePage({
                           placeholder="Promo code"
                           value={promoInput}
                           onChange={(e) => setPromoInput(e.target.value)}
-                          className="min-w-0 flex-1 rounded-pill border border-line bg-white px-4 py-2.5 text-[13px] text-ink outline-none focus:border-ink/30"
+                          className="min-w-0 flex-1 rounded-pill border border-grey-200 bg-white px-4 py-2.5 text-small text-black outline-none focus:border-black"
                         />
                         <button
                           type="button"
                           onClick={handleApplyPromo}
                           disabled={promoBusy || !promoInput.trim()}
-                          className="rounded-pill border border-line bg-white px-4 py-2.5 text-[13px] font-medium text-ink hover:bg-canvas disabled:opacity-50"
+                          className="rounded-pill border border-grey-200 bg-white px-4 py-2.5 text-small font-medium text-black hover:bg-white disabled:opacity-50"
                         >
                           {promoBusy ? "…" : "Apply"}
                         </button>
                       </div>
                       {promoError && (
-                        <p className="mt-2 text-[12px] text-red-600">{promoError}</p>
+                        <p className="mt-2 text-small text-alert-500">{promoError}</p>
                       )}
                     </div>
                   )}
                   {promoApplied && (
-                    <p className="mt-4 rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-2.5 text-[13px] text-emerald-800">
+                    <p className="mt-4 rounded-xl border border-leaf-800/25 bg-tint-sage px-4 py-2.5 text-small text-leaf-800">
                       {promoApplied.code} · {promoApplied.percent}% off applied. New
                       total {formatUSD(promoApplied.total)}.
                     </p>
@@ -360,14 +360,14 @@ export default function PaymentCapturePage({
                 </section>
 
                 {/* Upload */}
-                <section className="mt-8 rounded-card border border-line bg-white p-6 sm:p-8">
-                  <p className="text-[11px] uppercase tracking-label text-ink-muted">
+                <section className="mt-8 rounded-lg border border-grey-200 bg-white p-6 sm:p-8">
+                  <p className="text-small uppercase tracking-caps text-grey-600">
                     Upload proof of payment
                   </p>
-                  <h2 className="mt-2 text-[20px] font-medium tracking-tight2 text-ink">
+                  <h2 className="mt-2 text-h3 font-normal text-black">
                     Attach your bank-transfer screenshot
                   </h2>
-                  <p className="mt-2 text-[13px] text-ink-secondary">
+                  <p className="mt-2 text-small text-grey-700">
                     We&rsquo;ll verify it and mark your order as paid. Accepted
                     formats: any image. Max 25 MB.
                   </p>
@@ -385,10 +385,10 @@ export default function PaymentCapturePage({
                       const f = e.dataTransfer.files?.[0];
                       if (f) pickFile(f);
                     }}
-                    className={`mt-5 flex cursor-pointer flex-col items-center justify-center rounded-card border border-dashed p-8 text-center transition-all duration-200 ${
+                    className={`mt-5 flex cursor-pointer flex-col items-center justify-center rounded-lg border border-dashed p-8 text-center transition-all duration-200 ${
                       dragActive
-                        ? "border-ink/50 bg-ink/[0.04] scale-[1.01]"
-                        : "border-line bg-canvas hover:border-ink/40"
+                        ? "border-black/50 bg-black/[0.04] scale-[1.01]"
+                        : "border-grey-200 bg-white hover:border-black/40"
                     }`}
                   >
                     {filePreview ? (
@@ -397,7 +397,7 @@ export default function PaymentCapturePage({
                         <img
                           src={filePreview}
                           alt="Screenshot preview"
-                          className="mx-auto max-h-40 rounded-2xl border border-line object-contain shadow-soft"
+                          className="mx-auto max-h-40 rounded-2xl border border-grey-200 object-contain shadow-soft"
                         />
                       </div>
                     ) : (
@@ -411,10 +411,10 @@ export default function PaymentCapturePage({
                         />
                       </svg>
                     )}
-                    <p className="mt-3 text-[14px] font-medium text-ink">
+                    <p className="mt-3 text-base font-medium text-black">
                       {file ? file.name : "Choose image or drag it here"}
                     </p>
-                    <p className="mt-1 text-[12px] text-ink-muted">
+                    <p className="mt-1 text-small text-grey-600">
                       {file ? `${(file.size / 1024).toFixed(0)} KB · tap to replace` : "PNG, JPG up to 25 MB"}
                     </p>
                     <input
@@ -434,14 +434,14 @@ export default function PaymentCapturePage({
                         pickFile(null);
                         if (fileRef.current) fileRef.current.value = "";
                       }}
-                      className="mt-3 text-[12px] font-medium text-ink-muted underline underline-offset-2 hover:text-ink"
+                      className="mt-3 text-small font-medium text-grey-600 underline underline-offset-2 hover:text-black"
                     >
                       Remove file
                     </button>
                   )}
 
                   {uploadError && (
-                    <p className="mt-4 rounded-xl border border-red-200 bg-red-50 px-4 py-2.5 text-[13px] text-red-700">
+                    <p className="mt-4 rounded-xl border border-alert-500/30 bg-alert-50 px-4 py-2.5 text-small text-alert-500">
                       {uploadError}
                     </p>
                   )}
@@ -450,7 +450,7 @@ export default function PaymentCapturePage({
                     type="button"
                     onClick={handleUpload}
                     disabled={!file || uploading}
-                    className="btn-dark relative mt-5 w-full justify-center overflow-hidden disabled:opacity-60"
+                    className="btn-primary relative mt-5 w-full justify-center overflow-hidden disabled:opacity-60"
                   >
                     {uploading && (
                       <span className="absolute inset-y-0 left-0 w-full animate-[upload-progress_1.4s_ease-in-out_infinite] bg-white/15" />
@@ -465,7 +465,7 @@ export default function PaymentCapturePage({
                       {uploading ? "Verifying screenshot…" : "Submit for verification"}
                     </span>
                   </button>
-                  <p className="mt-3 flex items-center justify-center gap-1.5 text-[11px] text-ink-muted">
+                  <p className="mt-3 flex items-center justify-center gap-1.5 text-small text-grey-600">
                     <LockIcon className="h-3.5 w-3.5" />
                     Verified automatically via secure OCR matching
                   </p>
@@ -474,16 +474,16 @@ export default function PaymentCapturePage({
 
               {/* Right: bank details */}
               <aside className="lg:col-span-5">
-                <div className="rounded-card bg-surface-dim p-6 sm:p-8 lg:sticky lg:top-28">
+                <div className="rounded-lg bg-sand-100 p-6 sm:p-8 lg:sticky lg:top-28">
                   <div className="flex items-center gap-2">
-                    <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white/70 text-ink-secondary">
+                    <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white/70 text-grey-700">
                       <LockIcon className="h-4 w-4" />
                     </span>
-                    <p className="text-[11px] uppercase tracking-label text-ink-muted">
+                    <p className="text-small uppercase tracking-caps text-grey-600">
                       Transfer to
                     </p>
                   </div>
-                  <div className="mt-4 grid gap-3 text-[14px]">
+                  <div className="mt-4 grid gap-3 text-base">
                     <BankRow label="Payee" value={ctx.bank.payeeName} />
                     <BankRow label="Sort code" value={ctx.bank.sortCode} mono />
                     <BankRow
@@ -493,15 +493,15 @@ export default function PaymentCapturePage({
                     />
                     <BankRow label="Reference" value={ctx.bank.reference} mono />
                   </div>
-                  <div className="mt-6 flex items-center justify-between border-t border-line pt-5">
-                    <span className="text-[14px] text-ink-secondary">
+                  <div className="mt-6 flex items-center justify-between border-t border-grey-200 pt-5">
+                    <span className="text-base text-grey-700">
                       Amount to send
                     </span>
-                    <span className="text-[20px] font-medium text-ink">
+                    <span className="text-h3 font-normal text-black">
                       {formatUSD(promoApplied?.total ?? toNumber(ctx.order.total))}
                     </span>
                   </div>
-                  <p className="mt-4 text-[12px] leading-relaxed text-ink-muted">
+                  <p className="mt-4 text-small leading-relaxed text-grey-600">
                     Use the reference above so we can match your transfer. After
                     sending, upload the confirmation screenshot on the left.
                   </p>
@@ -544,17 +544,17 @@ function BankRow({
   }
   return (
     <div className="flex items-center justify-between gap-3 rounded-2xl bg-white/40 px-3.5 py-2.5 transition-colors hover:bg-white/70">
-      <span className="text-ink-secondary">{label}</span>
+      <span className="text-grey-700">{label}</span>
       <div className="flex items-center gap-2">
         <span
-          className={`font-medium text-ink ${mono ? "font-mono" : ""}`}
+          className={`font-medium text-black ${mono ? "font-mono" : ""}`}
         >
           {value}
         </span>
         <button
           type="button"
           onClick={copy}
-          className="inline-flex items-center gap-1 rounded-md px-2 py-1 text-[11px] font-medium text-ink-secondary transition-colors hover:bg-white hover:text-ink"
+          className="inline-flex items-center gap-1 rounded-md px-2 py-1 text-small font-medium text-grey-700 transition-colors hover:bg-white hover:text-black"
         >
           {copied ? (
             <>
@@ -581,12 +581,12 @@ function PaymentSteps({ active }: { active: 0 | 1 | 2 }) {
         return (
           <li key={label} className="flex items-center gap-2">
             <span
-              className={`inline-flex h-6 w-6 flex-none items-center justify-center rounded-full text-[11px] font-medium transition-colors ${
+              className={`inline-flex h-6 w-6 flex-none items-center justify-center rounded-full text-small font-medium transition-colors ${
                 state === "done"
-                  ? "bg-ink_btn text-white"
+                  ? "bg-black text-white"
                   : state === "active"
-                    ? "border border-ink_btn text-ink"
-                    : "border border-line text-ink-muted"
+                    ? "border border-black text-black"
+                    : "border border-grey-200 text-grey-600"
               }`}
             >
               {state === "done" ? (
@@ -598,14 +598,14 @@ function PaymentSteps({ active }: { active: 0 | 1 | 2 }) {
               )}
             </span>
             <span
-              className={`text-[12px] font-medium ${
-                state === "upcoming" ? "text-ink-muted" : "text-ink"
+              className={`text-small font-medium ${
+                state === "upcoming" ? "text-grey-600" : "text-black"
               }`}
             >
               {label}
             </span>
             {i < steps.length - 1 && (
-              <span className="ml-2 hidden h-px w-8 bg-line sm:inline-block" />
+              <span className="ml-2 hidden h-px w-8 bg-grey-200 sm:inline-block" />
             )}
           </li>
         );
@@ -631,36 +631,36 @@ function ResultCard({
     received: {
       title: "Payment received",
       body: "Your transfer was verified. We&rsquo;ll process your order shortly.",
-      color: "bg-emerald-50 border-emerald-200 text-emerald-800",
+      color: "bg-tint-sage border-leaf-800/25 text-leaf-800",
       icon: (
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
           <path d="M5 13l4 4L19 7" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       ),
-      iconBg: "bg-emerald-100 text-emerald-700",
+      iconBg: "bg-tint-sage text-leaf-800",
     },
     rejected: {
       title: "Payment couldn't be verified",
       body: "The screenshot didn&rsquo;t match the expected transfer. Please double-check the amount and reference, then try again.",
-      color: "bg-red-50 border-red-200 text-red-700",
+      color: "bg-alert-50 border-alert-500/30 text-alert-500",
       icon: (
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
           <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       ),
-      iconBg: "bg-red-100 text-red-600",
+      iconBg: "bg-alert-50 text-alert-500",
     },
     pending: {
       title: "Awaiting manual review",
       body: "Automatic verification isn&rsquo;t available right now. Our team will review your screenshot shortly.",
-      color: "bg-surface-soft border-line text-ink-secondary",
+      color: "bg-sand-100 border-grey-200 text-grey-700",
       icon: (
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
           <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.8" />
           <path d="M12 7v5l3 2" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       ),
-      iconBg: "bg-surface-mute text-ink-secondary",
+      iconBg: "bg-grey-100 text-grey-700",
     },
   }[status];
 
@@ -670,7 +670,7 @@ function ResultCard({
 
   return (
     <div className="mt-10 max-w-xl">
-      <div className={`rounded-card border p-6 sm:p-8 ${config.color}`}>
+      <div className={`rounded-lg border p-6 sm:p-8 ${config.color}`}>
         <div className="flex items-start gap-4">
           <span
             className={`inline-flex h-11 w-11 flex-none items-center justify-center rounded-full ${config.iconBg}`}
@@ -678,27 +678,27 @@ function ResultCard({
             {config.icon}
           </span>
           <div>
-            <p className="text-[11px] uppercase tracking-label opacity-70">
+            <p className="text-small uppercase tracking-caps opacity-70">
               Verification result
             </p>
-            <h2 className="mt-1 text-[22px] font-medium tracking-tight2 text-ink">
+            <h2 className="mt-1 text-h3 font-normal text-black">
               {config.title}
             </h2>
           </div>
         </div>
         <p
-          className="mt-4 text-[14px] leading-relaxed"
+          className="mt-4 text-base leading-relaxed"
           dangerouslySetInnerHTML={{ __html: config.body }}
         />
         {verification_error && (
-          <p className="mt-3 text-[12px] opacity-80">
+          <p className="mt-3 text-small opacity-80">
             Details: {verification_error}
           </p>
         )}
 
         {verification && (
           <div className="mt-5 rounded-2xl border border-current/15 bg-white/60 p-4">
-            <div className="flex items-center justify-between text-[12px] font-medium">
+            <div className="flex items-center justify-between text-small font-medium">
               <span className="opacity-80">Match confidence</span>
               <span>{probabilityPct}%</span>
             </div>
@@ -709,7 +709,7 @@ function ResultCard({
               />
             </div>
 
-            <div className="mt-4 flex items-center justify-between text-[12px]">
+            <div className="mt-4 flex items-center justify-between text-small">
               <span className="opacity-70">Amount detected</span>
               <span className="font-medium">
                 {verification.extracted.best_amount != null
@@ -726,10 +726,10 @@ function ResultCard({
                 {verification.reasons.map((r) => (
                   <li
                     key={r}
-                    className={`inline-flex items-center gap-1 rounded-pill border px-2.5 py-1 text-[11px] font-medium ${
+                    className={`inline-flex items-center gap-1 rounded-pill border px-2.5 py-1 text-small font-medium ${
                       isPositiveReason(r)
-                        ? "border-emerald-300/60 bg-emerald-500/10 text-emerald-800"
-                        : "border-red-300/60 bg-red-500/10 text-red-700"
+                        ? "border-leaf-800/25/60 bg-leaf-600/10 text-leaf-800"
+                        : "border-alert-500/30/60 bg-alert-500/10 text-alert-500"
                     }`}
                   >
                     {isPositiveReason(r) ? "✓" : "✕"} {reasonLabel(r)}
@@ -745,7 +745,7 @@ function ResultCard({
             href={screenshotUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-4 inline-flex text-[12px] underline underline-offset-4 opacity-80 hover:opacity-100"
+            className="mt-4 inline-flex text-small underline underline-offset-4 opacity-80 hover:opacity-100"
           >
             View uploaded screenshot ↗
           </a>
@@ -758,11 +758,11 @@ function ResultCard({
               ? `/orders/${encodeURIComponent(orderNumber)}`
               : "/track-order"
           }
-          className="btn-dark"
+          className="btn-primary"
         >
           Track order
         </Link>
-        <Link href="/" className="btn-ghost">
+        <Link href="/" className="btn-secondary">
           Back to home
         </Link>
       </div>

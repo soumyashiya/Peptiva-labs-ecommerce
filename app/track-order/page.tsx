@@ -63,12 +63,12 @@ function paymentMethodLabel(method: unknown): string {
 function statusStyles(status: string): string {
   const s = (status || "").toLowerCase();
   if (["completed", "paid", "received", "shipped", "delivered"].includes(s)) {
-    return "border-emerald-200 bg-emerald-50 text-emerald-800";
+    return "border-leaf-800/25 bg-tint-sage text-leaf-800";
   }
   if (["rejected", "failed", "cancelled"].includes(s)) {
-    return "border-red-200 bg-red-50 text-red-700";
+    return "border-alert-500/30 bg-alert-50 text-alert-500";
   }
-  return "border-line bg-white text-ink-secondary";
+  return "border-grey-200 bg-white text-grey-700";
 }
 
 export default function TrackOrderPage() {
@@ -114,15 +114,15 @@ export default function TrackOrderPage() {
   return (
     <>
       <Navbar />
-      <main className="section-block min-h-screen bg-canvas pb-24 pt-28 sm:pt-32">
-        <div className="container-fluid">
-          <p className="text-[11px] uppercase tracking-label text-ink-muted">
+      <main className="min-h-screen bg-white pb-24 pt-28 sm:pt-32">
+        <div className="shell">
+          <p className="text-small uppercase tracking-caps text-grey-600">
             Peptiva Labs · Order lookup
           </p>
-          <h1 className="mt-2 text-[clamp(44px,7vw,96px)] font-medium leading-[1] tracking-tight2 text-ink">
+          <h1 className="mt-2 text-h1 font-normal text-black">
             Track your order
           </h1>
-          <p className="mt-4 max-w-xl text-[14px] text-ink-secondary">
+          <p className="mt-4 max-w-xl text-base text-grey-700">
             Enter the email you used at checkout to see the latest status,
             tracking and totals for every Peptiva Labs order on your account.
           </p>
@@ -140,19 +140,19 @@ export default function TrackOrderPage() {
               placeholder="you@lab.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="min-w-0 flex-1 rounded-xl border border-line bg-white px-4 py-3 text-[14px] text-ink outline-none transition-colors placeholder:text-ink-subtle focus:border-ink/30"
+              className="min-w-0 flex-1 rounded-xl border border-grey-200 bg-white px-4 py-3 text-base text-black outline-none transition-colors placeholder:text-grey-600 focus:border-black"
             />
             <button
               type="submit"
               disabled={loading}
-              className="btn-dark justify-center disabled:opacity-60"
+              className="btn-primary justify-center disabled:opacity-60"
             >
               {loading ? "Looking up…" : "Look up orders"}
             </button>
           </form>
 
           {error && (
-            <p className="mt-6 max-w-xl rounded-xl border border-red-200 bg-red-50 px-4 py-2.5 text-[13px] text-red-700">
+            <p className="mt-6 max-w-xl rounded-xl border border-alert-500/30 bg-alert-50 px-4 py-2.5 text-small text-alert-500">
               {error}
             </p>
           )}
@@ -160,13 +160,13 @@ export default function TrackOrderPage() {
           {orders !== null && (
             <div className="mt-10">
               {orders.length === 0 ? (
-                <div className="rounded-card border border-line bg-white p-8 text-center">
-                  <p className="text-[15px] text-ink-secondary">
+                <div className="rounded-lg border border-grey-200 bg-white p-8 text-center">
+                  <p className="text-base text-grey-700">
                     No orders found for that email.
                   </p>
                 </div>
               ) : (
-                <ul className="divide-y divide-line border-y border-line">
+                <ul className="divide-y divide-grey-200 border-y border-grey-200">
                   {orders.map((o) => (
                     <li key={o.id}>
                       <Link
@@ -175,25 +175,25 @@ export default function TrackOrderPage() {
                       >
                       <div>
                         <div className="flex flex-wrap items-center gap-2">
-                          <p className="text-[15px] font-medium text-ink">
+                          <p className="text-base font-medium text-black">
                             {o.order_number}
                           </p>
                           <span
-                            className={`inline-flex items-center rounded-pill border px-2 py-0.5 text-[11px] font-medium uppercase tracking-label ${statusStyles(
+                            className={`inline-flex items-center rounded-pill border px-2 py-0.5 text-small font-medium uppercase tracking-caps ${statusStyles(
                               o.status
                             )}`}
                           >
                             {o.status || "pending"}
                           </span>
                           <span
-                            className={`inline-flex items-center rounded-pill border px-2 py-0.5 text-[11px] font-medium uppercase tracking-label ${statusStyles(
+                            className={`inline-flex items-center rounded-pill border px-2 py-0.5 text-small font-medium uppercase tracking-caps ${statusStyles(
                               o.payment_status
                             )}`}
                           >
                             Payment: {o.payment_status || "pending"}
                           </span>
                         </div>
-                        <p className="mt-1 text-[12px] text-ink-muted">
+                        <p className="mt-1 text-small text-grey-600">
                           Placed {formatDate(o.created_at)}
                           {o.tracking_number
                             ? ` · Tracking: ${o.tracking_number}`
@@ -201,10 +201,10 @@ export default function TrackOrderPage() {
                         </p>
                       </div>
                       <div className="text-right">
-                        <p className="text-[16px] font-medium text-ink">
+                        <p className="text-base font-medium text-black">
                           {formatUSD(toNumber(o.total))}
                         </p>
-                        <p className="mt-0.5 text-[12px] text-ink-muted">
+                        <p className="mt-0.5 text-small text-grey-600">
                           via {paymentMethodLabel(o.payment_method)}
                         </p>
                       </div>
@@ -217,11 +217,11 @@ export default function TrackOrderPage() {
           )}
 
           {orders === null && !error && !loading && (
-            <p className="mt-8 text-[13px] text-ink-secondary">
+            <p className="mt-8 text-small text-grey-700">
               Or{" "}
               <Link
                 href="/login"
-                className="text-ink underline underline-offset-2 hover:opacity-70"
+                className="text-black underline underline-offset-2 hover:opacity-70"
               >
                 sign in
               </Link>{" "}

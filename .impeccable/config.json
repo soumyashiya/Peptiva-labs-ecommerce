@@ -1,0 +1,26 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "gradient-text",
+        "value": "*",
+        "files": [
+          "components/CaseStudy.tsx"
+        ],
+        "createdAt": "2026-11-18T10:07:31.004Z",
+        "reason": "Deliberate 1:1 reproduction of the reference storefront's gradient statement band (wearefeel.com 'BACKED BY REAL STUDIES...'), which the user asked to copy exactly; verified against screenshot feel-07.png."
+      },
+      {
+        "rule": "border-accent-on-rounded",
+        "value": "*",
+        "files": [
+          "components/ProductDetail.tsx"
+        ],
+        "createdAt": "2026-11-19T14:12:55.214Z",
+        "reason": "Claude: intentional. The highlighted comparison column is one bordered capsule built across grid rows (header rounded-t-[20px]+border-b-0 at L691, rows border-x-2 at L710, last row rounded-b-[20px]+border-b-2 at L711). Removing either the border or the radius breaks the column outline."
+      }
+    ]
+  }
+}

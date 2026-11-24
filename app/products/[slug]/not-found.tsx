@@ -8,14 +8,14 @@ export default function ProductNotFound() {
       <Navbar />
       <main
         id="home"
-        className="container-fluid flex min-h-[70vh] flex-col items-center justify-center text-center"
+        className="shell flex min-h-[70vh] flex-col items-center justify-center text-center"
       >
         <h1 className="text-h2 font-normal">Product not found</h1>
-        <p className="mt-3 max-w-sm text-[14px] text-ink-secondary">
+        <p className="mt-3 max-w-sm text-base text-grey-700">
           The item you’re looking for may have sold out or moved. Explore the
           full range instead.
         </p>
-        <Link href="/products" className="btn-dark mt-6">
+        <Link href="/products" className="btn-primary mt-6">
           Back to the range
         </Link>
       </main>

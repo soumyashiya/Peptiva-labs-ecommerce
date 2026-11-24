@@ -1,0 +1,508 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#home"
+  - generic [ref=e5]:
+    - link "Third-party tested — view reports" [ref=e7] [cursor=pointer]:
+      - /url: /#why
+      - text: Third-party tested — view reports
+      - generic [aria-hidden] [ref=e8]: →
+    - generic [ref=e10]:
+      - generic [ref=e27]: "4.8"
+      - generic [ref=e28]: rating
+    - generic [ref=e30]: Cold-chain shipping on every order
+  - banner [ref=e31]:
+    - generic [ref=e33]:
+      - link "Peptiva Labs home" [ref=e34] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e35]:
+          - text: Peptiva
+          - generic [ref=e36]: Labs
+          - generic [aria-hidden] [ref=e37]: ®
+      - generic [ref=e38]:
+        - link "Cart, 0 items" [ref=e39] [cursor=pointer]:
+          - /url: /cart
+        - button "Search" [ref=e44] [cursor=pointer]
+        - button "Open menu" [ref=e50] [cursor=pointer]
+  - generic [aria-hidden]:
+    - button
+    - generic:
+      - generic:
+        - textbox:
+          - /placeholder: Search products
+        - button
+      - generic:
+        - link:
+          - /url: /products/bpc-157-tb-500
+          - generic:
+            - generic: BPC-157 + TB-500
+            - generic: 40 mg dual blend
+        - link:
+          - /url: /products/glow
+          - generic:
+            - generic: Glow
+            - generic: 5 mg · 70 mg options
+        - link:
+          - /url: /products/retatrutide
+          - generic:
+            - generic: Retatrutide 20mg
+            - generic: 20 mg pre-filled pen
+        - link:
+          - /url: /products/tirzepatide
+          - generic:
+            - generic: Tirzepatide
+            - generic: 5 / 20 / 40 mg
+  - generic [aria-hidden]:
+    - generic:
+      - link:
+        - /url: /
+        - generic:
+          - text: Peptiva
+          - generic: Labs
+          - generic [aria-hidden]: ®
+      - button
+    - generic:
+      - navigation:
+        - link:
+          - /url: /products
+          - text: Shop
+        - link:
+          - /url: /science
+          - text: Science
+        - link:
+          - /url: /reviews
+          - text: Reviews
+        - link:
+          - /url: /about
+          - text: About
+        - link:
+          - /url: /contact
+          - text: Contact
+      - paragraph: Your account
+      - generic:
+        - link:
+          - /url: /login
+          - text: Sign in
+        - link:
+          - /url: /register
+          - text: Create account
+      - link:
+        - /url: /products
+        - text: Shop all
+  - generic [ref=e53]:
+    - main [ref=e54]:
+      - generic [ref=e55]:
+        - navigation "Breadcrumb" [ref=e56]:
+          - link "Home" [ref=e57] [cursor=pointer]:
+            - /url: /
+          - text: /
+          - link "Shop" [ref=e58] [cursor=pointer]:
+            - /url: /products
+          - text: /NAD+ 1,000mg
+        - generic [ref=e59]:
+          - generic [ref=e60]:
+            - generic [ref=e61]:
+              - button "View image 1 of 3" [ref=e62] [cursor=pointer]
+              - button "View image 2 of 3" [ref=e63] [cursor=pointer]
+              - button "View image 3 of 3" [ref=e64] [cursor=pointer]
+            - generic [ref=e65]:
+              - img "NAD+ 1,000mg — 2 × 500 mg pre-filled pens" [ref=e67]
+              - generic [ref=e70]:
+                - button "Previous image" [ref=e71] [cursor=pointer]
+                - button "Next image" [ref=e74] [cursor=pointer]
+          - generic [ref=e77]:
+            - generic [ref=e78]:
+              - text: Free shipping via
+              - strong [ref=e79]: cold-chain
+            - heading "NAD+ 1,000mg" [level=1] [ref=e80]
+            - paragraph [ref=e81]: Research Compound • 2 × 500 mg pre-filled pens • $ 140 per kit
+            - link "Rated 4.6 out of 5 176 reviews" [ref=e82] [cursor=pointer]:
+              - /url: "#reviews"
+              - generic [ref=e83]:
+                - img "Rated 4.6 out of 5" [ref=e84]
+                - generic [ref=e100]: 176 reviews
+            - paragraph [ref=e101]: Nicotinamide Adenine Dinucleotide reference kit — two pre-filled 500 mg pens for controlled laboratory studies.
+            - generic [ref=e102]:
+              - generic [ref=e103]:
+                - generic [ref=e104]: One-time purchase
+                - generic [ref=e107]: $ 140
+              - generic [ref=e108]:
+                - paragraph [ref=e109]: How many kits?
+                - generic [ref=e110]:
+                  - button "1 kit $ 140 $ 140 per kit" [pressed] [ref=e111] [cursor=pointer]:
+                    - generic [ref=e114]: 1 kit
+                    - generic [ref=e115]: $ 140
+                    - generic [ref=e116]: $ 140 per kit
+                  - button "2 kits $ 280 $ 140 per kit" [ref=e117] [cursor=pointer]:
+                    - generic [ref=e121]: 2 kits
+                    - generic [ref=e122]: $ 280
+                    - generic [ref=e123]: $ 140 per kit
+                  - button "3 kits $ 420 $ 140 per kit" [ref=e124] [cursor=pointer]:
+                    - generic [ref=e129]: 3 kits
+                    - generic [ref=e130]: $ 420
+                    - generic [ref=e131]: $ 140 per kit
+                - generic [ref=e132]:
+                  - generic [ref=e133]: Need a different amount?
+                  - generic [ref=e134]:
+                    - button "Decrease quantity" [disabled] [ref=e135]
+                    - generic [ref=e137]: "1"
+                    - button "Increase quantity" [ref=e138] [cursor=pointer]
+                - list [ref=e141]:
+                  - listitem [ref=e142]:
+                    - generic [ref=e146]:
+                      - strong [ref=e147]: Third-party assayed
+                      - generic [ref=e148]: · certificate published per batch
+                  - listitem [ref=e149]:
+                    - generic [ref=e153]:
+                      - strong [ref=e154]: Volume pricing
+                      - generic [ref=e155]: · applied automatically at checkout
+                  - listitem [ref=e156]:
+                    - generic [ref=e161]:
+                      - strong [ref=e162]: Dispatched in 1 business day
+                      - generic [ref=e163]: · tracked and insulated
+                - button "Add to cart · $ 140" [ref=e164] [cursor=pointer]
+                - paragraph [ref=e165]:
+                  - generic [ref=e166]: In stock
+                  - generic [ref=e168]: ·
+                  - link "Shipping & delivery times" [ref=e169] [cursor=pointer]:
+                    - /url: /shipping-policy
+    - generic [ref=e170]:
+      - link "Reviews" [ref=e171] [cursor=pointer]:
+        - /url: "#reviews"
+      - link "Description" [ref=e174] [cursor=pointer]:
+        - /url: "#ingredients"
+      - link "How it works" [ref=e177] [cursor=pointer]:
+        - /url: "#contents"
+  - generic [ref=e180]:
+    - generic [ref=e184]:
+      - heading "Loved by our community" [level=2] [ref=e185]: Loved by ourcommunity
+      - generic [ref=e187]:
+        - list [ref=e188]:
+          - listitem [ref=e189]:
+            - paragraph [ref=e202]: Morning routine
+            - button "Play Morning routine" [ref=e203] [cursor=pointer]
+          - listitem [ref=e207]:
+            - paragraph [ref=e220]: Evening wind-down
+            - button "Play Evening wind-down" [ref=e221] [cursor=pointer]
+          - listitem [ref=e225]:
+            - paragraph [ref=e238]: Gym session
+            - button "Play Gym session" [ref=e239] [cursor=pointer]
+          - listitem [ref=e243]:
+            - paragraph [ref=e256]: Midday beach
+            - button "Play Midday beach" [ref=e257] [cursor=pointer]
+          - listitem [ref=e261]:
+            - paragraph [ref=e274]: Park walk
+            - button "Play Park walk" [ref=e275] [cursor=pointer]
+          - listitem [ref=e279]:
+            - paragraph [ref=e292]: Cabin porch
+            - button "Play Cabin porch" [ref=e293] [cursor=pointer]
+        - list [aria-hidden] [ref=e297]:
+          - listitem [ref=e298]:
+            - paragraph [ref=e311]: Morning routine
+            - button [aria-hidden] [ref=e312] [cursor=pointer]
+          - listitem [ref=e316]:
+            - paragraph [ref=e329]: Evening wind-down
+            - button [aria-hidden] [ref=e330] [cursor=pointer]
+          - listitem [ref=e334]:
+            - paragraph [ref=e347]: Gym session
+            - button [aria-hidden] [ref=e348] [cursor=pointer]
+          - listitem [ref=e352]:
+            - paragraph [ref=e365]: Midday beach
+            - button [aria-hidden] [ref=e366] [cursor=pointer]
+          - listitem [ref=e370]:
+            - paragraph [ref=e383]: Park walk
+            - button [aria-hidden] [ref=e384] [cursor=pointer]
+          - listitem [ref=e388]:
+            - paragraph [ref=e401]: Cabin porch
+            - button [aria-hidden] [ref=e402] [cursor=pointer]
+    - region "Rating summary" [ref=e406]:
+      - generic [ref=e407]:
+        - paragraph [ref=e408]: "4.6"
+        - img "Rated 4.6 out of 5" [ref=e410]
+        - paragraph [ref=e426]: based on 176 ratings
+    - generic [ref=e430]:
+      - heading "A coenzyme, not a peptide." [level=2] [ref=e431]
+      - paragraph [ref=e432]: NAD+ (nicotinamide adenine dinucleotide) is the coenzyme behind cellular energy metabolism and a substrate for the sirtuin and PARP enzymes.
+      - paragraph [ref=e433]: It is one of the most studied molecules in cellular-ageing research.
+      - link "Order now" [ref=e434] [cursor=pointer]:
+        - /url: "#buy"
+    - generic [ref=e438]:
+      - heading "Two pens, 500 mg each." [level=2] [ref=e439]
+      - paragraph [ref=e440]: The kit splits 1,000 mg across two sealed pens, so one can stay sealed and cold while the other is in use.
+      - paragraph [ref=e441]: That limits how often the material is exposed, which matters for a molecule this sensitive.
+    - generic [ref=e445]:
+      - heading "Handled for stability." [level=2] [ref=e446]
+      - paragraph [ref=e447]: NAD+ degrades with heat, light and repeated handling. Each pen is filled and sealed in one pass and shipped temperature-controlled.
+      - paragraph [ref=e448]: Its independent report is published the day the current batch is released.
+    - generic [ref=e449]:
+      - heading "Key compound highlights" [level=2] [ref=e450]
+      - article [ref=e452]:
+        - heading "NAD+" [level=3] [ref=e453]
+        - paragraph [ref=e454]: Nicotinamide adenine dinucleotide
+        - paragraph [ref=e455]: A redox coenzyme present in every living cell, studied in research on mitochondrial function, sirtuins and cellular ageing.
+        - button "Show more" [ref=e456] [cursor=pointer]
+        - generic [ref=e459]:
+          - generic [ref=e460]: Independently assayed
+          - generic [ref=e463]: Sealed fill
+          - generic [ref=e467]: Cold-chain handled
+    - generic [ref=e473]:
+      - heading "1,000 mg of NAD+, in two pens" [level=2] [ref=e474]
+      - link "Order now" [ref=e476] [cursor=pointer]:
+        - /url: "#buy"
+    - generic [ref=e478]:
+      - heading "FAQ" [level=2] [ref=e479]
+      - generic [ref=e480]:
+        - generic [ref=e484]: Search questions
+        - textbox "Search questions" [ref=e485]:
+          - /placeholder: Start typing your question
+      - generic [ref=e487]:
+        - button "Why is the kit split into two pens?" [ref=e489] [cursor=pointer]
+        - button "Is a lab report available?" [ref=e494] [cursor=pointer]
+        - button "How should NAD+ 1,000mg be stored?" [ref=e499] [cursor=pointer]
+        - button "How is each batch verified?" [ref=e504] [cursor=pointer]
+        - button "How is it shipped?" [ref=e509] [cursor=pointer]
+        - button "Who is this product for?" [ref=e514] [cursor=pointer]
+      - heading "Everything you need to know" [level=2] [ref=e518]
+      - generic [ref=e520]:
+        - button "What's in the kit" [ref=e522] [cursor=pointer]
+        - button "Storage & handling" [ref=e527] [cursor=pointer]
+        - button "Highlights" [ref=e532] [cursor=pointer]
+        - button "Safety protocol" [ref=e537] [cursor=pointer]
+    - link "Order now" [ref=e542] [cursor=pointer]:
+      - /url: "#buy"
+    - generic [ref=e543]:
+      - generic [ref=e544]:
+        - paragraph [ref=e549]:
+          - strong [ref=e550]: Independently
+          - text: assayed batches
+        - paragraph [ref=e556]:
+          - strong [ref=e557]: Sealed,
+          - text: tamper-evident fill
+        - paragraph [ref=e565]:
+          - strong [ref=e566]: Cold-chain
+          - text: 2–8°C handling
+        - paragraph [ref=e573]:
+          - strong [ref=e574]: Batch-coded
+          - text: paperwork in every box
+        - paragraph [ref=e580]:
+          - strong [ref=e581]: Research use
+          - text: only — never for humans
+      - button "References" [ref=e585] [cursor=pointer]
+      - generic [ref=e589]:
+        - paragraph [ref=e590]:
+          - strong [ref=e591]: NAD+ 1,000mg
+          - text: is supplied strictly for laboratory and analytical research.
+        - paragraph [ref=e592]: Not for human or veterinary use. Not intended to diagnose, treat, cure or prevent any disease.
+        - paragraph [ref=e593]: Store as directed on the carton and keep out of reach of unauthorised persons.
+      - paragraph [ref=e594]: It's part of our mission to make research material verifiable.
+    - region "Verified customer reviews" [ref=e596]:
+      - generic [ref=e597]:
+        - generic [ref=e598]:
+          - heading "Verified customer reviews" [level=2] [ref=e599]
+          - generic [ref=e600]:
+            - img "Rated 4.6 out of 5" [ref=e602]
+            - generic [ref=e618]: 176 ratings
+        - generic [ref=e619]:
+          - generic [ref=e620]:
+            - generic [ref=e621]: Sort reviews
+            - combobox "Sort reviews" [ref=e622]:
+              - 'option "Sort: highest rated" [selected]'
+              - 'option "Sort: lowest rated"'
+          - generic [ref=e623]:
+            - generic [ref=e627]: Search reviews
+            - textbox "Search reviews" [ref=e628]
+        - article [ref=e630]:
+          - generic [ref=e631]:
+            - paragraph [ref=e632]: Priya Nair
+            - paragraph [ref=e636]: Verified buyer
+          - generic [ref=e640]:
+            - img "Rated 5 out of 5" [ref=e642]
+            - heading "NAD+ 1,000mg" [level=3] [ref=e658]
+            - paragraph [ref=e659]: “Two sealed pens, one information sheet, no surprises. Reordering was a single click from the account page.”
+        - link "Read all reviews" [ref=e661] [cursor=pointer]:
+          - /url: /reviews
+    - region "We also recommend" [ref=e662]:
+      - generic [ref=e663]:
+        - generic [ref=e664]:
+          - heading "We also recommend" [level=2] [ref=e665]
+          - link "View all" [ref=e666] [cursor=pointer]:
+            - /url: /products
+        - group "Related products" [ref=e670]:
+          - article [ref=e672]:
+            - link [ref=e673] [cursor=pointer]:
+              - /url: /products/bpc-157-tb-500
+              - img "BPC-157 + TB-500" [ref=e674]
+            - generic [ref=e675]:
+              - heading [level=3] [ref=e676]:
+                - link "BPC-157 + TB-500" [ref=e677] [cursor=pointer]:
+                  - /url: /products/bpc-157-tb-500
+              - generic [ref=e678]:
+                - img "Rated 4.8 out of 5" [ref=e679]
+                - generic [ref=e695]: 412 reviews
+              - paragraph [ref=e696]: $ 130
+          - article [ref=e698]:
+            - link [ref=e699] [cursor=pointer]:
+              - /url: /products/glow
+              - img "Glow" [ref=e700]
+            - generic [ref=e701]:
+              - heading [level=3] [ref=e702]:
+                - link "Glow" [ref=e703] [cursor=pointer]:
+                  - /url: /products/glow
+              - generic [ref=e704]:
+                - img "Rated 4.9 out of 5" [ref=e705]
+                - generic [ref=e721]: 287 reviews
+              - paragraph [ref=e722]: from $ 100
+          - article [ref=e724]:
+            - link [ref=e725] [cursor=pointer]:
+              - /url: /products/retatrutide
+              - img "Retatrutide 20mg" [ref=e726]
+            - generic [ref=e727]:
+              - heading [level=3] [ref=e728]:
+                - link "Retatrutide 20mg" [ref=e729] [cursor=pointer]:
+                  - /url: /products/retatrutide
+              - generic [ref=e730]:
+                - img "Rated 4.7 out of 5" [ref=e731]
+                - generic [ref=e747]: 531 reviews
+              - paragraph [ref=e748]: $ 100
+  - contentinfo [ref=e751]:
+    - generic [ref=e752]:
+      - generic [ref=e754]:
+        - generic [ref=e755]:
+          - paragraph [ref=e756]: Start with our best sellers
+          - paragraph [ref=e757]: Trending right now
+        - generic [ref=e758]:
+          - link "BPC-157 + TB-500 $ 130" [ref=e759] [cursor=pointer]:
+            - /url: /products/bpc-157-tb-500
+            - generic [ref=e761]: BPC-157 + TB-500
+            - generic [ref=e762]: $ 130
+          - link "Glow from $ 100" [ref=e765] [cursor=pointer]:
+            - /url: /products/glow
+            - generic [ref=e767]: Glow
+            - generic [ref=e768]: from $ 100
+          - link "Retatrutide 20mg $ 100" [ref=e771] [cursor=pointer]:
+            - /url: /products/retatrutide
+            - generic [ref=e773]: Retatrutide 20mg
+            - generic [ref=e774]: $ 100
+          - link "Shop the full range" [ref=e777] [cursor=pointer]:
+            - /url: /products
+      - generic [ref=e785]:
+        - generic [ref=e786]:
+          - heading "Help with your order" [level=3] [ref=e787]
+          - list [ref=e788]:
+            - listitem [ref=e789]:
+              - link "My account" [ref=e790] [cursor=pointer]:
+                - /url: /account
+            - listitem [ref=e795]:
+              - link "Track my order" [ref=e796] [cursor=pointer]:
+                - /url: /track-order
+            - listitem [ref=e803]:
+              - link "Delivery" [ref=e804] [cursor=pointer]:
+                - /url: /shipping-policy
+            - listitem [ref=e810]:
+              - link "Contact us" [ref=e811] [cursor=pointer]:
+                - /url: /contact
+        - generic [ref=e816]:
+          - heading "Shop" [level=3] [ref=e817]
+          - list [ref=e818]:
+            - listitem [ref=e819]:
+              - link "All products" [ref=e820] [cursor=pointer]:
+                - /url: /products
+            - listitem [ref=e821]:
+              - link "Your cart" [ref=e822] [cursor=pointer]:
+                - /url: /cart
+            - listitem [ref=e823]:
+              - link "Checkout" [ref=e824] [cursor=pointer]:
+                - /url: /checkout
+        - generic [ref=e825]:
+          - heading "Science" [level=3] [ref=e826]
+          - list [ref=e827]:
+            - listitem [ref=e828]:
+              - link "BPC-157 + TB-500" [ref=e829] [cursor=pointer]:
+                - /url: /products/bpc-157-tb-500
+            - listitem [ref=e830]:
+              - link "Tirzepatide" [ref=e831] [cursor=pointer]:
+                - /url: /products/tirzepatide
+            - listitem [ref=e832]:
+              - link "Retatrutide" [ref=e833] [cursor=pointer]:
+                - /url: /products/retatrutide
+            - listitem [ref=e834]:
+              - link "Glow" [ref=e835] [cursor=pointer]:
+                - /url: /products/glow
+            - listitem [ref=e836]:
+              - link "NAD+" [ref=e837] [cursor=pointer]:
+                - /url: /products/nad-plus-1000mg
+        - generic [ref=e838]:
+          - heading "Company & reviews" [level=3] [ref=e839]
+          - list [ref=e840]:
+            - listitem [ref=e841]:
+              - link "About" [ref=e842] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e843]:
+              - link "How we verify" [ref=e844] [cursor=pointer]:
+                - /url: /science
+            - listitem [ref=e845]:
+              - link "Customer reviews" [ref=e846] [cursor=pointer]:
+                - /url: /reviews
+            - listitem [ref=e847]:
+              - link "Press" [ref=e848] [cursor=pointer]:
+                - /url: /press
+        - generic [ref=e849]:
+          - heading "Policies" [level=3] [ref=e850]
+          - list [ref=e851]:
+            - listitem [ref=e852]:
+              - link "Shipping policy" [ref=e853] [cursor=pointer]:
+                - /url: /shipping-policy
+            - listitem [ref=e854]:
+              - link "Refund policy" [ref=e855] [cursor=pointer]:
+                - /url: /refund-policy
+            - listitem [ref=e856]:
+              - link "Privacy policy" [ref=e857] [cursor=pointer]:
+                - /url: /privacy-policy
+            - listitem [ref=e858]:
+              - link "Terms of service" [ref=e859] [cursor=pointer]:
+                - /url: /terms-of-service
+      - generic [ref=e861]:
+        - generic [ref=e862]:
+          - paragraph [ref=e863]: Stay in touch
+          - paragraph [ref=e864]: Batch drops and early access.
+        - generic [ref=e865]:
+          - generic [ref=e866]:
+            - generic [ref=e867]:
+              - textbox "Email address" [ref=e868]
+              - button "Join" [disabled] [ref=e869]
+            - generic [ref=e872]:
+              - checkbox "I agree to receive research updates. Unsubscribe anytime." [checked] [ref=e873]
+              - text: I agree to receive research updates. Unsubscribe anytime.
+          - generic [ref=e874]:
+            - link "Peptiva Labs on Instagram" [ref=e875] [cursor=pointer]:
+              - /url: https://instagram.com
+            - link "Peptiva Labs on LinkedIn" [ref=e880] [cursor=pointer]:
+              - /url: https://linkedin.com
+      - generic [ref=e884]:
+        - generic [ref=e885]:
+          - generic [ref=e886]:
+            - text: Peptiva
+            - generic [ref=e887]: Labs
+            - generic [aria-hidden] [ref=e888]: ®
+          - paragraph [ref=e889]: Reference-grade research materials, verified.
+          - paragraph [ref=e890]: © 2026 Peptiva Labs. All rights reserved. For laboratory research use only — not for human or veterinary use.
+        - generic [ref=e891]:
+          - generic [ref=e892]:
+            - generic [ref=e893]: USD $
+            - generic [ref=e894]: English
+          - paragraph [ref=e895]:
+            - text: Something else?
+            - link "Contact us" [ref=e896] [cursor=pointer]:
+              - /url: /contact
+          - list [ref=e897]:
+            - listitem [ref=e898]:
+              - link "Privacy policy" [ref=e899] [cursor=pointer]:
+                - /url: /privacy-policy
+            - listitem [ref=e900]:
+              - link "Shipping and returns" [ref=e901] [cursor=pointer]:
+                - /url: /shipping-policy
+            - listitem [ref=e902]:
+              - link "Refund policy" [ref=e903] [cursor=pointer]:
+                - /url: /refund-policy
+            - listitem [ref=e904]:
+              - link "Terms of service" [ref=e905] [cursor=pointer]:
+                - /url: /terms-of-service

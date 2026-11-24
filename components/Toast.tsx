@@ -160,16 +160,16 @@ function ToastCard({
 
   const palette = {
     success: {
-      icon: "bg-emerald-100 text-emerald-700",
-      accent: "text-emerald-700",
+      icon: "bg-tint-sage text-leaf-800",
+      accent: "text-leaf-800",
     },
     error: {
-      icon: "bg-red-100 text-red-700",
-      accent: "text-red-700",
+      icon: "bg-alert-50 text-alert-500",
+      accent: "text-alert-500",
     },
     info: {
-      icon: "bg-ink/10 text-ink",
-      accent: "text-ink",
+      icon: "bg-black/10 text-black",
+      accent: "text-black",
     },
   }[toast.variant];
 
@@ -177,7 +177,7 @@ function ToastCard({
     <div
       role={toast.variant === "error" ? "alert" : "status"}
       className={[
-        "pointer-events-auto w-full max-w-sm overflow-hidden rounded-card border border-line bg-white shadow-card",
+        "pointer-events-auto w-full max-w-sm overflow-hidden rounded-lg border border-grey-200 bg-white shadow-soft",
         "transform-gpu transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]",
         entered
           ? "translate-y-0 opacity-100"
@@ -193,11 +193,11 @@ function ToastCard({
         </span>
         <div className="min-w-0 flex-1">
           {toast.title ? (
-            <p className={`text-[13px] font-medium ${palette.accent}`}>
+            <p className={`text-small font-medium ${palette.accent}`}>
               {toast.title}
             </p>
           ) : null}
-          <p className="mt-0.5 text-[13px] leading-relaxed text-ink-secondary">
+          <p className="mt-0.5 text-small leading-relaxed text-grey-700">
             {toast.description}
           </p>
         </div>
@@ -205,7 +205,7 @@ function ToastCard({
           type="button"
           onClick={() => onDismiss(toast.id)}
           aria-label="Dismiss"
-          className="ml-1 inline-flex h-6 w-6 flex-none items-center justify-center rounded-full text-ink-muted transition-colors hover:bg-canvas hover:text-ink"
+          className="ml-1 inline-flex h-6 w-6 flex-none items-center justify-center rounded-full text-grey-600 transition-colors hover:bg-white hover:text-black"
         >
           <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
             <path

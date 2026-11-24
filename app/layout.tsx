@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { DM_Sans } from "next/font/google";
-import localFont from "next/font/local";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
 import { CartProvider } from "@/components/CartContext";
@@ -16,26 +15,19 @@ import {
   jsonLd,
 } from "@/lib/seo";
 
-// Body font
-const dmSans = DM_Sans({
+/**
+ * Single typeface for the whole site, matching the reference storefront's
+ * approach: one geometric sans carrying every level purely through weight and
+ * size. Poppins is the closest freely-licensable match to the reference's
+ * F37 Ginger — near-identical metrics, single-storey `a` and `g`, and the
+ * same circular geometry. Italic ships too, for the hero's accent line.
+ */
+const poppins = Poppins({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-dm-sans",
+  variable: "--font-core",
   weight: ["300", "400", "500", "600", "700"],
-});
-
-// Heading / display font — Clash Display
-const clashDisplay = localFont({
-  variable: "--font-clash",
-  display: "swap",
-  src: [
-    { path: "./fonts/clash/ClashDisplay-Extralight.woff2", weight: "200", style: "normal" },
-    { path: "./fonts/clash/ClashDisplay-Light.woff2", weight: "300", style: "normal" },
-    { path: "./fonts/clash/ClashDisplay-Regular.woff2", weight: "400", style: "normal" },
-    { path: "./fonts/clash/ClashDisplay-Medium.woff2", weight: "500", style: "normal" },
-    { path: "./fonts/clash/ClashDisplay-Semibold.woff2", weight: "600", style: "normal" },
-    { path: "./fonts/clash/ClashDisplay-Bold.woff2", weight: "700", style: "normal" },
-  ],
+  style: ["normal", "italic"],
 });
 
 export const metadata: Metadata = {
@@ -64,7 +56,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#F1F1F1",
+  themeColor: "#FFFFFF",
   colorScheme: "light",
   width: "device-width",
   initialScale: 1,
@@ -80,11 +72,11 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${dmSans.variable} ${clashDisplay.variable}`}
+      className={poppins.variable}
     >
       <body
         suppressHydrationWarning
-        className="font-sans antialiased bg-canvas text-ink"
+        className="bg-white font-core text-black antialiased"
       >
         {/* Keyboard/screen-reader shortcut past the fixed navigation. */}
         <a href="#home" className="skip-link">

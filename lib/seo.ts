@@ -170,7 +170,7 @@ export function productSchema(product: Product) {
     ).map((src) => absoluteUrl(src)),
     brand: { "@type": "Brand", name: SITE_NAME },
     sku: product.slug,
-    offers: {
+    ...(product.comingSoon ? {} : { offers: {
       "@type": "Offer",
       url: absoluteUrl(`/products/${product.slug}`),
       priceCurrency: "USD",
@@ -180,7 +180,7 @@ export function productSchema(product: Product) {
       seller: { "@id": `${SITE_URL}/#organization` },
       // Human-readable label kept for parity with the on-page price.
       description: `${product.from ? "from " : ""}${formatUSD(product.price)}`,
-    },
+    } }),
   };
 }
 

@@ -1,0 +1,578 @@
+- generic [active] [ref=f3e1]:
+  - link "Skip to content" [ref=f3e2] [cursor=pointer]:
+    - /url: "#home"
+  - generic [ref=f3e5]:
+    - link "Third-party tested — view reports" [ref=f3e7] [cursor=pointer]:
+      - /url: /#why
+      - text: Third-party tested — view reports
+      - generic [aria-hidden] [ref=f3e8]: →
+    - generic [ref=f3e10]:
+      - generic [ref=f3e27]: "4.8"
+      - generic [ref=f3e28]: rating
+    - generic [ref=f3e29]: Cold-chain shipping on every order
+  - banner [ref=f3e31]:
+    - generic [ref=f3e33]:
+      - link "Peptiva Labs home" [ref=f3e34] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f3e35]:
+          - text: Peptiva
+          - generic [ref=f3e36]: Labs
+          - generic [aria-hidden] [ref=f3e37]: ®
+      - navigation [ref=f3e38]:
+        - link "Shop" [ref=f3e40] [cursor=pointer]:
+          - /url: /products
+        - link "Science" [ref=f3e41] [cursor=pointer]:
+          - /url: /science
+        - link "Reviews" [ref=f3e42] [cursor=pointer]:
+          - /url: /reviews
+        - link "About" [ref=f3e43] [cursor=pointer]:
+          - /url: /about
+        - link "Contact" [ref=f3e44] [cursor=pointer]:
+          - /url: /contact
+      - generic [ref=f3e45]:
+        - link "Cart, 0 items" [ref=f3e46] [cursor=pointer]:
+          - /url: /cart
+          - generic [ref=f3e51]: Cart
+        - button "Search" [ref=f3e52] [cursor=pointer]
+  - generic [aria-hidden]:
+    - button
+    - generic:
+      - generic:
+        - textbox:
+          - /placeholder: Search products
+        - button
+      - generic:
+        - link:
+          - /url: /products/bpc-157-tb-500
+          - generic:
+            - generic: BPC-157 + TB-500
+            - generic: 40 mg dual blend
+        - link:
+          - /url: /products/glow
+          - generic:
+            - generic: Glow
+            - generic: 5 mg · 70 mg options
+        - link:
+          - /url: /products/retatrutide
+          - generic:
+            - generic: Retatrutide 20mg
+            - generic: 20 mg pre-filled pen
+        - link:
+          - /url: /products/tirzepatide
+          - generic:
+            - generic: Tirzepatide
+            - generic: 5 / 20 / 40 mg
+  - generic [ref=f3e59]:
+    - main [ref=f3e60]:
+      - generic [ref=f3e61]:
+        - navigation "Breadcrumb" [ref=f3e62]:
+          - link "Home" [ref=f3e63] [cursor=pointer]:
+            - /url: /
+          - text: /
+          - link "Shop" [ref=f3e64] [cursor=pointer]:
+            - /url: /products
+          - text: /BPC-157 + TB-500
+        - generic [ref=f3e65]:
+          - generic [ref=f3e66]:
+            - generic [ref=f3e67]:
+              - button "View image 1 of 3" [ref=f3e68] [cursor=pointer]
+              - button "View image 2 of 3" [ref=f3e69] [cursor=pointer]
+              - button "View image 3 of 3" [ref=f3e70] [cursor=pointer]
+            - generic [ref=f3e71]:
+              - img "BPC-157 + TB-500 — 40 mg dual blend" [ref=f3e73]
+              - generic [ref=f3e76]:
+                - button "Previous image" [ref=f3e77] [cursor=pointer]
+                - button "Next image" [ref=f3e80] [cursor=pointer]
+          - generic [ref=f3e83]:
+            - generic [ref=f3e84]:
+              - text: Free shipping via
+              - strong [ref=f3e85]: cold-chain
+            - heading "BPC-157 + TB-500" [level=1] [ref=f3e86]
+            - paragraph [ref=f3e87]: Research Blend • 40 mg dual blend • $ 130 per kit
+            - link "Rated 4.8 out of 5 412 reviews" [ref=f3e88] [cursor=pointer]:
+              - /url: "#reviews"
+              - generic [ref=f3e89]:
+                - img "Rated 4.8 out of 5" [ref=f3e90]
+                - generic [ref=f3e106]: 412 reviews
+            - generic [ref=f3e107]:
+              - link "Compounds" [ref=f3e108] [cursor=pointer]:
+                - /url: "#ingredients"
+              - link "Lab report" [ref=f3e111] [cursor=pointer]:
+                - /url: "#analysis"
+            - paragraph [ref=f3e114]: Two widely researched peptides paired in one research-grade pre-filled pen for laboratory analysis and formulation studies.
+            - generic [ref=f3e115]:
+              - paragraph [ref=f3e116]: Janoshik verified
+              - generic [ref=f3e120]:
+                - generic [ref=f3e121]: One-time purchase
+                - generic [ref=f3e124]: $ 130
+              - generic [ref=f3e125]:
+                - paragraph [ref=f3e126]: How many kits?
+                - generic [ref=f3e127]:
+                  - button "1 kit $ 130 $ 130 per kit" [pressed] [ref=f3e128] [cursor=pointer]:
+                    - generic [ref=f3e131]: 1 kit
+                    - generic [ref=f3e132]: $ 130
+                    - generic [ref=f3e133]: $ 130 per kit
+                  - button "2 kits $ 260 $ 130 per kit" [ref=f3e134] [cursor=pointer]:
+                    - generic [ref=f3e138]: 2 kits
+                    - generic [ref=f3e139]: $ 260
+                    - generic [ref=f3e140]: $ 130 per kit
+                  - button "3 kits $ 390 $ 130 per kit" [ref=f3e141] [cursor=pointer]:
+                    - generic [ref=f3e146]: 3 kits
+                    - generic [ref=f3e147]: $ 390
+                    - generic [ref=f3e148]: $ 130 per kit
+                - generic [ref=f3e149]:
+                  - generic [ref=f3e150]: Need a different amount?
+                  - generic [ref=f3e151]:
+                    - button "Decrease quantity" [disabled] [ref=f3e152]
+                    - generic [ref=f3e154]: "1"
+                    - button "Increase quantity" [ref=f3e155] [cursor=pointer]
+                - list [ref=f3e158]:
+                  - listitem [ref=f3e159]:
+                    - generic [ref=f3e163]:
+                      - strong [ref=f3e164]: Third-party assayed
+                      - generic [ref=f3e165]: · certificate published per batch
+                  - listitem [ref=f3e166]:
+                    - generic [ref=f3e170]:
+                      - strong [ref=f3e171]: Volume pricing
+                      - generic [ref=f3e172]: · applied automatically at checkout
+                  - listitem [ref=f3e173]:
+                    - generic [ref=f3e178]:
+                      - strong [ref=f3e179]: Dispatched in 1 business day
+                      - generic [ref=f3e180]: · tracked and insulated
+                - button "Add to cart · $ 130" [ref=f3e181] [cursor=pointer]
+                - paragraph [ref=f3e182]:
+                  - generic [ref=f3e183]: In stock
+                  - generic [ref=f3e185]: ·
+                  - link "Shipping & delivery times" [ref=f3e186] [cursor=pointer]:
+                    - /url: /shipping-policy
+    - generic [ref=f3e187]:
+      - link "Reviews" [ref=f3e188] [cursor=pointer]:
+        - /url: "#reviews"
+      - link "Description" [ref=f3e191] [cursor=pointer]:
+        - /url: "#ingredients"
+      - link "How it works" [ref=f3e194] [cursor=pointer]:
+        - /url: "#contents"
+  - generic [ref=f3e197]:
+    - generic [ref=f3e201]:
+      - heading "Loved by our community" [level=2] [ref=f3e202]: Loved by ourcommunity
+      - generic [ref=f3e204]:
+        - list [ref=f3e205]:
+          - listitem [ref=f3e206]:
+            - paragraph [ref=f3e219]: Morning routine
+            - button "Play Morning routine" [ref=f3e220] [cursor=pointer]
+          - listitem [ref=f3e224]:
+            - paragraph [ref=f3e237]: Evening wind-down
+            - button "Play Evening wind-down" [ref=f3e238] [cursor=pointer]
+          - listitem [ref=f3e242]:
+            - paragraph [ref=f3e255]: Gym session
+            - button "Play Gym session" [ref=f3e256] [cursor=pointer]
+          - listitem [ref=f3e260]:
+            - paragraph [ref=f3e273]: Midday beach
+            - button "Play Midday beach" [ref=f3e274] [cursor=pointer]
+          - listitem [ref=f3e278]:
+            - paragraph [ref=f3e291]: Park walk
+            - button "Play Park walk" [ref=f3e292] [cursor=pointer]
+          - listitem [ref=f3e296]:
+            - paragraph [ref=f3e309]: Cabin porch
+            - button "Play Cabin porch" [ref=f3e310] [cursor=pointer]
+        - list [aria-hidden] [ref=f3e314]:
+          - listitem [ref=f3e315]:
+            - paragraph [ref=f3e328]: Morning routine
+            - button [aria-hidden] [ref=f3e329] [cursor=pointer]
+          - listitem [ref=f3e333]:
+            - paragraph [ref=f3e346]: Evening wind-down
+            - button [aria-hidden] [ref=f3e347] [cursor=pointer]
+          - listitem [ref=f3e351]:
+            - paragraph [ref=f3e364]: Gym session
+            - button [aria-hidden] [ref=f3e365] [cursor=pointer]
+          - listitem [ref=f3e369]:
+            - paragraph [ref=f3e382]: Midday beach
+            - button [aria-hidden] [ref=f3e383] [cursor=pointer]
+          - listitem [ref=f3e387]:
+            - paragraph [ref=f3e400]: Park walk
+            - button [aria-hidden] [ref=f3e401] [cursor=pointer]
+          - listitem [ref=f3e405]:
+            - paragraph [ref=f3e418]: Cabin porch
+            - button [aria-hidden] [ref=f3e419] [cursor=pointer]
+    - region "Rating summary" [ref=f3e423]:
+      - generic [ref=f3e424]:
+        - paragraph [ref=f3e425]: "4.8"
+        - img "Rated 4.8 out of 5" [ref=f3e427]
+        - paragraph [ref=f3e443]: based on 412 ratings
+    - generic [ref=f3e447]:
+      - paragraph [ref=f3e448]: 01 · BPC-157 + TB-500
+      - heading "Two compounds, measured separately." [level=2] [ref=f3e449]
+      - paragraph [ref=f3e450]: BPC-157 and TB-500 are among the most widely cited peptides in tissue-repair literature, and are often studied side by side.
+      - paragraph [ref=f3e451]: "Janoshik Analytical measured each one on its own in this batch: 21.99 mg of BPC-157 and 19.59 mg of TB-500 across the 3 mL fill."
+      - generic [ref=f3e452]:
+        - generic [ref=f3e453]:
+          - term [ref=f3e454]: Compounds
+          - definition [ref=f3e455]: 2 measured
+        - generic [ref=f3e456]:
+          - term [ref=f3e457]: Batch
+          - definition [ref=f3e458]: BP1701FSR
+        - generic [ref=f3e459]:
+          - term [ref=f3e460]: BPC-157
+          - definition [ref=f3e461]: 21.99 mg
+        - generic [ref=f3e462]:
+          - term [ref=f3e463]: TB-500
+          - definition [ref=f3e464]: 19.59 mg
+      - link "Order now" [ref=f3e465] [cursor=pointer]:
+        - /url: "#buy"
+    - generic [ref=f3e469]:
+      - paragraph [ref=f3e470]: 02 · BPC-157 + TB-500
+      - heading "A blend you don't have to build." [level=2] [ref=f3e471]
+      - paragraph [ref=f3e472]: Combining two lyophilised peptides at the bench adds a reconstitution step and a source of variance to every run.
+      - paragraph [ref=f3e473]: This pen arrives pre-filled at a fixed 20 mg / 20 mg ratio, so each experiment starts from the same known composition.
+      - generic [ref=f3e474]:
+        - generic [ref=f3e475]:
+          - term [ref=f3e476]: Format
+          - definition [ref=f3e477]: Pre-filled research pen
+        - generic [ref=f3e478]:
+          - term [ref=f3e479]: Strength
+          - definition [ref=f3e480]: 40 mg dual blend
+        - generic [ref=f3e481]:
+          - term [ref=f3e482]: Fill volume
+          - definition [ref=f3e483]: 3 mL
+        - generic [ref=f3e484]:
+          - term [ref=f3e485]: Seal
+          - definition [ref=f3e486]: Tamper-evident
+    - generic [ref=f3e490]:
+      - paragraph [ref=f3e491]: 03 · BPC-157 + TB-500
+      - heading "Built for recovery protocols." [level=2] [ref=f3e492]
+      - paragraph [ref=f3e493]: Researchers use the pair in comparative recovery and tissue-model study designs, where both compounds need to be present at once.
+      - paragraph [ref=f3e494]: Pair it with Glow for side-by-side protocols. Both are batch-coded to their public reports.
+      - generic [ref=f3e495]:
+        - generic [ref=f3e496]:
+          - term [ref=f3e497]: Storage
+          - definition [ref=f3e498]: 2–8°C, do not freeze
+        - generic [ref=f3e499]:
+          - term [ref=f3e500]: Shipping
+          - definition [ref=f3e501]: Insulated cold chain
+        - generic [ref=f3e502]:
+          - term [ref=f3e503]: Dispatch
+          - definition [ref=f3e504]: Within 1 business day
+        - generic [ref=f3e505]:
+          - term [ref=f3e506]: Paperwork
+          - definition [ref=f3e507]: Batch BP1701FSR
+    - generic [ref=f3e508]:
+      - heading "Key compound highlights" [level=2] [ref=f3e509]
+      - generic [ref=f3e510]:
+        - article [ref=f3e511]:
+          - heading "BPC-157" [level=3] [ref=f3e512]
+          - paragraph [ref=f3e513]: Pentadecapeptide
+          - paragraph [ref=f3e514]: A 15-amino-acid synthetic peptide derived from a gastric protein sequence, widely studied in preclinical tissue and gut models.
+          - button "Show more" [ref=f3e515] [cursor=pointer]
+          - generic [ref=f3e518]:
+            - generic [ref=f3e519]: Independently assayed
+            - generic [ref=f3e522]: Sealed fill
+            - generic [ref=f3e526]: Cold-chain handled
+        - article [ref=f3e532]:
+          - heading "TB-500" [level=3] [ref=f3e533]
+          - paragraph [ref=f3e534]: Thymosin β4 fragment
+          - paragraph [ref=f3e535]: A synthetic fragment of thymosin beta-4, investigated in preclinical research on cell migration and tissue repair.
+          - button "Show more" [ref=f3e536] [cursor=pointer]
+          - generic [ref=f3e539]:
+            - generic [ref=f3e540]: Independently assayed
+            - generic [ref=f3e543]: Sealed fill
+            - generic [ref=f3e547]: Cold-chain handled
+    - region "Certificate of analysis" [ref=f3e553]:
+      - generic [ref=f3e554]:
+        - heading "Certificate of analysis" [level=2] [ref=f3e555]
+        - paragraph [ref=f3e556]: Independently tested and verified by Janoshik Analytical.
+        - generic [ref=f3e557]:
+          - generic [ref=f3e558]:
+            - generic [ref=f3e559]:
+              - paragraph [ref=f3e560]: Batch number
+              - paragraph [ref=f3e561]: BP1701FSR
+            - generic [ref=f3e562]:
+              - paragraph [ref=f3e563]: Fill volume
+              - paragraph [ref=f3e564]: 3 mL
+            - generic [ref=f3e565]:
+              - paragraph [ref=f3e566]: Purity
+              - paragraph [ref=f3e567]: Verified
+          - table [ref=f3e569]:
+            - rowgroup [ref=f3e570]:
+              - row [ref=f3e571]:
+                - columnheader "Compound" [ref=f3e572]
+                - columnheader "Concentration" [ref=f3e573]
+                - columnheader "Verified content" [ref=f3e574]
+            - rowgroup [ref=f3e575]:
+              - row [ref=f3e576]:
+                - cell "BPC-157" [ref=f3e577]
+                - cell "7.33 mg/mL" [ref=f3e578]
+                - cell "21.99 mg" [ref=f3e579]
+              - row [ref=f3e580]:
+                - cell "TB-500" [ref=f3e581]
+                - cell "6.53 mg/mL" [ref=f3e582]
+                - cell "19.59 mg" [ref=f3e583]
+          - generic [ref=f3e584]:
+            - paragraph [ref=f3e585]: Concentration is measured per ml; verified content reflects the total assayed mass across the stated fill volume.
+            - link "View full report" [ref=f3e586] [cursor=pointer]:
+              - /url: https://verify.janoshik.com/tests/163218-ALLUVI_BPC157_TB500_40MG_KIT_EAI125ZEF8TB
+    - generic [ref=f3e590]:
+      - heading "Two repair peptides, one sealed pen" [level=2] [ref=f3e591]
+      - link "Order now" [ref=f3e593] [cursor=pointer]:
+        - /url: "#buy"
+    - generic [ref=f3e595]:
+      - heading "FAQ" [level=2] [ref=f3e596]
+      - generic [ref=f3e597]:
+        - generic [ref=f3e601]: Search questions
+        - textbox "Search questions" [ref=f3e602]:
+          - /placeholder: Start typing your question
+      - generic [ref=f3e604]:
+        - button "What is the ratio of BPC-157 to TB-500?" [ref=f3e606] [cursor=pointer]
+        - button "Can the two compounds be ordered separately?" [ref=f3e611] [cursor=pointer]
+        - button "How should BPC-157 + TB-500 be stored?" [ref=f3e616] [cursor=pointer]
+        - button "How is each batch verified?" [ref=f3e621] [cursor=pointer]
+        - button "How is it shipped?" [ref=f3e626] [cursor=pointer]
+        - button "Who is this product for?" [ref=f3e631] [cursor=pointer]
+      - heading "Everything you need to know" [level=2] [ref=f3e635]
+      - generic [ref=f3e637]:
+        - button "What's in the kit" [ref=f3e639] [cursor=pointer]
+        - button "Storage & handling" [ref=f3e644] [cursor=pointer]
+        - button "Highlights" [ref=f3e649] [cursor=pointer]
+        - button "Safety protocol" [ref=f3e654] [cursor=pointer]
+    - link "Order now" [ref=f3e659] [cursor=pointer]:
+      - /url: "#buy"
+    - generic [ref=f3e660]:
+      - generic [ref=f3e661]:
+        - paragraph [ref=f3e666]:
+          - strong [ref=f3e667]: Independently
+          - text: assayed batches
+        - paragraph [ref=f3e673]:
+          - strong [ref=f3e674]: Sealed,
+          - text: tamper-evident fill
+        - paragraph [ref=f3e682]:
+          - strong [ref=f3e683]: Cold-chain
+          - text: 2–8°C handling
+        - paragraph [ref=f3e690]:
+          - strong [ref=f3e691]: Batch-coded
+          - text: paperwork in every box
+        - paragraph [ref=f3e697]:
+          - strong [ref=f3e698]: Research use
+          - text: only — never for humans
+      - button "References" [ref=f3e702] [cursor=pointer]
+      - generic [ref=f3e706]:
+        - paragraph [ref=f3e707]:
+          - strong [ref=f3e708]: BPC-157 + TB-500
+          - text: is supplied strictly for laboratory and analytical research.
+        - paragraph [ref=f3e709]: Not for human or veterinary use. Not intended to diagnose, treat, cure or prevent any disease.
+        - paragraph [ref=f3e710]: Store as directed on the carton and keep out of reach of unauthorised persons.
+      - paragraph [ref=f3e711]: It's part of our mission to make research material verifiable.
+    - region "Verified customer reviews" [ref=f3e713]:
+      - generic [ref=f3e714]:
+        - generic [ref=f3e715]:
+          - heading "Verified customer reviews" [level=2] [ref=f3e716]
+          - generic [ref=f3e717]:
+            - img "Rated 4.8 out of 5" [ref=f3e719]
+            - generic [ref=f3e735]: 412 ratings
+        - generic [ref=f3e736]:
+          - generic [ref=f3e737]:
+            - generic [ref=f3e738]: Sort reviews
+            - combobox "Sort reviews" [ref=f3e739]:
+              - 'option "Sort: highest rated" [selected]'
+              - 'option "Sort: lowest rated"'
+          - generic [ref=f3e740]:
+            - generic [ref=f3e744]: Search reviews
+            - textbox "Search reviews" [ref=f3e745]
+        - article [ref=f3e747]:
+          - generic [ref=f3e748]:
+            - paragraph [ref=f3e749]: Leila Haddad
+            - paragraph [ref=f3e753]: Verified buyer
+          - generic [ref=f3e757]:
+            - img "Rated 4 out of 5" [ref=f3e759]
+            - heading "BPC-157 + TB-500" [level=3] [ref=f3e774]
+            - paragraph [ref=f3e775]: “Arrived cold, arrived sealed, arrived on the day they said. Documentation was in the box rather than buried in an email.”
+        - link "Read all reviews" [ref=f3e777] [cursor=pointer]:
+          - /url: /reviews
+    - region "We also recommend" [ref=f3e778]:
+      - generic [ref=f3e779]:
+        - generic [ref=f3e780]:
+          - heading "We also recommend" [level=2] [ref=f3e781]
+          - link "View all" [ref=f3e782] [cursor=pointer]:
+            - /url: /products
+        - generic [ref=f3e785]:
+          - group "Related products" [ref=f3e786]:
+            - article [ref=f3e788]:
+              - link [ref=f3e789] [cursor=pointer]:
+                - /url: /products/glow
+                - img "Glow" [ref=f3e790]
+              - generic [ref=f3e791]:
+                - heading [level=3] [ref=f3e792]:
+                  - link "Glow" [ref=f3e793] [cursor=pointer]:
+                    - /url: /products/glow
+                - generic [ref=f3e794]:
+                  - img "Rated 4.9 out of 5" [ref=f3e795]
+                  - generic [ref=f3e811]: 287 reviews
+                - paragraph [ref=f3e812]: from $ 100
+            - article [ref=f3e814]:
+              - link [ref=f3e815] [cursor=pointer]:
+                - /url: /products/retatrutide
+                - img "Retatrutide 20mg" [ref=f3e816]
+              - generic [ref=f3e817]:
+                - heading [level=3] [ref=f3e818]:
+                  - link "Retatrutide 20mg" [ref=f3e819] [cursor=pointer]:
+                    - /url: /products/retatrutide
+                - generic [ref=f3e820]:
+                  - img "Rated 4.7 out of 5" [ref=f3e821]
+                  - generic [ref=f3e837]: 531 reviews
+                - paragraph [ref=f3e838]: $ 100
+            - article [ref=f3e840]:
+              - link [ref=f3e841] [cursor=pointer]:
+                - /url: /products/tirzepatide
+                - img "Tirzepatide" [ref=f3e842]
+              - generic [ref=f3e843]:
+                - heading [level=3] [ref=f3e844]:
+                  - link "Tirzepatide" [ref=f3e845] [cursor=pointer]:
+                    - /url: /products/tirzepatide
+                - generic [ref=f3e846]:
+                  - img "Rated 4.8 out of 5" [ref=f3e847]
+                  - generic [ref=f3e863]: 698 reviews
+                - paragraph [ref=f3e864]: from $ 100
+          - generic:
+            - button "Previous" [disabled] [ref=f3e865]
+            - button "Next" [ref=f3e868] [cursor=pointer]
+  - contentinfo [ref=f3e873]:
+    - generic [ref=f3e874]:
+      - generic [ref=f3e876]:
+        - generic [ref=f3e877]:
+          - paragraph [ref=f3e878]: Start with our best sellers
+          - paragraph [ref=f3e879]: Trending right now
+        - generic [ref=f3e880]:
+          - link "BPC-157 + TB-500 $ 130" [ref=f3e881] [cursor=pointer]:
+            - /url: /products/bpc-157-tb-500
+            - generic [ref=f3e883]: BPC-157 + TB-500
+            - generic [ref=f3e884]: $ 130
+          - link "Glow from $ 100" [ref=f3e887] [cursor=pointer]:
+            - /url: /products/glow
+            - generic [ref=f3e889]: Glow
+            - generic [ref=f3e890]: from $ 100
+          - link "Retatrutide 20mg $ 100" [ref=f3e893] [cursor=pointer]:
+            - /url: /products/retatrutide
+            - generic [ref=f3e895]: Retatrutide 20mg
+            - generic [ref=f3e896]: $ 100
+          - link "Shop the full range" [ref=f3e899] [cursor=pointer]:
+            - /url: /products
+      - generic [ref=f3e907]:
+        - generic [ref=f3e908]:
+          - heading "Help with your order" [level=3] [ref=f3e909]
+          - list [ref=f3e910]:
+            - listitem [ref=f3e911]:
+              - link "My account" [ref=f3e912] [cursor=pointer]:
+                - /url: /account
+            - listitem [ref=f3e917]:
+              - link "Track my order" [ref=f3e918] [cursor=pointer]:
+                - /url: /track-order
+            - listitem [ref=f3e925]:
+              - link "Delivery" [ref=f3e926] [cursor=pointer]:
+                - /url: /shipping-policy
+            - listitem [ref=f3e932]:
+              - link "Contact us" [ref=f3e933] [cursor=pointer]:
+                - /url: /contact
+        - generic [ref=f3e938]:
+          - heading "Shop" [level=3] [ref=f3e939]
+          - list [ref=f3e940]:
+            - listitem [ref=f3e941]:
+              - link "All products" [ref=f3e942] [cursor=pointer]:
+                - /url: /products
+            - listitem [ref=f3e943]:
+              - link "Your cart" [ref=f3e944] [cursor=pointer]:
+                - /url: /cart
+            - listitem [ref=f3e945]:
+              - link "Checkout" [ref=f3e946] [cursor=pointer]:
+                - /url: /checkout
+        - generic [ref=f3e947]:
+          - heading "Science" [level=3] [ref=f3e948]
+          - list [ref=f3e949]:
+            - listitem [ref=f3e950]:
+              - link "BPC-157 + TB-500" [ref=f3e951] [cursor=pointer]:
+                - /url: /products/bpc-157-tb-500
+            - listitem [ref=f3e952]:
+              - link "Tirzepatide" [ref=f3e953] [cursor=pointer]:
+                - /url: /products/tirzepatide
+            - listitem [ref=f3e954]:
+              - link "Retatrutide" [ref=f3e955] [cursor=pointer]:
+                - /url: /products/retatrutide
+            - listitem [ref=f3e956]:
+              - link "Glow" [ref=f3e957] [cursor=pointer]:
+                - /url: /products/glow
+            - listitem [ref=f3e958]:
+              - link "NAD+" [ref=f3e959] [cursor=pointer]:
+                - /url: /products/nad-plus-1000mg
+        - generic [ref=f3e960]:
+          - heading "Company & reviews" [level=3] [ref=f3e961]
+          - list [ref=f3e962]:
+            - listitem [ref=f3e963]:
+              - link "About" [ref=f3e964] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=f3e965]:
+              - link "How we verify" [ref=f3e966] [cursor=pointer]:
+                - /url: /science
+            - listitem [ref=f3e967]:
+              - link "Customer reviews" [ref=f3e968] [cursor=pointer]:
+                - /url: /reviews
+            - listitem [ref=f3e969]:
+              - link "Press" [ref=f3e970] [cursor=pointer]:
+                - /url: /press
+        - generic [ref=f3e971]:
+          - heading "Policies" [level=3] [ref=f3e972]
+          - list [ref=f3e973]:
+            - listitem [ref=f3e974]:
+              - link "Shipping policy" [ref=f3e975] [cursor=pointer]:
+                - /url: /shipping-policy
+            - listitem [ref=f3e976]:
+              - link "Refund policy" [ref=f3e977] [cursor=pointer]:
+                - /url: /refund-policy
+            - listitem [ref=f3e978]:
+              - link "Privacy policy" [ref=f3e979] [cursor=pointer]:
+                - /url: /privacy-policy
+            - listitem [ref=f3e980]:
+              - link "Terms of service" [ref=f3e981] [cursor=pointer]:
+                - /url: /terms-of-service
+      - generic [ref=f3e983]:
+        - generic [ref=f3e984]:
+          - paragraph [ref=f3e985]: Stay in touch
+          - paragraph [ref=f3e986]: Batch drops and early access.
+        - generic [ref=f3e987]:
+          - generic [ref=f3e988]:
+            - generic [ref=f3e989]:
+              - textbox "Email address" [ref=f3e990]
+              - button "Join" [disabled] [ref=f3e991]
+            - generic [ref=f3e994]:
+              - checkbox "I agree to receive research updates. Unsubscribe anytime." [checked] [ref=f3e995]
+              - text: I agree to receive research updates. Unsubscribe anytime.
+          - generic [ref=f3e996]:
+            - link "Peptiva Labs on Instagram" [ref=f3e997] [cursor=pointer]:
+              - /url: https://instagram.com
+            - link "Peptiva Labs on LinkedIn" [ref=f3e1002] [cursor=pointer]:
+              - /url: https://linkedin.com
+      - generic [ref=f3e1006]:
+        - generic [ref=f3e1007]:
+          - generic [ref=f3e1008]:
+            - text: Peptiva
+            - generic [ref=f3e1009]: Labs
+            - generic [aria-hidden] [ref=f3e1010]: ®
+          - paragraph [ref=f3e1011]: Reference-grade research materials, verified.
+          - paragraph [ref=f3e1012]: © 2026 Peptiva Labs. All rights reserved. For laboratory research use only — not for human or veterinary use.
+        - generic [ref=f3e1013]:
+          - generic [ref=f3e1014]:
+            - generic [ref=f3e1015]: USD $
+            - generic [ref=f3e1016]: English
+          - paragraph [ref=f3e1017]:
+            - text: Something else?
+            - link "Contact us" [ref=f3e1018] [cursor=pointer]:
+              - /url: /contact
+          - list [ref=f3e1019]:
+            - listitem [ref=f3e1020]:
+              - link "Privacy policy" [ref=f3e1021] [cursor=pointer]:
+                - /url: /privacy-policy
+            - listitem [ref=f3e1022]:
+              - link "Shipping and returns" [ref=f3e1023] [cursor=pointer]:
+                - /url: /shipping-policy
+            - listitem [ref=f3e1024]:
+              - link "Refund policy" [ref=f3e1025] [cursor=pointer]:
+                - /url: /refund-policy
+            - listitem [ref=f3e1026]:
+              - link "Terms of service" [ref=f3e1027] [cursor=pointer]:
+                - /url: /terms-of-service

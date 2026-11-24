@@ -48,12 +48,12 @@ function toNumber(v: number | string | null | undefined): number {
 function statusStyles(status: string): string {
   const s = (status || "").toLowerCase();
   if (["completed", "paid", "received", "shipped", "delivered", "success"].includes(s)) {
-    return "border-emerald-200 bg-emerald-50 text-emerald-800";
+    return "border-leaf-800/25 bg-tint-sage text-leaf-800";
   }
   if (["rejected", "failed", "cancelled", "declined"].includes(s)) {
-    return "border-red-200 bg-red-50 text-red-700";
+    return "border-alert-500/30 bg-alert-50 text-alert-500";
   }
-  return "border-line bg-white text-ink-secondary";
+  return "border-grey-200 bg-white text-grey-700";
 }
 
 export default function OrderDetailPage({
@@ -88,26 +88,26 @@ export default function OrderDetailPage({
   return (
     <>
       <Navbar />
-      <main className="section-block bg-canvas pb-24 pt-28 sm:pt-32">
-        <div className="container-fluid">
+      <main className="bg-white pb-24 pt-28 sm:pt-32">
+        <div className="shell">
           <Link
             href="/track-order"
-            className="inline-flex items-center gap-2 text-[13px] text-ink-secondary transition-colors hover:text-ink"
+            className="inline-flex items-center gap-2 text-small text-grey-700 transition-colors hover:text-black"
           >
             <ArrowLeft /> Back to orders
           </Link>
 
           {loading && (
-            <p className="mt-8 text-[15px] text-ink-secondary">Loading order…</p>
+            <p className="mt-8 text-base text-grey-700">Loading order…</p>
           )}
 
           {error && (
-            <div className="mt-8 max-w-xl rounded-card border border-line bg-white p-8">
-              <p className="text-[15px] font-medium text-ink">
+            <div className="mt-8 max-w-xl rounded-lg border border-grey-200 bg-white p-8">
+              <p className="text-base font-medium text-black">
                 Couldn&rsquo;t open this order
               </p>
-              <p className="mt-2 text-[14px] text-ink-secondary">{error}</p>
-              <Link href="/track-order" className="btn-dark mt-6">
+              <p className="mt-2 text-base text-grey-700">{error}</p>
+              <Link href="/track-order" className="btn-primary mt-6">
                 Look up your orders
               </Link>
             </div>
@@ -117,26 +117,26 @@ export default function OrderDetailPage({
             <>
               <div className="mt-4 flex flex-wrap items-end justify-between gap-4">
                 <div>
-                  <p className="text-[11px] uppercase tracking-label text-ink-muted">
+                  <p className="text-small uppercase tracking-caps text-grey-600">
                     Peptiva Labs · Order
                   </p>
-                  <h1 className="mt-2 text-[clamp(36px,5vw,52px)] font-medium leading-[1] tracking-tight2 text-ink">
+                  <h1 className="mt-2 text-h1 font-normal text-black">
                     {data.order.order_number}
                   </h1>
-                  <p className="mt-2 text-[13px] text-ink-muted">
+                  <p className="mt-2 text-small text-grey-600">
                     Placed {formatDate(data.order.created_at)}
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2">
                   <span
-                    className={`inline-flex items-center rounded-pill border px-3 py-1 text-[12px] font-medium uppercase tracking-label ${statusStyles(
+                    className={`inline-flex items-center rounded-pill border px-3 py-1 text-small font-medium uppercase tracking-caps ${statusStyles(
                       data.order.status
                     )}`}
                   >
                     {data.order.status || "pending"}
                   </span>
                   <span
-                    className={`inline-flex items-center rounded-pill border px-3 py-1 text-[12px] font-medium uppercase tracking-label ${statusStyles(
+                    className={`inline-flex items-center rounded-pill border px-3 py-1 text-small font-medium uppercase tracking-caps ${statusStyles(
                       data.order.payment_status
                     )}`}
                   >
@@ -146,11 +146,11 @@ export default function OrderDetailPage({
               </div>
 
               {data.order.tracking_number && (
-                <div className="mt-6 flex flex-wrap items-center gap-3 rounded-card bg-surface-soft px-5 py-4">
-                  <p className="text-[11px] uppercase tracking-label text-ink-muted">
+                <div className="mt-6 flex flex-wrap items-center gap-3 rounded-lg bg-sand-100 px-5 py-4">
+                  <p className="text-small uppercase tracking-caps text-grey-600">
                     Tracking
                   </p>
-                  <p className="text-[14px] font-medium text-ink">
+                  <p className="text-base font-medium text-black">
                     {data.order.tracking_number}
                   </p>
                 </div>
@@ -159,27 +159,27 @@ export default function OrderDetailPage({
               <div className="mt-10 grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-12">
                 {/* Items + payments */}
                 <div className="lg:col-span-7">
-                  <section className="rounded-card border border-line bg-white p-6 sm:p-8">
-                    <p className="text-[11px] uppercase tracking-label text-ink-muted">
+                  <section className="rounded-lg border border-grey-200 bg-white p-6 sm:p-8">
+                    <p className="text-small uppercase tracking-caps text-grey-600">
                       Items
                     </p>
-                    <ul className="mt-5 divide-y divide-line border-y border-line">
+                    <ul className="mt-5 divide-y divide-grey-200 border-y border-grey-200">
                       {data.items.map((it) => (
                         <li
                           key={it.id}
                           className="flex items-center justify-between py-3"
                         >
                           <div className="min-w-0 pr-4">
-                            <p className="truncate text-[14px] font-medium text-ink">
+                            <p className="truncate text-base font-medium text-black">
                               {it.name}
                             </p>
-                            <p className="text-[12px] text-ink-muted">
+                            <p className="text-small text-grey-600">
                               Qty {it.quantity} ·{" "}
                               {formatUSD(toNumber(it.unit_price))} each
                               {it.sku ? ` · ${it.sku}` : ""}
                             </p>
                           </div>
-                          <span className="text-[14px] font-medium text-ink">
+                          <span className="text-base font-medium text-black">
                             {formatUSD(toNumber(it.line_total))}
                           </span>
                         </li>
@@ -187,12 +187,12 @@ export default function OrderDetailPage({
                     </ul>
                   </section>
 
-                  <section className="mt-8 rounded-card border border-line bg-white p-6 sm:p-8">
-                    <p className="text-[11px] uppercase tracking-label text-ink-muted">
+                  <section className="mt-8 rounded-lg border border-grey-200 bg-white p-6 sm:p-8">
+                    <p className="text-small uppercase tracking-caps text-grey-600">
                       Payments
                     </p>
                     {data.payments.length === 0 ? (
-                      <p className="mt-4 text-[13px] text-ink-secondary">
+                      <p className="mt-4 text-small text-grey-700">
                         No payments recorded yet.
                       </p>
                     ) : (
@@ -200,22 +200,22 @@ export default function OrderDetailPage({
                         {data.payments.map((p) => (
                           <li
                             key={p.id}
-                            className="flex items-start justify-between gap-3 rounded-xl bg-surface-soft p-4"
+                            className="flex items-start justify-between gap-3 rounded-xl bg-sand-100 p-4"
                           >
                             <div>
-                              <p className="text-[13px] font-medium text-ink">
+                              <p className="text-small font-medium text-black">
                                 {p.provider} · {p.provider_id}
                               </p>
-                              <p className="mt-0.5 text-[12px] text-ink-muted">
+                              <p className="mt-0.5 text-small text-grey-600">
                                 {formatDateTime(p.created_at)}
                               </p>
                             </div>
                             <div className="text-right">
-                              <p className="text-[13px] font-medium text-ink">
+                              <p className="text-small font-medium text-black">
                                 {formatUSD(toNumber(p.amount))}
                               </p>
                               <span
-                                className={`mt-1 inline-flex items-center rounded-pill border px-2 py-0.5 text-[10px] font-medium uppercase tracking-label ${statusStyles(
+                                className={`mt-1 inline-flex items-center rounded-pill border px-2 py-0.5 text-small font-medium uppercase tracking-caps ${statusStyles(
                                   p.status
                                 )}`}
                               >
@@ -231,46 +231,46 @@ export default function OrderDetailPage({
 
                 {/* Totals */}
                 <aside className="lg:col-span-5">
-                  <div className="rounded-card bg-surface-dim p-6 sm:p-8 lg:sticky lg:top-28">
-                    <p className="text-[11px] uppercase tracking-label text-ink-muted">
+                  <div className="rounded-lg bg-sand-100 p-6 sm:p-8 lg:sticky lg:top-28">
+                    <p className="text-small uppercase tracking-caps text-grey-600">
                       Totals
                     </p>
-                    <div className="mt-5 flex items-center justify-between text-[14px] text-ink-secondary">
+                    <div className="mt-5 flex items-center justify-between text-base text-grey-700">
                       <span>Subtotal</span>
-                      <span className="font-medium text-ink">
+                      <span className="font-medium text-black">
                         {formatUSD(toNumber(data.order.subtotal))}
                       </span>
                     </div>
-                    <div className="mt-3 flex items-center justify-between text-[14px] text-ink-secondary">
+                    <div className="mt-3 flex items-center justify-between text-base text-grey-700">
                       <span>Shipping</span>
-                      <span className="font-medium text-ink">
+                      <span className="font-medium text-black">
                         {formatUSD(toNumber(data.order.shipping))}
                       </span>
                     </div>
                     {toNumber(data.order.discount_amount) > 0 && (
-                      <div className="mt-3 flex items-center justify-between text-[14px] text-ink-secondary">
+                      <div className="mt-3 flex items-center justify-between text-base text-grey-700">
                         <span>Discount</span>
-                        <span className="font-medium text-ink">
+                        <span className="font-medium text-black">
                           −{formatUSD(toNumber(data.order.discount_amount))}
                         </span>
                       </div>
                     )}
-                    <div className="mt-5 flex items-center justify-between border-t border-line pt-5">
-                      <span className="text-[16px] font-medium text-ink">
+                    <div className="mt-5 flex items-center justify-between border-t border-grey-200 pt-5">
+                      <span className="text-base font-medium text-black">
                         Total
                       </span>
-                      <span className="text-[22px] font-medium text-ink">
+                      <span className="text-h3 font-normal text-black">
                         {formatUSD(toNumber(data.order.total))}
                       </span>
                     </div>
 
                     <div className="mt-6 flex flex-col gap-3">
-                      <Link href="/track-order" className="btn-dark w-full justify-center">
+                      <Link href="/track-order" className="btn-primary w-full justify-center">
                         Look up another order
                       </Link>
                       <Link
                         href="/products"
-                        className="inline-flex w-full items-center justify-center rounded-pill border border-line bg-white px-5 py-2.5 text-[14px] font-medium text-ink transition-colors hover:bg-canvas"
+                        className="inline-flex w-full items-center justify-center rounded-pill border border-grey-200 bg-white px-5 py-2.5 text-base font-medium text-black transition-colors hover:bg-white"
                       >
                         Shop the Peptiva Labs range
                       </Link>

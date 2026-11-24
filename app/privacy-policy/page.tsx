@@ -126,7 +126,7 @@ export default function PrivacyPolicyPage() {
         <p>
           Privacy questions or requests can be sent to{" "}
           <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>, or
-          reach us via the <Link href="/#contact">contact section</Link> of
+          reach us via the <Link href="/contact">contact page</Link> of
           the site.
         </p>
       </LegalSection>

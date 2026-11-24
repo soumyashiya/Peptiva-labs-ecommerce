@@ -5,11 +5,26 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useCart } from "@/components/CartContext";
-import { PlusIcon, MinusIcon, ArrowLeft } from "@/components/icons";
+import {
+  PlusIcon,
+  MinusIcon,
+  ArrowLeft,
+  CartIcon,
+  LockIcon,
+  TrashIcon,
+} from "@/components/icons";
 import { getProduct, formatUSD, type Product } from "@/lib/products";
 
 const SHIPPING_FEE = 45;
 
+/**
+ * Cart.
+ *
+ * Restyled onto the reference's system: plain hairline-separated line items on
+ * the page ground, a tinted summary panel on the right, and a single black
+ * pill CTA. Pricing maths, cart mutations and the shipping constant are
+ * unchanged from before the restyle.
+ */
 export default function CartPage() {
   const { items, hydrated, setQty, remove, clear } = useCart();
 
@@ -18,140 +33,129 @@ export default function CartPage() {
       const product = getProduct(i.slug);
       return product ? { ...i, product } : null;
     })
-    .filter((l): l is { slug: string; qty: number; product: Product } =>
-      l !== null
-    );
+    .filter((l): l is { slug: string; qty: number; product: Product } => l !== null);
 
-  const subtotal = lines.reduce(
-    (sum, l) => sum + l.product.price * l.qty,
-    0
-  );
+  const subtotal = lines.reduce((sum, l) => sum + l.product.price * l.qty, 0);
   const itemCount = lines.reduce((sum, l) => sum + l.qty, 0);
   const total = subtotal + (lines.length > 0 ? SHIPPING_FEE : 0);
 
   return (
     <>
       <Navbar />
-      <main className="section-block min-h-screen bg-canvas pb-20 pt-28 sm:pt-32">
-        <div className="container-fluid">
+      <main className="min-h-screen bg-white pb-20 pt-28 lg:pt-32">
+        <div className="shell">
           {!hydrated ? (
-            <p className="mt-6 text-[15px] text-ink-secondary">Loading…</p>
+            <p className="py-20 text-center text-base text-grey-600">Loading…</p>
           ) : lines.length === 0 ? (
-            <div className="mx-auto mt-6 flex max-w-xl flex-col items-center rounded-card border border-line bg-white p-12 text-center">
-              <span className="inline-flex h-14 w-14 items-center justify-center rounded-full bg-surface-mute text-ink">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-                  <path
-                    d="M4 6h16l-1.6 11.2A2 2 0 0 1 16.4 19H7.6a2 2 0 0 1-2-1.8L4 6Z"
-                    stroke="currentColor"
-                    strokeWidth="1.6"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M9 9V6a3 3 0 1 1 6 0v3"
-                    stroke="currentColor"
-                    strokeWidth="1.6"
-                    strokeLinecap="round"
-                  />
-                </svg>
+            <div className="mx-auto flex max-w-xl flex-col items-center rounded-lg bg-sand-100 p-10 text-center sm:p-14">
+              <span className="inline-flex h-16 w-16 items-center justify-center rounded-full bg-white text-black">
+                <CartIcon width={24} height={24} />
               </span>
-              <h1 className="mt-5 text-[clamp(28px,3.4vw,40px)] font-medium tracking-tight2 text-ink">
+              <h1 className="mt-6 text-h2 font-normal text-black">
                 Your cart is empty
               </h1>
-              <p className="mt-3 max-w-md text-[15px] text-ink-secondary">
+              <p className="mt-3 max-w-md text-base text-grey-700">
                 Explore our catalogue of research-grade peptides, each supplied
                 with full documentation.
               </p>
-              <Link href="/products" className="btn-dark mt-7">
+              <Link href="/products" className="btn-primary mt-8">
                 Browse the catalogue
               </Link>
             </div>
           ) : (
             <>
-              {/* Heading row */}
-              <div>
-                <p className="text-[11px] uppercase tracking-label text-ink-muted">
-                  Your selection
-                </p>
-                <h1 className="mt-2 text-[clamp(44px,7vw,96px)] font-medium leading-[1] tracking-tight2 text-ink">
-                  Cart
-                </h1>
+              <div className="text-center">
+                <p className="eyebrow">Your selection</p>
+                <h1 className="heading-caps mt-3">Cart</h1>
               </div>
 
-              {/* Two columns */}
-              <div className="mt-10 grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-14">
-                {/* Line items */}
+              <div className="mt-12 grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-14">
+                {/* ---- line items ---------------------------------- */}
                 <div className="lg:col-span-7">
-                  <div className="flex items-center justify-end">
+                  <div className="flex items-center justify-between">
+                    <p className="text-base text-grey-700">
+                      {itemCount} item{itemCount === 1 ? "" : "s"}
+                    </p>
                     <button
                       type="button"
                       onClick={clear}
-                      className="text-[13px] text-ink-secondary transition-colors hover:text-ink"
+                      className="inline-flex items-center gap-2 text-small text-grey-700 transition-colors hover:text-black"
                     >
+                      <TrashIcon width={15} height={15} />
                       Clear cart
                     </button>
                   </div>
 
-                  <ul className="mt-3 divide-y divide-line border-y border-line">
+                  <ul className="mt-4 divide-y divide-grey-200 border-y border-grey-200">
                     {lines.map((l) => (
                       <li
                         key={l.slug}
-                        className="grid grid-cols-[80px_1fr_auto] items-center gap-4 py-6 sm:grid-cols-[96px_1fr_auto] sm:gap-6"
+                        className="grid grid-cols-[88px_1fr] items-start gap-4 py-6 sm:grid-cols-[104px_1fr_auto] sm:gap-6"
                       >
                         <Link
                           href={`/products/${l.slug}`}
-                          className="relative h-20 w-20 overflow-hidden rounded-image bg-surface-mute sm:h-24 sm:w-24"
+                          className={`relative h-[88px] w-[88px] overflow-hidden rounded-lg sm:h-[104px] sm:w-[104px] ${l.product.bg}`}
                         >
                           <Image
                             src={l.product.img}
                             alt={l.product.name}
                             fill
-                            sizes="96px"
-                            className="object-cover"
+                            sizes="104px"
+                            className="object-contain p-2"
                           />
                         </Link>
 
                         <div className="min-w-0">
-                          <p className="text-[11px] uppercase tracking-label text-ink-muted">
+                          <p className="text-small text-grey-600">
                             {l.product.category}
                           </p>
                           <Link
                             href={`/products/${l.slug}`}
-                            className="mt-1 block text-[18px] font-medium text-ink hover:opacity-70 sm:text-[20px]"
+                            className="mt-1 block text-h4 font-normal text-black transition-opacity hover:opacity-60"
                           >
                             {l.product.name}
                           </Link>
+                          <p className="mt-0.5 text-small text-grey-600">
+                            {l.product.meta}
+                          </p>
 
                           <div className="mt-4 flex flex-wrap items-center gap-4">
-                            <div className="inline-flex items-center rounded-pill border border-line bg-white">
+                            <div className="inline-flex items-center rounded-md border border-grey-300">
                               <button
                                 aria-label="Decrease quantity"
                                 onClick={() => setQty(l.slug, l.qty - 1)}
-                                className="inline-flex h-9 w-9 items-center justify-center rounded-full text-ink transition-colors hover:bg-canvas"
+                                className="inline-flex h-10 w-10 items-center justify-center text-black transition-colors hover:bg-grey-100"
                               >
-                                <MinusIcon width={14} height={14} />
+                                <MinusIcon width={15} height={15} />
                               </button>
-                              <span className="w-8 text-center text-[14px] font-medium">
+                              <span className="w-9 text-center text-base font-medium tabular-nums">
                                 {l.qty}
                               </span>
                               <button
                                 aria-label="Increase quantity"
                                 onClick={() => setQty(l.slug, l.qty + 1)}
-                                className="inline-flex h-9 w-9 items-center justify-center rounded-full text-ink transition-colors hover:bg-canvas"
+                                className="inline-flex h-10 w-10 items-center justify-center text-black transition-colors hover:bg-grey-100"
                               >
-                                <PlusIcon width={14} height={14} />
+                                <PlusIcon width={15} height={15} />
                               </button>
                             </div>
                             <button
                               type="button"
                               onClick={() => remove(l.slug)}
-                              className="text-[13px] text-ink-secondary underline-offset-4 transition-colors hover:text-ink hover:underline"
+                              className="text-small text-grey-700 underline underline-offset-4 transition-colors hover:text-black"
                             >
                               Remove
                             </button>
                           </div>
+
+                          {/* On narrow widths the price folds under the copy
+                              rather than squeezing a third column. */}
+                          <p className="mt-4 text-h4 font-medium text-black sm:hidden">
+                            {formatUSD(l.product.price * l.qty)}
+                          </p>
                         </div>
 
-                        <div className="self-start text-right text-[16px] font-medium text-ink sm:text-[18px]">
+                        <div className="hidden text-right text-h4 font-medium text-black sm:block">
                           {formatUSD(l.product.price * l.qty)}
                         </div>
                       </li>
@@ -160,77 +164,60 @@ export default function CartPage() {
 
                   <Link
                     href="/products"
-                    className="mt-6 inline-flex items-center gap-2 text-[14px] text-ink-secondary transition-colors hover:text-ink"
+                    className="mt-6 inline-flex items-center gap-2 text-base text-grey-700 transition-colors hover:text-black"
                   >
                     <ArrowLeft /> Continue shopping
                   </Link>
                 </div>
 
-                {/* Summary */}
+                {/* ---- summary -------------------------------------- */}
                 <aside className="lg:col-span-5">
-                  <div className="rounded-card bg-surface-dimmer p-6 sm:p-8 lg:sticky lg:top-28">
-                    <p className="text-[11px] uppercase tracking-label text-ink-muted">
-                      Order summary
-                    </p>
-                    <div className="mt-6 flex items-center justify-between text-[14px] text-ink-secondary">
-                      <span>
-                        Subtotal ({itemCount} item
-                        {itemCount === 1 ? "" : "s"})
-                      </span>
-                      <span className="font-medium text-ink">
-                        {formatUSD(subtotal)}
-                      </span>
-                    </div>
-                    <div className="mt-3 flex items-center justify-between text-[14px] text-ink-secondary">
-                      <span>Shipping</span>
-                      <span className="font-medium text-ink">
-                        {formatUSD(SHIPPING_FEE)}
-                      </span>
-                    </div>
-                    <div className="mt-6 flex items-center justify-between border-t border-line pt-5">
-                      <span className="text-[16px] font-medium text-ink">
-                        Total
-                      </span>
-                      <div className="text-right">
-                        <span className="text-[22px] font-medium text-ink">
-                          {formatUSD(total)}
+                  <div className="rounded-lg bg-sand-100 p-6 sm:p-8 lg:sticky lg:top-32">
+                    <p className="eyebrow">Order summary</p>
+
+                    <div className="mt-6 space-y-3">
+                      <div className="flex items-center justify-between text-base text-grey-700">
+                        <span>
+                          Subtotal ({itemCount} item{itemCount === 1 ? "" : "s"})
                         </span>
-                        <p className="mt-0.5 text-[10px] uppercase tracking-label text-ink-muted">
-                          USD · Tax included
-                        </p>
+                        <span className="font-medium text-black">
+                          {formatUSD(subtotal)}
+                        </span>
+                      </div>
+                      <div className="flex items-center justify-between text-base text-grey-700">
+                        <span>Shipping</span>
+                        <span className="font-medium text-black">
+                          {formatUSD(SHIPPING_FEE)}
+                        </span>
                       </div>
                     </div>
-                    <Link
-                      href="/checkout"
-                      className="btn-dark mt-6 w-full justify-center"
-                    >
+
+                    {/* Label and figure share a baseline; the currency note
+                        sits on its own line so it cannot shunt the total up. */}
+                    <div className="mt-6 border-t border-grey-300 pt-6">
+                      <div className="flex items-baseline justify-between gap-4">
+                        <span className="text-h4 font-medium text-black">Total</span>
+                        <span className="text-h3 font-medium text-black">
+                          {formatUSD(total)}
+                        </span>
+                      </div>
+                      <p className="mt-1 text-right text-small text-grey-600">
+                        USD · tax included
+                      </p>
+                    </div>
+
+                    <Link href="/checkout" className="btn-primary btn-block mt-6">
                       Proceed to checkout
                     </Link>
-                    <p className="mt-4 flex items-center justify-center gap-2 text-[12px] text-ink-muted">
-                      <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
-                        <rect
-                          x="1"
-                          y="6"
-                          width="10"
-                          height="7"
-                          rx="1.5"
-                          stroke="currentColor"
-                          strokeWidth="1.2"
-                        />
-                        <path
-                          d="M3 6V4a3 3 0 1 1 6 0v2"
-                          stroke="currentColor"
-                          strokeWidth="1.2"
-                          strokeLinecap="round"
-                        />
-                      </svg>
+
+                    <p className="mt-4 flex items-center justify-center gap-2 text-small text-grey-600">
+                      <LockIcon width={14} height={14} />
                       Secure, encrypted checkout
                     </p>
-                    <div className="mt-5 rounded-2xl border border-line bg-white/60 p-4 text-[11px] leading-relaxed text-ink-secondary">
-                      <p className="font-semibold uppercase tracking-label text-ink">
-                        Research use only
-                      </p>
-                      <p className="mt-1.5">
+
+                    <div className="mt-6 rounded-lg bg-white p-5">
+                      <p className="eyebrow">Research use only</p>
+                      <p className="mt-2 text-small leading-relaxed text-grey-700">
                         By proceeding with this purchase, you acknowledge that
                         these products are supplied solely for laboratory
                         research and are not intended for human or veterinary

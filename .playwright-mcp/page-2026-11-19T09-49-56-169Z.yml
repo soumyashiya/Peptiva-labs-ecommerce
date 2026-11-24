@@ -1,0 +1,597 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#home"
+  - generic [ref=e5]:
+    - link "Third-party tested — view reports" [ref=e7] [cursor=pointer]:
+      - /url: /#why
+      - text: Third-party tested — view reports
+      - generic [aria-hidden] [ref=e8]: →
+    - generic [ref=e10]:
+      - generic [ref=e27]: "4.8"
+      - generic [ref=e28]: rating
+    - generic [ref=e30]: Cold-chain shipping on every order
+  - banner [ref=e31]:
+    - generic [ref=e33]:
+      - link "Peptiva Labs home" [ref=e34] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e35]:
+          - text: Peptiva
+          - generic [ref=e36]: Labs
+          - generic [aria-hidden] [ref=e37]: ®
+      - generic [ref=e38]:
+        - link "Cart, 0 items" [ref=e39] [cursor=pointer]:
+          - /url: /cart
+        - button "Search" [ref=e44] [cursor=pointer]
+        - button "Open menu" [ref=e50] [cursor=pointer]
+  - generic [aria-hidden]:
+    - button
+    - generic:
+      - generic:
+        - textbox:
+          - /placeholder: Search products
+        - button
+      - generic:
+        - link:
+          - /url: /products/bpc-157-tb-500
+          - generic:
+            - generic: BPC-157 + TB-500
+            - generic: 40 mg dual blend
+        - link:
+          - /url: /products/glow
+          - generic:
+            - generic: Glow
+            - generic: 5 mg · 70 mg options
+        - link:
+          - /url: /products/retatrutide
+          - generic:
+            - generic: Retatrutide 20mg
+            - generic: 20 mg pre-filled pen
+        - link:
+          - /url: /products/tirzepatide
+          - generic:
+            - generic: Tirzepatide
+            - generic: 5 / 20 / 40 mg
+  - generic [aria-hidden]:
+    - generic:
+      - link:
+        - /url: /
+        - generic:
+          - text: Peptiva
+          - generic: Labs
+          - generic [aria-hidden]: ®
+      - button
+    - generic:
+      - navigation:
+        - link:
+          - /url: /products
+          - text: Shop
+        - link:
+          - /url: /science
+          - text: Science
+        - link:
+          - /url: /reviews
+          - text: Reviews
+        - link:
+          - /url: /about
+          - text: About
+        - link:
+          - /url: /press
+          - text: Press
+        - link:
+          - /url: /#contact
+          - text: Contact
+      - paragraph: Your account
+      - generic:
+        - link:
+          - /url: /login
+          - text: Sign in
+        - link:
+          - /url: /register
+          - text: Create account
+      - link:
+        - /url: /products
+        - text: Shop all
+  - generic [ref=e53]:
+    - main [ref=e54]:
+      - generic [ref=e55]:
+        - navigation "Breadcrumb" [ref=e56]:
+          - link "Home" [ref=e57] [cursor=pointer]:
+            - /url: /
+          - text: /
+          - link "Shop" [ref=e58] [cursor=pointer]:
+            - /url: /products
+          - text: /Tirzepatide
+        - generic [ref=e59]:
+          - generic [ref=e60]:
+            - generic [ref=e61]:
+              - button "View image 1 of 4" [ref=e62] [cursor=pointer]
+              - button "View image 2 of 4" [ref=e63] [cursor=pointer]
+              - button "View image 3 of 4" [ref=e64] [cursor=pointer]
+              - button "View image 4 of 4" [ref=e65] [cursor=pointer]
+            - generic [ref=e66]:
+              - img "Tirzepatide — 5 / 20 / 40 mg" [ref=e68]
+              - generic [ref=e72]:
+                - button "Previous image" [ref=e73] [cursor=pointer]
+                - button "Next image" [ref=e76] [cursor=pointer]
+          - generic [ref=e79]:
+            - generic [ref=e80]:
+              - text: Free shipping via
+              - strong [ref=e81]: cold-chain
+            - heading "Tirzepatide" [level=1] [ref=e82]
+            - paragraph [ref=e83]: Research Peptide • 5 / 20 / 40 mg • $ 100 per kit
+            - link "Rated 4.8 out of 5 698 reviews" [ref=e84] [cursor=pointer]:
+              - /url: "#reviews"
+              - generic [ref=e85]:
+                - img "Rated 4.8 out of 5" [ref=e86]
+                - generic [ref=e102]: 698 reviews
+            - generic [ref=e103]:
+              - link "Compounds" [ref=e104] [cursor=pointer]:
+                - /url: "#ingredients"
+              - link "Lab report" [ref=e107] [cursor=pointer]:
+                - /url: "#analysis"
+            - paragraph [ref=e110]: Dual-agonist GLP-1 / GIP reference peptide stocked in three concentrations to suit different research study designs.
+            - generic [ref=e111]:
+              - paragraph [ref=e112]: Janoshik verified
+              - generic [ref=e116]:
+                - generic [ref=e117]: One-time purchase
+                - generic [ref=e120]: $ 100
+              - generic [ref=e121]:
+                - paragraph [ref=e122]: How many kits?
+                - generic [ref=e123]:
+                  - button "1 kit $ 100 $ 100 per kit" [pressed] [ref=e124] [cursor=pointer]:
+                    - generic [ref=e127]: 1 kit
+                    - generic [ref=e128]: $ 100
+                    - generic [ref=e129]: $ 100 per kit
+                  - button "2 kits $ 200 $ 100 per kit" [ref=e130] [cursor=pointer]:
+                    - generic [ref=e134]: 2 kits
+                    - generic [ref=e135]: $ 200
+                    - generic [ref=e136]: $ 100 per kit
+                  - button "3 kits $ 300 $ 100 per kit" [ref=e137] [cursor=pointer]:
+                    - generic [ref=e142]: 3 kits
+                    - generic [ref=e143]: $ 300
+                    - generic [ref=e144]: $ 100 per kit
+                - generic [ref=e145]:
+                  - generic [ref=e146]: Need a different amount?
+                  - generic [ref=e147]:
+                    - button "Decrease quantity" [disabled] [ref=e148]
+                    - generic [ref=e150]: "1"
+                    - button "Increase quantity" [ref=e151] [cursor=pointer]
+                - list [ref=e154]:
+                  - listitem [ref=e155]:
+                    - generic [ref=e159]:
+                      - strong [ref=e160]: Third-party assayed
+                      - generic [ref=e161]: · certificate published per batch
+                  - listitem [ref=e162]:
+                    - generic [ref=e166]:
+                      - strong [ref=e167]: Volume pricing
+                      - generic [ref=e168]: · applied automatically at checkout
+                  - listitem [ref=e169]:
+                    - generic [ref=e174]:
+                      - strong [ref=e175]: Dispatched in 1 business day
+                      - generic [ref=e176]: · tracked and insulated
+                - button "Add to cart · $ 100" [ref=e177] [cursor=pointer]
+                - paragraph [ref=e178]:
+                  - generic [ref=e179]: In stock
+                  - generic [ref=e181]: ·
+                  - link "Shipping & delivery times" [ref=e182] [cursor=pointer]:
+                    - /url: /shipping-policy
+    - generic [ref=e183]:
+      - link "Reviews" [ref=e184] [cursor=pointer]:
+        - /url: "#reviews"
+      - link "Description" [ref=e187] [cursor=pointer]:
+        - /url: "#ingredients"
+      - link "How it works" [ref=e190] [cursor=pointer]:
+        - /url: "#contents"
+  - generic [ref=e193]:
+    - generic [ref=e197]:
+      - heading "Loved by our community" [level=2] [ref=e198]: Loved by ourcommunity
+      - generic [ref=e200]:
+        - list [ref=e201]:
+          - listitem [ref=e202]:
+            - img "Incoming QC" [ref=e203]
+            - paragraph [ref=e215]: Incoming QC
+          - listitem [ref=e216]:
+            - img "Assay prep" [ref=e217]
+            - paragraph [ref=e229]: Assay prep
+          - listitem [ref=e230]:
+            - img "HPLC run" [ref=e231]
+            - paragraph [ref=e243]: HPLC run
+          - listitem [ref=e244]:
+            - img "Batch records" [ref=e245]
+            - paragraph [ref=e257]: Batch records
+          - listitem [ref=e258]:
+            - img "Cold store" [ref=e259]
+            - paragraph [ref=e271]: Cold store
+          - listitem [ref=e272]:
+            - img "Fill line" [ref=e273]
+            - paragraph [ref=e285]: Fill line
+          - listitem [ref=e286]:
+            - img "Seal check" [ref=e287]
+            - paragraph [ref=e299]: Seal check
+        - list [aria-hidden] [ref=e300]:
+          - listitem [ref=e301]:
+            - paragraph [ref=e313]: Incoming QC
+          - listitem [ref=e314]:
+            - paragraph [ref=e326]: Assay prep
+          - listitem [ref=e327]:
+            - paragraph [ref=e339]: HPLC run
+          - listitem [ref=e340]:
+            - paragraph [ref=e352]: Batch records
+          - listitem [ref=e353]:
+            - paragraph [ref=e365]: Cold store
+          - listitem [ref=e366]:
+            - paragraph [ref=e378]: Fill line
+          - listitem [ref=e379]:
+            - paragraph [ref=e391]: Seal check
+    - region "Rating summary" [ref=e392]:
+      - generic [ref=e393]:
+        - paragraph [ref=e394]: "4.8"
+        - img "Rated 4.8 out of 5" [ref=e396]
+        - paragraph [ref=e412]: based on 698 ratings
+    - generic [ref=e414]:
+      - heading "Explore our verified compound" [level=2] [ref=e415]
+      - tablist "Compounds" [ref=e416]:
+        - tab "Tirzepatide" [selected] [ref=e417] [cursor=pointer]
+      - generic [ref=e419]:
+        - generic [ref=e421]:
+          - heading "Tirzepatide" [level=3] [ref=e422]
+          - paragraph [ref=e423]: in Tirzepatide
+        - paragraph [ref=e427]: 100% of verified content
+        - list [ref=e430]:
+          - listitem [ref=e431]:
+            - generic [ref=e435]:
+              - generic [ref=e436]: Measured concentration
+              - generic [ref=e437]: 13.35 mg/mL
+          - listitem [ref=e438]:
+            - generic [ref=e442]:
+              - generic [ref=e443]: Verified content per device
+              - generic [ref=e444]: 40.05 mg
+          - listitem [ref=e445]:
+            - generic [ref=e449]:
+              - generic [ref=e450]: Batch
+              - generic [ref=e451]: TR786PAOS · 3 mL fill
+        - link "View the full report" [ref=e452] [cursor=pointer]:
+          - /url: https://verify.janoshik.com/tests/147174-ALLUVI_TIRZEPATIDE_40MG_KIT_T5MBWRAYD4HN
+    - generic [ref=e455]:
+      - generic [ref=e459]:
+        - heading "Verified before it is listed" [level=2] [ref=e460]
+        - list [ref=e461]:
+          - listitem [ref=e462]: Independently assayed by Janoshik
+          - listitem [ref=e465]: Batch code on every device
+          - listitem [ref=e468]: Sealed fill, cold-chain shipped
+      - link "Order now" [ref=e472] [cursor=pointer]:
+        - /url: "#buy"
+    - generic [ref=e474]:
+      - heading [level=2] [ref=e475]:
+        - text: Why researchers choose
+        - strong [ref=e476]: Peptiva Labs
+      - generic [ref=e477]:
+        - generic [ref=e478]: Peptiva Labs
+        - paragraph [ref=e481]: Typical unverified suppliers
+        - paragraph [ref=e483]: Third-party assay for every batch
+        - paragraph [ref=e493]: Public verification link
+        - paragraph [ref=e503]: Batch code on the device
+        - paragraph [ref=e513]: Sealed, pre-filled format
+        - paragraph [ref=e523]: Cold-chain shipping
+      - link "Order now" [ref=e533] [cursor=pointer]:
+        - /url: "#buy"
+    - generic [ref=e534]:
+      - heading "Join the labs who verify before they buy" [level=2] [ref=e535]
+      - generic [ref=e537]:
+        - figure "Hassan Al Marri Verified buyer" [ref=e538]:
+          - img "Rated 5 out of 5" [ref=e540]
+          - blockquote [ref=e556]: “Packaging was easily the cleanest I've seen from any research peptide supplier — sealed, labelled and cold-stored properly. Replies on WhatsApp arrived in minutes.”
+          - generic [ref=e557]:
+            - generic [ref=e558]: Hassan Al Marri
+            - generic [ref=e559]: Verified buyer
+        - figure "Dr. Aisha Khan Verified buyer" [ref=e560]:
+          - img "Rated 5 out of 5" [ref=e562]
+          - blockquote [ref=e578]: “Certificate matched the batch code on the device. That sounds basic, but it is the first time I have been able to check it end to end.”
+          - generic [ref=e579]:
+            - generic [ref=e580]: Dr. Aisha Khan
+            - generic [ref=e581]: Verified buyer
+        - figure "Leila Haddad Verified buyer" [ref=e582]:
+          - img "Rated 4 out of 5" [ref=e584]
+          - blockquote [ref=e599]: “Arrived cold, arrived sealed, arrived on the day they said. Documentation was in the box rather than buried in an email.”
+          - generic [ref=e600]:
+            - generic [ref=e601]: Leila Haddad
+            - generic [ref=e602]: Verified buyer
+        - figure "Priya Nair Verified buyer" [ref=e603]:
+          - img "Rated 5 out of 5" [ref=e605]
+          - blockquote [ref=e621]: “Two sealed pens, one information sheet, no surprises. Reordering was a single click from the account page.”
+          - generic [ref=e622]:
+            - generic [ref=e623]: Priya Nair
+            - generic [ref=e624]: Verified buyer
+      - link "Order now" [ref=e626] [cursor=pointer]:
+        - /url: "#buy"
+    - generic [ref=e627]:
+      - generic [ref=e628]:
+        - heading "Verified by Janoshik Analytical" [level=2] [ref=e629]
+        - paragraph [ref=e630]: Every Tirzepatide batch is tested by an independent laboratory before it is listed. The report is public, and the batch code printed on the device matches it.
+        - link "Read the results" [ref=e631] [cursor=pointer]:
+          - /url: "#analysis"
+      - generic [ref=e632]:
+        - generic [ref=e633]:
+          - heading "Independently assayed" [level=3] [ref=e635]
+          - paragraph [ref=e639]: Every batch is measured by Janoshik Analytical before it is listed — content per compound, not a marketing estimate.
+        - generic [ref=e640]:
+          - heading "Batch-coded devices" [level=3] [ref=e642]
+          - paragraph [ref=e646]: The batch code printed on the device matches the public report, so a result can be traced end to end.
+        - generic [ref=e647]:
+          - heading "Sealed at the source" [level=3] [ref=e649]
+          - paragraph [ref=e653]: Filled, sealed and tamper-evidenced in one controlled pass. No decanting and no repackaging.
+        - generic [ref=e654]:
+          - heading "Cold-chain handled" [level=3] [ref=e656]
+          - paragraph [ref=e660]: Stored at 2–8°C and shipped insulated and temperature-controlled, because stability starts with handling.
+      - link "Order now" [ref=e662] [cursor=pointer]:
+        - /url: "#buy"
+    - region "Certificate of analysis" [ref=e663]:
+      - generic [ref=e664]:
+        - heading "Certificate of analysis" [level=2] [ref=e665]
+        - paragraph [ref=e666]: Independently tested and verified by Janoshik Analytical.
+        - generic [ref=e667]:
+          - generic [ref=e668]:
+            - generic [ref=e669]:
+              - paragraph [ref=e670]: Batch number
+              - paragraph [ref=e671]: TR786PAOS
+            - generic [ref=e672]:
+              - paragraph [ref=e673]: Fill volume
+              - paragraph [ref=e674]: 3 mL
+            - generic [ref=e675]:
+              - paragraph [ref=e676]: Purity
+              - paragraph [ref=e677]: 99.85%
+          - table [ref=e679]:
+            - rowgroup [ref=e680]:
+              - row [ref=e681]:
+                - columnheader "Compound" [ref=e682]
+                - columnheader "Concentration" [ref=e683]
+                - columnheader "Verified content" [ref=e684]
+            - rowgroup [ref=e685]:
+              - row [ref=e686]:
+                - cell "Tirzepatide" [ref=e687]
+                - cell "13.35 mg/mL" [ref=e688]
+                - cell "40.05 mg" [ref=e689]
+          - generic [ref=e690]:
+            - paragraph [ref=e691]: Concentration is measured per ml; verified content reflects the total assayed mass across the stated fill volume.
+            - link "View full report" [ref=e692] [cursor=pointer]:
+              - /url: https://verify.janoshik.com/tests/147174-ALLUVI_TIRZEPATIDE_40MG_KIT_T5MBWRAYD4HN
+    - generic [ref=e696]:
+      - heading "Research material, done properly" [level=2] [ref=e697]
+      - link "Order now" [ref=e699] [cursor=pointer]:
+        - /url: "#buy"
+    - generic [ref=e701]:
+      - heading "FAQ" [level=2] [ref=e702]
+      - generic [ref=e703]:
+        - generic [ref=e707]: Search questions
+        - textbox "Search questions" [ref=e708]:
+          - /placeholder: Start typing your question
+      - generic [ref=e710]:
+        - button "How should Tirzepatide be stored?" [ref=e712] [cursor=pointer]
+        - button "How is each batch verified?" [ref=e717] [cursor=pointer]
+        - button "How is it shipped?" [ref=e722] [cursor=pointer]
+        - button "Who is this product for?" [ref=e727] [cursor=pointer]
+      - heading "Everything you need to know" [level=2] [ref=e731]
+      - generic [ref=e733]:
+        - button "What's in the kit" [ref=e735] [cursor=pointer]
+        - button "Storage & handling" [ref=e740] [cursor=pointer]
+        - button "Highlights" [ref=e745] [cursor=pointer]
+        - button "Safety protocol" [ref=e750] [cursor=pointer]
+    - generic [ref=e754]:
+      - generic [ref=e755]:
+        - paragraph [ref=e759]:
+          - strong [ref=e760]: Independently
+          - text: assayed batches
+        - paragraph [ref=e765]:
+          - strong [ref=e766]: Sealed,
+          - text: tamper-evident fill
+        - paragraph [ref=e773]:
+          - strong [ref=e774]: Cold-chain
+          - text: 2–8°C handling
+        - paragraph [ref=e780]:
+          - strong [ref=e781]: Batch-coded
+          - text: paperwork in every box
+        - paragraph [ref=e786]:
+          - strong [ref=e787]: Research use
+          - text: only — never for humans
+      - paragraph [ref=e788]:
+        - strong [ref=e789]: Tirzepatide
+        - text: is supplied strictly for laboratory research. It is not for human or veterinary use.
+    - region "Verified customer reviews" [ref=e791]:
+      - generic [ref=e792]:
+        - heading "Verified customer reviews" [level=2] [ref=e794]
+        - article [ref=e796]:
+          - generic [ref=e797]:
+            - paragraph [ref=e798]: Hassan Al Marri
+            - paragraph [ref=e802]: Verified buyer
+          - generic [ref=e806]:
+            - img "Rated 5 out of 5" [ref=e808]
+            - heading "Tirzepatide" [level=3] [ref=e824]
+            - paragraph [ref=e825]: “Packaging was easily the cleanest I've seen from any research peptide supplier — sealed, labelled and cold-stored properly. Replies on WhatsApp arrived in minutes.”
+        - link "Read all reviews" [ref=e827] [cursor=pointer]:
+          - /url: /reviews
+    - region "We also recommend" [ref=e828]:
+      - generic [ref=e829]:
+        - generic [ref=e830]:
+          - heading "We also recommend" [level=2] [ref=e831]
+          - link "View all" [ref=e832] [cursor=pointer]:
+            - /url: /products
+        - group "Related products" [ref=e836]:
+          - article [ref=e838]:
+            - link [ref=e839] [cursor=pointer]:
+              - /url: /products/bpc-157-tb-500
+              - img "BPC-157 + TB-500" [ref=e840]
+            - generic [ref=e841]:
+              - heading [level=3] [ref=e842]:
+                - link "BPC-157 + TB-500" [ref=e843] [cursor=pointer]:
+                  - /url: /products/bpc-157-tb-500
+              - generic [ref=e844]:
+                - img "Rated 4.8 out of 5" [ref=e845]
+                - generic [ref=e861]: 412 reviews
+              - paragraph [ref=e862]: $ 130
+          - article [ref=e864]:
+            - link [ref=e865] [cursor=pointer]:
+              - /url: /products/glow
+              - img "Glow" [ref=e866]
+            - generic [ref=e867]:
+              - heading [level=3] [ref=e868]:
+                - link "Glow" [ref=e869] [cursor=pointer]:
+                  - /url: /products/glow
+              - generic [ref=e870]:
+                - img "Rated 4.9 out of 5" [ref=e871]
+                - generic [ref=e887]: 287 reviews
+              - paragraph [ref=e888]: from $ 100
+          - article [ref=e890]:
+            - link [ref=e891] [cursor=pointer]:
+              - /url: /products/retatrutide
+              - img "Retatrutide 20mg" [ref=e892]
+            - generic [ref=e893]:
+              - heading [level=3] [ref=e894]:
+                - link "Retatrutide 20mg" [ref=e895] [cursor=pointer]:
+                  - /url: /products/retatrutide
+              - generic [ref=e896]:
+                - img "Rated 4.7 out of 5" [ref=e897]
+                - generic [ref=e913]: 531 reviews
+              - paragraph [ref=e914]: $ 100
+  - contentinfo [ref=e917]:
+    - generic [ref=e918]:
+      - generic [ref=e920]:
+        - generic [ref=e921]:
+          - paragraph [ref=e922]: Start with our best sellers
+          - paragraph [ref=e923]: Trending right now
+        - generic [ref=e924]:
+          - link "BPC-157 + TB-500 $ 130" [ref=e925] [cursor=pointer]:
+            - /url: /products/bpc-157-tb-500
+            - generic [ref=e927]: BPC-157 + TB-500
+            - generic [ref=e928]: $ 130
+          - link "Glow from $ 100" [ref=e931] [cursor=pointer]:
+            - /url: /products/glow
+            - generic [ref=e933]: Glow
+            - generic [ref=e934]: from $ 100
+          - link "Retatrutide 20mg $ 100" [ref=e937] [cursor=pointer]:
+            - /url: /products/retatrutide
+            - generic [ref=e939]: Retatrutide 20mg
+            - generic [ref=e940]: $ 100
+          - link "Shop the full range" [ref=e943] [cursor=pointer]:
+            - /url: /products
+      - generic [ref=e951]:
+        - generic [ref=e952]:
+          - heading "Help with your order" [level=3] [ref=e953]
+          - list [ref=e954]:
+            - listitem [ref=e955]:
+              - link "My account" [ref=e956] [cursor=pointer]:
+                - /url: /account
+            - listitem [ref=e961]:
+              - link "Track my order" [ref=e962] [cursor=pointer]:
+                - /url: /track-order
+            - listitem [ref=e969]:
+              - link "Delivery" [ref=e970] [cursor=pointer]:
+                - /url: /shipping-policy
+            - listitem [ref=e976]:
+              - link "Contact us" [ref=e977] [cursor=pointer]:
+                - /url: /#contact
+        - generic [ref=e982]:
+          - heading "Shop" [level=3] [ref=e983]
+          - list [ref=e984]:
+            - listitem [ref=e985]:
+              - link "All products" [ref=e986] [cursor=pointer]:
+                - /url: /products
+            - listitem [ref=e987]:
+              - link "Your cart" [ref=e988] [cursor=pointer]:
+                - /url: /cart
+            - listitem [ref=e989]:
+              - link "Checkout" [ref=e990] [cursor=pointer]:
+                - /url: /checkout
+        - generic [ref=e991]:
+          - heading "Science" [level=3] [ref=e992]
+          - list [ref=e993]:
+            - listitem [ref=e994]:
+              - link "BPC-157 + TB-500" [ref=e995] [cursor=pointer]:
+                - /url: /products/bpc-157-tb-500
+            - listitem [ref=e996]:
+              - link "Tirzepatide" [ref=e997] [cursor=pointer]:
+                - /url: /products/tirzepatide
+            - listitem [ref=e998]:
+              - link "Retatrutide" [ref=e999] [cursor=pointer]:
+                - /url: /products/retatrutide
+            - listitem [ref=e1000]:
+              - link "Glow" [ref=e1001] [cursor=pointer]:
+                - /url: /products/glow
+            - listitem [ref=e1002]:
+              - link "NAD+" [ref=e1003] [cursor=pointer]:
+                - /url: /products/nad-plus-1000mg
+        - generic [ref=e1004]:
+          - heading "Company & reviews" [level=3] [ref=e1005]
+          - list [ref=e1006]:
+            - listitem [ref=e1007]:
+              - link "About" [ref=e1008] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e1009]:
+              - link "How we verify" [ref=e1010] [cursor=pointer]:
+                - /url: /science
+            - listitem [ref=e1011]:
+              - link "Customer reviews" [ref=e1012] [cursor=pointer]:
+                - /url: /reviews
+            - listitem [ref=e1013]:
+              - link "Press" [ref=e1014] [cursor=pointer]:
+                - /url: /press
+        - generic [ref=e1015]:
+          - heading "Policies" [level=3] [ref=e1016]
+          - list [ref=e1017]:
+            - listitem [ref=e1018]:
+              - link "Shipping policy" [ref=e1019] [cursor=pointer]:
+                - /url: /shipping-policy
+            - listitem [ref=e1020]:
+              - link "Refund policy" [ref=e1021] [cursor=pointer]:
+                - /url: /refund-policy
+            - listitem [ref=e1022]:
+              - link "Privacy policy" [ref=e1023] [cursor=pointer]:
+                - /url: /privacy-policy
+            - listitem [ref=e1024]:
+              - link "Terms of service" [ref=e1025] [cursor=pointer]:
+                - /url: /terms-of-service
+      - generic [ref=e1027]:
+        - generic [ref=e1028]:
+          - paragraph [ref=e1029]: Stay in touch
+          - paragraph [ref=e1030]: Batch drops and early access.
+        - generic [ref=e1031]:
+          - generic [ref=e1032]:
+            - generic [ref=e1033]:
+              - textbox "Email address" [ref=e1034]
+              - button "Join" [disabled] [ref=e1035]
+            - generic [ref=e1038]:
+              - checkbox "I agree to receive research updates. Unsubscribe anytime." [checked] [ref=e1039]
+              - text: I agree to receive research updates. Unsubscribe anytime.
+          - generic [ref=e1040]:
+            - link "Peptiva Labs on Instagram" [ref=e1041] [cursor=pointer]:
+              - /url: https://instagram.com
+            - link "Peptiva Labs on LinkedIn" [ref=e1046] [cursor=pointer]:
+              - /url: https://linkedin.com
+      - generic [ref=e1050]:
+        - generic [ref=e1051]:
+          - generic [ref=e1052]:
+            - text: Peptiva
+            - generic [ref=e1053]: Labs
+            - generic [aria-hidden] [ref=e1054]: ®
+          - paragraph [ref=e1055]: Reference-grade research materials, verified.
+          - paragraph [ref=e1056]: © 2026 Peptiva Labs. All rights reserved. For laboratory research use only — not for human or veterinary use.
+        - generic [ref=e1057]:
+          - generic [ref=e1058]:
+            - generic [ref=e1059]: United Arab Emirates · USD $
+            - generic [ref=e1060]: English
+          - paragraph [ref=e1061]:
+            - text: Something else?
+            - link "Contact us" [ref=e1062] [cursor=pointer]:
+              - /url: /#contact
+          - list [ref=e1063]:
+            - listitem [ref=e1064]:
+              - link "Privacy policy" [ref=e1065] [cursor=pointer]:
+                - /url: /privacy-policy
+            - listitem [ref=e1066]:
+              - link "Shipping and returns" [ref=e1067] [cursor=pointer]:
+                - /url: /shipping-policy
+            - listitem [ref=e1068]:
+              - link "Refund policy" [ref=e1069] [cursor=pointer]:
+                - /url: /refund-policy
+            - listitem [ref=e1070]:
+              - link "Terms of service" [ref=e1071] [cursor=pointer]:
+                - /url: /terms-of-service

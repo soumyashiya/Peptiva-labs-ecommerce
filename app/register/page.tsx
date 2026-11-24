@@ -3,11 +3,10 @@
 import { useState, Suspense } from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import { useAuth } from "@/components/AuthContext";
 import { useToast } from "@/components/Toast";
 import { friendlyRegisterError } from "@/lib/errors";
+import AuthShell, { Eyebrow, INPUT } from "@/components/AuthShell";
 
 function RegisterInner() {
   const router = useRouter();
@@ -52,21 +51,19 @@ function RegisterInner() {
   }
 
   return (
-    <div className="mx-auto w-full max-w-lg">
-      <p className="text-[11px] uppercase tracking-label text-ink-muted">
-        Get started
-      </p>
-      <h1 className="mt-2 text-[clamp(36px,5vw,56px)] font-medium leading-[1] tracking-tight2 text-ink">
+    <div className="mx-auto w-full max-w-[480px]">
+      <Eyebrow>Get started</Eyebrow>
+      <h1 className="mt-4 text-[28px] font-medium leading-tight text-black sm:text-[34px]">
         Create your Peptiva Labs account
       </h1>
-      <p className="mt-3 text-[14px] text-ink-secondary">
+      <p className="mt-2 text-base text-grey-700">
         Register to track orders, earn wallet credit, and access the
         Peptiva Labs affiliate program.
       </p>
 
       <form
         onSubmit={handleSubmit}
-        className="mt-8 grid grid-cols-1 gap-4 rounded-card border border-line bg-white p-6 sm:grid-cols-2 sm:p-8"
+        className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2"
       >
         <TextField
           label="Full name"
@@ -125,19 +122,19 @@ function RegisterInner() {
         <button
           type="submit"
           disabled={loading}
-          className="btn-dark mt-2 w-full justify-center disabled:opacity-60 sm:col-span-2"
+          className="btn-primary mt-1 w-full justify-center sm:col-span-2"
         >
           {loading ? "Creating account…" : "Create account"}
         </button>
       </form>
 
-      <p className="mt-5 text-[13px] text-ink-secondary">
+      <p className="mt-6 text-center text-small text-grey-700">
         Already have an account?{" "}
         <Link
           href={`/login${next !== "/account" ? `?next=${encodeURIComponent(next)}` : ""}`}
-          className="text-blue-600 hover:text-blue-800"
+          className="font-medium text-black underline underline-offset-4 hover:opacity-60"
         >
-          Sign in →
+          Sign in
         </Link>
       </p>
     </div>
@@ -146,17 +143,16 @@ function RegisterInner() {
 
 export default function RegisterPage() {
   return (
-    <>
-      <Navbar />
-      <main className="section-block bg-canvas pb-24 pt-28 sm:pt-32">
-        <div className="container-fluid">
-          <Suspense fallback={<div className="text-ink-secondary">Loading…</div>}>
-            <RegisterInner />
-          </Suspense>
-        </div>
-      </main>
-      <Footer />
-    </>
+    <AuthShell
+      img="/new-images/auth/register-hd.webp"
+      tag="Join Peptiva Labs"
+      title="Track every order and earn credit on the next one."
+      points={["Order tracking", "Wallet credit", "Affiliate code"]}
+    >
+      <Suspense fallback={<div className="text-grey-700">Loading…</div>}>
+        <RegisterInner />
+      </Suspense>
+    </AuthShell>
   );
 }
 
@@ -181,7 +177,7 @@ function TextField({
 }) {
   return (
     <label className={`flex flex-col gap-1.5 ${full ? "sm:col-span-2" : ""}`}>
-      <span className="text-[12px] font-medium text-ink">{label}</span>
+      <span className="text-small font-medium text-black">{label}</span>
       <input
         type={type}
         required={required}
@@ -189,7 +185,7 @@ function TextField({
         value={value}
         autoComplete={autoComplete}
         onChange={(e) => onChange(e.target.value)}
-        className="rounded-xl border border-line bg-white px-4 py-3 text-[14px] text-ink outline-none transition-colors placeholder:text-ink-subtle focus:border-ink/30"
+        className={INPUT}
       />
     </label>
   );

@@ -53,53 +53,53 @@ export function LegalShell({
   return (
     <>
       <Navbar />
-      <main className="section-block bg-canvas pb-20 pt-28 sm:pb-28 sm:pt-32">
-        <div className="container-fluid">
-          <nav aria-label="Breadcrumb" className="text-[13px] text-ink-muted">
-            <Link href="/" className="transition-colors hover:text-ink">
+      <main className="bg-white pb-20 pt-28 sm:pb-28 sm:pt-32">
+        <div className="shell">
+          <nav aria-label="Breadcrumb" className="text-small text-grey-600">
+            <Link href="/" className="transition-colors hover:text-black">
               Home
             </Link>
             <span className="mx-2">/</span>
-            <span className="text-ink">{title}</span>
+            <span className="text-black">{title}</span>
           </nav>
 
           {/* Hero */}
-          <div className="mt-6 flex flex-col gap-5 rounded-card border border-line bg-white p-6 sm:flex-row sm:items-center sm:gap-6 sm:p-8">
+          <div className="mt-6 flex flex-col gap-5 rounded-lg border border-grey-200 bg-white p-6 sm:flex-row sm:items-center sm:gap-6 sm:p-8">
             {icon && (
-              <div className="inline-flex h-14 w-14 flex-none items-center justify-center rounded-2xl bg-nude-green text-ink">
+              <div className="inline-flex h-14 w-14 flex-none items-center justify-center rounded-2xl bg-tint-sage text-black">
                 {icon}
               </div>
             )}
             <div>
               <div className="flex flex-wrap items-center gap-2.5">
-                <span className="inline-flex items-center rounded-pill border border-line px-2.5 py-1 text-[10px] uppercase tracking-label text-ink-secondary">
+                <span className="inline-flex items-center rounded-pill border border-grey-200 px-2.5 py-1 text-small uppercase tracking-caps text-grey-700">
                   {eyebrow}
                 </span>
-                <span className="inline-flex items-center rounded-pill bg-surface-soft px-2.5 py-1 text-[10px] text-ink-muted">
+                <span className="inline-flex items-center rounded-pill bg-sand-100 px-2.5 py-1 text-small text-grey-600">
                   Last updated {updated}
                 </span>
               </div>
-              <h1 className="mt-3 text-[clamp(26px,3.6vw,40px)] font-medium leading-[1.1] tracking-tight2 text-ink">
+              <h1 className="mt-3 text-h2 font-normal leading-[1.1] text-black">
                 {title}
               </h1>
-              <p className="mt-2.5 max-w-2xl text-[14px] leading-relaxed text-ink-secondary">
+              <p className="mt-2.5 max-w-2xl text-base leading-relaxed text-grey-700">
                 {intro}
               </p>
             </div>
           </div>
 
           {/* Mobile: collapsible on-this-page nav */}
-          <details className="mt-6 rounded-card border border-line bg-white p-4 md:hidden">
-            <summary className="flex cursor-pointer list-none items-center justify-between text-[13px] font-medium text-ink">
+          <details className="mt-6 rounded-lg border border-grey-200 bg-white p-4 md:hidden">
+            <summary className="flex cursor-pointer list-none items-center justify-between text-small font-medium text-black">
               On this page
-              <ChevronDownIcon className="text-ink-muted" />
+              <ChevronDownIcon className="text-grey-600" />
             </summary>
-            <ul className="mt-3 space-y-1 border-t border-line pt-3">
+            <ul className="mt-3 space-y-1 border-t border-grey-200 pt-3">
               {sections.map((s) => (
                 <li key={s.id}>
                   <a
                     href={`#${s.id}`}
-                    className="block py-1.5 text-[13px] text-ink-secondary transition-colors hover:text-ink"
+                    className="block py-1.5 text-small text-grey-700 transition-colors hover:text-black"
                   >
                     {s.label}
                   </a>
@@ -113,8 +113,8 @@ export function LegalShell({
               aria-label="Section navigation"
               className="hidden md:col-span-4 md:block lg:col-span-3"
             >
-              <div className="sticky top-28 rounded-card border border-line bg-white p-5">
-                <p className="text-[11px] uppercase tracking-label text-ink-muted">
+              <div className="sticky top-28 rounded-lg border border-grey-200 bg-white p-5">
+                <p className="text-small uppercase tracking-caps text-grey-600">
                   On this page
                 </p>
                 <ul className="mt-3 space-y-0.5">
@@ -125,10 +125,10 @@ export function LegalShell({
                         <a
                           href={`#${s.id}`}
                           aria-current={isActive}
-                          className={`block rounded-lg px-2.5 py-1.5 text-[13px] transition-colors ${
+                          className={`block rounded-lg px-2.5 py-1.5 text-small transition-colors ${
                             isActive
-                              ? "bg-canvas font-medium text-ink"
-                              : "text-ink-secondary hover:text-ink"
+                              ? "bg-white font-medium text-black"
+                              : "text-grey-700 hover:text-black"
                           }`}
                         >
                           {s.label}
@@ -139,16 +139,16 @@ export function LegalShell({
                 </ul>
               </div>
 
-              <div className="mt-5 rounded-card border border-line bg-white p-5">
-                <p className="text-[13px] font-medium text-ink">
+              <div className="mt-5 rounded-lg border border-grey-200 bg-white p-5">
+                <p className="text-small font-medium text-black">
                   Still have questions?
                 </p>
-                <p className="mt-1.5 text-[13px] leading-relaxed text-ink-secondary">
+                <p className="mt-1.5 text-small leading-relaxed text-grey-700">
                   Reach our team any time at
                 </p>
                 <a
                   href={`mailto:${CONTACT.email}`}
-                  className="mt-1.5 inline-block text-[13px] font-medium text-ink underline-offset-4 hover:underline"
+                  className="mt-1.5 inline-block text-small font-medium text-black underline-offset-4 hover:underline"
                 >
                   {CONTACT.email}
                 </a>
@@ -158,7 +158,7 @@ export function LegalShell({
             <div className="md:col-span-8 lg:col-span-9">
               <div
                 ref={scopeRef}
-                className="legal-sections legal-prose max-w-3xl space-y-5 text-[14px] leading-relaxed text-ink-secondary"
+                className="legal-sections legal-prose max-w-3xl space-y-5 text-base leading-relaxed text-grey-700"
               >
                 {children}
               </div>
@@ -183,12 +183,12 @@ export function LegalSection({
   return (
     <section
       id={id}
-      className="legal-section scroll-mt-28 rounded-card border border-line bg-white p-6 sm:p-7"
+      className="legal-section scroll-mt-28 rounded-lg border border-grey-200 bg-white p-6 sm:p-7"
     >
       <div className="flex items-start gap-3.5">
-        <span className="section-num mt-0.5 inline-flex h-8 w-8 flex-none items-center justify-center rounded-full bg-ink_btn text-[11px] font-semibold text-white" />
+        <span className="section-num mt-0.5 inline-flex h-8 w-8 flex-none items-center justify-center rounded-full bg-black text-small font-semibold text-white" />
         <div className="min-w-0">
-          <h2 className="text-[18px] font-medium tracking-tight2 text-ink">
+          <h2 className="text-h4 font-medium text-black">
             {title}
           </h2>
           <div className="mt-3 space-y-3">{children}</div>

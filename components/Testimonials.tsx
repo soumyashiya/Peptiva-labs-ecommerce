@@ -1,96 +1,120 @@
 "use client";
 
-import { useState } from "react";
-import Image from "next/image";
+import { useMemo, useState } from "react";
+import Rating from "./Rating";
+import Rail from "./Rail";
 import { useReveal } from "./useReveal";
-import { QuoteIcon } from "./icons";
+import { REVIEWS, type Review } from "@/lib/reviews";
 
-const TESTIMONIALS = [
-  {
-    quote:
-      "Packaging was easily the cleanest I've seen from any research peptide supplier — sealed, labelled and cold-stored properly. Replies on WhatsApp arrived in minutes.",
-    name: "Hassan Al Marri",
-    role: "Independent researcher",
-    img: "/images/review-img1-seo.webp",
-  },
-  {
-    quote:
-      "I've worked with three different peptide vendors. Peptiva Labs is the only one that has been consistent on purity, stock, and after-sales communication every single order.",
-    name: "Dr. Aisha Khan",
-    role: "Clinical research coordinator",
-    img: "/images/review-img2-seo.webp",
-  },
-  {
-    quote:
-      "Their team walked me through concentration choices before I bought anything. No upsell, no pressure — just useful guidance. That's rare in this space.",
-    name: "Yusuf Rahman",
-    role: "Performance coach",
-    img: "/images/review-img3-seo.webp",
-  },
+/**
+ * Customer reviews.
+ *
+ * Reference archetype: a rounded lavender panel carrying a large sentence-case
+ * heading, an italic "Verified Customer Reviews" byline and a tab/sort row;
+ * the review cards then break out of the panel's bottom edge as a snap
+ * carousel of white cards — stars, product name, quote, then reviewer and
+ * "Verified Buyer" on one baseline.
+ */
+
+const TABS: { label: string; kind: Review["kind"] | "all" }[] = [
+  { label: "Product reviews", kind: "product" },
+  { label: "Company reviews", kind: "company" },
 ];
 
 export default function Testimonials() {
   const scope = useReveal<HTMLDivElement>();
-  const [index, setIndex] = useState(0);
-  const t = TESTIMONIALS[index];
+  const [tab, setTab] = useState(0);
+  const [query, setQuery] = useState("");
+
+  const items = useMemo(() => {
+    const kind = TABS[tab].kind;
+    const q = query.trim().toLowerCase();
+    return REVIEWS.filter(
+      (r) =>
+        (kind === "all" || r.kind === kind) &&
+        (!q ||
+          r.quote.toLowerCase().includes(q) ||
+          r.product.toLowerCase().includes(q) ||
+          r.name.toLowerCase().includes(q))
+    );
+  }, [tab, query]);
 
   return (
-    <section id="testimonial" className="section-block bg-canvas py-12 sm:py-16 md:py-24">
-      <div ref={scope} className="container-fluid">
-        <h2
-          data-reveal
-          className="reveal-init text-center text-h2 font-normal"
-        >
-          What our customers say
-        </h2>
-
-        <div
-          data-reveal
-          className="reveal-init mx-auto mt-8 sm:mt-12 grid max-w-4xl grid-cols-1 overflow-hidden rounded-card bg-surface-soft md:grid-cols-[260px_1fr]"
-        >
-          <div
-            data-img-reveal
-            className="relative aspect-[5/4] overflow-hidden md:aspect-auto md:h-full"
-          >
-            <Image
-              src={t.img}
-              alt={`${t.name}, ${t.role}`}
-              fill
-              sizes="(min-width: 768px) 260px, 100vw"
-              className="object-cover"
-            />
+    <section id="testimonial" className="section bg-white">
+      <div ref={scope} className="shell">
+        <div data-reveal className="rounded-[30px] bg-grad-routine pb-10 pt-12 sm:pb-14 sm:pt-[55px] lg:rounded-[40px]">
+          <div className="px-6 text-center sm:px-10">
+            <h2 className="text-[clamp(28px,3.4vw,50px)] font-bold leading-[1.3] text-black">
+              Join the labs who verify before they buy
+            </h2>
+            <p className="mt-8 text-base italic text-black sm:text-[20px]">
+              Verified customer reviews
+            </p>
           </div>
-          <figure className="flex flex-col justify-center p-6 sm:p-8 md:p-10">
-            <span className="text-ink/20">
-              <QuoteIcon />
-            </span>
-            <blockquote className="mt-3 text-[17px] sm:text-[20px] leading-snug text-ink">
-              {t.quote}
-            </blockquote>
-            <figcaption className="mt-4 sm:mt-5 flex flex-wrap items-baseline gap-x-3 gap-y-1">
-              <span className="text-[15px] font-medium text-ink">{t.name}</span>
-              <span className="text-[13px] text-ink-muted">{t.role}</span>
-            </figcaption>
-          </figure>
-        </div>
 
-        <div className="mt-6 flex justify-center">
-          {TESTIMONIALS.map((_, i) => (
-            <button
-              key={i}
-              onClick={() => setIndex(i)}
-              aria-label={`Testimonial ${i + 1}`}
-              aria-current={i === index ? "true" : undefined}
-              className="group inline-flex h-6 w-6 items-center justify-center"
-            >
-              <span
-                aria-hidden
-                className={`h-2.5 w-2.5 rounded-full transition-colors ${
-                  i === index ? "bg-ink" : "bg-ink/20 group-hover:bg-ink/40"
-                }`}
+          <div className="mt-8 flex flex-col items-center gap-5 px-6 sm:flex-row sm:justify-center sm:gap-8">
+            <div className="flex gap-6 sm:gap-8" role="tablist" aria-label="Review type">
+              {TABS.map((t, i) => (
+                <button
+                  key={t.label}
+                  type="button"
+                  role="tab"
+                  aria-selected={i === tab}
+                  data-active={i === tab}
+                  onClick={() => setTab(i)}
+                  className="tab"
+                >
+                  {t.label}
+                </button>
+              ))}
+            </div>
+
+            <label className="flex items-center gap-2 border-b-2 border-grey-200 pb-2">
+              <span className="sr-only">Search reviews</span>
+              <input
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                placeholder="Search reviews"
+                className="w-44 bg-transparent text-base text-black outline-none placeholder:text-grey-600"
               />
-            </button>
-          ))}
+            </label>
+          </div>
+
+        <div className="mt-10 px-3 sm:px-6 lg:mt-12 lg:px-[55px]">
+          {items.length === 0 ? (
+            <div className="rounded-lg bg-white p-10 text-center text-base text-grey-600 shadow-soft">
+              No reviews match “{query}”.
+            </div>
+          ) : (
+            <Rail
+              ariaLabel="Customer reviews"
+              gap="gap-4 lg:gap-6"
+              arrowOffset="-left-[30px] -right-[30px]"
+              arrowClassName="btn-round h-[50px] w-[50px] bg-[rgba(27,27,27,0.55)] disabled:opacity-40"
+              itemClassName="-mx-4 -my-10 scroll-px-4 px-4 py-10"
+              showProgress={false}
+            >
+              {items.map((r) => (
+                <figure
+                  key={r.name + r.product}
+                  className="flex min-h-[324px] w-[80vw] flex-col rounded-[20px] bg-white p-6 shadow-soft sm:w-[46vw] lg:w-[calc((100%-72px)/4)]"
+                >
+                  <Rating value={r.stars} size={18} />
+                  <figcaption className="mt-5 text-[18px] font-medium text-black">
+                    {r.product}
+                  </figcaption>
+                  <blockquote className="mt-2 flex-1 text-[17px] leading-[29px] text-black">
+                    “{r.quote}”
+                  </blockquote>
+                  <div className="mt-6 flex items-center justify-between gap-3 text-small font-medium text-grey-700">
+                    <span>{r.name}</span>
+                    <span>Verified buyer</span>
+                  </div>
+                </figure>
+              ))}
+            </Rail>
+          )}
+        </div>
         </div>
       </div>
     </section>

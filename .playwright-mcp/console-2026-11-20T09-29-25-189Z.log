@@ -1,0 +1,9 @@
+[    2516ms] [WARNING] In a sandboxed environment, addEventListener may not behave as expected. @ https://wearefeel.com/cdn/wpm/s59be8e47w556dc13fpc8f027a5m478ef996m.js:1
+[    2580ms] [INFO] UET customer privacy {source: initial, analyticsProcessingAllowed: true, marketingAllowed: true} @ https://wearefeel.com/web-pixels/strict/app/web-pixel-2359361704@58a904981d2724b937c16718aa2f1aee.js:1
+[    2581ms] [LOG] [Reach Pixel] initialized {pixelId: WfyAHQzU5ZRXwqMPoTFN44, shop: we-are-feel.myshopify.com, backendUrl: https://pixel-for-openai-ads.fly.dev} @ https://wearefeel.com/web-pixels/strict/app/web-pixel-2374009000@228ed79df443c286104f92372ce1436f.js:1
+[    2592ms] [INFO] k-web-pixel-version 4 @ https://wearefeel.com/web-pixels/strict/app/web-pixel-1492910248@3fe25e975c30cd2a9af38a04798704c0.js:1
+[    2825ms] [LOG] [Reach Pixel] event → page_viewed {oppref: false, obref: false, email: false, identifiers: Array(0)} @ https://wearefeel.com/web-pixels/strict/app/web-pixel-2374009000@228ed79df443c286104f92372ce1436f.js:1
+[    2826ms] [LOG] [Reach Pixel] event → contents_viewed {oppref: false, obref: false, email: false, identifiers: Array(0)} @ https://wearefeel.com/web-pixels/strict/app/web-pixel-2374009000@228ed79df443c286104f92372ce1436f.js:1
+[    4211ms] [WARNING] [Meta Pixel] - Multiple pixels with conflicting versions were detected on this page. @ https://connect.facebook.net/en_US/fbevents.js:206
+[    6350ms] [WARNING] [Recharge] Auto injection of widgets failed. There were 0 elements found, but no product id's found. @ https://static.rechargecdn.com/assets/js/widget.min.js?shop=we-are-feel.myshopify.com:21
+[   35932ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:38560

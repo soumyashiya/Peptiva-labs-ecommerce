@@ -266,25 +266,166 @@ export function ArrowLeft(props: SVGProps<SVGSVGElement>) {
   );
 }
 
-export function Logo({ className = "" }: { className?: string }) {
+export function SearchIcon(props: SVGProps<SVGSVGElement>) {
   return (
-    <span className={`inline-flex items-center gap-2.5 ${className}`}>
-      <span className="inline-flex h-8 w-8 items-center justify-center rounded-[10px] bg-ink_btn">
-        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" aria-hidden>
-          <path
-            d="M5.5 15.5 12 6.5l6.5 9"
-            stroke="#fff"
-            strokeWidth="1.7"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          <circle cx="5.5" cy="15.5" r="2.1" fill="#fff" />
-          <circle cx="12" cy="6.5" r="2.1" fill="#fff" />
-          <circle cx="18.5" cy="15.5" r="2.1" fill="#fff" />
-        </svg>
-      </span>
-      <span className="font-display text-[21px] font-medium leading-none tracking-tight2 text-ink">
-        Peptiva Labs
+    <svg {...base} {...props}>
+      <circle cx="11" cy="11" r="6.5" />
+      <path d="M15.8 15.8 20 20" />
+    </svg>
+  );
+}
+
+export function UserIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg {...base} {...props}>
+      <circle cx="12" cy="8" r="3.6" />
+      <path d="M4.8 20c.9-3.6 3.8-5.6 7.2-5.6s6.3 2 7.2 5.6" />
+    </svg>
+  );
+}
+
+export function ChevronRightIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg {...base} width={18} height={18} {...props}>
+      <path d="M9 5l7 7-7 7" />
+    </svg>
+  );
+}
+
+export function ChevronLeftIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg {...base} width={18} height={18} {...props}>
+      <path d="M15 5l-7 7 7 7" />
+    </svg>
+  );
+}
+
+export function ArrowRightLong(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg {...base} width={20} height={20} {...props}>
+      <path d="M4 12h15" />
+      <path d="M13 6l6 6-6 6" />
+    </svg>
+  );
+}
+
+/**
+ * Filled star used by every rating row. Fractional fills are handled by
+ * clipping the glyph to `fill`% of its width, matching how the reference
+ * renders half stars.
+ */
+export function StarIcon({
+  fill = 1,
+  size = 16,
+  className = "",
+}: {
+  fill?: number;
+  size?: number;
+  className?: string;
+}) {
+  const pct = Math.max(0, Math.min(1, fill)) * 100;
+  const path =
+    "M12 2.4l2.9 5.9 6.5.95-4.7 4.58 1.1 6.47L12 17.25 6.2 20.3l1.1-6.47L2.6 9.25l6.5-.95L12 2.4z";
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      className={className}
+      aria-hidden
+    >
+      <path d={path} fill="currentColor" opacity={0.18} />
+      {pct > 0 && (
+        <path
+          d={path}
+          fill="currentColor"
+          style={{ clipPath: `inset(0 ${100 - pct}% 0 0)` }}
+        />
+      )}
+    </svg>
+  );
+}
+
+export function CheckIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M5 12.5l4.5 4.5L19 7" />
+    </svg>
+  );
+}
+
+export function CheckCircleIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg {...base} {...props}>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M8.5 12.3l2.4 2.4 4.6-4.9" />
+    </svg>
+  );
+}
+
+export function TagIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M11.6 3.5H20v8.4l-8.7 8.7a1.6 1.6 0 0 1-2.3 0l-6.1-6.1a1.6 1.6 0 0 1 0-2.3l8.7-8.7z" />
+      <circle cx="16.3" cy="7.7" r="1.3" />
+    </svg>
+  );
+}
+
+export function CalendarCheckIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg {...base} {...props}>
+      <rect x="3.5" y="5" width="17" height="15.5" rx="3" />
+      <path d="M8 2.8v4.4M16 2.8v4.4M3.5 10.5h17" />
+      <path d="M9.3 15.2l1.9 1.9 3.6-3.8" />
+    </svg>
+  );
+}
+
+export function InstagramIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg {...base} {...props}>
+      <rect x="3.5" y="3.5" width="17" height="17" rx="5" />
+      <circle cx="12" cy="12" r="4" />
+      <circle cx="17" cy="7" r="1" fill="currentColor" stroke="none" />
+    </svg>
+  );
+}
+
+export function LinkedInIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg width={24} height={24} viewBox="0 0 24 24" fill="currentColor" {...props}>
+      <path d="M6.2 9.3H3.4V21h2.8V9.3zM4.8 3a1.7 1.7 0 1 0 0 3.4 1.7 1.7 0 0 0 0-3.4zM21 14.2c0-3.2-1.7-4.7-4-4.7-1.8 0-2.7 1-3.1 1.7V9.3H11V21h2.9v-6.5c0-1.4.6-2.3 1.9-2.3s1.8.9 1.8 2.3V21H21v-6.8z" />
+    </svg>
+  );
+}
+
+/**
+ * Wordmark lockup. The reference leads with a plain lowercase wordmark and no
+ * icon, so the mark carries the brand through weight and tracking alone.
+ */
+export function Logo({
+  className = "",
+  invert = false,
+}: {
+  className?: string;
+  invert?: boolean;
+}) {
+  return (
+    <span
+      className={`inline-flex items-baseline gap-[3px] text-[22px] font-bold leading-none tracking-[-0.03em] ${
+        invert ? "text-white" : "text-black"
+      } ${className}`}
+    >
+      Peptiva
+      <span className="font-normal">Labs</span>
+      <span
+        aria-hidden
+        className={`translate-y-[-7px] text-[9px] font-normal ${
+          invert ? "text-white/60" : "text-grey-600"
+        }`}
+      >
+        ®
       </span>
     </span>
   );

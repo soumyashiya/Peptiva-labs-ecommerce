@@ -2,160 +2,564 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ==========================================================================
+   Design tokens
+   Mirrors the reference storefront's custom-property system so gradients and
+   one-off rules can read the same values the Tailwind classes compile to.
+   ========================================================================== */
 :root {
-  --canvas: #F1F1F1;
-  --ink: #312938;
-  --ink-secondary: #515566;
-  --ink-muted: #656776;
-  --line: #E5E4E0;
+  /* neutrals */
+  --fl-black: #000000;
+  --fl-white: #ffffff;
+  --fl-ink: #111121;
+  --fl-grey-100: #f5f5f5;
+  --fl-grey-200: #ebebeb;
+  --fl-grey-300: #e0e0e0;
+  --fl-grey-500: #c4c4c4;
+  --fl-grey-600: #909090;
+  --fl-grey-650: #8a8a8a;
+  --fl-grey-700: #5b5b5b;
+  --fl-grey-800: #2a2a2a;
+
+  /* warm surfaces */
+  --fl-sand-100: #f8f5f2;
+  --fl-powder-50: #fef7f8;
+  --fl-powder-100: #fcf1f3;
+  --fl-powder-200: #fae3e8;
+  --fl-powder-300: #f6dde3;
+  --fl-powder-400: #f1d4db;
+  --fl-powder-500: #edcbd4;
+
+  /* semantic */
+  --fl-text-primary: var(--fl-black);
+  --fl-text-secondary: var(--fl-grey-600);
+  --fl-text-muted: var(--fl-grey-700);
+  --fl-text-faint: var(--fl-grey-650);
+  --fl-text-price: var(--fl-ink);
+  --fl-text-sale: #af3460;
+  --fl-text-success: #00b67a;
+  --fl-bg-page: var(--fl-white);
+  --fl-bg-surface: var(--fl-sand-100);
+  --fl-bg-muted: var(--fl-grey-100);
+  --fl-border-default: var(--fl-grey-200);
+
+  /* actions */
+  --fl-action-bg: var(--fl-black);
+  --fl-action-bg-hover: var(--fl-grey-800);
+  --fl-action-text: var(--fl-white);
+  --fl-action-disabled-bg: var(--fl-grey-200);
+  --fl-action-disabled-text: var(--fl-grey-500);
+
+  /* radii — measured off the reference */
+  --fl-r-md: 10px;
+  --fl-r-tile: 14px;
+  --fl-r-lg: 20px;
+  --fl-r-xl: 30px;
+  --fl-r-hero: 40px;
+  --fl-r-full: 1000px;
+
+  /* motion */
+  --fl-ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --fl-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --fl-duration-fast: 0.44s;
+  --fl-duration-base: 0.66s;
+
+  /* elevation */
+  --fl-elevation-soft: 0 2px 40px rgba(0, 0, 0, 0.1);
+  --fl-elevation-sticky: 0 -2px 20px rgba(0, 0, 0, 0.05);
+
+  /* layout rhythm — the inset page shell and the floating header.
+     Measured: the hero container sits 25px in from each viewport edge, and
+     the content column is 1345px inside a 1425px shell (40px gutters). */
+  --fl-shell-inset: 25px;
+  --fl-announce-h: 36px;
+  --fl-nav-h: 60px;
 }
 
+@media (max-width: 1023px) {
+  :root {
+    --fl-shell-inset: 12px;
+    --fl-nav-h: 56px;
+  }
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
 @layer base {
   html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-    background: var(--canvas);
+    background: var(--fl-bg-page);
   }
 
   body {
-    background-color: var(--canvas);
-    color: var(--ink);
-    font-family: var(--font-dm-sans), "DM Sans", system-ui, sans-serif;
-    font-size: 14px;
-    line-height: 1.42;
-    letter-spacing: -0.02em;
-  }
-
-  h1, h2, h3, h4 {
-    font-family: var(--font-clash), "Clash Display", var(--font-dm-sans), "DM Sans", system-ui, sans-serif;
-    color: var(--ink);
+    background-color: var(--fl-bg-page);
+    color: var(--fl-text-primary);
+    font-family: var(--font-core), Poppins, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
     font-weight: 400;
   }
 
-  html.lenis,
-  html.lenis body { height: auto; }
-  .lenis.lenis-smooth { scroll-behavior: auto !important; }
-  .lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
-  .lenis.lenis-stopped { overflow: hidden; }
-
-  ::selection {
-    background: rgba(49, 41, 56, 0.12);
-    color: var(--ink);
+  /* The reference sets no global heading font — headings share the core
+     family and differentiate purely by weight and size. */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--fl-text-primary);
+    font-weight: 400;
   }
 
-  /* Visible, consistent keyboard focus without affecting mouse users. */
+  /* Lenis smooth-scroll hooks */
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+
+  ::selection {
+    background: rgba(0, 0, 0, 0.1);
+    color: var(--fl-text-primary);
+  }
+
   :focus-visible {
-    outline: 2px solid var(--ink);
+    outline: 2px solid var(--fl-black);
     outline-offset: 2px;
     border-radius: 4px;
   }
-  /* Elements that manage their own focus ring opt out of the global outline. */
   [data-no-focus-ring]:focus-visible {
     outline: none;
   }
+
+  /* Hide the native number spinners inside quantity steppers. */
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
 }
 
+/* ==========================================================================
+   Components
+   ========================================================================== */
 @layer components {
-  /* Skip link — hidden until focused, then pinned top-left above the nav. */
   .skip-link {
     @apply sr-only;
   }
   .skip-link:focus {
-    @apply not-sr-only fixed left-4 top-4 z-[100] inline-flex items-center rounded-pill bg-ink_btn px-4 py-2 text-[14px] font-medium text-white shadow-card;
-  }
-}
-
-@layer components {
-  /* Section block — full-bleed section with no rounded card framing */
-  .section-block {
-    @apply relative w-full bg-surface overflow-hidden;
+    @apply not-sr-only fixed left-4 top-4 z-[100] inline-flex items-center rounded-pill bg-black px-4 py-2 text-small font-medium text-white shadow-soft;
   }
 
-  .container-fluid {
-    @apply mx-auto w-full max-w-container px-4 sm:px-6 lg:px-12;
+  /* ---- layout -------------------------------------------------------- */
+
+  /**
+   * The page shell. The reference insets all content from the viewport edge
+   * and rounds the top of the first section, so the white page reads as a
+   * mat around the content. Sections opt in with `.shell-round`.
+   */
+  .shell {
+    @apply mx-auto w-full;
+    max-width: 1425px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  @media (max-width: 1023px) {
+    .shell {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
   }
 
-  /* Display / wordmark */
-  .display {
-    font-weight: 300;
-    color: var(--ink);
-    letter-spacing: -0.07em;
-    line-height: 1;
+  /* Full-bleed band that still respects the shell inset on both sides. */
+  .shell-bleed {
+    @apply w-full;
+    padding-left: var(--fl-shell-inset);
+    padding-right: var(--fl-shell-inset);
   }
 
-  .display-letter {
-    display: inline-block;
+  .shell-round {
+    border-radius: var(--fl-r-hero);
+    overflow: hidden;
   }
 
-  /* Pill buttons */
-  .btn-pill {
-    @apply inline-flex items-center justify-center rounded-pill font-medium transition-all duration-300;
-    font-size: 14px;
+  /**
+   * Vertical rhythm. The reference runs a deliberately top-weighted
+   * rhythm — measured section paddings are 50–80px top against 25–40px
+   * bottom, never the symmetric block most templates use. Reproduced here as
+   * 60/32 desktop, scaled down for narrow viewports.
+   */
+  .section {
+    padding-top: 40px;
+    padding-bottom: 24px;
+  }
+  @media (min-width: 1024px) {
+    .section {
+      padding-top: 60px;
+      padding-bottom: 32px;
+    }
+  }
+  /* The heavier variant, matching the reference's 80/40 blocks. */
+  .section-loose {
+    padding-top: 56px;
+    padding-bottom: 28px;
+  }
+  @media (min-width: 1024px) {
+    .section-loose {
+      padding-top: 80px;
+      padding-bottom: 40px;
+    }
+  }
+  /**
+   * Home page rhythm, measured off the reference at 1902px: every block after
+   * the hero sits ~120px below the end of the previous one (e.g. routine panel
+   * end -> next heading 125px, why band -> next heading 120px, trusted CTA ->
+   * community cards 120px). Applied once here so each section's own padding
+   * cannot drift; the selector outranks .section / pt-0 utilities.
+   */
+  .home-flow > section:not(#home),
+  .home-flow > div > section,
+  .home-flow > div > div > section {
+    padding-top: 64px;
+    padding-bottom: 0;
+  }
+  .home-flow {
+    padding-bottom: 64px;
+  }
+  @media (min-width: 1024px) {
+    .home-flow > section:not(#home),
+    .home-flow > div > section,
+    .home-flow > div > div > section {
+      padding-top: 120px;
+    }
+    .home-flow {
+      padding-bottom: 100px;
+    }
+  }
+
+  /* ---- hero colour washes (reference: slider-gradient-animation) -- */
+  .hero-wash {
+    background-size: 600% 600%;
+    background-position: 0% 0%;
+    transition: opacity 1s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  .hero-wash--active {
+    animation: hero-gradient-pan 8s ease infinite;
+  }
+  .hero-fade {
+    transition: opacity 1s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  .hero-dash-fill {
+    width: 0;
+    animation-name: hero-dash-fill;
+    animation-timing-function: linear;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes hero-gradient-pan {
+    0% { background-position: 0% 0; }
+    100% { background-position: 100% 0; }
+  }
+  @keyframes hero-dash-fill {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .hero-wash--active { animation: none; }
+    .hero-dash-fill { animation: none; width: 100%; }
+  }
+
+  .section-tight {
+    padding-top: 24px;
+    padding-bottom: 16px;
+  }
+  @media (min-width: 1024px) {
+    .section-tight {
+      padding-top: 32px;
+      padding-bottom: 20px;
+    }
+  }
+
+  /* ---- typography ---------------------------------------------------- */
+
+  /**
+   * The signature centred all-caps section heading.
+   * Measured: 40px / 56px, weight 700, uppercase, 1px tracking, 22px below.
+   */
+  .heading-caps {
+    @apply text-center font-bold uppercase text-black;
+    font-size: clamp(26px, 3.6vw, 40px);
+    line-height: 1.4;
+    letter-spacing: 0.025em;
+    margin-bottom: 22px;
+  }
+
+  /* Sentence-case editorial heading inside split blocks — 40px / 60px, 400. */
+  .heading-editorial {
+    @apply font-normal text-black;
+    font-size: clamp(26px, 3.2vw, 40px);
+    line-height: 1.5;
+  }
+
+  /**
+   * The oversized light intro paragraph that follows an editorial heading.
+   * Measured at 25px / 40px in the reference's lightest weight; Poppins 300
+   * is the nearest match to F37 Ginger's 100.
+   */
+  .lead {
+    @apply text-lead font-light text-black;
+  }
+
+  /* Small uppercase eyebrow above a heading. */
+  .eyebrow {
+    @apply uppercase text-grey-700;
+    font-size: 12px;
+    line-height: 1.45;
+    letter-spacing: 0.08em;
+    font-weight: 400;
+  }
+
+  /* Underlined micro-link used throughout product cards. */
+  .link-micro {
+    @apply text-small text-black underline underline-offset-4 decoration-grey-500;
+    transition: text-decoration-color var(--fl-duration-fast) var(--fl-ease-standard);
+  }
+  .link-micro:hover {
+    @apply decoration-black;
+  }
+
+  /* ---- buttons ------------------------------------------------------- */
+
+  /* Measured: 16px regular, 10px radius, 15px/40px padding, 53px tall. */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-md text-base font-normal;
+    padding: 15px 40px;
+    line-height: 23px;
+    transition:
+      background-color var(--fl-duration-fast) var(--fl-ease-standard),
+      color var(--fl-duration-fast) var(--fl-ease-standard),
+      border-color var(--fl-duration-fast) var(--fl-ease-standard),
+      opacity var(--fl-duration-fast) var(--fl-ease-standard);
+  }
+
+  /* Solid black primary — the dominant CTA on the reference. */
+  .btn-primary {
+    @apply btn bg-black text-white;
+  }
+  .btn-primary:hover {
+    background: var(--fl-action-bg-hover);
+  }
+  .btn-primary:disabled {
+    background: var(--fl-action-disabled-bg);
+    color: var(--fl-action-disabled-text);
+    cursor: not-allowed;
+  }
+
+  /* Outlined secondary — white fill, hairline border. Used on product cards. */
+  .btn-secondary {
+    @apply btn border border-black bg-transparent text-black;
+  }
+  .btn-secondary:hover {
+    background: rgba(0, 0, 0, 0.04);
+  }
+  .btn-secondary:disabled {
+    @apply border-grey-200 text-grey-500;
+    cursor: not-allowed;
+  }
+
+  /* White card-button sitting on a tinted background. */
+  .btn-card {
+    @apply btn border border-grey-200 bg-white text-black;
+  }
+  .btn-card:hover {
+    @apply border-black;
+  }
+
+  /* The secondary in-card size: 12px/20px padding, 48px tall. */
+  .btn-sm {
     padding: 12px 20px;
-    letter-spacing: -0.02em;
+    @apply text-base;
   }
-  @media (min-width: 640px) {
-    .btn-pill { padding: 14px 24px; }
+  .btn-pill {
+    border-radius: var(--fl-r-full);
   }
-  .btn-dark {
-    @apply btn-pill bg-ink_btn text-white;
-  }
-  .btn-dark:hover {
-    background: #2a2d31;
-    transform: translateY(-1px);
-  }
-  .btn-ghost {
-    @apply btn-pill bg-transparent text-ink border border-ink/15;
-  }
-  .btn-ghost:hover {
-    background: rgba(49, 41, 56, 0.05);
+  .btn-block {
+    @apply w-full;
   }
 
-  /* Nav pill */
-  .nav-pill {
-    @apply rounded-pill bg-white/90 backdrop-blur border border-ink/10;
+  /* Circular carousel arrow — grey wash, darkens on hover. */
+  .btn-round {
+    @apply inline-flex h-12 w-12 flex-none items-center justify-center rounded-full text-white;
+    background: rgba(0, 0, 0, 0.3);
+    transition: background-color var(--fl-duration-fast) var(--fl-ease-standard);
+  }
+  .btn-round:hover {
+    background: rgba(0, 0, 0, 0.55);
+  }
+  .btn-round:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
   }
 
-  /* Card */
-  .card-soft {
-    @apply rounded-card p-6 sm:p-7 flex flex-col h-full;
-    min-height: 260px;
+  /* Small chip/pill badge, e.g. "Free shipping via …". */
+  .chip {
+    @apply inline-flex items-center gap-2 rounded-pill bg-white text-small text-black;
+    padding: 7px 14px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
   }
-  @media (min-width: 640px) {
-    .card-soft { min-height: 320px; }
-  }
-
-  /* Arrow square button */
-  .arrow-btn {
-    @apply inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-ink_btn text-white;
+  .chip-tint {
+    @apply inline-flex items-center gap-1.5 rounded-pill text-small font-medium text-plum-500;
+    background: var(--fl-powder-100);
+    padding: 7px 14px;
   }
 
-  /* Legal / policy page prose */
+  /* ---- surfaces ------------------------------------------------------ */
+
+  .card {
+    @apply rounded-lg bg-white;
+  }
+  .card-bordered {
+    @apply rounded-lg border border-grey-200 bg-white;
+  }
+  .card-tint {
+    @apply rounded-lg;
+    background: var(--fl-sand-100);
+  }
+
+  /* Fine horizontal rule matching the reference's hairlines. */
+  .hairline {
+    @apply border-0 border-t border-grey-200;
+  }
+
+  /* ---- forms --------------------------------------------------------- */
+
+  .field {
+    @apply w-full rounded-md border border-grey-200 bg-white px-4 text-base text-black outline-none;
+    height: 56px;
+    transition: border-color var(--fl-duration-fast) var(--fl-ease-standard);
+  }
+  .field::placeholder {
+    @apply text-grey-600;
+  }
+  .field:focus {
+    @apply border-black;
+  }
+  .field-invalid {
+    @apply border-alert-500;
+  }
+  textarea.field {
+    @apply py-4;
+    height: auto;
+    min-height: 128px;
+    resize: vertical;
+  }
+  select.field {
+    @apply appearance-none pr-10;
+  }
+
+  .field-label {
+    @apply mb-2 block text-small font-medium text-black;
+  }
+  .field-error {
+    @apply mt-1.5 block text-small text-alert-500;
+  }
+
+  /* ---- carousel rails ------------------------------------------------ */
+
+  /**
+   * Horizontal snap rail. The reference uses native overflow scrolling with
+   * snap points, with the scrollbar hidden and a separate progress bar.
+   */
+  .rail {
+    @apply flex overflow-x-auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scroll-behavior: smooth;
+  }
+  .rail::-webkit-scrollbar {
+    display: none;
+  }
+  .rail > * {
+    scroll-snap-align: start;
+    flex: none;
+  }
+
+  /* The thin track + dark thumb that sits under each rail. */
+  .rail-progress {
+    @apply relative h-px w-full bg-grey-200;
+  }
+  .rail-progress > span {
+    @apply absolute left-0 -top-px block h-[2px] bg-black;
+    transition: transform var(--fl-duration-fast) var(--fl-ease-standard);
+    transform-origin: left center;
+  }
+
+  /* Dash pagination used by the hero slider. */
+  .dash {
+    @apply h-[2px] w-10 rounded-full bg-black/20;
+    transition: background-color var(--fl-duration-fast) var(--fl-ease-standard);
+  }
+  .dash[data-active="true"] {
+    @apply bg-black;
+  }
+
+  /* ---- tabs ---------------------------------------------------------- */
+
+  /* Underlined tab row — inactive tabs keep a grey rule, active goes black. */
+  .tab {
+    @apply whitespace-nowrap pb-2 text-base text-grey-600;
+    border-bottom: 2px solid var(--fl-grey-200);
+    transition:
+      color var(--fl-duration-fast) var(--fl-ease-standard),
+      border-color var(--fl-duration-fast) var(--fl-ease-standard);
+  }
+  /* The active tab is distinguished by colour and rule only — the reference
+     keeps every tab at regular weight so the row does not reflow on change. */
+  .tab[data-active="true"] {
+    @apply text-black;
+    border-bottom-color: var(--fl-black);
+  }
+
+  /* ---- prose --------------------------------------------------------- */
+
   .legal-prose p {
-    @apply text-[14px] leading-relaxed;
+    @apply text-base leading-relaxed text-grey-700;
   }
   .legal-prose ul {
-    @apply list-none space-y-2;
+    @apply list-none space-y-2.5;
   }
   .legal-prose ul li {
-    @apply flex items-start gap-2.5;
+    @apply flex items-start gap-3 text-base text-grey-700;
   }
   .legal-prose ul li::before {
     content: "";
-    @apply mt-2 h-1.5 w-1.5 flex-none rounded-full bg-ink_btn;
+    @apply mt-2.5 h-1.5 w-1.5 flex-none rounded-full bg-black;
   }
   .legal-prose ol {
-    @apply list-decimal space-y-2 pl-5;
+    @apply list-decimal space-y-2.5 pl-5 text-base text-grey-700;
   }
   .legal-prose strong {
-    @apply font-semibold text-ink;
+    @apply font-medium text-black;
   }
   .legal-prose a {
-    @apply text-ink underline underline-offset-2;
+    @apply text-black underline underline-offset-2;
   }
 
-  /* Numbered badges on each policy section, driven by DOM order. */
   .legal-sections {
     counter-reset: legal-section;
   }
@@ -165,35 +569,80 @@
   .legal-sections .section-num::before {
     content: counter(legal-section, decimal-leading-zero);
   }
-
-  /* Content overlay that hides until parent .group is hovered (hover-capable devices only) */
-  .hover-reveal {
-    transition: transform 500ms ease-out, opacity 500ms ease-out;
-  }
-  @media (hover: hover) {
-    .hover-reveal {
-      transform: translateY(100%);
-      opacity: 0;
-    }
-    .group:hover .hover-reveal,
-    .group:focus-within .hover-reveal {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
 }
 
+/* ==========================================================================
+   Utilities
+   ========================================================================== */
 @layer utilities {
-  /* No initial-hidden state: content is visible by default. GSAP animates
-     from a hidden state only when JS is present, so server-rendered content
-     and prefers-reduced-motion users see everything immediately. */
-  .reveal-init { }
-  .clip-init { }
-  .text-balance { text-wrap: balance; }
-  .text-pretty { text-wrap: pretty; }
+  .text-balance {
+    text-wrap: balance;
+  }
+  .text-pretty {
+    text-wrap: pretty;
+  }
+
+  /* Edge fade for marquees and rails. */
+  .mask-fade-x {
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent,
+      #000 6%,
+      #000 94%,
+      transparent
+    );
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      #000 6%,
+      #000 94%,
+      transparent
+    );
+  }
+
+  /* Scroll-reveal start state. JS adds `is-revealed` via IntersectionObserver;
+     without JS the `@media (prefers-reduced-motion)` block and the
+     `.no-js` fallback keep content visible. */
+  .reveal {
+    opacity: 0;
+    transform: translate3d(0, 24px, 0);
+    transition:
+      opacity var(--fl-duration-base) var(--fl-ease-out),
+      transform var(--fl-duration-base) var(--fl-ease-out);
+    will-change: opacity, transform;
+  }
+  .reveal.is-revealed {
+    opacity: 1;
+    transform: none;
+  }
+
+  .marquee-track {
+    display: flex;
+    width: max-content;
+    will-change: transform;
+  }
+
+  .no-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
 }
 
-@keyframes upload-progress {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(100%); }
+/* Respect reduced-motion: no transforms, no infinite marquees. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
 }
